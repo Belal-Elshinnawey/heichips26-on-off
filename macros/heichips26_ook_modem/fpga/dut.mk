@@ -6,5 +6,10 @@
 SRC_DIR := ../../../rtl
 
 DUT_SRCS := \
-	../../../macros/counter/rtl/counter.sv \
-	$(SRC_DIR)/heichips26_digital_project.sv
+	$(SRC_DIR)/heichips26_ook_modem.sv \
+	$(SRC_DIR)/tx_framer.sv \
+	$(SRC_DIR)/ook_gate.sv \
+	$(SRC_DIR)/ro_model.sv \
+	$(SRC_DIR)/rx_sync.sv \
+	$(SRC_DIR)/rx_sampler.sv \
+	$(SRC_DIR)/rx_deframer.sv
