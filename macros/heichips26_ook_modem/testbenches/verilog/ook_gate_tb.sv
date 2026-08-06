@@ -9,16 +9,15 @@ module ook_gate_tb;
     logic ro_en = 0;
     logic tx_busy = 0;
     logic carrier_clk = 0;
-    logic ook_out = 0;
-    logic tx_drive_en = 0;
-    logic rst_n = 1;
+    wire  ook_out;
+    wire  tx_drive_en;
 
     ook_gate u_dut (.*);
 
     always #10 carrier_clk = ~carrier_clk;
 
     initial begin
-        $dumpfile("ook_date_tb.fst");
+        $dumpfile("ook_gate_tb.fst");
         $dumpvars(0, ook_gate_tb);
     end
 
