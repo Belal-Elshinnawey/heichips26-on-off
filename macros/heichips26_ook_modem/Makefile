@@ -35,8 +35,7 @@ FINAL_DIR      	:= final
 # The counter sub-macro is hardened separately (see macros/counter/), but its RTL
 # is needed for linting and RTL simulation of the whole design.
 MODULES_SYNTH := \
-	$(SRC_DIR)/heichips26_ook_modem.sv \
-	$(MACROS_DIR)/counter/rtl/counter.sv
+	$(SRC_DIR)/heichips26_ook_modem.sv
 
 MODULES_SIM := \
 	$(MODULES_SYNTH)
