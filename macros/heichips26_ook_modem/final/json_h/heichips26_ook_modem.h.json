@@ -1,0 +1,157 @@
+{
+  "creator": "Yosys 0.66 (git sha1 86f2ddebce7e98ce7cacc27e8a5c14cb53b51b51, clang++ 21.1.8 -fPIC -O3)",
+  "modules": {
+    "heichips26_ook_modem": {
+      "attributes": {
+        "hdlname": "heichips26_ook_modem",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:11.1-98.10"
+      },
+      "parameter_default_values": {
+        "CLKS_PER_BIT": "00000000000000000000001111101000"
+      },
+      "ports": {
+        "VPWR": {
+          "direction": "inout",
+          "bits": [ 2 ]
+        },
+        "VGND": {
+          "direction": "inout",
+          "bits": [ 3 ]
+        },
+        "ui_in": {
+          "direction": "input",
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ]
+        },
+        "uo_out": {
+          "direction": "output",
+          "bits": [ 12, 13, 14, 15, 16, 17, 18, 19 ]
+        },
+        "uio_in": {
+          "direction": "input",
+          "bits": [ 20, 21, 22, 23, 24, 25, 26, 27 ]
+        },
+        "uio_out": {
+          "direction": "output",
+          "bits": [ 12, 13, 14, 15, 16, 17, 18, 19 ]
+        },
+        "uio_oe": {
+          "direction": "output",
+          "bits": [ "1", "1", "1", "1", "1", "1", "1", "1" ]
+        },
+        "ena": {
+          "direction": "input",
+          "bits": [ 28 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 29 ]
+        },
+        "rst_n": {
+          "direction": "input",
+          "bits": [ 30 ]
+        }
+      },
+      "cells": {
+        "counter_0": {
+          "hide_name": 0,
+          "type": "counter",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:82.13-92.6"
+          },
+          "port_directions": {
+            "VGND": "inout",
+            "VPWR": "inout",
+            "clk_i": "input",
+            "count_o": "output",
+            "enable_i": "input",
+            "rst_ni": "input"
+          },
+          "connections": {
+            "VGND": [ 3 ],
+            "VPWR": [ 2 ],
+            "clk_i": [ 29 ],
+            "count_o": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+            "enable_i": [ 4 ],
+            "rst_ni": [ 30 ]
+          }
+        }
+      },
+      "netnames": {
+        "VGND": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:16.17-16.21"
+          }
+        },
+        "VPWR": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:15.17-15.21"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:24.23-24.26"
+          }
+        },
+        "ena": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:23.23-23.26"
+          }
+        },
+        "rst_n": {
+          "hide_name": 0,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:25.23-25.28"
+          }
+        },
+        "ui_in": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11 ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:18.23-18.28"
+          }
+        },
+        "uio_in": {
+          "hide_name": 0,
+          "bits": [ 20, 21, 22, 23, 24, 25, 26, 27 ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:20.23-20.29"
+          }
+        },
+        "uio_oe": {
+          "hide_name": 0,
+          "bits": [ "1", "1", "1", "1", "1", "1", "1", "1" ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:22.23-22.29"
+          }
+        },
+        "uio_out": {
+          "hide_name": 0,
+          "bits": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:21.23-21.30"
+          }
+        },
+        "uo_out": {
+          "hide_name": 0,
+          "bits": [ 12, 13, 14, 15, 16, 17, 18, 19 ],
+          "attributes": {
+            "src": "/home/kokor/heichips26-on-off/macros/heichips26_ook_modem/rtl/heichips26_ook_modem.sv:19.23-19.29"
+          }
+        }
+      }
+    }
+  }
+}

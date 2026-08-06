@@ -1,6 +1,6 @@
 *SPEF "ieee 1481-1999"
-*DESIGN "heichips26_digital_project"
-*DATE "10:55:05 Tuesday August 04, 2026"
+*DESIGN "heichips26_ook_modem"
+*DATE "22:15:50 Thursday August 06, 2026"
 *VENDOR "The OpenROAD Project"
 *PROGRAM "OpenROAD"
 *VERSION "dcf36133a369abc8f3c5e5738cd4d82e4903c0e0"
@@ -6637,14 +6637,14 @@
 *6623 _14_
 *6624 _15_
 *6625 counter_0
-*6626 heichips26_digital_project
-*6627 heichips26_digital_project_19
-*6628 heichips26_digital_project_20
-*6629 heichips26_digital_project_21
-*6630 heichips26_digital_project_22
-*6631 heichips26_digital_project_23
-*6632 heichips26_digital_project_24
-*6633 heichips26_digital_project_25
+*6626 heichips26_ook_modem
+*6627 heichips26_ook_modem_19
+*6628 heichips26_ook_modem_20
+*6629 heichips26_ook_modem_21
+*6630 heichips26_ook_modem_22
+*6631 heichips26_ook_modem_23
+*6632 heichips26_ook_modem_24
+*6633 heichips26_ook_modem_25
 *6634 input1
 *6635 input2
 *6636 output10

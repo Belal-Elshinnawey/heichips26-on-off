@@ -1,4 +1,4 @@
-module heichips26_digital_project (clk,
+module heichips26_ook_modem (clk,
     ena,
     rst_n,
     ui_in,
@@ -6622,14 +6622,14 @@ module heichips26_digital_project (clk,
     net5,
     net4,
     net3}));
- sg13cmos5l_tiehi heichips26_digital_project (.L_HI(net));
- sg13cmos5l_tiehi heichips26_digital_project_19 (.L_HI(net19));
- sg13cmos5l_tiehi heichips26_digital_project_20 (.L_HI(net20));
- sg13cmos5l_tiehi heichips26_digital_project_21 (.L_HI(net21));
- sg13cmos5l_tiehi heichips26_digital_project_22 (.L_HI(net22));
- sg13cmos5l_tiehi heichips26_digital_project_23 (.L_HI(net23));
- sg13cmos5l_tiehi heichips26_digital_project_24 (.L_HI(net24));
- sg13cmos5l_tiehi heichips26_digital_project_25 (.L_HI(net25));
+ sg13cmos5l_tiehi heichips26_ook_modem (.L_HI(net));
+ sg13cmos5l_tiehi heichips26_ook_modem_19 (.L_HI(net19));
+ sg13cmos5l_tiehi heichips26_ook_modem_20 (.L_HI(net20));
+ sg13cmos5l_tiehi heichips26_ook_modem_21 (.L_HI(net21));
+ sg13cmos5l_tiehi heichips26_ook_modem_22 (.L_HI(net22));
+ sg13cmos5l_tiehi heichips26_ook_modem_23 (.L_HI(net23));
+ sg13cmos5l_tiehi heichips26_ook_modem_24 (.L_HI(net24));
+ sg13cmos5l_tiehi heichips26_ook_modem_25 (.L_HI(net25));
  sg13cmos5l_buf_1 input1 (.A(rst_n),
     .X(net1));
  sg13cmos5l_buf_1 input2 (.A(ui_in[0]),

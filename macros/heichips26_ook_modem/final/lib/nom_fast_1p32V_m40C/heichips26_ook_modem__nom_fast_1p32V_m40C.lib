@@ -1,4 +1,4 @@
-library (heichips26_digital_project) {
+library (heichips26_ook_modem) {
   comment                        : "";
   delay_model                    : table_lookup;
   simulation                     : false;
@@ -65,7 +65,7 @@ library (heichips26_digital_project) {
     bit_to : 0;
   }
 
-  cell ("heichips26_digital_project") {
+  cell ("heichips26_ook_modem") {
     area : 87903.695 
     is_macro_cell : true;
     pin("clk") {
