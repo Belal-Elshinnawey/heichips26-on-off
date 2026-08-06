@@ -73,3 +73,24 @@ MACROS:
       counter_0:
         location: [100, 50]
         orientation: N
+
+  #アナログ側の名前に応じて後で変更
+
+  heichips26_analog_project:
+    gds:
+      - dir::../../../heichips26_analog_project/final/gds/heichips26_analog_project.gds
+    lef:
+      - dir::../../../heichips26_analog_project/final/lef/heichips26_analog_project.lef
+    vh:
+      - dir::../../../heichips26_analog_project/final/vh/heichips26_analog_project.vh
+    lib:
+      nom_typ_1p20V_25C:
+        - dir::../../../heichips26_analog_project/final/lib/heichips26_analog_project.lib
+      nom_fast_1p32V_m40C:
+        - dir::../../../heichips26_analog_project/final/lib/heichips26_analog_project.lib
+      nom_slow_1p08V_125C:
+        - dir::../../../heichips26_analog_project/final/lib/heichips26_analog_project.lib
+    instances:
+      analog_0:
+        location: [200, 50]
+        orientation: N
