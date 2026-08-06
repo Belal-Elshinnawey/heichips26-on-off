@@ -52,6 +52,28 @@ module heichips26_ook_modem #(
         .tx_busy(tx_busy)
     );
 
+    `ifdef SIM
+    ro_model u_ro_model (
+        .ro_en(ro_en),
+        .ro_out(carrier_clk)
+    );
+    `else
+    assign carrier_clk = 1'b0;
+    `endif
+
+    ook_gate u_ook_gate (
+        .mode_carrier(mode_sel),
+        .ro_en(ro_en),
+        .carrier_clk(carrier_clk),
+        .tx_busy(tx_busy),
+        .ook_out(ook_out),
+        .tx_drive_en(tx_drive_en)
+    );
+
+
+//  RX周り後で書くよ
+ 
+
     // List all unused inputs to prevent warnings
     wire _unused = &{ena, ui_in[7:1], uio_in[7:1]};
     
