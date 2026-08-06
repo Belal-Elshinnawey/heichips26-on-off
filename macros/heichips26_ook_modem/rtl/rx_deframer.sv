@@ -69,13 +69,28 @@ always_ff @(posedge clk or negedge rst_n) begin
                 phase_rst <= 1'b1;
                 skip1 <= 1'b1;
                 pre_got1 <= 1'b0;
-                bit_cnt <= 3'b111;
                 first_word <= 1'b1;
                 state <= PRE_CHK;
             end
+
             PRE_CHK: if(sv) begin
-                if(symbol) pre_got1 <= 1'b1;
-                else state <= HUNT;
+                if(symbol) begin
+                    if(pre_got1) state <= START_CHK;
+                    else pre_got1 <= 1'b1;
+                end else state <= HUNT;
+            end
+
+            WAIT_WORD: if(!rx_i) begin
+                phase_rst <= 1'b1;
+                skip1 <= 1'b1;
+                state <= START_CHK;
+            end
+
+            START_CHK: if(sv) begin
+                if(!symbol) begin
+                    bit_cnt <= 3'd5;
+                    state <= DATA;
+                end else state <= WAIT_WORD;
             end
 
             DATA: if(sv) begin
@@ -84,7 +99,7 @@ always_ff @(posedge clk or negedge rst_n) begin
                 else bit_cnt <= bit_cnt - 1'b1;
             end
 
-            STOP_CHK: if(!symbol) begin
+            STOP_CHK: if(sv) begin
                 if (symbol) begin
                     rx_data <= sh;
                     rx_valid <= 1'b1;
