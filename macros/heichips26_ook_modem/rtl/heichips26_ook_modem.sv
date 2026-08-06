@@ -71,28 +71,54 @@ module heichips26_ook_modem #(
     );
 
 
-//  RX周り後で書くよ
- 
+    // RX周り
+    wire rx_in_raw = bist_en ? ro_en : 1'b0;  // TODO: analog_0確定後に外部入力へ差替え
 
-    // List all unused inputs to prevent warnings
-    wire _unused = &{ena, ui_in[7:1], uio_in[7:1]};
-    
-    logic [7:0] count;
-    
-    counter counter_0 (
-    `ifdef USE_POWER_PINS
-        .VPWR  (VPWR),
-        .VGND  (VGND),
-    `endif
-        .clk_i    (clk),
-        .rst_ni   (rst_n),
-        .enable_i (ui_in[0]),
+    wire rx_suppress = tx_busy & ~bist_en;
 
-        .count_o  (count)
+    wire       rx_i, phase_rst, symbol, symbol_valid;
+    wire [5:0] rx_data;
+    wire       rx_valid, rx_sop, rx_eop;
+
+    // 同期回路
+    rx_sync u_rx_sync (
+        .clk   (clk),
+        .rx_in (rx_in_raw),
+        .rx_i  (rx_i)
     );
-    
-    assign uo_out  = count;
-    assign uio_out = count;
-    assign uio_oe  = '1;
+
+    // 多数決回路
+    rx_sampler #(
+        .CLKS_PER_BIT(CLKS_PER_BIT)
+    ) u_rx_sampler (
+        .clk          (clk),
+        .rst_n        (rst_n),
+        .rx_i         (rx_i),
+        .phase_rst    (phase_rst),
+        .symbol       (symbol),
+        .symbol_valid (symbol_valid)
+    );
+
+    // デフレーム回路
+    rx_deframer u_rx_deframer (
+        .clk          (clk),
+        .rst_n        (rst_n),
+        .rx_i         (rx_i),
+        .suppress     (rx_suppress),
+        .symbol       (symbol),
+        .symbol_valid (symbol_valid),
+        .phase_rst    (phase_rst),
+        .rx_data      (rx_data),
+        .rx_valid     (rx_valid),
+        .rx_sop       (rx_sop),
+        .rx_eop       (rx_eop)
+    );
+
+    // 出力ピン
+    assign uo_out = {tx_ready, rx_valid, rx_data};
+    assign uio_out = {ook_out,       1'b0, tx_busy, 1'b0, rx_eop,  rx_sop, 2'b00};
+    assign uio_oe  = 8'b1010_1100;
+
+    wire _unused = &{ena, rx_ready, tx_drive_en, uio_in[7], uio_in[5], uio_in[3:2]};
 
 endmodule
