@@ -6,7 +6,7 @@ MAKEFILE_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 RUN_TAG = $(shell ls -1 $(LIBRELANE_DIR)/runs 2>/dev/null | tail -n 1)
 
 # Variables
-TOP = heichips26_digital_project
+TOP = heichips26_ook_modem
 
 .DEFAULT_GOAL := help
 
@@ -35,7 +35,7 @@ FINAL_DIR      	:= final
 # The counter sub-macro is hardened separately (see macros/counter/), but its RTL
 # is needed for linting and RTL simulation of the whole design.
 MODULES_SYNTH := \
-	$(SRC_DIR)/heichips26_digital_project.sv \
+	$(SRC_DIR)/heichips26_ook_modem.sv \
 	$(MACROS_DIR)/counter/rtl/counter.sv
 
 MODULES_SIM := \
