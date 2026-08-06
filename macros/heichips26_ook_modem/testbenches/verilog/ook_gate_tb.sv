@@ -7,14 +7,11 @@ module ook_gate_tb;
     
     logic mode_carrier = 0;
     logic ro_en = 0;
-    logic clk = 0;
-    logic rst_n = 0;
     logic tx_busy = 0;
+    logic carrier_clk = 0;
     logic ook_out = 0;
     logic tx_drive_en = 0;
-
-    logic ook_out;
-    logic tx_drive_en;
+    logic rst_n = 1;
 
     ook_gate u_dut (.*);
 
