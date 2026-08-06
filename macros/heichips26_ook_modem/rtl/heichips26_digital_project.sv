@@ -3,9 +3,14 @@
 
 // Adapted from the Tiny Tapeout template
 
+// トップモジュール
+
+`timescale 1ns / 1ps
 `default_nettype none
 
-module heichips26_digital_project (
+module heichips26_ook_modem #(
+    parameter int unsigned CLKS_PER_BIT = 1000
+)(
 `ifdef USE_POWER_PINS
     inout  wire VPWR,
     inout  wire VGND,
@@ -19,6 +24,33 @@ module heichips26_digital_project (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+
+    // 入力ピン割当
+    wire [5:0] tx_data  = ui_in[5:0];
+    wire       tx_valid = ui_in[6];
+    wire       rx_ready = ui_in[7];
+    wire       tx_sop   = uio_in[0];
+    wire       tx_eop   = uio_in[1];
+    wire       mode_sel = uio_in[4];
+    wire       bist_en  = uio_in[6]; //RXで仕様
+
+    // TX周り
+    wire tx_ready, tx_busy, ro_en;
+    wire carrier_clk, ook_out, tx_drive_en;
+
+    tx_framer #(
+        .CLKS_PER_BIT(CLKS_PER_BIT)
+    ) u_tx_framer (
+        .clk(clk),
+        .rst_n(rst_n),
+        .tx_data(tx_data),
+        .tx_valid(tx_valid),
+        .tx_sop(tx_sop),
+        .tx_eop(tx_eop),
+        .tx_ready(tx_ready),
+        .ro_en(ro_en),
+        .tx_busy(tx_busy)
+    );
 
     // List all unused inputs to prevent warnings
     wire _unused = &{ena, ui_in[7:1], uio_in[7:1]};
