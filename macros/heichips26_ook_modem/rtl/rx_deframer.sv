@@ -105,7 +105,8 @@ always_ff @(posedge clk or negedge rst_n) begin
                     rx_valid <= 1'b1;
                     rx_sop <= first_word;
                     first_word <= 1'b0;
-                    state <= WAIT_WORD;
+                    if (!rx_i) state <= START_CHK;
+                    else       state <= WAIT_WORD;
                 end else begin
                     rx_eop <= 1'b1;
                     state <= HUNT;
