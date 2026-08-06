@@ -3,6 +3,9 @@
 
 MAKEFILE_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
+PDK_ROOT ?= $(shell realpath $(MAKEFILE_DIR)/../../IHP-Open-PDK)
+PDK ?= ihp-sg13cmos5l
+
 RUN_TAG = $(shell ls -1 $(LIBRELANE_DIR)/runs 2>/dev/null | tail -n 1)
 
 # Variables
@@ -32,13 +35,18 @@ FLOW_FINAL_DIR 	:= flow/final
 FINAL_DIR      	:= final
 
 # Variables for simulation and linting targets
-# The counter sub-macro is hardened separately (see macros/counter/), but its RTL
-# is needed for linting and RTL simulation of the whole design.
+# ro_model.sv is simulation-only (`ifdef SIM); harmless in synth (elaborates to nothing).
 MODULES_SYNTH := \
-	$(SRC_DIR)/heichips26_ook_modem.sv
+	$(SRC_DIR)/heichips26_ook_modem.sv \
+	$(SRC_DIR)/tx_framer.sv \
+	$(SRC_DIR)/ook_gate.sv \
+	$(SRC_DIR)/rx_sync.sv \
+	$(SRC_DIR)/rx_sampler.sv \
+	$(SRC_DIR)/rx_deframer.sv
 
 MODULES_SIM := \
-	$(MODULES_SYNTH)
+	$(MODULES_SYNTH) \
+	$(SRC_DIR)/ro_model.sv
 
 # Source files for sim-rtl-verilog: auto-selects MODULES_SIM when CELL == TOP, single-file otherwise (prefers .sv, falls back to .v)
 _SIM_SRCS = $(if $(filter $(CELL),$(TOP)),$(MODULES_SIM),$(or $(wildcard $(SRC_DIR)/$(CELL).sv),$(SRC_DIR)/$(CELL).v))
