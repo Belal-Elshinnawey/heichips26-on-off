@@ -52,13 +52,17 @@ module heichips26_ook_modem #(
         .tx_busy(tx_busy)
     );
 
+    // アナログマクロ (リングオシレータ)
     `ifdef SIM
-    ro_model u_ro_model (
+    ro_model ringosc_0 (
         .ro_en(ro_en),
         .ro_out(carrier_clk)
     );
     `else
-    assign carrier_clk = 1'b0;
+    ringosc ringosc_0 (
+        .en(ro_en),
+        .out(carrier_clk)
+    );
     `endif
 
     ook_gate u_ook_gate (
@@ -70,9 +74,21 @@ module heichips26_ook_modem #(
         .tx_drive_en(tx_drive_en)
     );
 
+    // アナログマクロ (インバータ)
+    wire ook_out_buffered;
+    inverter inverter_0 (
+        .in(ook_out),
+        .out(ook_out_buffered)
+    );
 
-    // RX周り
-    wire rx_in_raw = bist_en ? ro_en : 1'b0;  // TODO: analog_0確定後に外部入力へ差替え
+    // RX周り & アナログマクロ (アンプ)
+    wire rx_amp_out;
+    amplifier amplifier_0 (
+        .in(uio_in[2]),
+        .out(rx_amp_out)
+    );
+
+    wire rx_in_raw = bist_en ? ro_en : rx_amp_out;
 
     wire rx_suppress = tx_busy & ~bist_en;
 
