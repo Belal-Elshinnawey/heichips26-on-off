@@ -7,7 +7,8 @@
 `default_nettype none
 
 module basys3_top #(
-    parameter int unsigned CLKS_PER_BIT = 100_000
+    parameter int unsigned CLKS_PER_BIT = 100_000,
+    parameter int unsigned UART_DIVIDER = 868   // 100MHz/115200baud(TBで上書き可)
 ) (
     input  wire         clk,     // 100 MHz (W5)
     input  wire  [15:0] sw,
@@ -17,10 +18,14 @@ module basys3_top #(
     input  wire         btnD,    // 未使用
     input  wire         btnR,    // リセット
     input  wire         btnL,    // 未使用
+    input  wire         RsRx,    // USB-UART: PC→FPGA (B18)
+    output wire         RsTx,    // USB-UART: FPGA→PC (A18)
     inout  wire  [7:0]  JA
 );
 
 
+    // リセット同期化の定石パターン(lintのSYNCASYNCNETは誤検知なので局所抑止)
+    /* verilator lint_off SYNCASYNCNET */
     wire raw_rst_n = ~btnR;  // ボタンはアクティブHigh
     logic [1:0] rst_sync;
     always_ff @(posedge clk or negedge raw_rst_n) begin
@@ -28,6 +33,7 @@ module basys3_top #(
         else            rst_sync <= {rst_sync[0], 1'b1};
     end
     wire rst_n = rst_sync[1];
+    /* verilator lint_on SYNCASYNCNET */
 
     localparam int unsigned DEBOUNCE = CLKS_PER_BIT;
     localparam int unsigned DBW = (DEBOUNCE <= 1) ? 1 : $clog2(DEBOUNCE);
@@ -87,9 +93,18 @@ module basys3_top #(
     logic [7:0] ui_in, uio_in;
     wire  [7:0] uo_out, uio_out, uio_oe;
 
-    assign ui_in  = {1'b1, pend, pend_data};  // [7]rx_ready=1 [6]tx_valid [5:0]tx_data
-    //               [7]   [6]bist  [5]   [4]mode  [3:2]  [1]eop    [0]sop
-    assign uio_in = {1'b0, sw[15], 1'b0, sw[14], 2'b00, pend_eop, pend_sop};
+    // SW13=1: USB-UARTブリッジがモデムを駆動(PCターミナルでチャット)
+    // SW13=0: ボタン/スイッチ操作(従来デモ)
+    wire       use_uart = sw[13];
+    wire [5:0] ub_data;
+    wire       ub_valid, ub_sop, ub_eop;
+
+    assign ui_in  = {1'b1, use_uart ? ub_valid : pend,
+                     use_uart ? ub_data : pend_data};
+    //               [7]   [6]bist  [5]   [4]mode  [3:2]  [1]eop  [0]sop
+    assign uio_in = {1'b0, sw[15], 1'b0, sw[14], 2'b00,
+                     use_uart ? ub_eop : pend_eop,
+                     use_uart ? ub_sop : pend_sop};
 
     heichips26_ook_modem #(
         .CLKS_PER_BIT(CLKS_PER_BIT)
@@ -150,6 +165,22 @@ module basys3_top #(
     wire       sel_sop     = use_bist ? uio_out[2]  : ext_rx_sop;
     wire       sel_eop     = use_bist ? uio_out[3]  : ext_rx_eop;
 
+    // USB-UARTブリッジ(1文字 = SOP語+EOP語の2語パケット)
+    uart_bridge #(.UART_DIVIDER(UART_DIVIDER)) u_uart_bridge (
+        .clk       (clk),
+        .rst_n     (rst_n),
+        .uart_rx_i (RsRx),
+        .uart_tx_o (RsTx),
+        .tx_data   (ub_data),
+        .tx_valid  (ub_valid),
+        .tx_sop    (ub_sop),
+        .tx_eop    (ub_eop),
+        .tx_ready  (tx_ready_core),
+        .rx_data   (sel_rx_data),   // 表示ソース(BIST/外部)と同じ経路をエコー
+        .rx_valid  (sel_valid),
+        .rx_sop    (sel_sop)
+    );
+
     localparam int unsigned STRETCH = CLKS_PER_BIT * 100;
     localparam int unsigned STW = (STRETCH <= 1) ? 1 : $clog2(STRETCH);
     logic [STW-1:0] st_valid, st_sop, st_eop;
@@ -171,7 +202,7 @@ module basys3_top #(
     assign led[10]  = (st_eop != 0);
     assign led[11]  = pend;              // 送信待ち
     assign led[12]  = ext_rx_i;          // 受信線の生モニタ(RFノイズも見える)
-    assign led[13]  = 1'b0;
+    assign led[13]  = use_uart;          // UARTチャットモード表示
     assign led[14]  = sw[14];
     assign led[15]  = sw[15];
 
@@ -179,7 +210,7 @@ module basys3_top #(
     assign JA[2] = ext_rx_i;
     assign JA[3] = 1'b0;
 
-    wire _unused = &{btnD, btnL, sw[13:8], uio_oe,
+    wire _unused = &{btnD, btnL, sw[12:8], uio_oe,
                      uio_out[6], uio_out[4], uio_out[1:0], JA[7:4]};
 
 endmodule
