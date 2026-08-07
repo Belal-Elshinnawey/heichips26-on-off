@@ -7,7 +7,7 @@
 TOP := basys3_top
 
 include ../../dut.mk
-MODULES_SYNTH := $(DUT_SRCS) basys3_top.sv
+MODULES_SYNTH := $(DUT_SRCS) uart_rx.sv uart_tx.sv uart_bridge.sv basys3_top.sv
 
 PCF_FILE := Basys-3-Master.xdc
 

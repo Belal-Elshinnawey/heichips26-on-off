@@ -275,3 +275,7 @@ clean-all: ## Delete all generated files and folders of the macros and the TOP c
 	$(MAKE) clean
 .PHONY: clean-all
 # ================================================================================================
+
+librelane-heichips: ## Run LibreLane via the custom HeiChips flow (RegressionGate + RuntimeReport, built with the exercise-5 Python API)
+	cd $(LIBRELANE_DIR) && PDK=$(PDK) PDK_ROOT=$(PDK_ROOT) python3 flow.py
+.PHONY: librelane-heichips
