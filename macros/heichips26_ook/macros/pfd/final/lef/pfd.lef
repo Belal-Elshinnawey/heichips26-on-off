@@ -1,0 +1,120 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO pfd
+  CLASS BLOCK ;
+  FOREIGN pfd ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 60.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal2 ;
+        RECT 16.340 3.560 17.340 53.140 ;
+    END
+    PORT
+      LAYER Metal2 ;
+        RECT 66.340 3.560 67.340 53.140 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 3.840 18.780 96.000 20.780 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal2 ;
+        RECT 13.340 3.560 14.340 53.140 ;
+    END
+    PORT
+      LAYER Metal2 ;
+        RECT 63.340 3.560 64.340 53.140 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 3.840 12.780 96.000 14.780 ;
+    END
+  END VPWR
+  PIN clk_fb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.725400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 99.600 29.620 100.000 30.020 ;
+    END
+  END clk_fb
+  PIN clk_ref
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.725400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 29.620 0.400 30.020 ;
+    END
+  END clk_ref
+  PIN dn
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.708600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 74.200 59.600 74.600 60.000 ;
+    END
+  END dn
+  PIN rst_ni
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.180700 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 49.240 0.000 49.640 0.400 ;
+    END
+  END rst_ni
+  PIN up
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.708600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 24.280 59.600 24.680 60.000 ;
+    END
+  END up
+  OBS
+      LAYER GatPoly ;
+        RECT 3.840 3.630 96.000 53.070 ;
+      LAYER Metal1 ;
+        RECT 3.840 3.560 96.000 53.140 ;
+      LAYER Metal2 ;
+        RECT 6.615 59.390 24.070 59.600 ;
+        RECT 24.890 59.390 73.990 59.600 ;
+        RECT 74.810 59.390 94.185 59.600 ;
+        RECT 6.615 53.350 94.185 59.390 ;
+        RECT 6.615 3.350 13.130 53.350 ;
+        RECT 14.550 3.350 16.130 53.350 ;
+        RECT 17.550 3.350 63.130 53.350 ;
+        RECT 64.550 3.350 66.130 53.350 ;
+        RECT 67.550 3.350 94.185 53.350 ;
+        RECT 6.615 0.610 94.185 3.350 ;
+        RECT 6.615 0.400 49.030 0.610 ;
+        RECT 49.850 0.400 94.185 0.610 ;
+      LAYER Metal3 ;
+        RECT 0.400 30.230 99.600 52.600 ;
+        RECT 0.610 29.410 99.390 30.230 ;
+        RECT 0.400 20.990 99.600 29.410 ;
+        RECT 0.400 18.570 3.630 20.990 ;
+        RECT 96.210 18.570 99.600 20.990 ;
+        RECT 0.400 14.990 99.600 18.570 ;
+        RECT 0.400 12.570 3.630 14.990 ;
+        RECT 96.210 12.570 99.600 14.990 ;
+        RECT 0.400 11.660 99.600 12.570 ;
+      LAYER Metal4 ;
+        RECT 37.340 37.655 37.540 49.705 ;
+  END
+END pfd
+END LIBRARY
+
