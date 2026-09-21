@@ -1,0 +1,32 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator_stage.sch
+.subckt simple_comparator_stage VDDL VDD vin q0 vref0 VSS q1 vref1 q2 vref2 q3 vref3
+*.PININFO VDD:B VSS:B q0:O VDDL:B vin:I q1:O q2:O q3:O vref3:I vref2:I vref1:I vref0:I
+x1 vin vref0 VDD VSS q0 VDDL simple_comparator
+x2 vin vref1 VDD VSS q1 VDDL simple_comparator
+x3 vin vref2 VDD VSS q2 VDDL simple_comparator
+x4 vin vref3 VDD VSS q3 VDDL simple_comparator
+XR1 VDD vref3 VSS rhigh w=2e-6 l=4.2e-5 m=1 b=0 mm_ok=1
+XR2 vref3 vref2 VSS rppd w=2e-6 l=2.0e-6 m=1 b=0 mm_ok=1
+XR4 vref1 vref0 VSS rppd w=2e-6 l=3.6e-6 m=1 b=0 mm_ok=1
+XR3 vref2 vref1 VSS rppd w=2e-6 l=1.28e-6 m=1 b=0 mm_ok=1
+XR5 vref0 VSS VSS rhigh w=2e-6 l=3.49e-6 m=1 b=0 mm_ok=1
+.ends
+
+* expanding   symbol:  simple_comparator.sym # of pins=6
+** sym_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator.sym
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator.sch
+.subckt simple_comparator vin vref VDD VSS comp_out VDDL
+*.PININFO vin:I vref:I VDD:B VSS:B comp_out:O VDDL:B
+XMBIAS vbias vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XRBIAS vbias VSS VSS rhigh w=2e-6 l=120.08e-6 m=1 b=0 mm_ok=1
+XM3P net1 vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM1P outn vin net1 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM2P net2 vref net1 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM4N outn outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM5N net2 outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XMP1 net3 net2 VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XMN1 net3 net2 VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XMP2 comp_out net3 VDDL VDDL sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XMN2 comp_out net3 VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+.ends
+

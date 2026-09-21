@@ -1,0 +1,19 @@
+89. Printing statistics.
+
+=== pfd_digital ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+        5 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        3 cells
+        1   $_AND_
+        2   $_DFF_PP0_
+
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFF_PP0_ is unknown!
+

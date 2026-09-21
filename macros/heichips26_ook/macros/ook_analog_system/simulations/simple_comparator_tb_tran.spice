@@ -1,0 +1,56 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/testbenches/xschem/simple_comparator_tb_tran.sch
+**.subckt simple_comparator_tb_tran comp_out
+*.opin comp_out
+VDDSRC VDD GND {VDD}
+VIN vin GND PWL(0 0 10u {VDD})
+VREF vref GND 1.5
+VBIAS vbias GND 1.5
+x1 vin vref vbias VDD GND comp_out simple_comparator
+**** begin user architecture code
+
+
+.param VDD=3.3
+.options savecurrents klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-9
+.control
+save v(vin) v(vref) v(vbias) v(comp_out) v(VDD) v(VSS)
+tran 10n 10u
+write simple_comparator_tb_tran\.raw
+meas tran trip_point TRIG v(vin) VAL=1.5 RISE=1 TARG v(comp_out) VAL={VDD/2} CROSS=1
+print trip_point
+plot vin vref comp_out
+.endc
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  simple_comparator.sym # of pins=6
+** sym_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator.sym
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator.sch
+.subckt simple_comparator vin vref vbias VDD VSS comp_out
+*.ipin vin
+*.ipin vref
+*.ipin vbias
+*.iopin VDD
+*.iopin VSS
+*.opin comp_out
+XM4 outn outn VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM5 outp outn VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM1 outn vin tail VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM2 outp vref tail VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM3 tail vbias VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XMP1 outp_b outp VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XMN1 outp_b outp VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XMP2 comp_out outp_b VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XMN2 comp_out outp_b VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end

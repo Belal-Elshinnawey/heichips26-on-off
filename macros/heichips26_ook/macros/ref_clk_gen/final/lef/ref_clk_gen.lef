@@ -1,0 +1,88 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO ref_clk_gen
+  CLASS BLOCK ;
+  FOREIGN ref_clk_gen ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 66.000 BY 35.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal2 ;
+        RECT 16.340 3.560 17.340 30.460 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 3.840 18.780 61.920 20.780 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal2 ;
+        RECT 13.340 3.560 14.340 30.460 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 3.840 12.780 61.920 14.780 ;
+    END
+  END VPWR
+  PIN clk_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.725400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 26.260 0.400 26.660 ;
+    END
+  END clk_i
+  PIN clk_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.708600 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 32.920 0.000 33.320 0.400 ;
+    END
+  END clk_out
+  PIN rst_ni
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.180700 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 8.620 0.400 9.020 ;
+    END
+  END rst_ni
+  OBS
+      LAYER GatPoly ;
+        RECT 3.840 3.630 61.920 30.390 ;
+      LAYER Metal1 ;
+        RECT 3.840 3.560 61.920 30.460 ;
+      LAYER Metal2 ;
+        RECT 4.215 3.350 13.130 29.550 ;
+        RECT 14.550 3.350 16.130 29.550 ;
+        RECT 17.550 3.350 59.145 29.550 ;
+        RECT 4.215 0.610 59.145 3.350 ;
+        RECT 4.215 0.400 32.710 0.610 ;
+        RECT 33.530 0.400 59.145 0.610 ;
+      LAYER Metal3 ;
+        RECT 0.400 26.870 59.185 29.080 ;
+        RECT 0.610 26.050 59.185 26.870 ;
+        RECT 0.400 20.990 59.185 26.050 ;
+        RECT 0.400 18.570 3.630 20.990 ;
+        RECT 0.400 14.990 59.185 18.570 ;
+        RECT 0.400 12.570 3.630 14.990 ;
+        RECT 0.400 9.230 59.185 12.570 ;
+        RECT 0.610 8.410 59.185 9.230 ;
+        RECT 0.400 4.520 59.185 8.410 ;
+      LAYER Metal4 ;
+        RECT 31.100 6.575 45.700 27.445 ;
+  END
+END ref_clk_gen
+END LIBRARY
+

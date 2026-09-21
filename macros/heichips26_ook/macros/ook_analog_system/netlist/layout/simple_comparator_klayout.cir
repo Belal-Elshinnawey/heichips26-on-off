@@ -1,0 +1,58 @@
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 21/09/2026 06:53
+
+.SUBCKT simple_comparator VDD VDDL VSS comp_out vin vref
+R$1 \$7 VSS VSS rhigh w=2u l=13.71u ps=0.18u b=8 m=1
+M$2 \$27 vin \$44 VDD sg13_hv_pmos L=0.5u W=16u AS=5.44p AD=5.44p PS=34.72u
++ PD=34.72u rfmode=0
+M$4 \$27 \$27 VSS VSS sg13_hv_nmos L=0.5u W=8u AS=2.72p AD=2.72p PS=18.72u
++ PD=18.72u rfmode=0
+M$5 \$44 \$44 \$44 VDD sg13_hv_pmos L=0.5u W=12u AS=4.08p AD=4.08p PS=26.04u
++ PD=26.04u rfmode=0
+M$6 \$19 \$19 \$19 VDD sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$7 VSS VSS VSS VSS sg13_hv_nmos L=0.5u W=4u AS=1.36p AD=1.36p PS=9.36u
++ PD=9.36u rfmode=0
+M$8 \$27 \$27 \$27 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$10 \$19 \$19 \$19 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$13 \$27 \$27 \$27 VDD sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$14 \$19 \$27 VSS VSS sg13_hv_nmos L=0.5u W=8u AS=2.72p AD=2.72p PS=18.72u
++ PD=18.72u rfmode=0
+M$16 \$19 vref \$44 VDD sg13_hv_pmos L=0.5u W=16u AS=5.44p AD=5.44p PS=34.72u
++ PD=34.72u rfmode=0
+R$26 VSS \$54 VSS rhigh w=2u l=9.27u ps=0.18u b=15 m=1
+M$27 \$7 \$7 \$7 VSS sg13_hv_nmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u PD=4.68u
++ rfmode=0
+M$28 \$10 \$19 \$7 VSS sg13_hv_nmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$29 \$10 \$10 \$10 VSS sg13_hv_nmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$30 VDD VDD VDD VDD sg13_hv_pmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u PD=4.68u
++ rfmode=0
+M$31 \$10 \$19 VDD VDD sg13_hv_pmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$32 \$10 \$10 \$10 VDD sg13_hv_pmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$33 VSS VSS VSS VSS sg13_hv_nmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u PD=4.68u
++ rfmode=0
+M$34 comp_out \$10 VSS VSS sg13_hv_nmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$35 comp_out comp_out comp_out VSS sg13_hv_nmos L=4u W=2u AS=0.68p AD=0.68p
++ PS=4.68u PD=4.68u rfmode=0
+M$36 VDDL VDDL VDDL VDDL sg13_hv_pmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$37 comp_out \$10 VDDL VDDL sg13_hv_pmos L=4u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$38 comp_out comp_out comp_out VDDL sg13_hv_pmos L=4u W=2u AS=0.68p AD=0.68p
++ PS=4.68u PD=4.68u rfmode=0
+M$40 \$44 \$54 VDD VDD sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$41 VDD VDD VDD VDD sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p PS=17.36u
++ PD=17.36u rfmode=0
+M$42 \$54 \$54 \$54 VDD sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$43 \$54 \$54 VDD VDD sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+.ENDS simple_comparator

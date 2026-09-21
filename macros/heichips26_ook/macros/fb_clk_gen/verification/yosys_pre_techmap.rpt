@@ -1,0 +1,35 @@
+96. Printing statistics.
+
+=== fb_clk_gen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+       50 wire bits
+        4 public wires
+       12 public wire bits
+        2 ports
+        2 port bits
+       40 cells
+        4   $_ANDNOT_
+        3   $_AND_
+        2   $_DFF_P_
+        3   $_NAND_
+        2   $_NOT_
+        4   $_ORNOT_
+        5   $_OR_
+        9   $_SDFF_PP0_
+        1   $_XNOR_
+        7   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFF_P_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_SDFF_PP0_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+

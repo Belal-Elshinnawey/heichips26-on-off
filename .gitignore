@@ -41,6 +41,10 @@ IHP-Open-PDK/
 /macros/heichips26_digital_project/macros/counter/schematic/xschem/simulations
 /macros/heichips26_digital_project/macros/counter/testbenches/xschem/simulations
 
+/macros/heichips26_ook/macros/*/schematic/xschem/simulations
+/macros/heichips26_ook/macros/*/testbenches/xschem/simulations
+/macros/heichips26_ook/macros/*/testbenches/xschem/plot_simulations/data
+
 # CACE run outputs (inverter macro)
 /macros/heichips26_analog_project/macros/inverter/verification/cace/_runs
 /macros/heichips26_analog_project/macros/inverter/verification/cace/_docs

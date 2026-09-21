@@ -1,0 +1,226 @@
+
+Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_nmos                    |Circuit 2: sg13_lv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_nmos and sg13_lv_nmos are equivalent.
+
+Circuit 1 cell sg13_lv_pmos and Circuit 2 cell sg13_lv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_pmos                    |Circuit 2: sg13_lv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
+
+Circuit 1 cell rhigh and Circuit 2 cell rhigh are black boxes.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: rhigh                           |Circuit 2: rhigh                           
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rhigh and rhigh are equivalent.
+
+Class vco (0):  Merged 147 parallel devices.
+Class vco (1):  Merged 15 parallel devices.
+Subcircuit summary:
+Circuit 1: vco                             |Circuit 2: vco                             
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (78->20)                      |sg13_lv_nmos (27->20)                      
+sg13_lv_pmos (108->19)                     |sg13_lv_pmos (27->19)                      
+rhigh (1)                                  |rhigh (1)                                  
+Number of devices: 40                      |Number of devices: 40                      
+Number of nets: 16                         |Number of nets: 16                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+rhigh:167 vs. rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:167 vs. rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:21 vs. sg13_lv_pmos:M1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:22 vs. sg13_lv_pmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:5 vs. sg13_lv_pmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:9 vs. sg13_lv_pmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:17 vs. sg13_lv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:6 vs. sg13_lv_pmos:M11:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:2 vs. sg13_lv_pmos:M10:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:37 vs. sg13_lv_pmos:M15:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11 vs. sg13_lv_pmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3 vs. sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3 vs. sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3 vs. sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:179 vs. sg13_lv_pmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:179 vs. sg13_lv_pmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:142 vs. sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:142 vs. sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:142 vs. sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:142 vs. sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:69 vs. sg13_lv_pmos:M32:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:69 vs. sg13_lv_pmos:M32:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:69 vs. sg13_lv_pmos:M32:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:69 vs. sg13_lv_pmos:M32:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:23 vs. sg13_lv_pmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:23 vs. sg13_lv_pmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:23 vs. sg13_lv_pmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:23 vs. sg13_lv_pmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:178 vs. sg13_lv_pmos:M46:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:178 vs. sg13_lv_pmos:M46:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:141 vs. sg13_lv_pmos:M45:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:141 vs. sg13_lv_pmos:M45:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:154 vs. sg13_lv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:154 vs. sg13_lv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:138 vs. sg13_lv_pmos:M47:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:138 vs. sg13_lv_pmos:M47:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:28 vs. sg13_lv_pmos:M53:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:28 vs. sg13_lv_pmos:M53:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:29 vs. sg13_lv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:25 vs. sg13_lv_nmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:18 vs. sg13_lv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:16 vs. sg13_lv_nmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:60 vs. sg13_lv_nmos:M13:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:12 vs. sg13_lv_nmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:1 vs. sg13_lv_nmos:M14:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:0 vs. sg13_lv_nmos:M16:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:8 vs. sg13_lv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:164 vs. sg13_lv_nmos:M21:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:164 vs. sg13_lv_nmos:M21:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:34 vs. sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:34 vs. sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:34 vs. sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:182 vs. sg13_lv_nmos:M22:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:182 vs. sg13_lv_nmos:M22:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:117 vs. sg13_lv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:117 vs. sg13_lv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:117 vs. sg13_lv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:117 vs. sg13_lv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:106 vs. sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:106 vs. sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:106 vs. sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:106 vs. sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:7 vs. sg13_lv_nmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:7 vs. sg13_lv_nmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:7 vs. sg13_lv_nmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:7 vs. sg13_lv_nmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:77 vs. sg13_lv_nmos:M43:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:77 vs. sg13_lv_nmos:M43:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:24 vs. sg13_lv_nmos:M42:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:24 vs. sg13_lv_nmos:M42:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:111 vs. sg13_lv_nmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:111 vs. sg13_lv_nmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:14 vs. sg13_lv_nmos:M44:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:14 vs. sg13_lv_nmos:M44:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:121 vs. sg13_lv_nmos:M52:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:121 vs. sg13_lv_nmos:M52:
+Property mm_ok in circuit2 has no matching property in circuit1
+
+Subcircuit pins:
+Circuit 1: vco                             |Circuit 2: vco                             
+-------------------------------------------|-------------------------------------------
+vout                                       |vout                                       
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+VCL                                        |VCL                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes vco and vco are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ vco

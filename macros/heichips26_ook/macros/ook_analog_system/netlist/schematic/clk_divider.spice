@@ -1,0 +1,12 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/clk_divider.sch
+**.subckt clk_divider vin VDD VSS vout
+*.ipin vin
+*.iopin VDD
+*.iopin VSS
+*.opin vout
+x3 net2 net1 vin net1 VDD VDD VSS sg13cmos5l_dfrbp_1
+x1 net4 net3 net2 net3 VDD VDD VSS sg13cmos5l_dfrbp_1
+x2 net7 net5 net4 net5 VDD VDD VSS sg13cmos5l_dfrbp_1
+x4 vout net6 net7 net6 VDD VDD VSS sg13cmos5l_dfrbp_1
+**.ends
+.end

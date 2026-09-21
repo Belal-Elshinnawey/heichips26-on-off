@@ -1,0 +1,85 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO fb_clk_gen
+  CLASS BLOCK ;
+  FOREIGN fb_clk_gen ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 75.000 BY 36.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal2 ;
+        RECT 16.340 3.560 17.340 30.460 ;
+    END
+    PORT
+      LAYER Metal2 ;
+        RECT 66.340 3.560 67.340 30.460 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 3.840 18.780 71.040 20.780 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal2 ;
+        RECT 13.340 3.560 14.340 30.460 ;
+    END
+    PORT
+      LAYER Metal2 ;
+        RECT 63.340 3.560 64.340 30.460 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 3.840 12.780 71.040 14.780 ;
+    END
+  END VPWR
+  PIN clk_i
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.241800 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 74.600 17.860 75.000 18.260 ;
+    END
+  END clk_i
+  PIN clk_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.708600 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 17.860 0.400 18.260 ;
+    END
+  END clk_out
+  OBS
+      LAYER GatPoly ;
+        RECT 3.840 3.630 71.040 30.390 ;
+      LAYER Metal1 ;
+        RECT 3.840 3.560 71.040 30.460 ;
+      LAYER Metal2 ;
+        RECT 4.215 4.475 13.130 29.125 ;
+        RECT 14.550 4.475 16.130 29.125 ;
+        RECT 17.550 4.475 63.130 29.125 ;
+        RECT 64.550 4.475 65.865 29.125 ;
+      LAYER Metal3 ;
+        RECT 0.400 20.990 74.600 28.660 ;
+        RECT 0.400 18.570 3.630 20.990 ;
+        RECT 71.250 18.570 74.600 20.990 ;
+        RECT 0.400 18.470 74.600 18.570 ;
+        RECT 0.610 17.650 74.390 18.470 ;
+        RECT 0.400 14.990 74.600 17.650 ;
+        RECT 0.400 12.570 3.630 14.990 ;
+        RECT 71.250 12.570 74.600 14.990 ;
+        RECT 0.400 4.940 74.600 12.570 ;
+      LAYER Metal4 ;
+        RECT 14.780 11.195 50.500 28.285 ;
+  END
+END fb_clk_gen
+END LIBRARY
+

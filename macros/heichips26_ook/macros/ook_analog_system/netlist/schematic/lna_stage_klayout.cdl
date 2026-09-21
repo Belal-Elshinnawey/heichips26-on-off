@@ -1,0 +1,63 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/lna_stage.sch
+.subckt lna_stage Cap_M2 Cap_M1 VDD vout vin VSS Cap_M21 Cap_M11
+*.PININFO vin:I VSS:B VDD:B Cap_M2:B Cap_M1:B vout:B Cap_M21:B Cap_M11:B
+x2 VDD Cap_M1 vin VSS lna
+x1 VDD Cap_M11 Cap_M2 VSS lna
+x3 VDD vout Cap_M21 VSS lna
+.ends
+
+* expanding   symbol:  lna.sym # of pins=4
+** sym_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/lna.sym
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/lna.sch
+.subckt lna VDD vout vin VSS
+*.PININFO VDD:B VSS:B vin:I vout:B
+MM14 vout VDD net6 VSS sg13_hv_nmos w=2.0u l=0.5u ng=2
+MM15 net6 vin VSS VSS sg13_hv_nmos w=18.0u l=0.5u ng=18
+MM16 net1 net1 VSS VSS sg13_hv_nmos w=2.00u l=0.5u ng=2
+MM17 isource1 vout VSS VSS sg13_hv_nmos w=0.5u l=0.5u ng=1
+MM18 VDD isource1 isink1 VSS sg13_hv_nmos w=1.5u l=0.5u ng=1
+MM19 VSS isink1 vout VDD sg13_hv_pmos w=0.7u l=0.5u ng=1
+MM20 net2 net2 VSS VSS sg13_hv_nmos w=10.0u l=0.5u ng=5
+MM21 isink1 net2 VSS VSS sg13_hv_nmos w=10.0u l=0.5u ng=5
+MM22 net3 net3 VDD VDD sg13_hv_pmos w=14u l=0.5u ng=7
+MM23 isource1 net3 VDD VDD sg13_hv_pmos w=14u l=0.5u ng=7
+MM24 net4 net4 VDD VDD sg13_hv_pmos w=14u l=0.5u ng=7
+MM25 vout net4 VDD VDD sg13_hv_pmos w=14u l=0.5u ng=7
+RR2 net1 vin 32.509k $SUB=VSS $[rhigh] w=2.0e-6 l=9.96e-6 b=3 m=1 ps=0.18e-6
+RR5 net4 VSS 13.574k $SUB=VSS $[rhigh] w=2e-6 l=4.95e-6 b=2 m=1 ps=0.18e-6
+RR1 VDD net1 153.18k $SUB=VSS $[rhigh] w=2e-6 l=19.995e-6 b=9 m=1 ps=0.18e-6
+RR6 VDD net2 153.18k $SUB=VSS $[rhigh] w=2.0e-6 l=19.995e-6 b=9 m=1 ps=0.18e-6
+MM2 net5 net5 VSS VSS sg13_hv_nmos w=0.5u l=0.5u ng=1
+MM3 vout net5 VSS VSS sg13_hv_nmos w=0.5u l=0.5u ng=1
+RR4 net3 VSS 13.574k $SUB=VSS $[rhigh] w=2e-6 l=4.95e-6 b=2 m=1 ps=0.18e-6
+RR13 VDD net5 189.44k $SUB=VSS $[rhigh] w=2e-6 l=22.72e-6 b=10 m=1 ps=0.18e-6
+MM1 VSS VSS VSS VDD sg13_hv_pmos w=0.7u l=0.5u ng=1
+MM4 vout vout vout VDD sg13_hv_pmos w=0.7u l=0.5u ng=1
+MM5 VSS VSS VSS VSS sg13_hv_nmos w=0.5u l=0.5u ng=1
+MM6 isource1 isource1 isource1 VSS sg13_hv_nmos w=0.5u l=0.5u ng=1
+MM7 isink1 isink1 isink1 VSS sg13_hv_nmos w=1.5u l=0.5u ng=1
+MM8 VDD VDD VDD VSS sg13_hv_nmos w=1.5u l=0.5u ng=1
+MM9 isource1 isource1 isource1 VDD sg13_hv_pmos w=2u l=0.5u ng=1
+MM10 VDD VDD VDD VDD sg13_hv_pmos w=2u l=0.5u ng=1
+MM11 VDD VDD VDD VDD sg13_hv_pmos w=2u l=0.5u ng=1
+MM12 net3 net3 net3 VDD sg13_hv_pmos w=2u l=0.5u ng=1
+MM13 VDD VDD VDD VDD sg13_hv_pmos w=2u l=0.5u ng=1
+MM26 VDD VDD VDD VDD sg13_hv_pmos w=2u l=0.5u ng=1
+MM27 vout vout vout VDD sg13_hv_pmos w=2u l=0.5u ng=1
+MM28 net4 net4 net4 VDD sg13_hv_pmos w=2u l=0.5u ng=1
+MM29 isink1 isink1 isink1 VSS sg13_hv_nmos w=2.0u l=0.5u ng=1
+MM30 VSS VSS VSS VSS sg13_hv_nmos w=2.0u l=0.5u ng=1
+MM31 net2 net2 net2 VSS sg13_hv_nmos w=2.0u l=0.5u ng=1
+MM32 VSS VSS VSS VSS sg13_hv_nmos w=2.0u l=0.5u ng=1
+MM33 vout vout vout VSS sg13_hv_nmos w=0.5u l=0.5u ng=1
+MM34 VSS VSS VSS VSS sg13_hv_nmos w=0.5u l=0.5u ng=1
+MM35 net5 net5 net5 VSS sg13_hv_nmos w=0.5u l=0.5u ng=1
+MM36 VSS VSS VSS VSS sg13_hv_nmos w=0.5u l=0.5u ng=1
+MM37 vout vout vout VSS sg13_hv_nmos w=1.0u l=0.5u ng=1
+MM38 net6 net6 net6 VSS sg13_hv_nmos w=1.0u l=0.5u ng=1
+MM39 net6 net6 net6 VSS sg13_hv_nmos w=1.0u l=0.5u ng=1
+MM40 VSS VSS VSS VSS sg13_hv_nmos w=1.0u l=0.5u ng=1
+MM41 net1 net1 net1 VSS sg13_hv_nmos w=1.00u l=0.5u ng=1
+MM42 VSS VSS VSS VSS sg13_hv_nmos w=1.00u l=0.5u ng=1
+.ends
+

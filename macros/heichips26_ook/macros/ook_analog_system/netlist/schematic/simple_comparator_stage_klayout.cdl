@@ -1,0 +1,53 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator_stage.sch
+.subckt simple_comparator_stage VDD1_5 VDD3_3 vin q0 vref0 VSS q1 vref1 q2 vref2 q3 vref3
+*.PININFO VDD3_3:B VSS:B VDD1_5:B vin:I q0:O vref3:I vref2:I vref1:I vref0:I q1:O q2:O q3:O
+x2 VDD1_5 VSS VDD3_3 vref0 vin q0 simple_comparator
+RR1 VDD3_3 vref3 20.064k $SUB=VSS $[rhigh] w=2e-6 l=28.8e-6 b=0
+RR5 vref0 VSS 9.031k $SUB=VSS $[rhigh] w=2e-6 l=12.9e-6 b=0
+x1 VDD1_5 VSS VDD3_3 vref1 vin q1 simple_comparator
+x3 VDD1_5 VSS VDD3_3 vref2 vin q2 simple_comparator
+x4 VDD1_5 VSS VDD3_3 vref3 vin q3 simple_comparator
+RR4 vref1 vref0 2.0229k $SUB=VSS $[rhigh] w=2e-6 l=2.8e-6 b=0
+RR3 vref2 vref1 1.0514k $SUB=VSS $[rhigh] w=2e-6 l=1.4e-6 b=0
+RR2 vref3 vref2 1.0514k $SUB=VSS $[rhigh] w=2e-6 l=1.4e-6 b=0
+.ends
+
+* expanding   symbol:  simple_comparator.sym # of pins=6
+** sym_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator.sym
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator.sch
+.subckt simple_comparator VDDL VSS VDD vref vin comp_out
+*.PININFO vin:I vref:I VDD:B VSS:B comp_out:O VDDL:B
+MMBIAS vbias vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1
+RRBIAS vbias VSS 126.92k $SUB=VSS $[rhigh] w=2e-6 l=9.27e-6 b=15 m=1 ps=0.18e-6
+MM3P net4 vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1
+MM1P outn vin net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=4
+MM2P net1 vref net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=4
+MM4N outn outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=4
+MM5N net1 outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=4
+MMP1 net2 net1 VDD VDD sg13_hv_pmos w=2u l=4u ng=1
+MMN1 net2 net1 net3 VSS sg13_hv_nmos w=2u l=4u ng=1
+MMP2 comp_out net2 VDDL VDDL sg13_hv_pmos w=2u l=4u ng=1
+MMBIAS1 vbias vbias vbias VDD sg13_hv_pmos w=4u l=0.5u ng=1
+MMBIAS2 VDD VDD VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1
+MM1 VDD VDD VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1
+MM2 net4 net4 net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1
+MMP3 net2 net2 net2 VDD sg13_hv_pmos w=2u l=4u ng=1
+MMP4 VDD VDD VDD VDD sg13_hv_pmos w=2u l=4u ng=1
+MMP5 VDDL VDDL VDDL VDDL sg13_hv_pmos w=2u l=4u ng=1
+MMP6 comp_out comp_out comp_out VDDL sg13_hv_pmos w=2u l=4u ng=1
+MMN3 comp_out comp_out comp_out VSS sg13_hv_nmos w=2u l=4u ng=1
+MMN4 VSS VSS VSS VSS sg13_hv_nmos w=2u l=4u ng=1
+MMN5 net2 net2 net2 VSS sg13_hv_nmos w=2u l=4u ng=1
+MMN6 net3 net3 net3 VSS sg13_hv_nmos w=2u l=4u ng=1
+MM3 net4 net4 net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1
+MM4 outn outn outn VDD sg13_hv_pmos w=4u l=0.5u ng=1
+MM5 net1 net1 net1 VSS sg13_hv_nmos w=2u l=0.5u ng=1
+MM6 VSS VSS VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1
+MM7 net4 net4 net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1
+MM8 net1 net1 net1 VDD sg13_hv_pmos w=4u l=0.5u ng=1
+MM9 outn outn outn VSS sg13_hv_nmos w=2u l=0.5u ng=1
+MM10 VSS VSS VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1
+RRBIAS1 net3 VSS 98.458k $SUB=VSS $[rhigh] w=2e-6 l=13.71e-6 b=8 m=1 ps=0.18e-6
+MMN8 comp_out net2 VSS VSS sg13_hv_nmos w=2u l=4u ng=1
+.ends
+

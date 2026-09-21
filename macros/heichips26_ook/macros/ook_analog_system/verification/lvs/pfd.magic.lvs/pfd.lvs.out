@@ -1,0 +1,58 @@
+
+Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_nmos                    |Circuit 2: sg13_lv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_nmos and sg13_lv_nmos are equivalent.
+
+Circuit 1 cell sg13_lv_pmos and Circuit 2 cell sg13_lv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_pmos                    |Circuit 2: sg13_lv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
+Flattening unmatched subcell sg13cmos5l_dfrbp_1 in circuit pfd (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_nand2_1 in circuit pfd (1)(1 instance)
+
+Subcircuit summary:
+Circuit 1: pfd                             |Circuit 2: pfd                             
+-------------------------------------------|-------------------------------------------
+sg13_lv_pmos (36)                          |sg13_lv_pmos (36)                          
+sg13_lv_nmos (36)                          |sg13_lv_nmos (36)                          
+Number of devices: 72                      |Number of devices: 72                      
+Number of nets: 40                         |Number of nets: 40                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pfd                             |Circuit 2: pfd                             
+-------------------------------------------|-------------------------------------------
+UP                                         |UP                                         
+CLK_REF                                    |CLK_REF                                    
+CLK_FB                                     |CLK_FB                                     
+DN                                         |DN                                         
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfd and pfd are equivalent.
+
+Final result: Circuits match uniquely.
+.
