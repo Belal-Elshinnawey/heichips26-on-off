@@ -10,10 +10,10 @@ N 880 -1050 880 -1010 {lab=VDD3_3}
 N 2080 -1430 2080 -1390 {lab=VDD3_3}
 N 2060 -1430 2060 -1390 {lab=VDD1_5}
 N 880 -850 880 -820 {lab=VSS}
-N 2220 -1260 2270 -1260 {lab=q3}
-N 2220 -1280 2270 -1280 {lab=q2}
-N 2220 -1300 2270 -1300 {lab=q1}
-N 2220 -1320 2270 -1320 {lab=q0}
+N 2220 -1270 2270 -1270 {lab=q3}
+N 2220 -1290 2270 -1290 {lab=q2}
+N 2220 -1310 2270 -1310 {lab=q1}
+N 2220 -1330 2270 -1330 {lab=q0}
 N 1590 -1300 1590 -1250 {lab=ACC_CAP}
 N 770 -1030 770 -1010 {lab=Cap_M2}
 N 790 -1030 790 -1010 {lab=Cap_M1}
@@ -82,14 +82,14 @@ N 1590 -1300 1920 -1300 {lab=ACC_CAP}
 C {title-3.sym} 0 0 0 0 {name=l1 author="Belal ELshinnawey" rev=1.0 lock=true}
 C {devices/iopin.sym} 880 -820 1 0 {name=p3 lab=VSS}
 C {devices/ipin.sym} 670 -930 0 0 {name=p4 lab=vin}
-C {devices/iopin.sym} 2270 -1260 0 0 {name=p5 lab=q3}
+C {devices/iopin.sym} 2270 -1270 0 0 {name=p5 lab=q3}
 C {devices/iopin.sym} 880 -1050 1 1 {name=p6 lab=VDD3_3}
 C {devices/lab_pin.sym} 2080 -1430 1 0 {name=l4 sig_type=std_logic lab=VDD3_3}
 C {devices/iopin.sym} 2060 -1430 1 1 {name=p1 lab=VDD1_5}
 C {devices/lab_pin.sym} 2070 -1170 3 0 {name=l5 sig_type=std_logic lab=VSS}
-C {devices/iopin.sym} 2270 -1280 0 0 {name=p2 lab=q2}
-C {devices/iopin.sym} 2270 -1300 0 0 {name=p7 lab=q1}
-C {devices/iopin.sym} 2270 -1320 0 0 {name=p8 lab=q0}
+C {devices/iopin.sym} 2270 -1290 0 0 {name=p2 lab=q2}
+C {devices/iopin.sym} 2270 -1310 0 0 {name=p7 lab=q1}
+C {devices/iopin.sym} 2270 -1330 0 0 {name=p8 lab=q0}
 C {devices/iopin.sym} 1590 -1250 1 0 {name=p9 lab=ACC_CAP}
 C {devices/iopin.sym} 770 -1030 1 1 {name=p10 lab=Cap_M2}
 C {devices/iopin.sym} 790 -1030 1 1 {name=p11 lab=Cap_M1}

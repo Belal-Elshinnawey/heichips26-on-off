@@ -70,29 +70,45 @@ Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:176 vs. simple_comparator_stage:2/rhigh:R5:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:447 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
- l circuit1: 0.00012344   circuit2: 1e-05   (delta=170%, cutoff=1%)
+ l circuit1: 0.00012344   circuit2: 1.371e-05   (delta=160%, cutoff=1%)
 rhigh:447 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:447 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:447 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:447 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:362 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
+ l circuit1: 0.00012344   circuit2: 1.371e-05   (delta=160%, cutoff=1%)
+rhigh:362 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:362 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
- l circuit1: 0.00012344   circuit2: 1e-05   (delta=170%, cutoff=1%)
+Property ps in circuit2 has no matching property in circuit1
 rhigh:362 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:362 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
-Property mm_ok in circuit2 has no matching property in circuit1
+Property ps in circuit2 has no matching property in circuit1
 rhigh:108 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
- l circuit1: 0.00012344   circuit2: 1e-05   (delta=170%, cutoff=1%)
-rhigh:108 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
-Property mm_ok in circuit2 has no matching property in circuit1
+ l circuit1: 0.00012344   circuit2: 1.371e-05   (delta=160%, cutoff=1%)
 rhigh:108 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
 Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:108 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:108 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:108 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
 rhigh:100 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
- l circuit1: 0.00012344   circuit2: 1e-05   (delta=170%, cutoff=1%)
+ l circuit1: 0.00012344   circuit2: 1.371e-05   (delta=160%, cutoff=1%)
 rhigh:100 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:100 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:100 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
 Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:100 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
 rhigh:498 vs. simple_comparator_stage:2/rhigh:R2:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:498 vs. simple_comparator_stage:2/rhigh:R2:
@@ -272,29 +288,45 @@ Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:242 vs. lna_stage:1/lna:3/rhigh:R5:
 Property ps in circuit2 has no matching property in circuit1
 rhigh:346 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
- l circuit1: 0.0001483   circuit2: 0.00012008   (delta=21%, cutoff=1%)
+ l circuit1: 0.0001483   circuit2: 9.27e-06   (delta=176%, cutoff=1%)
 rhigh:346 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:346 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:346 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:346 vs. simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:292 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
+ l circuit1: 0.0001483   circuit2: 9.27e-06   (delta=176%, cutoff=1%)
+rhigh:292 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:292 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
- l circuit1: 0.0001483   circuit2: 0.00012008   (delta=21%, cutoff=1%)
+Property ps in circuit2 has no matching property in circuit1
 rhigh:292 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:292 vs. simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
-Property mm_ok in circuit2 has no matching property in circuit1
+Property ps in circuit2 has no matching property in circuit1
 rhigh:222 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
- l circuit1: 0.0001483   circuit2: 0.00012008   (delta=21%, cutoff=1%)
-rhigh:222 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
-Property mm_ok in circuit2 has no matching property in circuit1
+ l circuit1: 0.0001483   circuit2: 9.27e-06   (delta=176%, cutoff=1%)
 rhigh:222 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
 Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:222 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:222 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:222 vs. simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
 rhigh:59 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
- l circuit1: 0.0001483   circuit2: 0.00012008   (delta=21%, cutoff=1%)
+ l circuit1: 0.0001483   circuit2: 9.27e-06   (delta=176%, cutoff=1%)
 rhigh:59 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
 Property mm_ok in circuit2 has no matching property in circuit1
 rhigh:59 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:59 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
 Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:59 vs. simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
 rhigh:428 vs. lna_stage:1/lna:2/rhigh:R4:
  l circuit1: 1.502e-05   circuit2: 4.95e-06   (delta=101%, cutoff=1%)
 rhigh:428 vs. lna_stage:1/lna:2/rhigh:R4:
@@ -648,11 +680,7 @@ Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:23 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS2:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:23 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS2:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:23 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS2:
 Property mm_ok in circuit2 has no matching property in circuit1
-sg13_hv_pmos:6 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP5:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
 sg13_hv_pmos:6 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP5:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:375 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M3P:
@@ -688,49 +716,33 @@ Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:32 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M2P:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:184 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP1:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:184 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP1:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:184 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP1:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:167 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP1:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:167 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP1:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:167 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP1:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:160 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP1:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:160 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP1:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:160 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP1:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:383 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP1:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:383 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP1:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:383 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP1:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:276 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP2:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:276 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP2:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:276 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP2:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:54 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP2:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:54 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP2:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:54 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP2:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:37 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP2:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:37 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP2:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:37 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP2:
 Property mm_ok in circuit2 has no matching property in circuit1
-sg13_hv_pmos:35 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP2:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
 sg13_hv_pmos:35 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP2:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:35 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP2:
@@ -744,25 +756,17 @@ Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:49 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M2:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:264 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP6:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:264 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP6:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:264 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP6:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:255 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP6:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:255 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP6:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:255 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP6:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:239 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP6:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:239 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP6:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:239 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP6:
 Property mm_ok in circuit2 has no matching property in circuit1
-sg13_hv_pmos:414 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP6:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
 sg13_hv_pmos:414 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP6:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:414 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP6:
@@ -800,25 +804,17 @@ Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:17 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M4:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:369 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP3:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:369 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP3:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:369 vs. simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP3:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:361 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP3:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:361 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP3:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:361 vs. simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP3:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:341 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP3:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
-sg13_hv_pmos:341 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP3:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:341 vs. simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP3:
 Property mm_ok in circuit2 has no matching property in circuit1
-sg13_hv_pmos:15 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP3:
- w circuit1: 2e-06   circuit2: 4e-06   (delta=66.7%, cutoff=1%)
 sg13_hv_pmos:15 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP3:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_hv_pmos:15 vs. simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP3:

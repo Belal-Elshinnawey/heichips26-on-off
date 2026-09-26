@@ -6,26 +6,26 @@ x2 VDD1_5 VDD3_3 ACC_CAP q0 vref0 VSS q1 vref1 q2 vref2 q3 vref3 simple_comparat
 x1 Cap_M2 Cap_M1 VDD3_3 lnaf vin VSS Cap_M21 Cap_M11 lna_stage
 XM24 net1 net1 VDD3_3 VDD3_3 sg13_hv_pmos w=14u l=0.5u ng=7 m=1 mm_ok=1
 XM25 opm net1 VDD3_3 VDD3_3 sg13_hv_pmos w=14u l=0.5u ng=7 m=1 mm_ok=1
-XR5 net1 VSS VSS rhigh w=2e-6 l=10e-6 m=1 b=0 ps=0.18e-6 mm_ok=1
+XR5 net1 VSS VSS rhigh w=2e-6 l=10e-6 m=1 b=0 ps=0 mm_ok=1
 XM13 VDD3_3 VDD3_3 VDD3_3 VDD3_3 sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM26 VDD3_3 VDD3_3 VDD3_3 VDD3_3 sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM27 opm opm opm VDD3_3 sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM28 net1 net1 net1 VDD3_3 sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
-XR3 opm VSS VSS rhigh w=2e-6 l=8e-6 m=1 b=0 ps=0.18e-6 mm_ok=1
+XR3 opm VSS VSS rhigh w=2e-6 l=8e-6 m=1 b=0 ps=0 mm_ok=1
 XM2 ACC_CAP ACC_CAP opm opm sg13_hv_pmos w=20u l=0.5u ng=10 m=1 mm_ok=1
 .ends
 
 * expanding   symbol:  simple_comparator_stage.sym # of pins=12
 ** sym_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator_stage.sym
 ** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator_stage.sch
-.subckt simple_comparator_stage VDDL VDD vin q0 vref0 VSS q1 vref1 q2 vref2 q3 vref3
-*.PININFO VDD:B VSS:B VDDL:B vin:I q0:O vref3:I vref2:I vref1:I vref0:I q1:O q2:O q3:O
-x2 VDDL VSS VDD vref0 vin q0 simple_comparator
-XR1 VDD vref3 VSS rhigh w=2e-6 l=28.8e-6 m=1 b=0 mm_ok=1
+.subckt simple_comparator_stage VDD1_5 VDD3_3 vin q0 vref0 VSS q1 vref1 q2 vref2 q3 vref3
+*.PININFO VDD3_3:B VSS:B VDD1_5:B vin:I q0:O vref3:I vref2:I vref1:I vref0:I q1:O q2:O q3:O
+x2 VDD1_5 VSS VDD3_3 vref0 vin q0 simple_comparator
+XR1 VDD3_3 vref3 VSS rhigh w=2e-6 l=28.8e-6 m=1 b=0 mm_ok=1
 XR5 vref0 VSS VSS rhigh w=2e-6 l=12.9e-6 m=1 b=0 mm_ok=1
-x1 VDDL VSS VDD vref1 vin q1 simple_comparator
-x3 VDDL VSS VDD vref2 vin q2 simple_comparator
-x4 VDDL VSS VDD vref3 vin q3 simple_comparator
+x1 VDD1_5 VSS VDD3_3 vref1 vin q1 simple_comparator
+x3 VDD1_5 VSS VDD3_3 vref2 vin q2 simple_comparator
+x4 VDD1_5 VSS VDD3_3 vref3 vin q3 simple_comparator
 XR4 vref1 vref0 VSS rhigh w=2e-6 l=2.8e-6 m=1 b=0 mm_ok=1
 XR3 vref2 vref1 VSS rhigh w=2e-6 l=1.4e-6 m=1 b=0 mm_ok=1
 XR2 vref3 vref2 VSS rhigh w=2e-6 l=1.4e-6 m=1 b=0 mm_ok=1
@@ -49,23 +49,23 @@ x3 VDD vout Cap_M21 VSS lna
 .subckt simple_comparator VDDL VSS VDD vref vin comp_out
 *.PININFO vin:I vref:I VDD:B VSS:B comp_out:O VDDL:B
 XMBIAS vbias vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
-XRBIAS vbias VSS VSS rhigh w=2e-6 l=120.08e-6 m=1 b=0 mm_ok=1
+XRBIAS vbias VSS VSS rhigh w=2e-6 l=9.27e-6 m=1 b=15 ps=0.18e-6 mm_ok=1
 XM3P net4 vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
 XM1P outn vin net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=4 mm_ok=1
 XM2P net1 vref net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=4 mm_ok=1
 XM4N outn outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=4 mm_ok=1
 XM5N net1 outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=4 mm_ok=1
-XMP1 net2 net1 VDD VDD sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XMP1 net2 net1 VDD VDD sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
 XMN1 net2 net1 net3 VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
-XMP2 comp_out net2 VDDL VDDL sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XMP2 comp_out net2 VDDL VDDL sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
 XMBIAS1 vbias vbias vbias VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
 XMBIAS2 VDD VDD VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
 XM1 VDD VDD VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
 XM2 net4 net4 net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
-XMP3 net2 net2 net2 VDD sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
-XMP4 VDD VDD VDD VDD sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
-XMP5 VDDL VDDL VDDL VDDL sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
-XMP6 comp_out comp_out comp_out VDDL sg13_hv_pmos w=4u l=4u ng=1 m=1 mm_ok=1
+XMP3 net2 net2 net2 VDD sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMP4 VDD VDD VDD VDD sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMP5 VDDL VDDL VDDL VDDL sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMP6 comp_out comp_out comp_out VDDL sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
 XMN3 comp_out comp_out comp_out VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
 XMN4 VSS VSS VSS VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
 XMN5 net2 net2 net2 VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
@@ -78,7 +78,7 @@ XM7 net4 net4 net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
 XM8 net1 net1 net1 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
 XM9 outn outn outn VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM10 VSS VSS VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
-XRBIAS1 net3 VSS VSS rhigh w=2e-6 l=10.0e-6 m=1 b=8 mm_ok=1
+XRBIAS1 net3 VSS VSS rhigh w=2e-6 l=13.71e-6 m=1 b=8 ps=0.18e-6 mm_ok=1
 XMN8 comp_out net2 VSS VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
 .ends
 

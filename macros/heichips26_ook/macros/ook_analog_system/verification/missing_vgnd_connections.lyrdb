@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report-database>
+  <description>Missing terminal connections on net VGND (magic PEX warnings, ook_analog_system)</description>
+  <categories>
+    <category>
+      <name>missing_vgnd</name>
+      <description>Missing terminal connection of device on net VGND</description>
+    </category>
+  </categories>
+  <cells>
+    <cell>
+      <name>ook_analog_system</name>
+    </cell>
+  </cells>
+  <items>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (12.946,45.329;14.946,47.329)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (13946,46329) -- sg13cmos5l_dfrbpq_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (35.106,50.722;37.106,52.722)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (36106,51722) -- sg13cmos5l_nor2_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (33.046,25.912;35.046,27.912)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (34046,26912) -- sg13cmos5l_dfrbpq_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (26.206,25.912;28.206,27.912)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (27206,26912) -- sg13cmos5l_dfrbpq_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (35.358,39.263;37.358,41.263)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (36358,40263) -- sg13cmos5l_or2_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (28.518,39.263;30.518,41.263)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (29518,40263) -- sg13cmos5l_dlygate4sd3_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (21.678,39.263;23.678,41.263)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (22678,40263) -- sg13cmos5l_buf_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (14.838,39.263;16.838,41.263)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (15838,40263) -- sg13cmos5l_nor2_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (26.444,45.329;28.444,47.329)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (27444,46329) -- sg13cmos5l_dfrbpq_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (19.366,25.912;21.366,27.912)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (20366,26912) -- sg13cmos5l_and2_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (12.525,25.912;14.525,27.912)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (13525,26912) -- sg13cmos5l_decap_8 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (-0.214,45.273;1.786,47.273)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (786,46273) -- edge of dac placement area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (21.608,50.722;23.608,52.722)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (22608,51722) -- sg13cmos5l_nor2_1 area</comment>
+    </item>
+    <item>
+      <category>missing_vgnd</category>
+      <cell>ook_analog_system</cell>
+      <visited>false</visited>
+      <values>
+        <value>box: (8.448,50.666;10.448,52.666)</value>
+      </values>
+      <tags/>
+      <comment>magic coord (9448,51666) -- edge of dac placement area</comment>
+    </item>
+  </items>
+</report-database>

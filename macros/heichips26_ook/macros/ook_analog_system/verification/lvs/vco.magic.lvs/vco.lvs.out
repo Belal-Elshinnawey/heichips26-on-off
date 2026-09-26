@@ -55,9 +55,9 @@ Number of devices: 40                      |Number of devices: 40
 Number of nets: 16                         |Number of nets: 16                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely with property errors.
-rhigh:167 vs. rhigh:R1:
+rhigh:176 vs. rhigh:R1:
 Property mm_ok in circuit2 has no matching property in circuit1
-rhigh:167 vs. rhigh:R1:
+rhigh:176 vs. rhigh:R1:
 Property mm_ok in circuit2 has no matching property in circuit1
 sg13_lv_pmos:21 vs. sg13_lv_pmos:M1:
 Property mm_ok in circuit2 has no matching property in circuit1
