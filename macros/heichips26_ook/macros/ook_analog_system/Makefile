@@ -267,6 +267,13 @@ klayout-lvs-netlist: ## Export CDL schematic netlist from Xschem for KLayout LVS
 		xschem set netlist_name [file tail [file rootname [xschem get current_name]]]_klayout.cdl; \
 		xschem netlist \
 	' $(XSCHEM_SCH_DIR)/$(CELL).sch
+	@DAC_SPICE="$(CURDIR)/netlist/schematic/dac_magic.spice"; \
+	NETLIST_KLAYOUT="$(NET_SCH_DIR)/$(CELL)_klayout.cdl"; \
+	if [ -f "$$DAC_SPICE" ] && grep -qw 'dac' "$$NETLIST_KLAYOUT"; then \
+		sed -i '/\.end\b/Id' "$$NETLIST_KLAYOUT"; \
+		cat "$$DAC_SPICE" >> "$$NETLIST_KLAYOUT"; \
+		echo ".END" >> "$$NETLIST_KLAYOUT"; \
+	fi
 	@STD_CELL_CDL="$(PDKPATH)/libs.ref/$(STD_CELL_LIBRARY)/cdl/$(STD_CELL_LIBRARY).cdl"; \
 	NETLIST_KLAYOUT="$(NET_SCH_DIR)/$(CELL)_klayout.cdl"; \
 	if [ -f "$$STD_CELL_CDL" ] && grep -iE '^\.subckt[[:space:]]' "$$STD_CELL_CDL" | awk '{print $$2}' | grep -qiwFf - "$$NETLIST_KLAYOUT"; then \
@@ -296,6 +303,13 @@ magic-lvs-netlist: ## Export SPICE schematic netlist from Xschem for Magic + Net
 		xschem set netlist_name [file tail [file rootname [xschem get current_name]]]_magic.spice; \
 		xschem netlist \
 	' $(XSCHEM_SCH_DIR)/$(CELL).sch
+	@DAC_SPICE="$(CURDIR)/netlist/schematic/dac_magic.spice"; \
+	NETLIST_SCH="$(NET_SCH_DIR)/$(CELL)_magic.spice"; \
+	if [ -f "$$DAC_SPICE" ] && grep -qw 'dac' "$$NETLIST_SCH"; then \
+		sed -i '/\.end\b/Id' "$$NETLIST_SCH"; \
+		cat "$$DAC_SPICE" >> "$$NETLIST_SCH"; \
+		echo ".end" >> "$$NETLIST_SCH"; \
+	fi
 	@STD_CELL_SPICE="$(PDKPATH)/libs.ref/$(STD_CELL_LIBRARY)/spice/$(STD_CELL_LIBRARY).spice"; \
 	NETLIST_SCH="$(NET_SCH_DIR)/$(CELL)_magic.spice"; \
 	if [ -f "$$STD_CELL_SPICE" ] && grep -iE '^\.subckt[[:space:]]' "$$STD_CELL_SPICE" | awk '{print $$2}' | grep -qiwFf - "$$NETLIST_SCH"; then \

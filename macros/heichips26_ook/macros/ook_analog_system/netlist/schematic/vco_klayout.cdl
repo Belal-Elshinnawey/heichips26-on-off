@@ -19,7 +19,7 @@ MM15 VCH VCH VDD VDD sg13_lv_pmos w=5u l=0.13u ng=10
 MM16 VCH VCL net3 VSS sg13_lv_nmos w=40u l=0.13u ng=20
 MM17 VCL_L VCH VDD VDD sg13_lv_pmos w=5u l=0.13u ng=10
 MM18 VCL_L VCL_L VSS VSS sg13_lv_nmos w=3u l=0.13u ng=5
-RR1 net3 VSS 8.4065k $SUB=VSS $[rhigh] w=2e-6 l=12e-6 b=0
+RR1 net3 VSS 3.5494k $SUB=VSS $[rhigh] w=2e-6 l=5e-6 b=0
 MM19 VDD VDD VDD VDD sg13_lv_pmos w=0.5u l=0.13u ng=1
 MM20 VCH VCH VCH VDD sg13_lv_pmos w=0.5u l=0.13u ng=1
 MM21 VCH VCH VCH VSS sg13_lv_nmos w=2u l=0.13u ng=1

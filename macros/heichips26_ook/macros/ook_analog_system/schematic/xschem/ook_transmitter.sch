@@ -5,68 +5,92 @@ V {}
 S {}
 F {}
 E {}
-T {System Clock is 80MHz.
-To produce ref clock,
-divide system clock by 2.95 in HDL.} 410 -1100 0 0 0.4 0.4 {}
-T {Data in is 6us per symbol. 
-a full on+off code is 12us.} 1670 -910 0 0 0.4 0.4 {}
-N 1680 -950 1770 -950 {lab=vout}
-N 1490 -980 1570 -980 {lab=#net1}
-N 1000 -970 1050 -970 {lab=UP}
-N 1000 -950 1050 -950 {lab=DN}
-N 1170 -960 1250 -960 {lab=vosc}
-N 810 -740 1250 -740 {lab=#net2}
-N 810 -950 810 -740 {lab=#net2}
-N 810 -950 860 -950 {lab=#net2}
-N 1610 -900 1610 -740 {lab=#net3}
-N 1370 -740 1610 -740 {lab=#net3}
-N 1520 -880 1530 -880 {lab=data_in_n}
-N 1530 -920 1530 -880 {lab=data_in_n}
-N 1530 -920 1570 -920 {lab=data_in_n}
-N 930 -900 930 -870 {lab=VSS}
-N 930 -1090 930 -1020 {lab=VDD}
-N 1080 -910 1080 -890 {lab=VSS}
-N 810 -970 860 -970 {lab=clk_27_12MHz}
-N 1110 -1040 1110 -1010 {lab=VDD}
-N 1370 -1070 1370 -1040 {lab=VDD}
-N 1370 -920 1370 -900 {lab=VSS}
-N 1650 -920 1650 -900 {lab=VSS}
-N 1620 -1030 1620 -1000 {lab=VDD}
-N 1310 -820 1310 -790 {lab=VDD}
-N 1310 -690 1310 -670 {lab=VSS}
-N 1520 -950 1520 -900 {lab=data_in_p}
-N 1520 -950 1570 -950 {lab=data_in_p}
-N 1120 -910 1120 -870 {lab=cp_cap_p}
-N 1140 -910 1140 -870 {lab=cp_cap_m}
+N 1530 -840 1710 -840 {lab=#net1}
+N 1410 -780 1410 -740 {lab=VGND}
+N 1750 -760 1750 -590 {lab=clk_fb}
+N 1820 -810 1890 -810 {lab=vout}
+N 1760 -910 1760 -860 {lab=VPWR}
+N 1790 -780 1790 -750 {lab=VGND}
+N 1070 -820 1080 -820 {lab=dac_out}
+N 930 -900 930 -890 {lab=VPWR}
+N 1180 -820 1180 -790 {lab=vcl}
+N 1180 -730 1180 -710 {lab=VGND}
+N 1410 -940 1410 -900 {lab=VPWR}
+N 630 -660 630 -590 {lab=clk_fb}
+N 1180 -880 1180 -820 {lab=vcl}
+N 1140 -820 1180 -820 {lab=vcl}
+N 930 -680 930 -650 {lab=VGND}
+N 630 -590 1750 -590 {lab=clk_fb}
+N 1020 -780 1060 -780 {lab=vctrl_out}
+N 1060 -780 1060 -660 {lab=vctrl_out}
+N 1060 -660 1570 -660 {lab=vctrl_out}
+N 1570 -810 1710 -810 {lab=vctrl_out}
+N 1020 -740 1030 -740 {lab=vctrl_b_out}
+N 1030 -740 1030 -630 {lab=vctrl_b_out}
+N 1030 -630 1590 -630 {lab=vctrl_b_out}
+N 1590 -780 1590 -630 {lab=vctrl_b_out}
+N 1070 -880 1070 -820 {lab=dac_out}
+N 1590 -780 1710 -780 {lab=vctrl_b_out}
+N 1570 -810 1570 -660 {lab=vctrl_out}
+N 590 -660 630 -660 {lab=clk_fb}
+N 630 -820 630 -660 {lab=clk_fb}
+N 1180 -820 1200 -820 {lab=vcl}
+N 1260 -820 1290 -820 {lab=#net2}
+N 810 -850 840 -850 {lab=clk_ref}
+N 810 -790 840 -790 {lab=rst_ni}
+N 810 -760 840 -760 {lab=vctrl_in}
+N 810 -720 840 -720 {lab=vctrl_b_in}
+N 1020 -820 1070 -820 {lab=dac_out}
+N 630 -820 840 -820 {lab=clk_fb}
 C {title-3.sym} 0 0 0 0 {name=l1 author="Belal ELshinnawey" rev=1.0 lock=true}
-C {devices/iopin.sym} 930 -1090 3 0 {name=p1 lab=VDD}
-C {devices/iopin.sym} 930 -870 1 0 {name=p5 lab=VSS}
-C {devices/lab_pin.sym} 1080 -890 3 0 {name=lp16 sig_type=std_logic lab=VSS}
-C {ipin.sym} 1520 -880 0 0 {name=p4 lab=data_in_n}
-C {pfd.sym} 930 -960 0 0 {name=x1}
-C {charge_pump.sym} 1110 -960 0 0 {name=x2}
-C {vco.sym} 1360 -980 0 0 {name=x3}
-C {output_buffer.sym} 1620 -830 0 0 {name=x4}
-C {ipin.sym} 810 -970 0 0 {name=p2 lab=clk_27_12MHz}
-C {devices/lab_pin.sym} 1110 -1040 1 0 {name=lp1 sig_type=std_logic lab=VDD
+C {devices/iopin.sym} 1890 -810 0 0 {name=pvout1 lab=vout}
+C {devices/iopin.sym} 1410 -940 3 0 {name=p9 lab=VPWR}
+C {devices/lab_pin.sym} 930 -900 1 0 {name=lp11 sig_type=std_logic lab=VPWR
 }
-C {devices/lab_pin.sym} 1370 -1070 1 0 {name=lp2 sig_type=std_logic lab=VDD
+C {devices/lab_pin.sym} 1760 -900 1 0 {name=lp12 sig_type=std_logic lab=VPWR
 }
-C {devices/lab_pin.sym} 1370 -900 3 0 {name=lp3 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1650 -900 3 0 {name=lp4 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1620 -1030 1 0 {name=lp5 sig_type=std_logic lab=VDD
+C {devices/iopin.sym} 1410 -740 1 0 {name=p12 lab=VGND}
+C {devices/lab_pin.sym} 930 -650 3 0 {name=lp13 sig_type=std_logic lab=VGND}
+C {devices/lab_pin.sym} 1180 -710 3 0 {name=lp14 sig_type=std_logic lab=VGND}
+C {devices/lab_pin.sym} 1790 -750 3 0 {name=lp15 sig_type=std_logic lab=VGND}
+C {devices/iopin.sym} 1180 -880 3 0 {name=p15 lab=vcl}
+C {sg13cmos5l_pr/cap_mfringe.sym} 1180 -760 0 0 {name=C1
+model=cap_mfringe
+w=128.0u
+l=42.0u
+mmin=1
+mmax=4
+spiceprefix=X
+spice_ignore=true}
+C {rhigh_ps.sym} 1110 -820 1 0 {name=R1
+w=1e-6
+l=61.395e-6
+model=rhigh
+body=VGND
+spiceprefix=X
+b=2
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
 }
-C {devices/lab_pin.sym} 1310 -820 1 0 {name=lp6 sig_type=std_logic lab=VDD
+C {devices/iopin.sym} 1070 -880 3 0 {name=p1 lab=dac_out}
+C {devices/iopin.sym} 590 -660 2 0 {name=p4 lab=clk_fb}
+C {vco.sym} 1400 -840 0 0 {name=x1}
+C {output_buffer.sym} 1760 -690 0 0 {name=x2}
+C {sg13cmos5l_pr/rsil.sym} 1230 -820 1 1 {name=R2
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
 }
-C {devices/lab_pin.sym} 1310 -670 3 0 {name=lp7 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1020 -970 1 0 {name=lp8 sig_type=std_logic lab=UP
-}
-C {devices/lab_pin.sym} 1020 -950 3 0 {name=lp9 sig_type=std_logic lab=DN
-}
-C {devices/lab_pin.sym} 1210 -960 3 0 {name=lp10 sig_type=std_logic lab=vosc
-}
-C {devices/iopin.sym} 1770 -950 0 0 {name=p3 lab=vout}
-C {clock_divider.sym} 1310 -740 0 1 {name=x5}
-C {ipin.sym} 1520 -900 0 0 {name=p6 lab=data_in_p}
-C {devices/iopin.sym} 1120 -870 1 0 {name=p7 lab=cp_cap_p}
-C {devices/iopin.sym} 1140 -870 1 0 {name=p8 lab=cp_cap_m}
+C {/home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/dac/schematic/xschem/dac.sym} 930 -770 0 0 {name=x7}
+C {devices/iopin.sym} 810 -850 2 0 {name=p5 lab=clk_ref}
+C {devices/iopin.sym} 810 -790 2 0 {name=p6 lab=rst_ni}
+C {devices/iopin.sym} 810 -760 2 0 {name=p7 lab=vctrl_in}
+C {devices/iopin.sym} 810 -720 2 0 {name=p8 lab=vctrl_b_in}
+C {devices/iopin.sym} 1570 -720 2 0 {name=p2 lab=vctrl_out}
+C {devices/iopin.sym} 1590 -720 0 0 {name=p3 lab=vctrl_b_out}

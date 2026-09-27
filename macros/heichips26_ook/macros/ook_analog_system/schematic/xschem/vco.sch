@@ -522,7 +522,7 @@ C {devices/lab_pin.sym} 510 -910 0 0 {name=lp39 sig_type=std_logic lab=VCH}
 C {devices/lab_pin.sym} 520 -630 0 0 {name=lp40 sig_type=std_logic lab=VCL_L}
 C {sg13cmos5l_pr/rhigh.sym} 270 -350 0 0 {name=R1
 w=2e-6
-l=12e-6
+l=4.25e-6
 model=rhigh
 body=VSS
 spiceprefix=X

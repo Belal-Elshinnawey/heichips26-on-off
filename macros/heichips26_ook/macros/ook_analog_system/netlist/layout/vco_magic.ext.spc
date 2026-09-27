@@ -1,6 +1,6 @@
 * NGSPICE file created from vco.ext - technology: ihp-sg13cmos5l
 
-.subckt vco vout VDD VSS VCL
+.subckt vco vout VSS VCL VDD
 X0 GROUP19_0.nmos$2_priv1_0.S VCL GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X1 VSS GROUP17_0.G GROUP7_0.nmos$1_priv2_0.D VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
 X2 GROUP9_0.pmos_priv3_0.S GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
@@ -13,7 +13,7 @@ X8 VSS GROUP17_0.G GROUP17_0.G VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=
 X9 VDD GROUP14_0.G vout VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X10 GROUP19_0.nmos$2_priv1_0.D VCL GROUP19_0.nmos$2_priv1_0.S VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X11 GROUP17_0.G GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
-X12 VSS GROUP17_0.G GROUP14_0.nmos_priv4_0.S VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
+X12 VSS GROUP17_0.G GROUP15_0.nmos$1_priv4_0.D VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
 X13 vout GROUP14_0.G VDD VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X14 GROUP14_0.G GROUP14_0.G GROUP14_0.G VSS sg13_lv_nmos ad=0.136p pd=1.48u as=31.352p ps=0.17609m w=0.4u l=0.13u
 X15 GROUP4_0.pmos_priv2_0.S GROUP10_0.nmos_priv3_0.D GROUP14_0.G VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
@@ -30,12 +30,12 @@ X25 GROUP10_0.nmos_priv3_0.D GROUP14_0.nmos_priv4_0.D GROUP11_0.nmos$1_priv3_0.D
 X26 GROUP19_0.nmos$2_priv1_0.S VCL GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X27 GROUP13_0.pmos_priv4_0.S GROUP14_0.G GROUP14_0.nmos_priv4_0.D VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X28 vout vout vout VDD sg13_lv_pmos ad=0.153p pd=1.58u as=3.253p ps=26.98u w=0.45u l=0.13u
-X29 GROUP14_0.nmos_priv4_0.S GROUP14_0.G GROUP14_0.nmos_priv4_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=0.136p ps=1.48u w=0.4u l=0.13u
+X29 GROUP15_0.nmos$1_priv4_0.D GROUP14_0.G GROUP14_0.nmos_priv4_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=0.136p ps=1.48u w=0.4u l=0.13u
 X30 GROUP4_0.pmos_priv2_0.S GROUP10_0.nmos_priv3_0.D GROUP14_0.G VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X31 GROUP19_0.nmos$2_priv1_0.D VCL GROUP19_0.nmos$2_priv1_0.S VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X32 GROUP19_0.nmos$2_priv1_0.S VCL GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.13u
 X33 VSS GROUP17_0.G GROUP7_0.nmos$1_priv2_0.D VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.204p ps=1.88u w=0.6u l=0.13u
-X34 VSS VSS VSS VSS sg13_lv_nmos ad=0.204p pd=1.88u as=57.59747p ps=0.21318m w=0.6u l=0.13u
+X34 VSS VSS VSS VSS sg13_lv_nmos ad=0.204p pd=1.88u as=97.45567p ps=0.39391m w=0.6u l=0.13u
 X35 GROUP10_0.nmos_priv3_0.D GROUP14_0.nmos_priv4_0.D GROUP9_0.pmos_priv3_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X36 GROUP13_0.pmos_priv4_0.S GROUP14_0.G GROUP14_0.nmos_priv4_0.D VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X37 VDD GROUP19_0.nmos$2_priv1_0.S GROUP19_0.nmos$2_priv1_0.S VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
@@ -46,7 +46,7 @@ X41 VSS VSS VSS VSS sg13_lv_nmos ad=0.204p pd=1.88u as=0 ps=0 w=0.6u l=0.13u
 X42 GROUP19_0.nmos$2_priv1_0.D VCL GROUP19_0.nmos$2_priv1_0.S VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X43 GROUP19_0.nmos$2_priv1_0.S VCL GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X44 VDD GROUP19_0.nmos$2_priv1_0.S GROUP17_0.G VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
-X45 VSS GROUP17_0.G GROUP14_0.nmos_priv4_0.S VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.204p ps=1.88u w=0.6u l=0.13u
+X45 VSS GROUP17_0.G GROUP15_0.nmos$1_priv4_0.D VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.204p ps=1.88u w=0.6u l=0.13u
 X46 VSS VSS VSS VSS sg13_lv_nmos ad=0.204p pd=1.88u as=0 ps=0 w=0.6u l=0.13u
 X47 VDD GROUP19_0.nmos$2_priv1_0.S GROUP4_0.pmos_priv2_0.S VDD sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
 X48 GROUP19_0.nmos$2_priv1_0.S VCL GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
@@ -64,7 +64,7 @@ X59 vout GROUP14_0.G VDD VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=
 X60 VSS GROUP17_0.G GROUP11_0.nmos$1_priv3_0.D VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
 X61 GROUP19_0.nmos$2_priv1_0.D VCL GROUP19_0.nmos$2_priv1_0.S VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X62 GROUP19_0.nmos$2_priv1_0.S VCL GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
-X63 GROUP14_0.nmos_priv4_0.S GROUP17_0.G VSS VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
+X63 GROUP15_0.nmos$1_priv4_0.D GROUP17_0.G VSS VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
 X64 VDD VDD VDD VDD sg13_lv_pmos ad=0.153p pd=1.58u as=0 ps=0 w=0.45u l=0.13u
 X65 GROUP14_0.G GROUP10_0.nmos_priv3_0.D GROUP4_0.pmos_priv2_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X66 vout GROUP14_0.G VSS VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
@@ -84,10 +84,10 @@ X79 GROUP19_0.nmos$2_priv1_0.D VCL GROUP19_0.nmos$2_priv1_0.S VSS sg13_lv_nmos a
 X80 GROUP14_0.nmos_priv4_0.D GROUP14_0.G GROUP13_0.pmos_priv4_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X81 GROUP9_0.pmos_priv3_0.S GROUP14_0.nmos_priv4_0.D GROUP10_0.nmos_priv3_0.D VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X82 GROUP13_0.pmos_priv4_0.S GROUP14_0.G GROUP14_0.nmos_priv4_0.D VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=0.153p ps=1.58u w=0.45u l=0.13u
-X83 GROUP14_0.nmos_priv4_0.S GROUP14_0.G GROUP14_0.nmos_priv4_0.D VSS sg13_lv_nmos ad=0.136p pd=1.48u as=76f ps=0.78u w=0.4u l=0.13u
+X83 GROUP15_0.nmos$1_priv4_0.D GROUP14_0.G GROUP14_0.nmos_priv4_0.D VSS sg13_lv_nmos ad=0.136p pd=1.48u as=76f ps=0.78u w=0.4u l=0.13u
 X84 GROUP14_0.G GROUP10_0.nmos_priv3_0.D GROUP4_0.pmos_priv2_0.S VDD sg13_lv_pmos ad=0.153p pd=1.58u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X85 GROUP11_0.nmos$1_priv3_0.D GROUP14_0.nmos_priv4_0.D GROUP10_0.nmos_priv3_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=0.136p ps=1.48u w=0.4u l=0.13u
-X86 GROUP14_0.nmos_priv4_0.D GROUP14_0.G GROUP14_0.nmos_priv4_0.S VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
+X86 GROUP14_0.nmos_priv4_0.D GROUP14_0.G GROUP15_0.nmos$1_priv4_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
 X87 vout GROUP14_0.G VDD VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X88 VDD GROUP19_0.nmos$2_priv1_0.S GROUP19_0.nmos$2_priv1_0.S VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
 X89 GROUP19_0.nmos$2_priv1_0.S GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
@@ -103,7 +103,7 @@ X98 VSS GROUP17_0.G GROUP11_0.nmos$1_priv3_0.D VSS sg13_lv_nmos ad=0.114p pd=0.9
 X99 GROUP19_0.nmos$2_priv1_0.S VCL GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X100 GROUP17_0.G GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
 X101 VDD GROUP19_0.nmos$2_priv1_0.S GROUP17_0.G VDD sg13_lv_pmos ad=95f pd=0.88u as=0.17p ps=1.68u w=0.5u l=0.13u
-X102 GROUP14_0.nmos_priv4_0.S GROUP17_0.G VSS VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
+X102 GROUP15_0.nmos$1_priv4_0.D GROUP17_0.G VSS VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
 X103 GROUP4_0.pmos_priv2_0.S GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
 X104 VSS VSS VSS VSS sg13_lv_nmos ad=0.204p pd=1.88u as=0 ps=0 w=0.6u l=0.13u
 X105 GROUP19_0.nmos$2_priv1_0.D VCL GROUP19_0.nmos$2_priv1_0.S VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
@@ -117,8 +117,8 @@ X112 VDD GROUP19_0.nmos$2_priv1_0.S GROUP9_0.pmos_priv3_0.S VDD sg13_lv_pmos ad=
 X113 VDD GROUP14_0.G vout VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X114 GROUP19_0.nmos$2_priv1_0.S VCL GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X115 GROUP17_0.G GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=0.17p pd=1.68u as=95f ps=0.88u w=0.5u l=0.13u
-X116 VSS GROUP17_0.G GROUP14_0.nmos_priv4_0.S VSS sg13_lv_nmos ad=0.204p pd=1.88u as=0.114p ps=0.98u w=0.6u l=0.13u
-X117 GROUP14_0.nmos_priv4_0.S GROUP14_0.nmos_priv4_0.S GROUP14_0.nmos_priv4_0.S VSS sg13_lv_nmos ad=0.204p pd=1.88u as=3.0172p ps=22.36u w=0.6u l=0.13u
+X116 VSS GROUP17_0.G GROUP15_0.nmos$1_priv4_0.D VSS sg13_lv_nmos ad=0.204p pd=1.88u as=0.114p ps=0.98u w=0.6u l=0.13u
+X117 GROUP15_0.nmos$1_priv4_0.D GROUP15_0.nmos$1_priv4_0.D GROUP15_0.nmos$1_priv4_0.D VSS sg13_lv_nmos ad=0.204p pd=1.88u as=3.0172p ps=22.36u w=0.6u l=0.13u
 X118 GROUP4_0.pmos_priv2_0.S GROUP10_0.nmos_priv3_0.D GROUP14_0.G VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X119 GROUP11_0.nmos$1_priv3_0.D GROUP17_0.G VSS VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
 X120 VSS GROUP17_0.G GROUP17_0.G VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.204p ps=1.88u w=0.6u l=0.13u
@@ -137,7 +137,7 @@ X132 GROUP14_0.nmos_priv4_0.D GROUP14_0.G GROUP13_0.pmos_priv4_0.S VDD sg13_lv_p
 X133 GROUP9_0.pmos_priv3_0.S GROUP14_0.nmos_priv4_0.D GROUP10_0.nmos_priv3_0.D VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=0.153p ps=1.58u w=0.45u l=0.13u
 X134 GROUP11_0.nmos$1_priv3_0.D GROUP14_0.nmos_priv4_0.D GROUP10_0.nmos_priv3_0.D VSS sg13_lv_nmos ad=0.136p pd=1.48u as=76f ps=0.78u w=0.4u l=0.13u
 X135 GROUP9_0.pmos_priv3_0.S GROUP9_0.pmos_priv3_0.S GROUP9_0.pmos_priv3_0.S VDD sg13_lv_pmos ad=0.17p pd=1.68u as=0 ps=0 w=0.5u l=0.13u
-X136 GROUP14_0.nmos_priv4_0.S GROUP14_0.G GROUP14_0.nmos_priv4_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
+X136 GROUP15_0.nmos$1_priv4_0.D GROUP14_0.G GROUP14_0.nmos_priv4_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
 X137 VDD GROUP14_0.G vout VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X138 GROUP14_0.G GROUP14_0.G GROUP14_0.G VDD sg13_lv_pmos ad=0.153p pd=1.58u as=0 ps=0 w=0.45u l=0.13u
 X139 GROUP10_0.nmos_priv3_0.D GROUP14_0.nmos_priv4_0.D GROUP11_0.nmos$1_priv3_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
@@ -157,7 +157,7 @@ X152 GROUP11_0.nmos$1_priv3_0.D GROUP11_0.nmos$1_priv3_0.D GROUP11_0.nmos$1_priv
 X153 VSS GROUP17_0.G GROUP11_0.nmos$1_priv3_0.D VSS sg13_lv_nmos ad=0.204p pd=1.88u as=0.114p ps=0.98u w=0.6u l=0.13u
 X154 GROUP17_0.G GROUP17_0.G GROUP17_0.G VDD sg13_lv_pmos ad=0.17p pd=1.68u as=0 ps=0 w=0.5u l=0.13u
 X155 VSS GROUP17_0.G GROUP17_0.G VSS sg13_lv_nmos ad=0.204p pd=1.88u as=0.114p ps=0.98u w=0.6u l=0.13u
-X156 GROUP14_0.nmos_priv4_0.S GROUP14_0.nmos_priv4_0.S GROUP14_0.nmos_priv4_0.S VSS sg13_lv_nmos ad=0.136p pd=1.48u as=0 ps=0 w=0.4u l=0.13u
+X156 GROUP15_0.nmos$1_priv4_0.D GROUP15_0.nmos$1_priv4_0.D GROUP15_0.nmos$1_priv4_0.D VSS sg13_lv_nmos ad=0.136p pd=1.48u as=0 ps=0 w=0.4u l=0.13u
 X157 GROUP14_0.G GROUP10_0.nmos_priv3_0.D GROUP4_0.pmos_priv2_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X158 GROUP17_0.G GROUP17_0.G VSS VSS sg13_lv_nmos ad=0.114p pd=0.98u as=0.114p ps=0.98u w=0.6u l=0.13u
 X159 VDD GROUP14_0.G vout VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=0.153p ps=1.58u w=0.45u l=0.13u
@@ -168,22 +168,22 @@ X163 GROUP14_0.G GROUP10_0.nmos_priv3_0.D GROUP7_0.nmos$1_priv2_0.D VSS sg13_lv_
 X164 GROUP19_0.nmos$2_priv1_0.S GROUP19_0.nmos$2_priv1_0.S GROUP19_0.nmos$2_priv1_0.S VSS sg13_lv_nmos ad=0.68p pd=4.68u as=51.83605p ps=0.29582m w=2u l=0.13u
 X165 vout GROUP14_0.G VSS VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
 X166 VSS GROUP14_0.G vout VSS sg13_lv_nmos ad=0.136p pd=1.48u as=76f ps=0.78u w=0.4u l=0.13u
-X167 VSS GROUP19_0.nmos$2_priv1_0.D VSS rhigh l=12u w=2u
-X168 GROUP13_0.pmos_priv4_0.S GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
-X169 GROUP9_0.pmos_priv3_0.S GROUP14_0.nmos_priv4_0.D GROUP10_0.nmos_priv3_0.D VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
-X170 GROUP14_0.nmos_priv4_0.D GROUP14_0.G GROUP13_0.pmos_priv4_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
-X171 GROUP10_0.nmos_priv3_0.D GROUP14_0.nmos_priv4_0.D GROUP9_0.pmos_priv3_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
-X172 VDD VDD VDD VDD sg13_lv_pmos ad=0.17p pd=1.68u as=0 ps=0 w=0.5u l=0.13u
-X173 GROUP13_0.pmos_priv4_0.S GROUP13_0.pmos_priv4_0.S GROUP13_0.pmos_priv4_0.S VDD sg13_lv_pmos ad=0.153p pd=1.58u as=0 ps=0 w=0.45u l=0.13u
-X174 GROUP14_0.nmos_priv4_0.D GROUP14_0.G GROUP14_0.nmos_priv4_0.S VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
-X175 GROUP11_0.nmos$1_priv3_0.D GROUP14_0.nmos_priv4_0.D GROUP10_0.nmos_priv3_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
-X176 vout GROUP14_0.G VDD VDD sg13_lv_pmos ad=0.153p pd=1.58u as=85.49999f ps=0.83u w=0.45u l=0.13u
+X167 GROUP13_0.pmos_priv4_0.S GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
+X168 GROUP9_0.pmos_priv3_0.S GROUP14_0.nmos_priv4_0.D GROUP10_0.nmos_priv3_0.D VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
+X169 GROUP14_0.nmos_priv4_0.D GROUP14_0.G GROUP13_0.pmos_priv4_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
+X170 GROUP10_0.nmos_priv3_0.D GROUP14_0.nmos_priv4_0.D GROUP9_0.pmos_priv3_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
+X171 VDD VDD VDD VDD sg13_lv_pmos ad=0.17p pd=1.68u as=0 ps=0 w=0.5u l=0.13u
+X172 GROUP13_0.pmos_priv4_0.S GROUP13_0.pmos_priv4_0.S GROUP13_0.pmos_priv4_0.S VDD sg13_lv_pmos ad=0.153p pd=1.58u as=0 ps=0 w=0.45u l=0.13u
+X173 GROUP14_0.nmos_priv4_0.D GROUP14_0.G GROUP15_0.nmos$1_priv4_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
+X174 GROUP11_0.nmos$1_priv3_0.D GROUP14_0.nmos_priv4_0.D GROUP10_0.nmos_priv3_0.D VSS sg13_lv_nmos ad=76f pd=0.78u as=76f ps=0.78u w=0.4u l=0.13u
+X175 vout GROUP14_0.G VDD VDD sg13_lv_pmos ad=0.153p pd=1.58u as=85.49999f ps=0.83u w=0.45u l=0.13u
+X176 VSS GROUP19_0.nmos$2_priv1_0.D VSS rhigh l=5u w=2u
 X177 GROUP14_0.G GROUP10_0.nmos_priv3_0.D GROUP4_0.pmos_priv2_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X178 GROUP10_0.nmos_priv3_0.D GROUP10_0.nmos_priv3_0.D GROUP10_0.nmos_priv3_0.D VDD sg13_lv_pmos ad=0.153p pd=1.58u as=0 ps=0 w=0.45u l=0.13u
 X179 GROUP19_0.nmos$2_priv1_0.S GROUP19_0.nmos$2_priv1_0.S GROUP19_0.nmos$2_priv1_0.S VDD sg13_lv_pmos ad=0.17p pd=1.68u as=0 ps=0 w=0.5u l=0.13u
 X180 GROUP14_0.nmos_priv4_0.D GROUP14_0.G GROUP13_0.pmos_priv4_0.S VDD sg13_lv_pmos ad=85.49999f pd=0.83u as=85.49999f ps=0.83u w=0.45u l=0.13u
 X181 VDD GROUP19_0.nmos$2_priv1_0.S GROUP4_0.pmos_priv2_0.S VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
-X182 GROUP19_0.nmos$2_priv1_0.D GROUP19_0.nmos$2_priv1_0.D GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.68p pd=4.68u as=8.6976p ps=69.86u w=2u l=0.13u
+X182 GROUP19_0.nmos$2_priv1_0.D GROUP19_0.nmos$2_priv1_0.D GROUP19_0.nmos$2_priv1_0.D VSS sg13_lv_nmos ad=0.68p pd=4.68u as=16.1211p ps=83.45u w=2u l=0.13u
 X183 GROUP17_0.G GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
 X184 GROUP4_0.pmos_priv2_0.S GROUP19_0.nmos$2_priv1_0.S VDD VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.13u
 X185 VDD VDD VDD VDD sg13_lv_pmos ad=0.17p pd=1.68u as=0 ps=0 w=0.5u l=0.13u

@@ -1,6 +1,6 @@
 * NGSPICE file created from output_buffer.ext - technology: ihp-sg13cmos5l
 
-.subckt output_buffer vin vctrl_b vout_fb vctrl vout VSS VDD
+.subckt output_buffer vin vctrl_b vout_fb vctrl VSS vout VDD
 X0 vout GROUP2_0.G VDD VDD sg13_lv_pmos ad=0.76p pd=4.38u as=0.76p ps=4.38u w=4u l=0.13u
 X1 VSS vin vout_fb VSS sg13_lv_nmos ad=0.228p pd=1.58u as=0.228p ps=1.58u w=1.2u l=0.13u
 X2 VDD GROUP2_0.G vout VDD sg13_lv_pmos ad=0.76p pd=4.38u as=0.76p ps=4.38u w=4u l=0.13u
@@ -12,7 +12,7 @@ X7 GROUP7_0.nmos_priv2_0.D vctrl VSS VDD sg13_lv_pmos ad=0.2565p pd=1.73u as=0.2
 X8 vout_fb vctrl_b GROUP7_0.nmos_priv2_0.D VDD sg13_lv_pmos ad=0.2565p pd=1.73u as=0.459p ps=3.38u w=1.35u l=0.13u
 X9 VDD vin vout_fb VDD sg13_lv_pmos ad=0.2565p pd=1.73u as=0.459p ps=3.38u w=1.35u l=0.13u
 X10 GROUP7_0.nmos_priv2_0.D vctrl vout_fb VSS sg13_lv_nmos ad=0.228p pd=1.58u as=0.228p ps=1.58u w=1.2u l=0.13u
-X11 VDD VDD VDD VDD sg13_lv_pmos ad=0.68p pd=4.68u as=0.19046n ps=0.49218m w=2u l=0.13u
+X11 VDD VDD VDD VDD sg13_lv_pmos ad=0.68p pd=4.68u as=72.94395p ps=0.3843m w=2u l=0.13u
 X12 VDD GROUP7_0.nmos_priv2_0.D GROUP2_0.G VDD sg13_lv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.13u
 X13 vout GROUP2_0.G VSS VSS sg13_lv_nmos ad=0.76p pd=4.38u as=0.76p ps=4.38u w=4u l=0.13u
 X14 VDD GROUP2_0.G vout VDD sg13_lv_pmos ad=0.76p pd=4.38u as=0.76p ps=4.38u w=4u l=0.13u
