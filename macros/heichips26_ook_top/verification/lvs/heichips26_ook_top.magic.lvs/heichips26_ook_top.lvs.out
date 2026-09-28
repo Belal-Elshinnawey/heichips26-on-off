@@ -1,0 +1,1343 @@
+
+Circuit 1 cell sg13_lv_pmos and Circuit 2 cell sg13_lv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_pmos                    |Circuit 2: sg13_lv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
+
+Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_nmos                    |Circuit 2: sg13_lv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_nmos and sg13_lv_nmos are equivalent.
+
+Circuit 1 cell sg13_hv_pmos and Circuit 2 cell sg13_hv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_pmos                    |Circuit 2: sg13_hv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_pmos and sg13_hv_pmos are equivalent.
+
+Circuit 1 cell rhigh and Circuit 2 cell rhigh are black boxes.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: rhigh                           |Circuit 2: rhigh                           
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rhigh and rhigh are equivalent.
+
+Circuit 1 cell sg13_hv_nmos and Circuit 2 cell sg13_hv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_nmos                    |Circuit 2: sg13_hv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_nmos and sg13_hv_nmos are equivalent.
+
+Circuit 1 cell rsil and Circuit 2 cell rsil are black boxes.
+Warning: Equate pins:  cell rsil is a placeholder, treated as a black box.
+Warning: Equate pins:  cell rsil is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: rsil                            |Circuit 2: rsil                            
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rsil and rsil are equivalent.
+Flattening unmatched subcell ook_analog_system in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell ook_transmitter in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell vco in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell output_buffer in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell dac in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_fill_2 in circuit heichips26_ook_top (1)(178 instances)
+Flattening unmatched subcell sg13cmos5l_a221oi_1 in circuit heichips26_ook_top (1)(21 instances)
+Flattening unmatched subcell sg13cmos5l_fill_1 in circuit heichips26_ook_top (1)(169 instances)
+Flattening unmatched subcell sg13cmos5l_nand2_1 in circuit heichips26_ook_top (1)(60 instances)
+Flattening unmatched subcell sg13cmos5l_o21ai_1 in circuit heichips26_ook_top (1)(77 instances)
+Flattening unmatched subcell sg13cmos5l_decap_8 in circuit heichips26_ook_top (1)(66 instances)
+Flattening unmatched subcell sg13cmos5l_nor3_1 in circuit heichips26_ook_top (1)(23 instances)
+Flattening unmatched subcell sg13cmos5l_a21oi_1 in circuit heichips26_ook_top (1)(46 instances)
+Flattening unmatched subcell sg13cmos5l_and2_1 in circuit heichips26_ook_top (1)(29 instances)
+Flattening unmatched subcell sg13cmos5l_nor2_1 in circuit heichips26_ook_top (1)(57 instances)
+Flattening unmatched subcell sg13cmos5l_buf_8 in circuit heichips26_ook_top (1)(27 instances)
+Flattening unmatched subcell sg13cmos5l_dfrbpq_1 in circuit heichips26_ook_top (1)(69 instances)
+Flattening unmatched subcell sg13cmos5l_buf_1 in circuit heichips26_ook_top (1)(62 instances)
+Flattening unmatched subcell sg13cmos5l_and3_1 in circuit heichips26_ook_top (1)(9 instances)
+Flattening unmatched subcell sg13cmos5l_dlygate4sd3_1 in circuit heichips26_ook_top (1)(83 instances)
+Flattening unmatched subcell sg13cmos5l_nor2b_1 in circuit heichips26_ook_top (1)(13 instances)
+Flattening unmatched subcell sg13cmos5l_xnor2_1 in circuit heichips26_ook_top (1)(34 instances)
+Flattening unmatched subcell sg13cmos5l_nand3_1 in circuit heichips26_ook_top (1)(17 instances)
+Flattening unmatched subcell sg13cmos5l_a22oi_1 in circuit heichips26_ook_top (1)(15 instances)
+Flattening unmatched subcell sg13cmos5l_decap_4 in circuit heichips26_ook_top (1)(40 instances)
+Flattening unmatched subcell sg13cmos5l_or3_1 in circuit heichips26_ook_top (1)(3 instances)
+Flattening unmatched subcell sg13cmos5l_a21o_1 in circuit heichips26_ook_top (1)(19 instances)
+Flattening unmatched subcell sg13cmos5l_nor4_1 in circuit heichips26_ook_top (1)(10 instances)
+Flattening unmatched subcell sg13cmos5l_xor2_1 in circuit heichips26_ook_top (1)(23 instances)
+Flattening unmatched subcell sg13cmos5l_nand3b_1 in circuit heichips26_ook_top (1)(4 instances)
+Flattening unmatched subcell sg13cmos5l_or2_1 in circuit heichips26_ook_top (1)(13 instances)
+Flattening unmatched subcell sg13cmos5l_mux2_1 in circuit heichips26_ook_top (1)(7 instances)
+Flattening unmatched subcell sg13cmos5l_inv_1 in circuit heichips26_ook_top (1)(35 instances)
+Flattening unmatched subcell sg13cmos5l_nand2b_1 in circuit heichips26_ook_top (1)(13 instances)
+Flattening unmatched subcell sg13cmos5l_or4_1 in circuit heichips26_ook_top (1)(2 instances)
+Flattening unmatched subcell sg13cmos5l_nand4_1 in circuit heichips26_ook_top (1)(2 instances)
+Flattening unmatched subcell ook_receiver in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell simple_comparator_stage in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell simple_comparator in circuit heichips26_ook_top (1)(4 instances)
+Flattening unmatched subcell lna_stage in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell lna in circuit heichips26_ook_top (1)(3 instances)
+Flattening unmatched subcell ook_digital_system in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_decap_8 in circuit heichips26_ook_top (1)(2388 instances)
+Flattening unmatched subcell sg13cmos5l_and2_1 in circuit heichips26_ook_top (1)(4 instances)
+Flattening unmatched subcell sg13cmos5l_fill_2 in circuit heichips26_ook_top (1)(51 instances)
+Flattening unmatched subcell sg13cmos5l_inv_1 in circuit heichips26_ook_top (1)(5 instances)
+Flattening unmatched subcell sg13cmos5l_dlygate4sd3_1 in circuit heichips26_ook_top (1)(15 instances)
+Flattening unmatched subcell sg13cmos5l_buf_1 in circuit heichips26_ook_top (1)(16 instances)
+Flattening unmatched subcell sg13cmos5l_fill_1 in circuit heichips26_ook_top (1)(39 instances)
+Flattening unmatched subcell sg13cmos5l_tiehi in circuit heichips26_ook_top (1)(17 instances)
+Flattening unmatched subcell sg13cmos5l_nor2b_1 in circuit heichips26_ook_top (1)(3 instances)
+Flattening unmatched subcell sg13cmos5l_decap_4 in circuit heichips26_ook_top (1)(34 instances)
+Flattening unmatched subcell sg13cmos5l_o21ai_1 in circuit heichips26_ook_top (1)(4 instances)
+Flattening unmatched subcell sg13cmos5l_buf_8 in circuit heichips26_ook_top (1)(8 instances)
+Flattening unmatched subcell sg13cmos5l_dfrbpq_1 in circuit heichips26_ook_top (1)(16 instances)
+Flattening unmatched subcell sg13cmos5l_tielo in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_nand3b_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_nand2b_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_xnor2_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_a21oi_1 in circuit heichips26_ook_top (1)(3 instances)
+Flattening unmatched subcell sg13cmos5l_a21o_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_nor4_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_nand2_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_nor2_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_or2_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_nand4_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_a221oi_1 in circuit heichips26_ook_top (1)(1 instance)
+Flattening unmatched subcell sg13cmos5l_nand3_1 in circuit heichips26_ook_top (1)(1 instance)
+
+Class heichips26_ook_top (0):  Merged 11191 parallel devices.
+Class heichips26_ook_top (1):  Merged 5164 parallel devices.
+Subcircuit summary:
+Circuit 1: heichips26_ook_top              |Circuit 2: heichips26_ook_top              
+-------------------------------------------|-------------------------------------------
+sg13_lv_pmos (9267->3782)                  |sg13_lv_pmos (6322->3782)                  
+sg13_lv_nmos (9182->3782)                  |sg13_lv_nmos (6322->3782)                  
+sg13_hv_nmos (234->86)                     |sg13_hv_nmos (153->86)                     
+sg13_hv_pmos (241->83)                     |sg13_hv_pmos (148->83)                     
+rhigh (35)                                 |rhigh (35)                                 
+rsil (1)                                   |rsil (1)                                   
+Number of devices: 7769                    |Number of devices: 7769                    
+Number of nets: 3885                       |Number of nets: 3885                       
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 41 symmetries with property errors.
+rsil:13489 vs. ook_analog_system:2/ook_transmitter:1/rsil:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rsil:13489 vs. ook_analog_system:2/ook_transmitter:1/rsil:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11663 vs. ook_analog_system:2/ook_transmitter:1/rhigh:R1:
+ l circuit1: 0.00018436   circuit2: 6.1395e-05   (delta=100%, cutoff=1%)
+rhigh:11663 vs. ook_analog_system:2/ook_transmitter:1/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11663 vs. ook_analog_system:2/ook_transmitter:1/rhigh:R1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:11663 vs. ook_analog_system:2/ook_transmitter:1/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11663 vs. ook_analog_system:2/ook_transmitter:1/rhigh:R1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:8927 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:8927 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:10072 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:10072 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:17912 vs. ook_analog_system:2/ook_transmitter:1/vco:1/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:17912 vs. ook_analog_system:2/ook_transmitter:1/vco:1/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:6773 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
+ l circuit1: 0.00012344   circuit2: 1.371e-05   (delta=160%, cutoff=1%)
+rhigh:6773 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:6773 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:6773 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:6773 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:5471 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
+ l circuit1: 0.00012344   circuit2: 1.371e-05   (delta=160%, cutoff=1%)
+rhigh:5471 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:5471 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:5471 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:5471 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:6501 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
+ l circuit1: 0.00012344   circuit2: 1.371e-05   (delta=160%, cutoff=1%)
+rhigh:6501 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:6501 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:6501 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:6501 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:2798 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
+ l circuit1: 0.00012344   circuit2: 1.371e-05   (delta=160%, cutoff=1%)
+rhigh:2798 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:2798 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:2798 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:2798 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:16854 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R4:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:16854 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R4:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11721 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R3:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11721 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R3:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:7833 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:7833 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/rhigh:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11648 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R2:
+ l circuit1: 4e-05   circuit2: 9.96e-06   (delta=120%, cutoff=1%)
+rhigh:11648 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11648 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R2:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:11648 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11648 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R2:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:3076 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R2:
+ l circuit1: 4e-05   circuit2: 9.96e-06   (delta=120%, cutoff=1%)
+rhigh:3076 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:3076 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R2:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:3076 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:3076 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R2:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:8546 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R2:
+ l circuit1: 4e-05   circuit2: 9.96e-06   (delta=120%, cutoff=1%)
+rhigh:8546 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:8546 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R2:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:8546 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R2:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:8546 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R2:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:17661 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R1:
+ l circuit1: 0.00020002   circuit2: 1.9995e-05   (delta=164%, cutoff=1%)
+rhigh:17661 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:17661 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:17661 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:17661 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12583 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R1:
+ l circuit1: 0.00020002   circuit2: 1.9995e-05   (delta=164%, cutoff=1%)
+rhigh:12583 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12583 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12583 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12583 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:16161 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R1:
+ l circuit1: 0.00020002   circuit2: 1.9995e-05   (delta=164%, cutoff=1%)
+rhigh:16161 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:16161 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:16161 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R1:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:16161 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R1:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:1293 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R6:
+ l circuit1: 0.00020002   circuit2: 1.9995e-05   (delta=164%, cutoff=1%)
+rhigh:1293 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R6:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:1293 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R6:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:1293 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R6:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:1293 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R6:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12768 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R6:
+ l circuit1: 0.00020002   circuit2: 1.9995e-05   (delta=164%, cutoff=1%)
+rhigh:12768 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R6:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12768 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R6:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12768 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R6:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12768 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R6:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:15393 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R6:
+ l circuit1: 0.00020002   circuit2: 1.9995e-05   (delta=164%, cutoff=1%)
+rhigh:15393 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R6:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:15393 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R6:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:15393 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R6:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:15393 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R6:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:5629 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R13:
+ l circuit1: 0.00024997   circuit2: 2.272e-05   (delta=167%, cutoff=1%)
+rhigh:5629 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R13:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:5629 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R13:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:5629 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R13:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:5629 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R13:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:3769 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R13:
+ l circuit1: 0.00024997   circuit2: 2.272e-05   (delta=167%, cutoff=1%)
+rhigh:3769 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R13:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:3769 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R13:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:3769 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R13:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:3769 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R13:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:793 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R13:
+ l circuit1: 0.00024997   circuit2: 2.272e-05   (delta=167%, cutoff=1%)
+rhigh:793 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R13:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:793 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R13:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:793 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R13:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:793 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R13:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:7610 vs. ook_analog_system:2/ook_receiver:2/rhigh:R3:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:7610 vs. ook_analog_system:2/ook_receiver:2/rhigh:R3:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:7610 vs. ook_analog_system:2/ook_receiver:2/rhigh:R3:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:7610 vs. ook_analog_system:2/ook_receiver:2/rhigh:R3:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:7574 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R4:
+ l circuit1: 1.502e-05   circuit2: 4.95e-06   (delta=101%, cutoff=1%)
+rhigh:7574 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R4:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:7574 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R4:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:7574 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R4:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:7574 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R4:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:9210 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R4:
+ l circuit1: 1.502e-05   circuit2: 4.95e-06   (delta=101%, cutoff=1%)
+rhigh:9210 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R4:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:9210 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R4:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:9210 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R4:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:9210 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R4:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12782 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R4:
+ l circuit1: 1.502e-05   circuit2: 4.95e-06   (delta=101%, cutoff=1%)
+rhigh:12782 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R4:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12782 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R4:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12782 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R4:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12782 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R4:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:13832 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
+ l circuit1: 0.0001483   circuit2: 9.27e-06   (delta=176%, cutoff=1%)
+rhigh:13832 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:13832 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:13832 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:13832 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12354 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
+ l circuit1: 0.0001483   circuit2: 9.27e-06   (delta=176%, cutoff=1%)
+rhigh:12354 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12354 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12354 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12354 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:11143 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
+ l circuit1: 0.0001483   circuit2: 9.27e-06   (delta=176%, cutoff=1%)
+rhigh:11143 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11143 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:11143 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:11143 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:5153 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
+ l circuit1: 0.0001483   circuit2: 9.27e-06   (delta=176%, cutoff=1%)
+rhigh:5153 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:5153 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:5153 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:5153 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/rhigh:RBIAS:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12488 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R5:
+ l circuit1: 1.502e-05   circuit2: 4.95e-06   (delta=101%, cutoff=1%)
+rhigh:12488 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12488 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:12488 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:12488 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:10561 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R5:
+ l circuit1: 1.502e-05   circuit2: 4.95e-06   (delta=101%, cutoff=1%)
+rhigh:10561 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:10561 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:10561 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:10561 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:2982 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R5:
+ l circuit1: 1.502e-05   circuit2: 4.95e-06   (delta=101%, cutoff=1%)
+rhigh:2982 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:2982 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:2982 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:2982 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:1356 vs. ook_analog_system:2/ook_receiver:2/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:1356 vs. ook_analog_system:2/ook_receiver:2/rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:1356 vs. ook_analog_system:2/ook_receiver:2/rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:1356 vs. ook_analog_system:2/ook_receiver:2/rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+sg13_hv_pmos:969 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:969 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:969 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10649 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10763 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M3P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10763 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M3P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14951 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:M3P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14951 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:M3P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:13080 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M3P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:13080 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M3P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:6779 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M3P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:6779 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M3P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:750 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M1P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:11433 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:M1P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10235 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M1P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3324 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M1P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1372 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M2P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1229 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:M2P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1351 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M2P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:138 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M2P:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5302 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5302 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14371 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14371 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:11683 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:11683 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:13708 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:13708 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9720 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9720 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:18933 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:18933 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2600 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2600 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1904 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1904 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5893 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:8741 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1662 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4348 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14160 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14160 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12278 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12278 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:6955 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:6955 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:8318 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:8318 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14144 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14144 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10382 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10382 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4180 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4180 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2251 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2251 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12491 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12491 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:7418 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:7418 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1497 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1497 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14369 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:14369 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9737 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9737 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:7776 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:7776 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:18705 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:18705 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1088 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1088 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5095 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:15531 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:15531 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3166 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3166 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9905 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9905 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3180 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M23:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2186 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M23:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1911 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M23:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:611 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:759 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:699 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10076 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10076 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10076 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10076 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3182 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3182 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3182 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3182 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2096 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2096 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2096 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2096 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3540 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3540 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9724 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9724 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2916 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2916 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4662 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4341 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2759 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2647 vs. ook_analog_system:2/ook_receiver:2/sg13_hv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2296 vs. ook_analog_system:2/ook_receiver:2/sg13_hv_pmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:15606 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:15606 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12666 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12666 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1642 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1642 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4336 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4336 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MBIAS:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:3578 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M22:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1296 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M22:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:249 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M22:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:16739 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:16739 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:7499 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:7499 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12023 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12023 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5727 vs. ook_analog_system:2/ook_receiver:2/sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5727 vs. ook_analog_system:2/ook_receiver:2/sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5407 vs. ook_analog_system:2/ook_receiver:2/sg13_hv_pmos:M27:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5407 vs. ook_analog_system:2/ook_receiver:2/sg13_hv_pmos:M27:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12071 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:12071 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10136 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:10136 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4276 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4276 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:17533 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:17533 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_pmos:MBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:7479 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:7479 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_pmos:MBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5622 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:5622 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_pmos:MBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2387 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2387 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_pmos:MBIAS1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:868 vs. ook_analog_system:2/ook_receiver:2/sg13_hv_pmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:663 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:663 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:663 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:663 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:7357 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:7357 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3428 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3428 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1523 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1523 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:865 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:865 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:15517 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:15517 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:12421 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:12421 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14137 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14137 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1898 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1898 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1542 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1542 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:8751 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:8751 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:7040 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:7040 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:10218 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:10218 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14241 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14241 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2297 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2297 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:465 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:465 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:13336 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:13336 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:8118 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:8118 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6234 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6234 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4538 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4538 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:117 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:117 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:17160 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:17160 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:15301 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:15301 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14650 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14650 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6980 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6980 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4736 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:M5N:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2039 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:M5N:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1022 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:M5N:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:8956 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:M5N:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5014 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:M4N:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3127 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:M4N:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2206 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:M4N:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:845 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:M4N:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:10947 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3177 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M14:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3263 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M14:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1276 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M14:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:546 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M15:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1446 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M15:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:314 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M15:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:16985 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:16985 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:17102 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:17102 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:9350 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:9350 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5085 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5085 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:10930 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:10930 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3143 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3143 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2248 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M21:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1799 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M21:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:823 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M21:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:12454 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:12454 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:15202 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:15202 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3882 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3882 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6460 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M16:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14060 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M16:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2324 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M16:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4533 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6169 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1559 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4098 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4098 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2162 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2162 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:8841 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:8841 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:11594 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:11594 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:17119 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:17119 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1575 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1575 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5272 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5272 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5272 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5272 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5251 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5251 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5251 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5251 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1776 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1776 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1776 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1776 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4110 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4110 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4110 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4110 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2172 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2172 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2172 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:2172 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:658 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:658 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:658 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:658 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:11883 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:11883 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:4/sg13_hv_nmos:MN6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:11834 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:11834 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:2/sg13_hv_nmos:MN6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14536 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14536 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:1/sg13_hv_nmos:MN6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5878 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:5878 vs. ook_analog_system:2/ook_receiver:2/simple_comparator_stage:2/simple_comparator:3/sg13_hv_nmos:MN6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:14513 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M38:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:13454 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M38:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1071 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M38:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:16016 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M41:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:16016 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M41:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6469 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M41:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6469 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M41:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:10987 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M41:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:10987 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M41:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:17307 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:17307 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:13862 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:13862 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3303 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3303 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:8997 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:8997 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:2/sg13_hv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1269 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1269 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:1/sg13_hv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6022 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:6022 vs. ook_analog_system:2/ook_receiver:2/lna_stage:1/lna:3/sg13_hv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:2178 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:7384 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:3823 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:120 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M16:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:1970 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:5273 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M21:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:5273 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M21:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:351 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:351 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:351 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:351 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:351 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:10626 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M22:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:10626 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M22:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:9431 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:9431 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:9431 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:9431 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:8442 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:8442 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:8442 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:8442 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:6015 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:6015 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:6015 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:6015 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M33:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:180 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:4536 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:17027 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:8736 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M44:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:8736 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M44:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:5848 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:4060 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:4060 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:15998 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:15998 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:12523 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M42:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:12523 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M42:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:12485 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M43:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:12485 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M43:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:4064 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M52:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:4064 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M52:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:17832 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:17832 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:3292 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:760 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:2606 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:3398 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:1470 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M14:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:560 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_nmos:M13:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:62 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:1406 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:294 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:1632 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:882 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M15:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:364 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:279 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:279 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:279 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:279 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:279 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:279 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:279 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:279 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:279 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3962 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3962 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3584 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M32:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3584 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M32:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3584 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M32:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3584 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M32:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3199 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3199 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3199 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3199 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:622 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:622 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:622 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:622 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:2473 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:4192 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:146 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M11:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:8680 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:8680 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:13751 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11266 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:10638 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:10638 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:6340 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M47:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:6340 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M47:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11708 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M45:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11708 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M45:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:10009 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M46:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:10009 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M46:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:6157 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M53:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:6157 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M53:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3097 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3097 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:18335 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:18335 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:2704 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:1462 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3444 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:3232 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M10:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:867 vs. ook_analog_system:2/ook_transmitter:1/vco:1/sg13_lv_pmos:M11:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:251 vs. ook_analog_system:2/ook_transmitter:1/output_buffer:2/sg13_lv_pmos:M1:
+Property mm_ok in circuit2 has no matching property in circuit1
+
+Subcircuit pins:
+Circuit 1: heichips26_ook_top              |Circuit 2: heichips26_ook_top              
+-------------------------------------------|-------------------------------------------
+in_tieoff                                  |in_tieoff                                  
+in_tieon                                   |in_tieon                                   
+VAPWR                                      |VAPWR                                      
+q3                                         |q3                                         
+q0                                         |q0                                         
+q2                                         |q2                                         
+q1                                         |q1                                         
+clk                                        |clk                                        
+rst_n                                      |rst_n                                      
+vctrl_in                                   |vctrl_in                                   
+vctrl_b_in                                 |vctrl_b_in                                 
+clk_ref                                    |clk_ref                                    
+analog_2                                   |analog_2                                   
+rst_n_in                                   |rst_n_in                                   
+data_in_tx                                 |data_in_tx                                 
+q2_d                                       |q2_d                                       
+q3_d                                       |q3_d                                       
+q0_d                                       |q0_d                                       
+q1_d                                       |q1_d                                       
+analog_0                                   |analog_0                                   
+analog_1                                   |analog_1                                   
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes heichips26_ook_top and heichips26_ook_top are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ heichips26_ook_top

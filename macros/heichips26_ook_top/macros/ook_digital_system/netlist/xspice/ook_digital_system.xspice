@@ -1,0 +1,231 @@
+* XSpice netlist created from SPICE and liberty sources by spi2xspice.py
+* NGSPICE file created from ook_digital_system.ext - technology: ihp-sg13cmos5l
+* Black-box entry subcircuit for sg13cmos5l_decap_8 abstract view
+* Black-box entry subcircuit for sg13cmos5l_and2_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_fill_2 abstract view
+* Black-box entry subcircuit for sg13cmos5l_inv_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_dlygate4sd3_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_buf_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_fill_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_tiehi abstract view
+* Black-box entry subcircuit for sg13cmos5l_nor2b_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_decap_4 abstract view
+* Black-box entry subcircuit for sg13cmos5l_o21ai_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_buf_8 abstract view
+* Black-box entry subcircuit for sg13cmos5l_dfrbpq_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_tielo abstract view
+* Black-box entry subcircuit for sg13cmos5l_nand3b_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_nand2b_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_xnor2_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_a21oi_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_a21o_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_nor4_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_nand2_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_nor2_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_or2_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_nand4_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_a221oi_1 abstract view
+* Black-box entry subcircuit for sg13cmos5l_nand3_1 abstract view
+.subckt ook_digital_system a_VGND a_VPWR a_clk a_clk_ref a_data_in_tx
++ a_in_tieoff a_in_tieon a_q0 a_q0_d a_q1 a_q1_d a_q2 a_q2_d a_q3 a_q3_d a_rst
++ a_rst_n_in a_vctrl a_vctrl_n
+A_062_ [_062_/A _076_/Q] _062_/X d_lut_sg13cmos5l_and2_1
+A_045_ [_066_/A] _045_/Y d_lut_sg13cmos5l_inv_1
+Ahold41 [_078_/Q] _066_/A d_lut_sg13cmos5l_dlygate4sd3_1
+Aoutput7 [output7/A] clk_ref d_lut_sg13cmos5l_buf_1
+A_083__17 _083__17/L_HI done
+A_061_ [_061_/A _059_/Y] _076_/D d_lut_sg13cmos5l_nor2b_1
+A_044_ [_044_/A] _052_/A d_lut_sg13cmos5l_inv_1
+Ahold42 [_069_/Y] _078_/D d_lut_sg13cmos5l_dlygate4sd3_1
+Aoutput8 [_089_/Q] q0_d d_lut_sg13cmos5l_buf_1
+Aoutput10 [_085_/Q] q2_d d_lut_sg13cmos5l_buf_1
+A_077__26 _077__26/L_HI done
+A_060_ [_059_/C _075_/Q _073_/A] _060_/Y d_lut_sg13cmos5l_o21ai_1
+Ahold32 [_084_/Q] _085_/D d_lut_sg13cmos5l_dlygate4sd3_1
+Ahold43 [_077_/Q] _062_/A d_lut_sg13cmos5l_dlygate4sd3_1
+Aoutput9 [_087_/Q] q1_d d_lut_sg13cmos5l_buf_1
+Aoutput11 [_083_/Q] q3_d d_lut_sg13cmos5l_buf_1
+Ahold44 [_065_/Y] _077_/D d_lut_sg13cmos5l_dlygate4sd3_1
+Ahold33 [_088_/Q] _089_/D d_lut_sg13cmos5l_dlygate4sd3_1
+Aoutput12 [output12/A] rst d_lut_sg13cmos5l_buf_1
+Ahold34 [_086_/Q] _087_/D d_lut_sg13cmos5l_dlygate4sd3_1
+Ahold45 [_076_/Q] _059_/C d_lut_sg13cmos5l_dlygate4sd3_1
+Aoutput13 [_049_/Y] vctrl d_lut_sg13cmos5l_buf_1
+Ahold35 [_082_/Q] _083_/D d_lut_sg13cmos5l_dlygate4sd3_1
+Ahold46 [_060_/Y] _061_/A d_lut_sg13cmos5l_dlygate4sd3_1
+Aoutput14 [_050_/Y] vctrl_n d_lut_sg13cmos5l_buf_1
+A_089__16 _089__16/L_HI done
+Aook_digital_system_31 in_tieon done
+Ahold36 [_079_/Q] _044_/A d_lut_sg13cmos5l_dlygate4sd3_1
+A_082__23 _082__23/L_HI done
+Ahold37 [_071_/Y] _079_/D d_lut_sg13cmos5l_dlygate4sd3_1
+Aclkbuf_0_clk [clk] clkbuf_0_clk/X d_lut_sg13cmos5l_buf_8
+Ahold38 [_080_/Q] _073_/B d_lut_sg13cmos5l_dlygate4sd3_1
+Aclkbuf_regs_0_clk [clk] clkbuf_regs_0_clk/X d_lut_sg13cmos5l_buf_8
+A_088__30 _088__30/L_HI done
+Ahold39 [_081_/Q] _055_/B d_lut_sg13cmos5l_dlygate4sd3_1
+Artl_buf_rst [_073_/A] output12/A d_lut_sg13cmos5l_buf_1
+A_079_ _079_/D _085_/CLK NULL ~_079__15/L_HI _079_/Q NULL ddflop
+A_078_ _078_/D _089_/CLK NULL ~_078__24/L_HI _078_/Q NULL ddflop
+Aook_digital_system in_tieoff dzero
+A_077_ _077_/D _077_/CLK NULL ~_077__26/L_HI _077_/Q NULL ddflop
+Ainput1 [data_in_tx] _072_/B d_lut_sg13cmos5l_buf_1
+A_076_ _076_/D _077_/CLK NULL ~_076__28/L_HI _076_/Q NULL ddflop
+A_059_ [_057_/A _063_/C _059_/C] _059_/Y d_lut_sg13cmos5l_nand3b_1
+Artl_buf_clk [rtl_buf_clk/A] output7/A d_lut_sg13cmos5l_buf_1
+Ainput2 [q0] _088_/D d_lut_sg13cmos5l_buf_1
+A_075_ _075_/D _077_/CLK NULL ~_075__29/L_HI _075_/Q NULL ddflop
+A_058_ [_073_/A _058_/B] _075_/D d_lut_sg13cmos5l_and2_1
+Ainput3 [q1] _086_/D d_lut_sg13cmos5l_buf_1
+A_074_ _074_/D _077_/CLK NULL ~_074__22/L_HI _074_/Q NULL ddflop
+A_057_ [_057_/A _063_/C] _058_/B d_lut_sg13cmos5l_nor2b_1
+A_076__28 _076__28/L_HI done
+Ainput4 [q2] _084_/D d_lut_sg13cmos5l_buf_1
+Aclkbuf_2_3__f_clk_regs [clkbuf_0_clk_regs/X] _089_/CLK d_lut_sg13cmos5l_buf_8
+A_073_ [_073_/A _073_/B] _081_/D d_lut_sg13cmos5l_and2_1
+A_056_ [_075_/Q _056_/B] _063_/C d_lut_sg13cmos5l_nand2b_1
+A_079__15 _079__15/L_HI done
+Aclkbuf_2_2__f_clk_regs [clkbuf_0_clk_regs/X] _086_/CLK d_lut_sg13cmos5l_buf_8
+Ainput5 [q3] _082_/D d_lut_sg13cmos5l_buf_1
+A_072_ [_073_/A _072_/B] _080_/D d_lut_sg13cmos5l_and2_1
+A_055_ [_074_/Q _055_/B] _056_/B d_lut_sg13cmos5l_xnor2_1
+A_085__19 _085__19/L_HI done
+Aclkbuf_2_1__f_clk_regs [clkbuf_0_clk_regs/X] _077_/CLK d_lut_sg13cmos5l_buf_8
+Ainput6 [rst_n_in] _073_/A d_lut_sg13cmos5l_buf_1
+A_071_ [_044_/A _068_/B _070_/X] _071_/Y d_lut_sg13cmos5l_a21oi_1
+A_054_ [_047_/Y _057_/A _053_/Y] _054_/Y d_lut_sg13cmos5l_a21oi_1
+Aclkbuf_2_0__f_clk_regs [clkbuf_0_clk_regs/X] _085_/CLK d_lut_sg13cmos5l_buf_8
+A_070_ [_052_/A _066_/Y _068_/A] _070_/X d_lut_sg13cmos5l_a21o_1
+A_053_ [_074_/Q _057_/A _073_/A] _053_/Y d_lut_sg13cmos5l_o21ai_1
+A_052_ [_052_/A _066_/A _062_/A _052_/D] _057_/A d_lut_sg13cmos5l_nor4_1
+Aclkbuf_1_0__f_clk [clkbuf_0_clk/X] rtl_buf_clk/A d_lut_sg13cmos5l_buf_8
+A_051_ [_076_/Q _075_/Q] _052_/D d_lut_sg13cmos5l_nand2_1
+A_050_ [_074_/Q _075_/Q] _050_/Y d_lut_sg13cmos5l_nor2_1
+A_087__21 _087__21/L_HI done
+A_081__27 _081__27/L_HI done
+Aclkbuf_0_clk_regs [clkbuf_regs_0_clk/X] clkbuf_0_clk_regs/X d_lut_sg13cmos5l_buf_8
+A_078__24 _078__24/L_HI done
+A_089_ _089_/D _089_/CLK NULL ~_089__16/L_HI _089_/Q NULL ddflop
+A_088_ _088_/D _089_/CLK NULL ~_088__30/L_HI _088_/Q NULL ddflop
+A_084__18 _084__18/L_HI done
+A_075__29 _075__29/L_HI done
+A_087_ _087_/D _089_/CLK NULL ~_087__21/L_HI _087_/Q NULL ddflop
+A_086_ _086_/D _086_/CLK NULL ~_086__20/L_HI _086_/Q NULL ddflop
+A_069_ [_045_/Y _063_/Y _068_/X] _069_/Y d_lut_sg13cmos5l_a21oi_1
+A_085_ _085_/D _085_/CLK NULL ~_085__19/L_HI _085_/Q NULL ddflop
+A_068_ [_068_/A _068_/B] _068_/X d_lut_sg13cmos5l_or2_1
+A_084_ _084_/D _085_/CLK NULL ~_084__18/L_HI _084_/Q NULL ddflop
+A_074__22 _074__22/L_HI done
+A_067_ [_075_/Q _056_/B _066_/Y] _068_/B d_lut_sg13cmos5l_o21ai_1
+A_080__25 _080__25/L_HI done
+A_083_ _083_/D _086_/CLK NULL ~_083__17/L_HI _083_/Q NULL ddflop
+A_086__20 _086__20/L_HI done
+A_066_ [_066_/A _077_/Q _076_/Q _075_/Q] _066_/Y d_lut_sg13cmos5l_nand4_1
+A_049_ [_075_/Q _074_/Q] _049_/Y d_lut_sg13cmos5l_nor2b_1
+A_082_ _082_/D _086_/CLK NULL ~_082__23/L_HI _082_/Q NULL ddflop
+A_065_ [_046_/Y _059_/Y _062_/X _058_/B _064_/Y] _065_/Y d_lut_sg13cmos5l_a221oi_1
+A_048_ [_073_/A] _068_/A d_lut_sg13cmos5l_inv_1
+A_081_ _081_/D _085_/CLK NULL ~_081__27/L_HI _081_/Q NULL ddflop
+A_064_ [_075_/Q _056_/B _073_/A] _064_/Y d_lut_sg13cmos5l_o21ai_1
+A_047_ [_055_/B] _047_/Y d_lut_sg13cmos5l_inv_1
+A_080_ _080_/D _086_/CLK NULL ~_080__25/L_HI _080_/Q NULL ddflop
+A_063_ [_077_/Q _076_/Q _063_/C] _063_/Y d_lut_sg13cmos5l_nand3_1
+A_046_ [_062_/A] _046_/Y d_lut_sg13cmos5l_inv_1
+Ahold40 [_054_/Y] _074_/D d_lut_sg13cmos5l_dlygate4sd3_1
+
+.model todig_1v2 adc_bridge(in_high=0.7999999999999999 in_low=0.39999999999999997 rise_delay=500p fall_delay=500p)
+.model toana_1v2 dac_bridge(out_high=1.2 out_low=0)
+
+.model ddflop d_dff(ic=0 rise_delay=50p fall_delay=50p)
+.model dlatch d_dlatch(ic=0 rise_delay=50p fall_delay=50p)
+.model dzero d_pulldown(load=250f)
+.model done d_pullup(load=250f)
+
+AA2D1 [a_VGND] [dig_VGND] todig_1v2
+AA2D2 [a_VPWR] [dig_VPWR] todig_1v2
+AA2D3 [a_clk] [clk] todig_1v2
+AD2A1 [clk_ref] [a_clk_ref] toana_1v2
+AA2D4 [a_data_in_tx] [data_in_tx] todig_1v2
+AD2A2 [in_tieoff] [a_in_tieoff] toana_1v2
+AD2A3 [in_tieon] [a_in_tieon] toana_1v2
+AA2D5 [a_q0] [q0] todig_1v2
+AD2A4 [q0_d] [a_q0_d] toana_1v2
+AA2D6 [a_q1] [q1] todig_1v2
+AD2A5 [q1_d] [a_q1_d] toana_1v2
+AA2D7 [a_q2] [q2] todig_1v2
+AD2A6 [q2_d] [a_q2_d] toana_1v2
+AA2D8 [a_q3] [q3] todig_1v2
+AD2A7 [q3_d] [a_q3_d] toana_1v2
+AD2A8 [rst] [a_rst] toana_1v2
+AA2D9 [a_rst_n_in] [rst_n_in] todig_1v2
+AD2A9 [vctrl] [a_vctrl] toana_1v2
+AD2A10 [vctrl_n] [a_vctrl_n] toana_1v2
+
+.ends
+
+
+* sg13cmos5l_decap_8 (no function)
+* sg13cmos5l_and2_1 (A*B)
+.model d_lut_sg13cmos5l_and2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0001")
+* sg13cmos5l_fill_2 (no function)
+* sg13cmos5l_inv_1 !(A)
+.model d_lut_sg13cmos5l_inv_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "10")
+* sg13cmos5l_dlygate4sd3_1 A
+.model d_lut_sg13cmos5l_dlygate4sd3_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01")
+* sg13cmos5l_buf_1 A
+.model d_lut_sg13cmos5l_buf_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01")
+* sg13cmos5l_fill_1 (no function)
+* sg13cmos5l_tiehi 1
+* sg13cmos5l_nor2b_1 !(A+!B_N)
+.model d_lut_sg13cmos5l_nor2b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0010")
+* sg13cmos5l_decap_4 (no function)
+* sg13cmos5l_o21ai_1 !((A1+A2)*B1)
+.model d_lut_sg13cmos5l_o21ai_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111000")
+* sg13cmos5l_buf_8 A
+.model d_lut_sg13cmos5l_buf_8 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01")
+* sg13cmos5l_dfrbpq_1 IQ
+* sg13cmos5l_tielo 0
+* sg13cmos5l_nand3b_1 !(!A_N*B*C)
+.model d_lut_sg13cmos5l_nand3b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111101")
+* sg13cmos5l_nand2b_1 !(!A_N*B)
+.model d_lut_sg13cmos5l_nand2b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1101")
+* sg13cmos5l_xnor2_1 !(A^B)
+.model d_lut_sg13cmos5l_xnor2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1001")
+* sg13cmos5l_a21oi_1 !((A1*A2)+B1)
+.model d_lut_sg13cmos5l_a21oi_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11100000")
+* sg13cmos5l_a21o_1 ((A1*A2)+B1)
+.model d_lut_sg13cmos5l_a21o_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00011111")
+* sg13cmos5l_nor4_1 !(A+B+C+D)
+.model d_lut_sg13cmos5l_nor4_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000000000000000")
+* sg13cmos5l_nand2_1 !(A*B)
+.model d_lut_sg13cmos5l_nand2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1110")
+* sg13cmos5l_nor2_1 !(A+B)
+.model d_lut_sg13cmos5l_nor2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000")
+* sg13cmos5l_or2_1 (A+B)
+.model d_lut_sg13cmos5l_or2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0111")
+* sg13cmos5l_nand4_1 !(A*B*C*D)
+.model d_lut_sg13cmos5l_nand4_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111111111111110")
+* sg13cmos5l_a221oi_1 !((A1*A2)+(B1*B2)+C1)
+.model d_lut_sg13cmos5l_a221oi_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11101110111000000000000000000000")
+* sg13cmos5l_nand3_1 !(A*B*C)
+.model d_lut_sg13cmos5l_nand3_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111110")
+.end

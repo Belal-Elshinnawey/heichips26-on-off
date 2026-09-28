@@ -1,0 +1,40 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/schematic/xschem/simple_comparator.sch
+**.subckt simple_comparator VDDL VSS VDD vref vin comp_out
+*.ipin vin
+*.ipin vref
+*.iopin VDD
+*.iopin VSS
+*.opin comp_out
+*.iopin VDDL
+XMBIAS vbias vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XRBIAS vbias VSS VSS rhigh w=2e-6 l=9.27e-6 m=1 b=15 ps=0.18e-6 mm_ok=1
+XM3P net4 vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM1P outn vin net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=4 mm_ok=1
+XM2P net1 vref net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=4 mm_ok=1
+XM4N outn outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=4 mm_ok=1
+XM5N net1 outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=4 mm_ok=1
+XMP1 net2 net1 VDD VDD sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMN1 net2 net1 net3 VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMP2 comp_out net2 VDDL VDDL sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMBIAS1 vbias vbias vbias VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XMBIAS2 VDD VDD VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM1 VDD VDD VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM2 net4 net4 net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XMP3 net2 net2 net2 VDD sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMP6 comp_out comp_out comp_out VDDL sg13_hv_pmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMN3 comp_out comp_out comp_out VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMN4 VSS VSS VSS VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMN5 net2 net2 net2 VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
+XMN6 net3 net3 net3 VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
+XM3 net4 net4 net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM4 outn outn outn VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM5 net1 net1 net1 VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM6 VSS VSS VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM7 net4 net4 net4 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM8 net1 net1 net1 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM9 outn outn outn VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM10 VSS VSS VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XRBIAS1 net3 VSS VSS rhigh w=2e-6 l=13.71e-6 m=1 b=8 ps=0.18e-6 mm_ok=1
+XMN8 comp_out net2 VSS VSS sg13_hv_nmos w=2u l=4u ng=1 m=1 mm_ok=1
+**.ends
+.end

@@ -1,0 +1,39 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/testbenches/xschem/dac_tb_tran.sch
+**.subckt dac_tb_tran vout
+*.iopin vout
+VCLKREF CLK_REF GND PULSE(0 {VDD} 0 0.5n 0.5n {0.5/FREQ_REF} {1/FREQ_REF})
+VDDSRC VDD GND {VDD}
+x4 CLK_FB VDD VDD net1 vout GND GND output_buffer_pex
+x1 net1 VDD GND vcl vco_pex
+VDDSRC1 VDD2 GND {2}
+x7 GND VDD CLK_FB CLK_REF net2 VDD GND net3 VDD net4 dac
+R1 vcl net2 250k
+C1 vcl GND 12p
+**** begin user architecture code
+
+
+.param VDD=1.5
+.param FREQ_REF=80e6
+.options klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-9 rshunt=1e12
+.save vout CLK_FB vcl
+.tran 100p 150u 0 100p
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/dac/netlist/xspice/dac.xspice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/vco_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/output_buffer_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.tech/ngspice/models/cap_mfringe.lib
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VDD2
+.end

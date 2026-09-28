@@ -1,0 +1,14 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/pfd.sch
+**.subckt pfd CLK_REF UP DN CLK_FB VDD VSS
+*.iopin VDD
+*.iopin VSS
+*.ipin CLK_REF
+*.ipin CLK_FB
+*.iopin DN
+*.iopin UP
+x1 net1 UP CLK_REF VDD RESET_N VDD VSS sg13cmos5l_dfrbp_1
+x2 DN net2 CLK_FB VDD RESET_N VDD VSS sg13cmos5l_dfrbp_1
+* noconn #net2
+x3 RESET_N DN net1 VDD VSS sg13cmos5l_nand2_1
+**.ends
+.end

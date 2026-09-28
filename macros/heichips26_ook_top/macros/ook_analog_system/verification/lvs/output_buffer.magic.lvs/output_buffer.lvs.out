@@ -1,0 +1,132 @@
+
+Circuit 1 cell sg13_lv_pmos and Circuit 2 cell sg13_lv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_pmos                    |Circuit 2: sg13_lv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
+
+Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_nmos                    |Circuit 2: sg13_lv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_nmos and sg13_lv_nmos are equivalent.
+
+Class output_buffer (0):  Merged 144 parallel devices.
+Class output_buffer (1):  Merged 9 parallel devices.
+Subcircuit summary:
+Circuit 1: output_buffer                   |Circuit 2: output_buffer                   
+-------------------------------------------|-------------------------------------------
+sg13_lv_pmos (110->11)                     |sg13_lv_pmos (15->11)                      
+sg13_lv_nmos (55->10)                      |sg13_lv_nmos (15->10)                      
+Number of devices: 21                      |Number of devices: 21                      
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sg13_lv_nmos:1 vs. sg13_lv_nmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:35 vs. sg13_lv_nmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:13 vs. sg13_lv_nmos:M2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:10 vs. sg13_lv_nmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:43 vs. sg13_lv_nmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:86 vs. sg13_lv_nmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:86 vs. sg13_lv_nmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:86 vs. sg13_lv_nmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:86 vs. sg13_lv_nmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:86 vs. sg13_lv_nmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:69 vs. sg13_lv_nmos:M26:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:34 vs. sg13_lv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:34 vs. sg13_lv_nmos:M31:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:18 vs. sg13_lv_nmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:105 vs. sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_nmos:105 vs. sg13_lv_nmos:M35:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:9 vs. sg13_lv_pmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:4 vs. sg13_lv_pmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:0 vs. sg13_lv_pmos:M1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:8 vs. sg13_lv_pmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:6 vs. sg13_lv_pmos:M11:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11 vs. sg13_lv_pmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11 vs. sg13_lv_pmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11 vs. sg13_lv_pmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11 vs. sg13_lv_pmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11 vs. sg13_lv_pmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:11 vs. sg13_lv_pmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:96 vs. sg13_lv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:96 vs. sg13_lv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:5 vs. sg13_lv_pmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:46 vs. sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:46 vs. sg13_lv_pmos:M30:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:24 vs. sg13_lv_pmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:122 vs. sg13_lv_pmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_lv_pmos:122 vs. sg13_lv_pmos:M34:
+Property mm_ok in circuit2 has no matching property in circuit1
+
+Subcircuit pins:
+Circuit 1: output_buffer                   |Circuit 2: output_buffer                   
+-------------------------------------------|-------------------------------------------
+vin                                        |vin                                        
+vctrl_b                                    |vctrl_b                                    
+vctrl                                      |vctrl                                      
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+vout_fb                                    |vout_fb                                    
+vout                                       |vout                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes output_buffer and output_buffer are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ output_buffer

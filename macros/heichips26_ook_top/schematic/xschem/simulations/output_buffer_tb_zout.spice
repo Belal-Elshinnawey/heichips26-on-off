@@ -1,0 +1,67 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/testbenches/xschem/output_buffer_tb_zout.sch
+**.subckt output_buffer_tb_zout
+VDD VDD GND {VDD}
+* noconn #net1
+IAC_PROBE vout GND ac 1
+RBIAS vout GND 10meg
+L1 net2 net3 58n
+C3 net2 GND 1.8p
+x2 net1 VDD VDD VDD net4 GND GND output_buffer_pex
+x1 GND VDD GND VDD net2 net4 sg13cmos5l_IOPadAnalog
+L8 net3 net5 2.75u
+C1 vout net5 48f
+C2 GND vout 0.89n
+L11 vout GND 151p
+**** begin user architecture code
+
+
+.param VDD=1.5
+.csparam VDD=VDD
+.param temp=27
+.options savecurrents reltol=1e-3 abstol=1e-12 gmin=1e-9 trtol=25 itl1=200 itl4=50 rshunt=1e9
+.control
+
+shell rm -f output_buffer_tb_zout.raw
+shell rm -f ../plot_simulations/data/output_buffer_tb_zout.txt
+shell rm -f ../plot_simulations/data/output_buffer_tb_zout_433p92MHz.txt
+
+save all
+set wr_vecnames
+set wr_singlescale
+
+op
+write output_buffer_tb_zout.raw
+set appendwrite
+ac lin 200 200e6 600e6
+write output_buffer_tb_zout.raw
+let zout = -v(vout)
+print zout[0]
+plot real(zout) imag(zout) xlimit 200e6 600e6
+wrdata ../plot_simulations/data/output_buffer_tb_zout.txt mag(zout) phase(zout) real(zout) imag(zout)
+
+ac lin 1 433.92meg 433.92meg
+write output_buffer_tb_zout.raw
+let zout_433 = -v(vout)
+print zout_433
+wrdata ../plot_simulations/data/output_buffer_tb_zout_433p92MHz.txt mag(zout_433) phase(zout_433) real(zout_433) imag(zout_433)
+
+unset appendwrite
+
+*quit
+.endc
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/output_buffer_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.ref/sg13cmos5l_io/spice/sg13cmos5l_io.spi
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

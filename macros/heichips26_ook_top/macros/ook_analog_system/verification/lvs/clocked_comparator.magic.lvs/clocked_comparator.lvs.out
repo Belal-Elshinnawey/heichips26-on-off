@@ -1,0 +1,222 @@
+
+Circuit 1 cell sg13_hv_nmos and Circuit 2 cell sg13_hv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_nmos                    |Circuit 2: sg13_hv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_nmos and sg13_hv_nmos are equivalent.
+
+Circuit 1 cell sg13_hv_pmos and Circuit 2 cell sg13_hv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_pmos                    |Circuit 2: sg13_hv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_pmos and sg13_hv_pmos are equivalent.
+
+Class clocked_comparator (0):  Merged 42 parallel devices.
+Class clocked_comparator (1):  Merged 20 parallel devices.
+Subcircuit summary:
+Circuit 1: clocked_comparator              |Circuit 2: clocked_comparator              
+-------------------------------------------|-------------------------------------------
+sg13_hv_nmos (44->20)                      |sg13_hv_nmos (33->20)                      
+sg13_hv_pmos (41->23)                      |sg13_hv_pmos (30->23)                      
+Number of devices: 43                      |Number of devices: 43                      
+Number of nets: 16                         |Number of nets: 16                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+sg13_hv_pmos:43 vs. sg13_hv_pmos:MT:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:43 vs. sg13_hv_pmos:MT:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:76 vs. sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:76 vs. sg13_hv_pmos:M8:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:63 vs. sg13_hv_pmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:63 vs. sg13_hv_pmos:M5:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:20 vs. sg13_hv_pmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:20 vs. sg13_hv_pmos:M6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:59 vs. sg13_hv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:59 vs. sg13_hv_pmos:M9:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:30 vs. sg13_hv_pmos:MPA1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:30 vs. sg13_hv_pmos:MPA1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:70 vs. sg13_hv_pmos:MPB1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:70 vs. sg13_hv_pmos:MPB1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:61 vs. sg13_hv_pmos:MPA2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:61 vs. sg13_hv_pmos:MPA2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9 vs. sg13_hv_pmos:MPB2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:9 vs. sg13_hv_pmos:MPB2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:1 vs. sg13_hv_pmos:MIP1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:51 vs. sg13_hv_pmos:MT1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:51 vs. sg13_hv_pmos:MT1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:44 vs. sg13_hv_pmos:MT2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:71 vs. sg13_hv_pmos:MIP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:71 vs. sg13_hv_pmos:MIP2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:64 vs. sg13_hv_pmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:64 vs. sg13_hv_pmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:64 vs. sg13_hv_pmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:64 vs. sg13_hv_pmos:M3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:19 vs. sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:19 vs. sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:19 vs. sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:19 vs. sg13_hv_pmos:M4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:15 vs. sg13_hv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:15 vs. sg13_hv_pmos:M19:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:60 vs. sg13_hv_pmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:60 vs. sg13_hv_pmos:M20:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:11 vs. sg13_hv_pmos:MIP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:11 vs. sg13_hv_pmos:MIP3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:29 vs. sg13_hv_pmos:MPA3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:6 vs. sg13_hv_pmos:MPB4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:8 vs. sg13_hv_pmos:MPA4:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:48 vs. sg13_hv_pmos:MPA6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:48 vs. sg13_hv_pmos:MPA6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2 vs. sg13_hv_pmos:MPB6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2 vs. sg13_hv_pmos:MPB6:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:35 vs. sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:35 vs. sg13_hv_nmos:M7:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:31 vs. sg13_hv_nmos:M10:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:31 vs. sg13_hv_nmos:M10:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:22 vs. sg13_hv_nmos:M11:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:22 vs. sg13_hv_nmos:M11:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3 vs. sg13_hv_nmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:3 vs. sg13_hv_nmos:M12:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:83 vs. sg13_hv_nmos:MNA1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:83 vs. sg13_hv_nmos:MNA1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:55 vs. sg13_hv_nmos:MNB1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:55 vs. sg13_hv_nmos:MNB1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:42 vs. sg13_hv_nmos:MNB2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:42 vs. sg13_hv_nmos:MNB2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:34 vs. sg13_hv_nmos:MNA2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:34 vs. sg13_hv_nmos:MNA2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4 vs. sg13_hv_nmos:M13:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:4 vs. sg13_hv_nmos:M13:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:58 vs. sg13_hv_nmos:M14:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:58 vs. sg13_hv_nmos:M14:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:0 vs. sg13_hv_nmos:MIN1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:38 vs. sg13_hv_nmos:MIN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:38 vs. sg13_hv_nmos:MIN3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:24 vs. sg13_hv_nmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:24 vs. sg13_hv_nmos:M17:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:84 vs. sg13_hv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:84 vs. sg13_hv_nmos:M18:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:10 vs. sg13_hv_nmos:M21:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:45 vs. sg13_hv_nmos:MIN2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:45 vs. sg13_hv_nmos:MIN2:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:65 vs. sg13_hv_nmos:M23:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:27 vs. sg13_hv_nmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:39 vs. sg13_hv_nmos:MNB3:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_nmos:33 vs. sg13_hv_nmos:MNA3:
+Property mm_ok in circuit2 has no matching property in circuit1
+
+Subcircuit pins:
+Circuit 1: clocked_comparator              |Circuit 2: clocked_comparator              
+-------------------------------------------|-------------------------------------------
+vin                                        |vin                                        
+vref                                       |vref                                       
+VDDL                                       |VDDL                                       
+vout                                       |vout                                       
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+clk                                        |clk                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes clocked_comparator and clocked_comparator are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ clocked_comparator

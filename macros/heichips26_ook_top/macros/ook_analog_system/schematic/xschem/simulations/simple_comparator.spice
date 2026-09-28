@@ -1,0 +1,20 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/simple_comparator.sch
+**.subckt simple_comparator vin vref VDD VSS comp_out
+*.ipin vin
+*.ipin vref
+*.iopin VDD
+*.iopin VSS
+*.opin comp_out
+XMBIAS vbias vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XRBIAS vbias VSS VSS rhigh w=2e-6 l=120.08e-6 m=1 b=0 mm_ok=1
+XM3P net1 vbias VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM1P outn vin net1 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM2P net2 vref net1 VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XM4N outn outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM5N net2 outn VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XMP1 net3 net2 VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XMN1 net3 net2 VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XMP2 comp_out net3 VDD VDD sg13_hv_pmos w=4u l=0.5u ng=1 m=1 mm_ok=1
+XMN2 comp_out net3 VSS VSS sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+**.ends
+.end

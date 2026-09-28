@@ -1,0 +1,19 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/peak_detector.sch
+**.subckt peak_detector VSS vin vout VDD vamp
+*.ipin vin
+*.iopin vout
+*.iopin VDD
+*.iopin vamp
+*.iopin VSS
+XM24 net1 net1 VDD VDD sg13_hv_pmos w=14u l=0.5u ng=7 m=1 mm_ok=1
+XM25 vamp net1 VDD VDD sg13_hv_pmos w=14u l=0.5u ng=7 m=1 mm_ok=1
+XR5 net1 VSS VSS rhigh w=2e-6 l=10e-6 m=1 b=0 ps=0.18e-6 mm_ok=1
+XM13 VDD VDD VDD VDD sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM26 VDD VDD VDD VDD sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM27 vamp vamp vamp VDD sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM28 net1 net1 net1 VDD sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XR3 vamp VSS VSS rhigh w=2e-6 l=6e-6 m=1 b=0 ps=0.18e-6 mm_ok=1
+XC2 vin vamp cap_mfringe w=40.0u l=8.0u mmin=1 mmax=4
+XM2 vout vout vamp vamp sg13_hv_pmos w=20u l=0.5u ng=10 m=1 mm_ok=1
+**.ends
+.end

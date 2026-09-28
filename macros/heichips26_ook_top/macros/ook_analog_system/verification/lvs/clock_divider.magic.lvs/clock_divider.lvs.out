@@ -1,0 +1,55 @@
+
+Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_nmos                    |Circuit 2: sg13_lv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_nmos and sg13_lv_nmos are equivalent.
+
+Circuit 1 cell sg13_lv_pmos and Circuit 2 cell sg13_lv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_pmos                    |Circuit 2: sg13_lv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
+Flattening unmatched subcell sg13cmos5l_dfrbp_1 in circuit clock_divider (1)(4 instances)
+
+Subcircuit summary:
+Circuit 1: clock_divider                   |Circuit 2: clock_divider                   
+-------------------------------------------|-------------------------------------------
+sg13_lv_pmos (68)                          |sg13_lv_pmos (68)                          
+sg13_lv_nmos (68)                          |sg13_lv_nmos (68)                          
+Number of devices: 136                     |Number of devices: 136                     
+Number of nets: 71                         |Number of nets: 71                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: clock_divider                   |Circuit 2: clock_divider                   
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+vin                                        |vin                                        
+vout                                       |vout                                       
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes clock_divider and clock_divider are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -1,0 +1,319 @@
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 14/09/2026 03:44
+
+.SUBCKT comparator_group VDD VDDL VSS clk_h q0 q1 q2 q3 vin vref_1 vref_2
++ vref_3 vref_4
+M$1 \$49 \$49 \$49 VDDL sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p PS=17.36u
++ PD=17.36u rfmode=0
+M$2 \$64 \$64 \$64 VDDL sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p PS=17.36u
++ PD=17.36u rfmode=0
+M$3 \$54 \$54 \$54 VDDL sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p PS=17.36u
++ PD=17.36u rfmode=0
+M$4 \$59 \$59 \$59 VDDL sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p PS=17.36u
++ PD=17.36u rfmode=0
+M$5 \$49 \$68 q0 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$6 \$64 \$69 q3 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$7 \$54 \$70 q1 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$8 \$59 \$71 q2 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$9 q0 q0 q0 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u PD=8.68u
++ rfmode=0
+M$10 q3 q3 q3 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u PD=8.68u
++ rfmode=0
+M$11 q1 q1 q1 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u PD=8.68u
++ rfmode=0
+M$12 q2 q2 q2 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u PD=8.68u
++ rfmode=0
+M$13 \$51 \$51 \$51 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$14 \$61 \$61 \$61 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$15 \$56 \$56 \$56 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$16 \$66 \$66 \$66 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$17 \$51 \$8 \$52 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$18 \$61 \$12 \$62 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$19 \$56 \$10 \$57 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$20 \$66 \$14 \$67 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$21 \$52 \$52 \$52 VDD sg13_hv_pmos L=0.5u W=7u AS=2.38p AD=2.38p PS=15.36u
++ PD=15.36u rfmode=0
+M$22 \$62 \$62 \$62 VDD sg13_hv_pmos L=0.5u W=7u AS=2.38p AD=2.38p PS=15.36u
++ PD=15.36u rfmode=0
+M$23 \$57 \$57 \$57 VDD sg13_hv_pmos L=0.5u W=7u AS=2.38p AD=2.38p PS=15.36u
++ PD=15.36u rfmode=0
+M$24 \$67 \$67 \$67 VDD sg13_hv_pmos L=0.5u W=7u AS=2.38p AD=2.38p PS=15.36u
++ PD=15.36u rfmode=0
+M$25 VDDL VDDL VDDL VDDL sg13_hv_pmos L=0.5u W=32u AS=10.88p AD=10.88p
++ PS=69.44u PD=69.44u rfmode=0
+M$29 VDDL \$8 \$49 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$30 VDDL \$14 \$64 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$31 VDDL \$10 \$54 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$32 VDDL \$12 \$59 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$37 \$8 \$8 \$8 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$38 \$10 \$10 \$10 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$39 \$14 \$14 \$14 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$40 \$12 \$12 \$12 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$41 \$8 \$90 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$42 \$10 \$93 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$43 \$14 \$98 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$44 \$12 \$96 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$45 VSS VSS VSS VSS sg13_hv_nmos L=0.5u W=40u AS=13.6p AD=13.6p PS=107.2u
++ PD=107.2u rfmode=0
+M$53 VSS \$90 \$52 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$54 VSS \$96 \$62 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$55 VSS \$93 \$57 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$56 VSS \$98 \$67 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$57 \$52 \$52 \$52 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$58 \$62 \$62 \$62 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$59 \$57 \$57 \$57 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$60 \$67 \$67 \$67 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$65 VSS \$8 q0 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$66 VSS \$14 q3 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$67 VSS \$10 q1 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$68 VSS \$12 q2 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$69 q0 q0 q0 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u PD=5.36u
++ rfmode=0
+M$70 q3 q3 q3 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u PD=5.36u
++ rfmode=0
+M$71 q1 q1 q1 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u PD=5.36u
++ rfmode=0
+M$72 q2 q2 q2 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u PD=5.36u
++ rfmode=0
+M$77 q0 \$68 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$78 q1 \$70 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$79 q3 \$69 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$80 q2 \$71 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$89 VSS \$8 \$51 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$90 VSS \$14 \$66 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$91 VSS \$12 \$61 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$92 VSS \$10 \$56 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$93 \$51 \$51 \$51 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$94 \$66 \$66 \$66 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$95 \$61 \$61 \$61 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$96 \$56 \$56 \$56 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$101 \$52 vref_1 \$74 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$102 \$57 vref_2 \$77 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$103 \$67 vref_4 \$83 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$104 \$62 vref_3 \$80 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$105 \$74 \$74 \$74 VDD sg13_hv_pmos L=0.5u W=15u AS=5.1p AD=5.1p PS=32.04u
++ PD=32.04u rfmode=0
+M$106 \$77 \$77 \$77 VDD sg13_hv_pmos L=0.5u W=15u AS=5.1p AD=5.1p PS=32.04u
++ PD=32.04u rfmode=0
+M$107 \$83 \$83 \$83 VDD sg13_hv_pmos L=0.5u W=15u AS=5.1p AD=5.1p PS=32.04u
++ PD=32.04u rfmode=0
+M$108 \$80 \$80 \$80 VDD sg13_hv_pmos L=0.5u W=15u AS=5.1p AD=5.1p PS=32.04u
++ PD=32.04u rfmode=0
+M$109 \$90 \$90 \$90 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$110 \$93 \$93 \$93 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$111 \$96 \$96 \$96 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$112 \$98 \$98 \$98 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$113 clk_h clk_h clk_h VDD sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p
++ PS=18.72u PD=18.72u rfmode=0
+M$117 \$90 VSS clk_h VDD sg13_hv_pmos L=0.5u W=24u AS=4.86p AD=4.86p PS=30.86u
++ PD=30.86u rfmode=0
+M$129 \$93 VSS clk_h VDD sg13_hv_pmos L=0.5u W=24u AS=4.86p AD=4.86p PS=30.86u
++ PD=30.86u rfmode=0
+M$141 \$96 VSS clk_h VDD sg13_hv_pmos L=0.5u W=24u AS=4.86p AD=4.86p PS=30.86u
++ PD=30.86u rfmode=0
+M$153 \$98 VSS clk_h VDD sg13_hv_pmos L=0.5u W=24u AS=4.86p AD=4.86p PS=30.86u
++ PD=30.86u rfmode=0
+M$165 clk_h clk_h clk_h VSS sg13_hv_nmos L=0.5u W=8u AS=2.72p AD=2.72p
++ PS=18.72u PD=18.72u rfmode=0
+M$169 \$90 \$90 \$90 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$170 \$96 \$96 \$96 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$171 \$93 \$93 \$93 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$172 \$98 \$98 \$98 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$173 \$90 VDD clk_h VSS sg13_hv_nmos L=0.5u W=24u AS=4.86p AD=4.86p PS=30.86u
++ PD=30.86u rfmode=0
+M$185 \$96 VDD clk_h VSS sg13_hv_nmos L=0.5u W=24u AS=4.86p AD=4.86p PS=30.86u
++ PD=30.86u rfmode=0
+M$197 \$93 VDD clk_h VSS sg13_hv_nmos L=0.5u W=24u AS=4.86p AD=4.86p PS=30.86u
++ PD=30.86u rfmode=0
+M$209 \$98 VDD clk_h VSS sg13_hv_nmos L=0.5u W=24u AS=4.86p AD=4.86p PS=30.86u
++ PD=30.86u rfmode=0
+M$225 VSS \$90 \$51 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$226 VSS \$93 \$56 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$227 VSS \$96 \$61 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$228 VSS \$98 \$66 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$233 \$68 \$68 \$68 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$234 \$71 \$71 \$71 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$235 \$69 \$69 \$69 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$236 \$70 \$70 \$70 VSS sg13_hv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$237 \$68 \$51 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$238 \$71 \$61 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$239 \$69 \$66 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$240 \$70 \$56 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$249 \$68 q0 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$250 \$71 q2 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$251 \$69 q3 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$252 \$70 q1 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$257 \$117 \$117 \$117 VDDL sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p
++ PS=17.36u PD=17.36u rfmode=0
+M$258 \$132 \$132 \$132 VDDL sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p
++ PS=17.36u PD=17.36u rfmode=0
+M$259 \$122 \$122 \$122 VDDL sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p
++ PS=17.36u PD=17.36u rfmode=0
+M$260 \$127 \$127 \$127 VDDL sg13_hv_pmos L=0.5u W=8u AS=2.72p AD=2.72p
++ PS=17.36u PD=17.36u rfmode=0
+M$261 \$117 q0 \$68 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$262 \$132 q3 \$69 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$263 \$122 q1 \$70 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$264 \$127 q2 \$71 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$265 \$68 \$68 \$68 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$266 \$69 \$69 \$69 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$267 \$70 \$70 \$70 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$268 \$71 \$71 \$71 VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$273 \$117 \$51 VDDL VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$274 \$122 \$56 VDDL VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$275 \$132 \$66 VDDL VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$276 \$127 \$61 VDDL VDDL sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$285 VSS \$51 \$8 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$286 VSS \$61 \$12 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$287 VSS \$66 \$14 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$288 VSS \$56 \$10 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$293 \$97 \$97 \$97 VDD sg13_hv_pmos L=0.5u W=7u AS=2.38p AD=2.38p PS=15.36u
++ PD=15.36u rfmode=0
+M$294 \$92 \$92 \$92 VDD sg13_hv_pmos L=0.5u W=7u AS=2.38p AD=2.38p PS=15.36u
++ PD=15.36u rfmode=0
+M$295 \$95 \$95 \$95 VDD sg13_hv_pmos L=0.5u W=7u AS=2.38p AD=2.38p PS=15.36u
++ PD=15.36u rfmode=0
+M$296 \$89 \$89 \$89 VDD sg13_hv_pmos L=0.5u W=7u AS=2.38p AD=2.38p PS=15.36u
++ PD=15.36u rfmode=0
+M$297 \$97 vin \$83 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$298 \$92 vin \$77 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$299 \$95 vin \$80 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$300 \$89 vin \$74 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$305 \$8 \$8 \$8 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$306 \$10 \$10 \$10 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$307 \$12 \$12 \$12 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$308 \$14 \$14 \$14 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$309 \$8 \$51 \$89 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$310 \$10 \$56 \$92 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$311 \$12 \$61 \$95 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$312 \$14 \$66 \$97 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$321 VSS \$90 \$89 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$322 VSS \$98 \$97 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$323 VSS \$93 \$92 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$324 VSS \$96 \$95 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$325 \$89 \$89 \$89 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$326 \$97 \$97 \$97 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$327 \$92 \$92 \$92 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$328 \$95 \$95 \$95 VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$329 VDD VDD VDD VDD sg13_hv_pmos L=0.5u W=20u AS=6.8p AD=6.8p PS=42.72u
++ PD=42.72u rfmode=0
+M$333 VDD \$98 \$83 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$334 VDD \$93 \$77 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$335 VDD \$96 \$80 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+M$336 VDD \$90 \$74 VDD sg13_hv_pmos L=0.5u W=5u AS=1.7p AD=1.7p PS=10.68u
++ PD=10.68u rfmode=0
+.ENDS comparator_group

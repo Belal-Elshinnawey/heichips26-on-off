@@ -1,0 +1,6 @@
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 13/09/2026 18:34
+
+.SUBCKT peak_detector VSS vin vout
+M$1 vin vin vout VSS sg13_hv_nmos L=0.5u W=20u AS=4.1p AD=4.1p PS=26.1u
++ PD=26.1u rfmode=0
+.ENDS peak_detector

@@ -1,0 +1,63 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/testbenches/xschem/ook_receiver_tb_tran.sch
+**.subckt ook_receiver_tb_tran
+VDD3 VDD GND {VDD}
+Cb2 net4 net5 10p
+L20 net2 net3 8.33u
+R1 net2 vin 50
+Cb1 net1 GND 1.25n
+Cb3 net3 net1 16.14f
+L22 net1 GND 107p
+L24 net4 net1 344n
+Cb4 net4 GND 330f
+Cb5 vout GND 5p
+R2 GND vout 250k
+VDDL VDDL GND {1.5}
+x2 VDDL opm q0 vref0 q1 vref1 vout q2 vref3 vref2 q3 VDD lo_s2 lo_s2f lo_s1 lo_s1f net5 GND lnaf ook_receiver_pex
+**** begin user architecture code
+
+
+.param VDD=3.3
+.param temp=27
+.options klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-12
+
+.param b0=1 b1=0 b2=1 b3=0 b4=0 b5=1 b6=0 b7=1
+.param bitsum={b0+b1+b2+b3+b4+b5+b6+b7}
+.param parity={bitsum-2*int(bitsum/2)}
+
+Vcarrier ncar 0 SINE(0 1m 433.92e6)
+
+Bvenv nenv 0 V =
++ (time<10e-6)  ? 1 :
++ (time<15e-6)  ? (1-b0) : (time<20e-6) ? b0 :
++ (time<25e-6)  ? (1-b1) : (time<30e-6) ? b1 :
++ (time<35e-6)  ? (1-b2) : (time<40e-6) ? b2 :
++ (time<45e-6)  ? (1-b3) : (time<50e-6) ? b3 :
++ (time<55e-6)  ? (1-b4) : (time<60e-6) ? b4 :
++ (time<65e-6)  ? (1-b5) : (time<70e-6) ? b5 :
++ (time<75e-6)  ? (1-b6) : (time<80e-6) ? b6 :
++ (time<85e-6)  ? (1-b7) : (time<90e-6) ? b7 :
++ (time<100e-6) ? parity :
++ 1
+
+Bvin1 vin 0 V={(V(nenv)*V(ncar))}
+
+.save vin vout i(vdd3) v(q3) v(q2) v(q1) v(q0) opm lo_s1 lo_s1f lo_s2 lo_s2f vref0 vref1 vref2 vref3
+.tran 100p 120u 100p
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.tech/ngspice/models/cap_mfringe.lib
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/ook_receiver_magic_pex_3.spice
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VDDL
+.end

@@ -2,37 +2,50 @@
 # Please edit the fields below to match your project.
 
 project-name: An On-Off keying Transmitter/Receiver
-top-cell: "heichips26_ook" # Must be a unique name
+top-cell: "heichips26_ook_top" # Must be a unique name
 team-members:
 - Belal Elshinnawey
 - Koh Tomita
 - Kokoro Kodama
 - Francisco Sayas
 slot-size: small # small, large, tiny
-analog-pins: 1 # 0-3, only for small or tiny projects
-short-description: aaa
-# Please add the documentation about your project here.
-# Why did you choose to create it? How does it work? How can it be tested, etc.?
-# If your project requires additional external hardware, e.g. a USB port,
-# please mention this so we can consider it when designing the HeiChips PCB.
+analog-pins: 3 # 0-3, only for small or tiny projects
+short-description: 
+- ON OFF keying Transmitter+Receiver. It works by turning a carrier signal ON and OFF to transmit data.
+- I built this because I wanted an RFIC for my first SoC design, and OOK is the simplest.
+- How it works (bit bang mode. from the FPGA side, toggle the transmission pin with your favorite data encoding scheme
+  , and hopefully, you receive something on the other end. I recommend start+stop bits with Manchester encoding, and a symbol duration no shorter than 6us)
+- ui_in[0] is connected to the transmitter tx pin.
+- uo_out[7] to [4] is connected to q3 to q0 of the receiver comparators.
+
 long-description: |
+  - Receiver design:
+    - A 3 stage input amplifier
+    - the amplifier connects to a PMOS, connected as a diode
+    - the diode uses an off chip capacitor and resistor to form a peak detector
+    - the peak detector feeds 4 comparators, each comparator has a threshold that ramps above 900mV based on signal strength
+  - Transmitter design:
+    - The design uses a VCO to lock on 433.92 MHz
+    - The VCO feeds an output buffer, which has a transmission gate to turn the output on/off (the OOK part)
+    - The buffer also contains a middle tap before the transmission gate to feed the VCO output back
+    - The feedback clock is divided using a line of 13 flip-flops. The divided signal is fed to an FSM
+    - The FSM computes the frequency error and increases/decreases the duty of a DAC based on the error
+    - The DAC connects to a low pass filter which feeds the VCO to set the frequency
+  - Digital side:
+    - The digital side contains a simple 2xFF stage per comparator output to sync the comparators with local clock domain
+    - The transmitter is controlled by data_in_tx. This signal drives the transmission gate of the output buffer with dead time insertion
+  - PCB design:
+    - analog-1 pin connects to the off chip accumulator: /plots/accumulator_network.png
+    - analog-0 pin is for the sender, it uses the network: /plots/output_network.png
+    - analog-2 pin is for the receiver, it uses the network: /plots/input_network.png
+    - capacitors under 0.5pF are ignored. use footprints 402, with dielectric NP0/C0G, X7R is ok but not lower. for 0.5pF caps, use RF caps.
+    - If the capacitors are too expensive, use place holder 0 ohm resistors for series elements, and open circuits for shunts.
+    - The trace should be 50 ohms. If you're using a 2-layer PCB, decrease the thickness to get a reasonable impedance with reasonable trace thickness.
+    (I had some good designs with 2-layer PCBs at 1mm thickness)
+    - both transmit and receive matching networks should end with your favorite 50 ohm SMA/BNC connector you find at your vendor of choice
+    - If my PCB requires too much, and you think it should be my responsibility, email: belalshinnawey@gmail.com and I will provide
+    whatever you need regarding this issue. :)
 
-  aaa
-
-  Is this thing on?
-  
-  This is a super cool project 👏
-  
-  * with
-  * bullet
-  * points
-  
-  **nice** *formatting* and [links](https://heichips.github.io/).
-
-# These paths are used to verify your
-# submission during the precheck.
-# Wildcards are allowed, but there
-# should only be a single match.
-gds-path: macros/heichips26_ook/final/gds/*.gds
-lef-path: macros/heichips26_ook/final/lef/*.lef
-header-path: macros/heichips26_ook/final/vh/*.vh
+gds-path: macros/heichips26_ook_top/final/gds/*.gds
+lef-path: macros/heichips26_ook_top/final/lef/*.lef
+header-path: macros/heichips26_ook_top/final/vh/*.vh

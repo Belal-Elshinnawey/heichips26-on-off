@@ -1,0 +1,18 @@
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 13/09/2026 20:59
+
+.SUBCKT peak_detector VDD VSS vamp vout
+M$1 vamp vamp vout VSS sg13_hv_nmos L=0.5u W=20u AS=4.1p AD=4.1p PS=26.1u
++ PD=26.1u rfmode=0
+R$11 VSS vamp VSS rhigh w=2u l=3u ps=0u b=0 m=1
+R$12 VSS \$5 VSS rhigh w=2u l=10u ps=0u b=0 m=1
+M$13 vamp vamp vamp VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$14 VDD VDD VDD VDD sg13_hv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=9.36u
++ PD=9.36u rfmode=0
+M$15 vamp \$5 VDD VDD sg13_hv_pmos L=0.5u W=14u AS=2.96p AD=2.96p PS=18.96u
++ PD=18.96u rfmode=0
+M$22 \$5 \$5 \$5 VDD sg13_hv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$24 \$5 \$5 VDD VDD sg13_hv_pmos L=0.5u W=14u AS=2.96p AD=2.96p PS=18.96u
++ PD=18.96u rfmode=0
+.ENDS peak_detector

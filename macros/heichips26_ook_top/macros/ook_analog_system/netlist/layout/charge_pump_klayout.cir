@@ -1,0 +1,36 @@
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 09/09/2026 13:29
+
+.SUBCKT charge_pump DN UP VDD VSS cp_cap_m cp_cap_p vout
+R$1 VSS \$32 VSS rhigh w=2u l=27.585u ps=0.18u b=9 m=1
+R$2 \$10 VDD VSS rhigh w=2u l=27.585u ps=0.18u b=9 m=1
+R$3 cp_cap_m VSS VSS rhigh w=2u l=25.11u ps=0.18u b=8 m=1
+R$4 vout cp_cap_p VSS rhigh w=2u l=9.53u ps=0.18u b=2 m=1
+M$5 \$16 \$16 \$16 VSS sg13_lv_nmos L=0.5u W=2.63u AS=0.8942p AD=0.8942p
++ PS=6.62u PD=6.62u rfmode=0
+M$6 cp_cap_p cp_cap_p cp_cap_p VSS sg13_lv_nmos L=0.5u W=0.63u AS=0.2142p
++ AD=0.2142p PS=1.94u PD=1.94u rfmode=0
+M$7 cp_cap_p DN \$16 VSS sg13_lv_nmos L=0.5u W=2.5u AS=0.56875p AD=0.56875p
++ PS=4.945u PD=4.945u rfmode=0
+M$11 VSS VSS VSS VSS sg13_lv_nmos L=0.5u W=4u AS=1.36p AD=1.36p PS=9.36u
++ PD=9.36u rfmode=0
+M$13 \$16 \$10 VSS VSS sg13_lv_nmos L=0.5u W=10u AS=2.2p AD=2.2p PS=14.2u
++ PD=14.2u rfmode=0
+M$19 \$10 \$10 \$10 VSS sg13_lv_nmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$20 \$10 \$10 VSS VSS sg13_lv_nmos L=0.5u W=10u AS=2.2p AD=2.2p PS=14.2u
++ PD=14.2u rfmode=0
+M$25 \$32 \$32 \$32 VDD sg13_lv_pmos L=0.5u W=2u AS=0.68p AD=0.68p PS=4.68u
++ PD=4.68u rfmode=0
+M$26 VDD VDD VDD VDD sg13_lv_pmos L=0.5u W=4u AS=1.36p AD=1.36p PS=9.36u
++ PD=9.36u rfmode=0
+M$27 \$32 \$32 VDD VDD sg13_lv_pmos L=0.5u W=12u AS=2.58p AD=2.58p PS=16.58u
++ PD=16.58u rfmode=0
+M$33 \$29 \$29 \$29 VDD sg13_lv_pmos L=0.5u W=2.63u AS=0.8942p AD=0.8942p
++ PS=6.62u PD=6.62u rfmode=0
+M$35 \$29 \$32 VDD VDD sg13_lv_pmos L=0.5u W=12u AS=2.58p AD=2.58p PS=16.58u
++ PD=16.58u rfmode=0
+M$42 cp_cap_p cp_cap_p cp_cap_p VDD sg13_lv_pmos L=0.5u W=0.63u AS=0.2142p
++ AD=0.2142p PS=1.94u PD=1.94u rfmode=0
+M$43 cp_cap_p UP \$29 VDD sg13_lv_pmos L=0.5u W=2.5u AS=0.56875p AD=0.56875p
++ PS=4.945u PD=4.945u rfmode=0
+.ENDS charge_pump
