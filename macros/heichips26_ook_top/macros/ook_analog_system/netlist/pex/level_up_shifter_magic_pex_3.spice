@@ -1,0 +1,112 @@
+* PEX produced on Sun Sep 13 16:37:32 CEST 2026 using scripts/sak-pex.sh with m=3 and s=1 (extresist threshold=10000 mOhm, minres=1000 mOhm, mindelay=1 ps)
+* NGSPICE file created from level_up_shifter_pex.ext - technology: ihp-sg13cmos5l
+
+.subckt level_up_shifter_pex VDD2 A B VSS VDD1
+X0 VSS.t10 VSS.t8 VSS.t9 VSS.t2 sg13_lv_nmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=0.13u
+X1 VDD1 GROUP1_0/pmos_priv2_0.D GROUP4_0/pmos_priv5_0.D VDD1 sg13_lv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X2 VDD2 nmosHV_priv1_0.D pmosHV_priv2_0.D VDD2 sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X3 VDD1 A GROUP1_0/pmos_priv2_0.D VDD1 sg13_lv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X4 VSS.t7 VSS.t5 VSS.t6 VSS.t0 sg13_lv_nmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=0.13u
+X5 VDD2 pmosHV_priv2_0.D nmosHV_priv1_0.D VDD2 sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X6 GROUP4_0/pmos_priv5_0.D GROUP4_0/pmos_priv5_0.D GROUP4_0/pmos_priv5_0.D VSS.t2 sg13_lv_nmos ad=0.34p pd=2.68u as=4.34p ps=25.58u w=1u l=0.13u
+X7 GROUP4_0/pmos_priv5_0.D GROUP4_0/pmos_priv5_0.D GROUP4_0/pmos_priv5_0.D VDD1 sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=0.13u
+X8 GROUP1_0/pmos_priv2_0.D GROUP1_0/pmos_priv2_0.D GROUP1_0/pmos_priv2_0.D VDD1 sg13_lv_pmos ad=0.34p pd=2.68u as=14.5676p ps=72.93999u w=1u l=0.13u
+X9 GROUP1_0/pmos_priv2_0.D GROUP1_0/pmos_priv2_0.D GROUP1_0/pmos_priv2_0.D VSS.t0 sg13_lv_nmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=0.13u
+X10 B pmosHV_priv2_0.D VSS.t14 VSS.t4 sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X11 VSS.t13 VSS.t11 VSS.t12 VSS.t4 sg13_hv_nmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=0.5u
+X12 VDD2 VDD2 VDD2 VDD2 sg13_hv_pmos ad=1.02p pd=6.68u as=5.8956p ps=28.68u w=3u l=0.5u
+X13 GROUP4_0/pmos_priv5_0.D GROUP1_0/pmos_priv2_0.D VSS.t15 VSS.t2 sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X14 nmosHV_priv1_0.D GROUP1_0/pmos_priv2_0.D VSS.t17 VSS.t16 sg13_hv_nmos ad=3.4p pd=20.68u as=3.4p ps=20.68u w=10u l=0.5u
+X15 GROUP1_0/pmos_priv2_0.D A VSS.t1 VSS.t0 sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.13u
+X16 B B B VDD2 sg13_hv_pmos ad=1.02p pd=6.68u as=7.2396p ps=29.16u w=3u l=0.5u
+X17 B B B VSS.t4 sg13_hv_nmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=0.5u
+X18 VDD2 pmosHV_priv2_0.D B VDD2 sg13_hv_pmos ad=1.02p pd=6.68u as=1.02p ps=6.68u w=3u l=0.5u
+X19 VDD1 VDD1 VDD1 VDD1 sg13_lv_pmos ad=0.34p pd=2.68u as=3.8804p ps=22.12u w=1u l=0.13u
+X20 pmosHV_priv2_0.D GROUP4_0/pmos_priv5_0.D VSS VSS.t3 sg13_hv_nmos ad=3.4p pd=20.68u as=3.4p ps=20.68u w=10u l=0.5u
+X21 VDD1 VDD1 VDD1 VDD1 sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=0.13u
+R0 VSS.n9 VSS.n8 1.09783e+06
+R1 VSS.t2 VSS.t0 1573.91
+R2 VSS.t16 VSS.t2 970.338
+R3 VSS.n10 VSS.n9 952.746
+R4 VSS.t4 VSS.n6 862.538
+R5 VSS.n7 VSS.t4 766.051
+R6 VSS.n8 VSS.t16 484.863
+R7 VSS.t3 VSS.n7 414.49
+R8 VSS.n8 VSS.t3 165.528
+R9 VSS.n11 VSS.t15 18.5884
+R10 VSS.n6 VSS.t14 18.4515
+R11 VSS.n10 VSS.t1 18.1594
+R12 VSS.n1 VSS.t6 5.61832
+R13 VSS.n3 VSS.t9 5.61832
+R14 VSS.n5 VSS.t12 5.63547
+R15 VSS.n0 VSS.t5 7.47191
+R16 VSS.n2 VSS.t8 7.47191
+R17 VSS.n4 VSS.t11 7.48191
+R18 VSS VSS.n7 14.2024
+R19 VSS.n9 VSS.t0 8.69615
+R20 VSS.n4 VSS.n5 0.0434444
+R21 VSS.n0 VSS.n1 0.0657531
+R22 VSS.n2 VSS.n3 0.0657531
+R23 VSS VSS.n6 1.12372
+R24 VSS VSS.t17 1.1115
+R25 VSS.t17 VSS.n11 1.02228
+R26 VSS.t14 VSS.n4 0.653499
+R27 VSS.n11 VSS.n10 0.456389
+R28 VSS.t1 VSS.n0 0.403213
+R29 VSS.t15 VSS.n2 0.403213
+R30 VSS.n5 VSS.t13 5.73663
+R31 VSS.n3 VSS.t10 5.77235
+R32 VSS.n1 VSS.t7 5.77235
+C0 pmosHV_priv2_0.D a_590_703# 0.03823f
+C1 GROUP4_0/pmos_priv5_0.D nmosHV_priv1_0.D 0.06218f
+C2 pmosHV_priv2_0.D a_590_2070# 0.04749f
+C3 a_n2026_1267# GROUP1_0/pmos_priv2_0.D 0.06073f
+C4 B nmosHV_priv1_0.D 0.02726f
+C5 VDD2 GROUP4_0/pmos_priv5_0.D 0.01384f
+C6 a_n2026_1267# A 0.02866f
+C7 GROUP1_0/pmos_priv2_0.D GROUP4_0/pmos_priv5_0.D 2.7191f
+C8 a_n1302_1266# GROUP1_0/pmos_priv2_0.D 0.02994f
+C9 VDD1 GROUP1_0/pmos_priv2_0.D 1.68672f
+C10 VDD2 B 0.65654f
+C11 VDD1 A 1.2044f
+C12 a_n1302_361# GROUP1_0/pmos_priv2_0.D 0.03084f
+C13 VDD1 a_n2026_1484# 0.13031f
+C14 a_590_2070# B 0.21649f
+C15 pmosHV_priv2_0.D a_590_1068# 0.03807f
+C16 a_590_2435# nmosHV_priv1_0.D 0.01044f
+C17 VDD1 a_n1302_1483# 0.12814f
+C18 VDD2 nmosHV_priv1_0.D 0.48811f
+C19 VDD2 a_590_2435# 0.49579f
+C20 a_n1302_578# GROUP4_0/pmos_priv5_0.D 0.06174f
+C21 GROUP1_0/pmos_priv2_0.D nmosHV_priv1_0.D 0.25731f
+C22 pmosHV_priv2_0.D GROUP4_0/pmos_priv5_0.D 0.23924f
+C23 a_n2026_361# A 0.02882f
+C24 GROUP1_0/pmos_priv2_0.D A 2.86391f
+C25 B a_590_1068# 0.11229f
+C26 pmosHV_priv2_0.D B 3.05374f
+C27 VDD2 a_590_2070# 0.28707f
+C28 a_n2026_1267# VDD1 0.07101f
+C29 a_n1302_1266# GROUP4_0/pmos_priv5_0.D 0.06066f
+C30 a_n2026_1484# A 0.02882f
+C31 VDD1 GROUP4_0/pmos_priv5_0.D 0.41187f
+C32 a_n1302_1266# VDD1 0.07036f
+C33 B GROUP4_0/pmos_priv5_0.D 0.02502f
+C34 a_n1302_1483# GROUP1_0/pmos_priv2_0.D 0.02882f
+C35 GROUP1_0/pmos_priv2_0.D a_n2026_578# 0.06198f
+C36 a_n2026_578# A 0.02866f
+C37 pmosHV_priv2_0.D a_590_2435# 0.04333f
+C38 pmosHV_priv2_0.D nmosHV_priv1_0.D 0.86959f
+C39 a_n1302_578# GROUP1_0/pmos_priv2_0.D 0.02913f
+C40 pmosHV_priv2_0.D VDD2 2.78777f
+C41 pmosHV_priv2_0.D GROUP1_0/pmos_priv2_0.D 0.015f
+C42 a_590_703# VSS 0.25795f ; **FLOATING
+C43 a_590_1068# VSS 0.15326f ; **FLOATING
+C44 a_590_2070# VSS 0.02411f ; **FLOATING
+C45 a_n1302_361# VSS 0.13392f ; **FLOATING
+C46 a_n2026_361# VSS 0.13398f ; **FLOATING
+C47 a_n1302_578# VSS 0.075f ; **FLOATING
+C48 a_n2026_578# VSS 0.07596f ; **FLOATING
+C49 a_590_2435# VSS 0.01583f ; **FLOATING
+C50 nmosHV_priv1_0.D VSS 3.0046f
+.ends
+

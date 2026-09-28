@@ -1,0 +1,31 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/level_up_shifter.sch
+**.subckt level_up_shifter VDD2 A B VSS VDD1
+*.iopin VSS
+*.iopin VDD2
+*.opin B
+*.ipin A
+*.iopin VDD1
+XM1 net1 AB VSS VSS sg13_hv_nmos w=10u l=0.5u ng=1 m=1 mm_ok=1
+XM4 T net1 VDD2 VDD2 sg13_hv_pmos w=1u l=0.5u ng=1 m=1 mm_ok=1
+XM3 net1 T VDD2 VDD2 sg13_hv_pmos w=1u l=0.5u ng=1 m=1 mm_ok=1
+XM2 T AM VSS VSS sg13_hv_nmos w=10u l=0.5u ng=1 m=1 mm_ok=1
+XM5 B T VDD2 VDD2 sg13_hv_pmos w=3u l=0.5u ng=1 m=1 mm_ok=1
+XM6 B T VSS VSS sg13_hv_nmos w=1u l=0.5u ng=1 m=1 mm_ok=1
+XM7 VSS VSS VSS VSS sg13_hv_nmos w=1u l=0.5u ng=1 m=1 mm_ok=1
+XM8 VDD2 VDD2 VDD2 VDD2 sg13_hv_pmos w=3u l=0.5u ng=1 m=1 mm_ok=1
+XM9 VDD1 VDD1 VDD1 VDD1 sg13_lv_pmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM12 AB A VDD1 VDD1 sg13_lv_pmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM10 VSS VSS VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM11 VDD1 VDD1 VDD1 VDD1 sg13_lv_pmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM14 AM AB VDD1 VDD1 sg13_lv_pmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM15 VSS VSS VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM17 AB A VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM13 AM AB VSS VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM16 AB AB AB VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM18 AB AB AB VDD1 sg13_lv_pmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM19 AM AM AM VDD1 sg13_lv_pmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM20 AM AM AM VSS sg13_lv_nmos w=1u l=0.13u ng=1 m=1 mm_ok=1
+XM21 B B B VDD2 sg13_hv_pmos w=3u l=0.5u ng=1 m=1 mm_ok=1
+XM22 B B B VSS sg13_hv_nmos w=1u l=0.5u ng=1 m=1 mm_ok=1
+**.ends
+.end

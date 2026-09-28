@@ -1,0 +1,71 @@
+* PEX produced on Sun Sep 13 21:17:33 CEST 2026 using scripts/sak-pex.sh with m=3 and s=1 (extresist threshold=10000 mOhm, minres=1000 mOhm, mindelay=1 ps)
+* NGSPICE file created from peak_detector_pex.ext - technology: ihp-sg13cmos5l
+
+.subckt peak_detector_pex VSS vin vout VDD vamp
+X0 VDD VDD VDD VDD sg13_hv_pmos ad=0.68p pd=4.68u as=10.323p ps=64.26u w=2u l=0.5u
+X1 vamp vamp vout VSS sg13_hv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X2 vamp GROUP3_0.G VDD VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X3 vamp GROUP3_0.G VDD VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X4 GROUP3_0.G GROUP3_0.G VDD VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X5 vout vamp vamp VSS sg13_hv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X6 vamp vamp vamp VDD sg13_hv_pmos ad=0.68p pd=4.68u as=42.3931p ps=0.28617m w=2u l=0.5u
+X7 VDD GROUP3_0.G vamp VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.5u
+X8 vout vamp vamp VSS sg13_hv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X9 vamp vamp vout VSS sg13_hv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X10 VDD GROUP3_0.G vamp VDD sg13_hv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.5u
+X11 vamp GROUP3_0.G VDD VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X12 VDD GROUP3_0.G GROUP3_0.G VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.5u
+X13 GROUP3_0.G GROUP3_0.G VDD VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X14 vamp vamp vout VSS sg13_hv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X15 VDD GROUP3_0.G vamp VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X16 VDD GROUP3_0.G vamp VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X17 VDD GROUP3_0.G GROUP3_0.G VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X18 VDD GROUP3_0.G GROUP3_0.G VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X19 GROUP3_0.G VSS VSS rhigh l=10u w=2u
+X20 vout vamp vamp VSS sg13_hv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X21 GROUP3_0.G GROUP3_0.G GROUP3_0.G VDD sg13_hv_pmos ad=0.68p pd=4.68u as=33.483p ps=0.1089m w=2u l=0.5u
+X22 vamp vamp vout VSS sg13_hv_nmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.5u
+X23 VDD VDD VDD VDD sg13_hv_pmos ad=0.68p pd=4.68u as=0 ps=0 w=2u l=0.5u
+X24 VDD GROUP3_0.G GROUP3_0.G VDD sg13_hv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.5u
+X25 vout vamp vamp VSS sg13_hv_nmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.5u
+X26 vamp vamp vout VSS sg13_hv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X27 vout vamp vamp VSS sg13_hv_nmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X28 GROUP3_0.G GROUP3_0.G VDD VDD sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+X29 vamp VSS VSS rhigh l=4u w=2u
+C0 VDD GROUP3_0.G 11.1108f
+C1 vin GROUP3_0.G 0.01443f
+C2 vamp a_13850_n1668# 0.08232f
+C3 a_13828_n78# vamp 0.17117f
+C4 VDD a_12904_1341# 0.38341f
+C5 a_13828_n78# VDD 0.21725f
+C6 a_13828_1343# GROUP3_0.G 0.0419f
+C7 a_12940_n2610# GROUP3_0.G 0.07811f
+C8 vamp vout 3.36805f
+C9 a_12904_n80# GROUP3_0.G 0.19666f
+C10 VDD vamp 2.02759f
+C11 vin vout 0.03287f
+C12 vin vamp 98.5666f
+C13 a_12940_n2610# a_13850_n1668# 0.07581f
+C14 a_13828_1343# a_12904_1341# 0.01031f
+C15 vamp a_16397_68# 0.19417f
+C16 a_13828_n78# a_12904_n80# 0.01031f
+C17 a_12940_n2610# vamp 0.01114f
+C18 VDD a_13828_1343# 0.37396f
+C19 vin a_16397_68# 0.01865f
+C20 a_18346_68# vout 0.0157f
+C21 a_18346_68# vamp 0.10806f
+C22 VDD a_12904_n80# 0.2159f
+C23 a_12904_1341# GROUP3_0.G 0.04426f
+C24 a_13828_n78# GROUP3_0.G 0.04233f
+C25 vamp GROUP3_0.G 3.11693f
+C26 vin VSS 3.00217f
+C27 vout VSS 6.74389f
+C28 vamp VSS 0.60544f
+C29 a_18346_68# VSS 0.29443f ; **FLOATING
+C30 a_13828_n78# VSS 0.013f ; **FLOATING
+C31 a_12904_n80# VSS 0.013f ; **FLOATING
+C32 a_16397_68# VSS 0.29482f ; **FLOATING
+C33 a_13828_1343# VSS 0.013f ; **FLOATING
+C34 a_12904_1341# VSS 0.013f ; **FLOATING
+.ends
+

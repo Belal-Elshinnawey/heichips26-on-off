@@ -1,0 +1,1526 @@
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 24/09/2026 02:33
+
+.SUBCKT ook_transmitter VGND VPWR clk_fb clk_ref dac_out rst_ni vcl vctrl_b_in
++ vctrl_b_out vctrl_in vctrl_out vout
+X$160 VPWR VGND \$1435 \$1065 \$1550 \$2111 sg13cmos5l_or3_1
+X$161 VPWR VGND \$2579 \$2837 \$2516 \$2994 sg13cmos5l_or3_1
+X$162 VPWR \$2599 VGND \$1575 \$40 \$2603 \$2571 sg13cmos5l_nand4_1
+X$163 VPWR VGND \$2309 \$1970 \$2221 \$2074 sg13cmos5l_nand3b_1
+X$164 VPWR VGND \$1226 \$2573 \$2697 \$2700 sg13cmos5l_nand3b_1
+X$165 VPWR VGND \$2635 \$2843 \$2839 \$2837 sg13cmos5l_nand3b_1
+X$166 VPWR VGND \$317 \$124 \$229 \$1754 sg13cmos5l_and3_1
+X$167 VPWR VGND \$3446 \$3245 \$2466 \$3156 sg13cmos5l_and3_1
+X$168 VPWR VGND \$3196 \$3202 \$2118 \$3371 sg13cmos5l_and3_1
+X$169 VPWR VGND \$1793 \$1795 \$1281 \$1970 sg13cmos5l_and3_1
+X$170 VPWR VGND \$116 \$17 \$1105 \$1346 sg13cmos5l_and3_1
+X$171 VPWR VGND \$1250 \$1545 \$1472 \$1733 sg13cmos5l_and3_1
+X$172 VPWR VGND \$2221 \$1970 \$2074 \$1578 sg13cmos5l_and3_1
+X$173 VPWR VGND \$3199 \$2570 \$1781 \$3202 sg13cmos5l_and3_1
+X$174 VPWR VGND \$1574 \$1575 \$1222 \$1478 \$1686 sg13cmos5l_or4_1
+X$175 VPWR VGND \$2992 \$2993 \$2922 sg13cmos5l_nand2b_1
+X$176 VPWR VGND \$45 \$568 \$273 sg13cmos5l_nand2b_1
+X$177 VPWR VGND \$1803 \$1534 \$51 sg13cmos5l_nand2b_1
+X$178 VPWR VGND \$697 \$535 \$1435 sg13cmos5l_nand2b_1
+X$179 VPWR VGND \$2951 \$2671 \$3068 sg13cmos5l_nand2b_1
+X$180 VPWR VGND \$591 \$771 \$1044 sg13cmos5l_nand2b_1
+X$181 VPWR VGND \$2574 \$2753 \$2614 sg13cmos5l_nand2b_1
+X$182 VPWR VGND \$2406 \$2452 \$2451 sg13cmos5l_nand2b_1
+X$183 VPWR VGND \$317 \$485 \$1855 sg13cmos5l_nand2b_1
+X$184 VPWR VGND \$1346 \$229 \$1507 sg13cmos5l_nand2b_1
+X$185 VPWR VGND \$1233 \$1105 \$1980 sg13cmos5l_nand2b_1
+X$186 VPWR VGND \$223 \$2818 \$1405 sg13cmos5l_nand2b_1
+X$187 VPWR VGND \$2216 \$2218 \$1216 \$1550 sg13cmos5l_nand3_1
+X$188 VPWR VGND \$858 \$396 \$399 \$151 sg13cmos5l_nand3_1
+X$189 VPWR VGND \$2809 \$2474 \$2573 \$2753 sg13cmos5l_nand3_1
+X$190 VPWR VGND \$2349 \$1965 \$1785 \$1964 sg13cmos5l_nand3_1
+X$191 VPWR VGND \$1714 \$741 \$1423 \$317 sg13cmos5l_nand3_1
+X$192 VPWR VGND \$2894 \$2571 \$2205 \$2603 sg13cmos5l_nand3_1
+X$193 VPWR VGND \$721 \$1025 \$398 \$719 sg13cmos5l_nand3_1
+X$194 VPWR VGND \$1573 \$1790 \$464 \$535 sg13cmos5l_nand3_1
+X$195 VPWR VGND \$1207 \$535 \$707 \$20 sg13cmos5l_nand3_1
+X$196 VPWR VGND \$2464 \$2577 \$2736 \$2732 sg13cmos5l_nand3_1
+X$197 VPWR VGND \$1234 \$1105 \$17 \$116 sg13cmos5l_nand3_1
+X$198 VPWR VGND \$63 \$1233 \$17 \$1041 sg13cmos5l_nand3_1
+X$199 VPWR VGND \$1967 \$1783 \$1787 \$1968 sg13cmos5l_nand3_1
+X$200 VPWR VGND \$2369 \$741 \$2090 \$2368 sg13cmos5l_nand3_1
+X$201 VPWR VGND \$1661 \$1281 \$1216 \$304 sg13cmos5l_nand3_1
+X$202 VPWR VGND \$3213 \$2806 \$3211 \$194 sg13cmos5l_nand3_1
+X$203 VPWR VGND \$561 \$398 \$858 sg13cmos5l_and2_1
+X$204 VPWR VGND \$3245 \$3135 \$2847 sg13cmos5l_and2_1
+X$205 VPWR VGND \$2821 \$2619 \$3156 sg13cmos5l_and2_1
+X$206 VPWR VGND \$1781 \$2573 \$2613 sg13cmos5l_and2_1
+X$207 VPWR VGND \$2760 \$2590 \$2671 sg13cmos5l_and2_1
+X$208 VPWR VGND \$3026 \$2571 \$1874 sg13cmos5l_and2_1
+X$209 VPWR VGND \$1811 \$1682 \$767 sg13cmos5l_and2_1
+X$210 VPWR VGND \$845 \$553 \$701 sg13cmos5l_and2_1
+X$211 VPWR VGND \$2571 \$2345 \$2671 sg13cmos5l_and2_1
+X$212 VPWR VGND \$3003 \$2843 \$2845 sg13cmos5l_and2_1
+X$213 VPWR VGND \$958 \$1781 \$2572 sg13cmos5l_and2_1
+X$214 VPWR VGND \$3137 \$3001 \$2637 sg13cmos5l_and2_1
+X$215 VPWR VGND \$584 \$2464 \$2618 sg13cmos5l_and2_1
+X$216 VPWR VGND \$3084 \$2466 \$2473 sg13cmos5l_and2_1
+X$217 VPWR VGND \$2637 \$1984 \$2098 sg13cmos5l_and2_1
+X$218 VPWR VGND \$2350 \$1550 \$2353 sg13cmos5l_and2_1
+X$219 VPWR VGND \$568 \$44 \$111 sg13cmos5l_and2_1
+X$220 VPWR VGND \$2098 \$2377 \$1754 sg13cmos5l_and2_1
+X$221 VPWR VGND \$1205 \$692 \$535 sg13cmos5l_and2_1
+X$222 VPWR VGND \$2613 \$2632 \$2824 sg13cmos5l_and2_1
+X$223 VPWR VGND \$185 \$1233 \$1105 sg13cmos5l_and2_1
+X$224 VPWR VGND \$1480 \$304 \$1276 sg13cmos5l_and2_1
+X$225 VPWR VGND \$3122 \$2599 \$2651 sg13cmos5l_and2_1
+X$226 VPWR VGND \$768 \$116 \$17 sg13cmos5l_and2_1
+X$227 VPWR VGND \$2824 \$2984 \$3356 sg13cmos5l_and2_1
+X$228 VPWR VGND \$2847 \$3247 \$3137 sg13cmos5l_and2_1
+X$229 VPWR VGND \$1739 \$1785 \$1967 sg13cmos5l_and2_1
+X$230 VPWR VGND \$1152 \$229 \$1234 sg13cmos5l_and2_1
+X$238 VPWR VGND \$457 \$505 \$171 \$383 sg13cmos5l_nor3_1
+X$239 VPWR VGND \$2828 \$2825 \$2630 \$2992 sg13cmos5l_nor3_1
+X$240 VPWR VGND \$727 \$1812 \$1811 \$1984 sg13cmos5l_nor3_1
+X$241 VPWR VGND \$3245 \$3510 \$3246 \$222 sg13cmos5l_nor3_1
+X$242 VPWR VGND \$2847 \$2855 \$2861 \$222 sg13cmos5l_nor3_1
+X$243 VPWR VGND \$1578 \$1539 \$1226 \$1339 sg13cmos5l_nor3_1
+X$244 VPWR VGND \$3156 \$3233 \$3235 \$223 sg13cmos5l_nor3_1
+X$245 VPWR VGND \$1491 \$1922 \$1512 \$1267 sg13cmos5l_nor3_1
+X$246 VPWR VGND \$3137 \$3263 \$3266 \$222 sg13cmos5l_nor3_1
+X$247 VPWR VGND \$584 \$878 \$51 \$748 sg13cmos5l_nor3_1
+X$248 VPWR VGND \$2214 \$2452 \$2350 \$2345 sg13cmos5l_nor3_1
+X$249 VPWR VGND \$388 \$1020 \$693 \$691 sg13cmos5l_nor3_1
+X$250 VPWR VGND \$2821 \$3347 \$3169 \$223 sg13cmos5l_nor3_1
+X$251 VPWR VGND \$1064 \$1204 \$1020 \$1205 sg13cmos5l_nor3_1
+X$252 VPWR VGND \$17 \$1730 \$1233 \$1041 sg13cmos5l_nor3_1
+X$253 VPWR VGND \$2098 \$2248 \$2100 \$222 sg13cmos5l_nor3_1
+X$254 VPWR VGND \$1754 \$1613 \$1827 \$222 sg13cmos5l_nor3_1
+X$255 VPWR VGND \$2471 \$2993 \$1084 \$2991 sg13cmos5l_nor3_1
+X$256 VPWR VGND \$2088 \$2492 \$768 \$1984 sg13cmos5l_nor3_1
+X$257 VPWR VGND \$464 \$210 \$579 \$469 sg13cmos5l_nor3_1
+X$258 VPWR VGND \$124 \$1121 \$123 \$222 sg13cmos5l_nor3_1
+X$259 VPWR VGND \$2956 \$3189 \$3190 \$2118 sg13cmos5l_nor3_1
+X$260 VPWR VGND \$171 \$383 \$304 \$457 \$697 sg13cmos5l_nor4_1
+X$261 VPWR VGND \$2671 \$2336 \$2603 \$2111 \$2651 sg13cmos5l_nor4_1
+X$262 VPWR VGND \$1534 \$116 \$1803 \$1457 \$2088 sg13cmos5l_nor4_1
+X$263 VPWR VGND \$2635 \$2580 \$2493 \$2492 \$2666 sg13cmos5l_nor4_1
+X$264 VPWR VGND \$2671 \$2345 \$2350 \$2214 \$2570 sg13cmos5l_nor4_1
+X$265 VPWR VGND \$727 \$480 \$479 \$1152 \$1267 sg13cmos5l_nor4_1
+X$266 VPWR VGND \$1574 \$1222 \$1478 \$1575 \$393 sg13cmos5l_nor4_1
+X$267 VPWR VGND \$2579 \$2743 \$2707 \$2922 \$2623 sg13cmos5l_nor4_1
+X$268 VPWR VGND \$2630 \$2983 \$2825 \$2579 \$2577 sg13cmos5l_nor4_1
+X$277 VGND \$3533 \$2697 \$3202 \$2651 VPWR sg13cmos5l_mux2_1
+X$278 VGND \$640 \$1041 \$23 \$420 VPWR sg13cmos5l_mux2_1
+X$279 VGND \$3368 \$2697 \$2803 \$2797 VPWR sg13cmos5l_mux2_1
+X$280 VGND \$399 \$403 \$461 \$310 VPWR sg13cmos5l_mux2_1
+X$281 VGND \$1254 \$1682 \$767 \$187 VPWR sg13cmos5l_mux2_1
+X$282 VGND \$2471 \$1682 \$2469 \$1730 VPWR sg13cmos5l_mux2_1
+X$283 VPWR VGND \$2780 \$2760 \$2778 \$2441 sg13cmos5l_a21o_1
+X$284 VPWR VGND \$3211 \$2118 \$3130 \$3076 sg13cmos5l_a21o_1
+X$285 VPWR VGND \$506 \$1032 \$999 \$1033 sg13cmos5l_a21o_1
+X$286 VPWR VGND \$284 \$2549 \$2813 \$576 sg13cmos5l_a21o_1
+X$287 VPWR VGND \$2808 \$2614 \$2474 \$2573 sg13cmos5l_a21o_1
+X$288 VPWR VGND \$1224 \$1539 \$1339 \$1405 sg13cmos5l_a21o_1
+X$289 VPWR VGND \$2314 \$1035 \$2549 \$1044 sg13cmos5l_a21o_1
+X$290 VPWR VGND \$1295 \$1285 \$458 \$1403 sg13cmos5l_a21o_1
+X$291 VPWR VGND \$3530 \$3577 \$3397 \$3437 sg13cmos5l_a21o_1
+X$292 VPWR VGND \$557 \$151 \$726 \$460 sg13cmos5l_a21o_1
+X$293 VPWR VGND \$704 \$393 \$1207 \$917 sg13cmos5l_a21o_1
+X$294 VPWR VGND \$3390 \$2780 \$3179 \$2603 sg13cmos5l_a21o_1
+X$295 VPWR VGND \$1606 \$1730 \$1682 \$185 sg13cmos5l_a21o_1
+X$296 VPWR VGND \$408 \$737 \$999 \$929 sg13cmos5l_a21o_1
+X$297 VPWR VGND \$1423 \$767 \$62 \$187 sg13cmos5l_a21o_1
+X$298 VPWR VGND \$917 \$535 \$20 \$707 sg13cmos5l_a21o_1
+X$299 VPWR VGND \$2675 \$2369 \$1821 \$2092 sg13cmos5l_a21o_1
+X$300 VPWR VGND \$1785 \$1783 \$1968 \$1787 sg13cmos5l_a21o_1
+X$301 VGND \$1609 VPWR \$2493 \$1612 \$2239 \$1987 \$2097 sg13cmos5l_a221oi_1
+X$302 VGND \$958 VPWR \$737 \$735 \$176 \$163 \$393 sg13cmos5l_a221oi_1
+X$303 VGND \$265 VPWR \$256 \$397 \$554 \$399 \$458 sg13cmos5l_a221oi_1
+X$304 VGND \$2822 VPWR \$2573 \$2617 \$1044 \$2464 \$2618 sg13cmos5l_a221oi_1
+X$305 VGND \$552 VPWR \$392 \$397 \$554 \$458 \$561 sg13cmos5l_a221oi_1
+X$306 VPWR VGND \$828 \$712 \$205 \$553 sg13cmos5l_nand3_1
+X$307 VGND \$2268 VPWR \$2266 \$2064 \$554 \$458 \$2180 sg13cmos5l_a221oi_1
+X$308 VGND \$1026 VPWR \$254 \$397 \$554 \$458 \$988 sg13cmos5l_a221oi_1
+X$309 VGND \$64 VPWR \$1424 \$1254 \$480 \$1243 \$812 sg13cmos5l_a221oi_1
+X$310 VGND \$702 VPWR \$1049 \$958 \$176 \$397 \$704 sg13cmos5l_a221oi_1
+X$311 VGND \$1481 VPWR \$1562 \$576 \$554 \$458 \$1739 sg13cmos5l_a221oi_1
+X$312 VGND \$1507 VPWR \$1421 \$590 \$1152 \$317 \$1258 sg13cmos5l_a221oi_1
+X$313 VGND \$3030 VPWR \$2591 \$2064 \$554 \$2146 \$2791 sg13cmos5l_a221oi_1
+X$314 VGND \$2803 VPWR \$999 \$2599 \$2971 \$2808 \$2809 sg13cmos5l_a221oi_1
+X$315 VGND \$1419 VPWR \$85 \$217 \$17 \$281 \$1279 sg13cmos5l_a221oi_1
+X$316 VGND \$313 VPWR \$1279 \$117 \$116 \$56 \$27 sg13cmos5l_a221oi_1
+X$317 VGND \$2347 VPWR \$2211 \$2064 \$554 \$2146 \$2451 sg13cmos5l_a221oi_1
+X$318 VGND \$739 VPWR \$1032 \$958 \$176 \$576 \$393 sg13cmos5l_a221oi_1
+X$319 VGND \$3016 VPWR \$2862 \$958 \$2118 \$2064 \$2787 sg13cmos5l_a221oi_1
+X$320 VGND \$120 VPWR \$217 \$756 \$114 \$349 \$313 sg13cmos5l_a221oi_1
+X$321 VGND \$2007 VPWR \$1551 \$958 \$2118 \$2064 \$2013 sg13cmos5l_a221oi_1
+X$322 VGND VPWR \$988 \$1080 \$721 sg13cmos5l_nor2b_1
+X$323 VGND VPWR \$2180 \$2214 \$2349 sg13cmos5l_nor2b_1
+X$324 VGND VPWR \$1247 \$1204 \$1472 sg13cmos5l_nor2b_1
+X$325 VGND VPWR \$318 \$771 \$591 sg13cmos5l_nor2b_1
+X$326 VGND VPWR \$943 \$1020 \$690 sg13cmos5l_nor2b_1
+X$327 VGND VPWR \$1795 \$1339 \$1338 sg13cmos5l_nor2b_1
+X$328 VGND VPWR \$710 \$707 \$828 sg13cmos5l_nor2b_1
+X$329 VGND VPWR \$2984 \$2983 \$2985 sg13cmos5l_nor2b_1
+X$330 VGND VPWR \$2208 \$2333 \$2209 sg13cmos5l_nor2b_1
+X$331 VGND VPWR \$313 \$1105 \$1534 sg13cmos5l_nor2b_1
+X$332 VGND VPWR \$1874 \$1478 \$707 sg13cmos5l_nor2b_1
+X$333 VPWR \$20 VGND \$1478 \$1021 \$1475 \$1650 sg13cmos5l_nand4_1
+X$334 VGND VPWR \$27 \$1233 \$1105 sg13cmos5l_nor2b_1
+X$335 \$3363 VGND VPWR \$3073 \$3196 \$2803 \$3199 sg13cmos5l_a22oi_1
+X$336 \$2092 VGND VPWR \$485 \$1750 \$1989 \$1820 sg13cmos5l_a22oi_1
+X$337 \$3369 VGND VPWR \$3368 \$3207 \$3054 \$3059 sg13cmos5l_a22oi_1
+X$338 \$2627 VGND VPWR \$2235 \$2629 \$258 \$2366 sg13cmos5l_a22oi_1
+X$339 \$485 VGND VPWR \$51 \$1803 \$1730 \$1682 sg13cmos5l_a22oi_1
+X$340 \$3471 VGND VPWR \$3202 \$3363 \$3365 \$2599 sg13cmos5l_a22oi_1
+X$341 \$670 VGND VPWR \$33 \$506 \$470 \$469 sg13cmos5l_a22oi_1
+X$342 \$1598 VGND VPWR \$1489 \$1457 \$313 \$51 sg13cmos5l_a22oi_1
+X$343 \$2372 VGND VPWR \$1730 \$1682 \$1980 \$1105 sg13cmos5l_a22oi_1
+X$344 \$479 VGND VPWR \$63 \$768 \$767 \$123 sg13cmos5l_a22oi_1
+X$345 \$281 VGND VPWR \$185 \$183 \$120 \$53 sg13cmos5l_a22oi_1
+X$346 \$2094 VGND VPWR \$2088 \$1987 \$1818 \$1984 sg13cmos5l_a22oi_1
+X$347 \$2839 VGND VPWR \$1606 \$2629 \$1444 \$2366 sg13cmos5l_a22oi_1
+X$348 \$112 VGND VPWR \$284 \$408 \$46 \$311 sg13cmos5l_a22oi_1
+X$349 VPWR VGND \$3132 \$3582 sg13cmos5l_dlygate4sd3_1
+X$350 VPWR VGND \$2430 \$2359 sg13cmos5l_dlygate4sd3_1
+X$351 VPWR VGND \$2549 \$2818 sg13cmos5l_dlygate4sd3_1
+X$352 VPWR VGND \$3475 \$2753 sg13cmos5l_dlygate4sd3_1
+X$353 VPWR VGND \$3135 \$2991 sg13cmos5l_dlygate4sd3_1
+X$354 VPWR VGND \$3001 \$2366 sg13cmos5l_dlygate4sd3_1
+X$355 VPWR VGND \$3595 \$3430 sg13cmos5l_dlygate4sd3_1
+X$356 VPWR VGND \$3225 \$3347 sg13cmos5l_dlygate4sd3_1
+X$357 VPWR VGND \$3081 \$3340 sg13cmos5l_dlygate4sd3_1
+X$358 VPWR VGND \$3231 \$3233 sg13cmos5l_dlygate4sd3_1
+X$359 VPWR VGND \$2766 \$2643 sg13cmos5l_dlygate4sd3_1
+X$360 VPWR VGND \$1066 \$1396 sg13cmos5l_dlygate4sd3_1
+X$361 VPWR VGND \$1793 \$1790 sg13cmos5l_dlygate4sd3_1
+X$362 VPWR VGND \$148 \$108 sg13cmos5l_dlygate4sd3_1
+X$363 VPWR VGND \$291 \$215 sg13cmos5l_dlygate4sd3_1
+X$364 VPWR VGND \$1954 \$1650 sg13cmos5l_dlygate4sd3_1
+X$365 VPWR VGND \$384 \$321 sg13cmos5l_dlygate4sd3_1
+X$366 VPWR VGND \$793 \$1021 sg13cmos5l_dlygate4sd3_1
+X$367 VPWR VGND \$412 \$466 sg13cmos5l_dlygate4sd3_1
+X$368 VPWR VGND \$692 \$950 sg13cmos5l_dlygate4sd3_1
+X$369 VPWR VGND \$145 \$287 sg13cmos5l_dlygate4sd3_1
+X$370 VPWR VGND \$111 \$167 sg13cmos5l_dlygate4sd3_1
+X$371 VPWR VGND \$2700 \$2818 sg13cmos5l_dlygate4sd3_1
+X$372 VPWR VGND \$400 \$109 sg13cmos5l_dlygate4sd3_1
+X$373 VPWR VGND \$2221 \$2542 sg13cmos5l_dlygate4sd3_1
+X$374 VPWR VGND \$2074 \$2218 sg13cmos5l_dlygate4sd3_1
+X$375 VPWR VGND \$188 \$776 sg13cmos5l_dlygate4sd3_1
+X$376 VPWR VGND \$2057 \$2176 sg13cmos5l_dlygate4sd3_1
+X$377 VPWR VGND \$1933 \$2187 sg13cmos5l_dlygate4sd3_1
+X$378 VPWR VGND \$1797 \$1917 sg13cmos5l_dlygate4sd3_1
+X$379 VPWR VGND \$820 \$765 sg13cmos5l_dlygate4sd3_1
+X$380 VPWR VGND \$2622 \$2322 sg13cmos5l_dlygate4sd3_1
+X$381 VPWR VGND \$3235 \$3410 sg13cmos5l_dlygate4sd3_1
+X$382 VPWR VGND \$160 \$373 sg13cmos5l_dlygate4sd3_1
+X$383 VPWR VGND \$2413 \$1800 sg13cmos5l_dlygate4sd3_1
+X$384 VPWR VGND \$3333 \$3079 sg13cmos5l_dlygate4sd3_1
+X$385 VPWR VGND \$3438 \$3369 sg13cmos5l_dlygate4sd3_1
+X$386 VPWR VGND \$2437 \$2186 sg13cmos5l_dlygate4sd3_1
+X$387 VPWR VGND \$1463 \$1289 sg13cmos5l_dlygate4sd3_1
+X$388 VPWR VGND \$2385 \$1952 sg13cmos5l_dlygate4sd3_1
+X$389 VPWR VGND \$1338 \$1342 sg13cmos5l_dlygate4sd3_1
+X$390 VPWR VGND \$1827 \$1618 sg13cmos5l_dlygate4sd3_1
+X$391 VPWR VGND \$2184 \$2692 sg13cmos5l_dlygate4sd3_1
+X$392 VPWR VGND \$423 \$1994 sg13cmos5l_dlygate4sd3_1
+X$393 VPWR VGND \$253 \$40 sg13cmos5l_dlygate4sd3_1
+X$394 VPWR VGND \$3224 \$3566 sg13cmos5l_dlygate4sd3_1
+X$395 VPWR VGND \$110 \$48 sg13cmos5l_dlygate4sd3_1
+X$396 VPWR VGND \$1339 \$1093 sg13cmos5l_dlygate4sd3_1
+X$397 VPWR VGND \$3217 \$2574 sg13cmos5l_dlygate4sd3_1
+X$398 VPWR VGND \$2619 \$3445 sg13cmos5l_dlygate4sd3_1
+X$399 VPWR VGND \$3169 \$3377 sg13cmos5l_dlygate4sd3_1
+X$400 VPWR VGND \$2488 \$2846 sg13cmos5l_dlygate4sd3_1
+X$401 VPWR VGND \$2377 \$1987 sg13cmos5l_dlygate4sd3_1
+X$402 VPWR VGND \$3442 \$2983 sg13cmos5l_dlygate4sd3_1
+X$403 VPWR VGND \$3247 \$2629 sg13cmos5l_dlygate4sd3_1
+X$404 VPWR VGND \$2100 \$3455 sg13cmos5l_dlygate4sd3_1
+X$405 VPWR VGND \$592 \$594 sg13cmos5l_dlygate4sd3_1
+X$406 VPWR VGND \$3196 \$3074 sg13cmos5l_dlygate4sd3_1
+X$407 VPWR VGND \$3359 \$3502 sg13cmos5l_dlygate4sd3_1
+X$408 VPWR VGND \$35 \$2249 sg13cmos5l_dlygate4sd3_1
+X$409 VPWR VGND \$1734 \$2004 sg13cmos5l_dlygate4sd3_1
+X$410 VPWR VGND \$174 \$106 sg13cmos5l_dlygate4sd3_1
+X$411 VPWR VGND \$1843 \$1475 sg13cmos5l_dlygate4sd3_1
+X$412 VPWR VGND \$3007 \$2590 sg13cmos5l_dlygate4sd3_1
+X$413 VPWR VGND \$1228 \$1281 sg13cmos5l_dlygate4sd3_1
+X$414 VPWR VGND \$3446 \$2989 sg13cmos5l_dlygate4sd3_1
+X$415 VPWR VGND \$3179 \$3182 sg13cmos5l_dlygate4sd3_1
+X$416 VPWR VGND \$771 \$947 sg13cmos5l_dlygate4sd3_1
+X$417 VPWR VGND \$3449 \$2466 sg13cmos5l_dlygate4sd3_1
+X$418 VPWR VGND \$582 \$670 sg13cmos5l_dlygate4sd3_1
+X$419 VPWR VGND \$2790 \$2788 sg13cmos5l_dlygate4sd3_1
+X$420 VPWR VGND \$1501 \$1243 sg13cmos5l_dlygate4sd3_1
+X$421 VPWR VGND \$190 \$1106 sg13cmos5l_dlygate4sd3_1
+X$422 VPWR VGND \$2080 \$1096 sg13cmos5l_dlygate4sd3_1
+X$423 VPWR VGND \$3266 \$3499 sg13cmos5l_dlygate4sd3_1
+X$424 VPWR VGND \$664 \$212 sg13cmos5l_dlygate4sd3_1
+X$425 VPWR VGND \$44 \$261 sg13cmos5l_dlygate4sd3_1
+X$426 VPWR VGND \$170 \$198 sg13cmos5l_dlygate4sd3_1
+X$427 VPWR VGND \$3480 \$3576 sg13cmos5l_dlygate4sd3_1
+X$428 VPWR VGND \$537 \$795 sg13cmos5l_dlygate4sd3_1
+X$429 VPWR VGND \$591 \$814 sg13cmos5l_dlygate4sd3_1
+X$430 VPWR VGND \$199 \$499 sg13cmos5l_dlygate4sd3_1
+X$431 VPWR VGND \$1965 \$2353 \$1650 sg13cmos5l_xnor2_1
+X$432 VPWR VGND \$461 \$727 \$151 sg13cmos5l_xnor2_1
+X$433 VPWR VGND \$1332 \$1567 \$1211 sg13cmos5l_xnor2_1
+X$434 VPWR VGND \$47 \$210 \$311 sg13cmos5l_xnor2_1
+X$435 VPWR VGND \$212 \$412 \$110 sg13cmos5l_xnor2_1
+X$436 VPWR VGND \$3191 \$3026 \$2795 sg13cmos5l_xnor2_1
+X$437 VPWR VGND \$735 \$574 \$311 sg13cmos5l_xnor2_1
+X$438 VPWR VGND \$571 \$574 \$739 sg13cmos5l_nand2b_1
+X$439 VPWR VGND \$525 \$505 \$304 sg13cmos5l_xnor2_1
+X$440 VPWR VGND \$3430 \$2603 \$3179 sg13cmos5l_xnor2_1
+X$441 VPWR VGND \$310 \$726 \$109 sg13cmos5l_xnor2_1
+X$442 VPWR VGND \$1545 \$1550 \$1734 sg13cmos5l_xnor2_1
+X$443 VPWR VGND \$1290 \$1338 \$1093 sg13cmos5l_xnor2_1
+X$444 VPWR VGND \$552 \$396 \$557 sg13cmos5l_xnor2_1
+X$445 VPWR VGND \$2268 \$1965 \$1782 sg13cmos5l_xnor2_1
+X$446 VPWR VGND \$178 \$273 \$208 sg13cmos5l_xnor2_1
+X$447 VPWR VGND \$2967 \$727 \$3132 sg13cmos5l_xnor2_1
+X$448 VPWR VGND \$934 \$1014 \$748 sg13cmos5l_xnor2_1
+X$449 VPWR VGND \$3512 \$3433 \$3520 sg13cmos5l_xnor2_1
+X$450 VPWR VGND \$3030 \$3033 \$2790 sg13cmos5l_xnor2_1
+X$451 VPWR VGND \$1025 \$1276 \$20 sg13cmos5l_xnor2_1
+X$452 VPWR VGND \$3520 \$3480 \$3196 sg13cmos5l_xnor2_1
+X$453 VPWR VGND \$1637 \$1207 \$1475 sg13cmos5l_xnor2_1
+X$454 VPWR VGND \$1783 \$1963 \$1065 sg13cmos5l_xnor2_1
+X$455 VPWR VGND \$767 \$1803 \$1534 sg13cmos5l_xnor2_1
+X$456 VPWR VGND \$3502 \$3595 \$2780 sg13cmos5l_xnor2_1
+X$457 VPWR VGND \$1952 \$2208 \$2057 sg13cmos5l_xnor2_1
+X$458 VPWR VGND \$1403 \$1400 \$1567 sg13cmos5l_xnor2_1
+X$459 VPWR VGND \$1190 \$473 \$17 sg13cmos5l_xnor2_1
+X$460 VPWR VGND \$795 \$384 \$617 sg13cmos5l_xnor2_1
+X$461 VPWR VGND \$3237 \$2473 \$2466 sg13cmos5l_xnor2_1
+X$462 VPWR VGND \$693 \$535 \$692 sg13cmos5l_xnor2_1
+X$463 VPWR VGND \$396 \$701 \$171 sg13cmos5l_xnor2_1
+X$464 VPWR VGND \$1511 \$1435 \$1555 sg13cmos5l_xnor2_1
+X$5790 VPWR VGND sg13cmos5l_decap_4
+X$5791 VPWR VGND sg13cmos5l_decap_4
+X$5792 VPWR VGND sg13cmos5l_decap_4
+X$5793 VPWR VGND sg13cmos5l_decap_4
+X$5794 VPWR VGND sg13cmos5l_decap_4
+X$5795 VPWR VGND sg13cmos5l_decap_4
+X$5796 VPWR VGND sg13cmos5l_decap_4
+X$5797 VPWR VGND sg13cmos5l_decap_4
+X$5798 VPWR VGND sg13cmos5l_decap_4
+X$5799 VPWR VGND sg13cmos5l_decap_4
+X$5800 VPWR VGND sg13cmos5l_decap_4
+X$5801 VPWR VGND sg13cmos5l_decap_4
+X$5802 VPWR VGND sg13cmos5l_decap_4
+X$5803 VPWR VGND sg13cmos5l_decap_4
+X$5804 VPWR VGND sg13cmos5l_decap_4
+X$5805 VPWR VGND sg13cmos5l_decap_4
+X$5806 VPWR VGND sg13cmos5l_decap_4
+X$5807 VPWR VGND sg13cmos5l_decap_4
+X$5808 VPWR VGND sg13cmos5l_decap_4
+X$5809 VPWR VGND sg13cmos5l_decap_4
+X$5810 VPWR VGND sg13cmos5l_decap_4
+X$5811 VPWR VGND sg13cmos5l_decap_4
+X$5812 VPWR VGND sg13cmos5l_decap_4
+X$5813 VPWR VGND sg13cmos5l_decap_4
+X$5814 VPWR VGND sg13cmos5l_decap_4
+X$5815 VPWR VGND sg13cmos5l_decap_4
+X$5816 VPWR VGND sg13cmos5l_decap_4
+X$5817 VPWR VGND sg13cmos5l_decap_4
+X$5818 VPWR VGND sg13cmos5l_decap_4
+X$5819 VPWR VGND sg13cmos5l_decap_4
+X$5820 VPWR VGND sg13cmos5l_decap_4
+X$5821 VPWR VGND sg13cmos5l_decap_4
+X$5822 VPWR VGND sg13cmos5l_decap_4
+X$5823 VPWR VGND sg13cmos5l_decap_4
+X$5824 VPWR VGND sg13cmos5l_decap_4
+X$5825 VPWR VGND sg13cmos5l_decap_4
+X$5826 VPWR VGND sg13cmos5l_decap_4
+X$5827 VPWR VGND sg13cmos5l_decap_4
+X$5828 VPWR VGND sg13cmos5l_decap_4
+X$5829 VPWR VGND \$2088 \$1044 \$2618 sg13cmos5l_nor2_1
+X$5830 VPWR VGND \$2847 \$3135 \$3246 sg13cmos5l_nor2_1
+X$5831 VPWR VGND \$2870 \$2064 \$2956 sg13cmos5l_nor2_1
+X$5832 VPWR VGND \$1084 \$1044 \$2822 sg13cmos5l_nor2_1
+X$5833 VPWR VGND \$51 \$62 \$2367 sg13cmos5l_nor2_1
+X$5834 VPWR VGND \$2372 \$1984 \$2580 sg13cmos5l_nor2_1
+X$5835 VPWR VGND \$2769 \$2549 \$1035 sg13cmos5l_nor2_1
+X$5836 VPWR VGND \$194 \$3199 \$3577 sg13cmos5l_nor2_1
+X$5837 VPWR VGND \$2474 \$2632 \$2617 sg13cmos5l_nor2_1
+X$5838 VPWR VGND \$2795 \$2599 \$2796 sg13cmos5l_nor2_1
+X$5839 VPWR VGND \$485 \$1994 \$1846 sg13cmos5l_nor2_1
+X$5840 VPWR VGND \$1332 \$1781 \$1285 sg13cmos5l_nor2_1
+X$5841 VPWR VGND \$1473 \$1733 \$1767 sg13cmos5l_nor2_1
+X$5842 VPWR VGND \$222 \$188 \$225 sg13cmos5l_nor2_1
+X$5843 VPWR VGND \$62 \$1233 \$812 sg13cmos5l_nor2_1
+X$5844 VPWR VGND \$460 \$151 \$152 sg13cmos5l_nor2_1
+X$5845 VPWR VGND \$3189 \$33 \$3397 sg13cmos5l_nor2_1
+X$5846 VPWR VGND \$1216 \$109 \$1574 sg13cmos5l_nor2_1
+X$5847 VPWR VGND \$304 \$199 \$691 sg13cmos5l_nor2_1
+X$5848 VPWR VGND \$1080 \$1480 \$1400 sg13cmos5l_nor2_1
+X$5849 VPWR VGND \$264 \$748 \$1084 sg13cmos5l_nor2_1
+X$5850 VPWR VGND \$731 \$210 \$575 sg13cmos5l_nor2_1
+X$5851 VPWR VGND \$2852 \$2637 \$2849 sg13cmos5l_nor2_1
+X$5852 VPWR VGND \$2097 \$2368 \$2239 sg13cmos5l_nor2_1
+X$5853 VPWR VGND \$1803 \$1534 \$120 sg13cmos5l_nor2_1
+X$5854 VPWR VGND \$727 \$2434 \$2630 sg13cmos5l_nor2_1
+X$5855 VPWR VGND \$2088 \$768 \$2097 sg13cmos5l_nor2_1
+X$5856 VPWR VGND \$1963 \$1555 \$1559 sg13cmos5l_nor2_1
+X$5857 VPWR VGND \$2579 \$2516 \$2902 sg13cmos5l_nor2_1
+X$5858 VPWR VGND \$1796 \$1578 \$2168 sg13cmos5l_nor2_1
+X$5859 VPWR VGND \$769 \$775 \$124 sg13cmos5l_nor2_1
+X$5860 VPWR VGND \$2111 \$2336 \$2951 sg13cmos5l_nor2_1
+X$5861 VPWR VGND \$3045 \$1781 \$2797 sg13cmos5l_nor2_1
+X$5862 VPWR VGND \$2837 \$2839 \$2679 sg13cmos5l_nor2_1
+X$5863 VPWR VGND \$188 \$592 \$123 sg13cmos5l_nor2_1
+X$5864 VPWR VGND \$1444 \$2629 \$2837 sg13cmos5l_nor2_1
+X$5865 VPWR VGND \$812 \$229 \$1123 sg13cmos5l_nor2_1
+X$5866 VPWR VGND \$1035 \$1534 \$1408 sg13cmos5l_nor2_1
+X$5867 VPWR VGND \$1791 \$1578 \$1693 sg13cmos5l_nor2_1
+X$5868 VPWR VGND \$1754 \$2377 \$3455 sg13cmos5l_nor2_1
+X$5869 VPWR VGND \$2635 \$2580 \$2503 sg13cmos5l_nor2_1
+X$5870 VPWR VGND \$258 \$2629 \$2707 sg13cmos5l_nor2_1
+X$5871 VPWR VGND \$1846 \$1995 \$1612 sg13cmos5l_nor2_1
+X$5872 VPWR VGND \$2097 \$1987 \$1995 sg13cmos5l_nor2_1
+X$5873 VPWR VGND \$1207 \$1555 \$1775 sg13cmos5l_nor2_1
+X$5874 VPWR VGND \$1234 \$229 \$1491 sg13cmos5l_nor2_1
+X$5875 VPWR VGND \$2235 \$2366 \$2296 sg13cmos5l_nor2_1
+X$5876 VPWR VGND \$2637 \$3001 \$3499 sg13cmos5l_nor2_1
+X$5877 VPWR VGND \$1290 \$1578 \$1483 sg13cmos5l_nor2_1
+X$5878 VPWR VGND \$1971 \$1970 \$1791 sg13cmos5l_nor2_1
+X$5879 VPWR VGND \$3480 \$2599 \$3505 sg13cmos5l_nor2_1
+X$5880 VPWR VGND \$3156 \$2619 \$3377 sg13cmos5l_nor2_1
+X$5881 VPWR VGND \$3137 \$3247 \$2861 sg13cmos5l_nor2_1
+X$5882 VPWR VGND \$1730 \$2367 \$1989 sg13cmos5l_nor2_1
+X$5883 VPWR VGND \$2336 \$2335 \$2333 sg13cmos5l_nor2_1
+X$5884 VPWR VGND \$1775 \$1550 \$1776 sg13cmos5l_nor2_1
+X$5885 VGND \$871 \$172 VPWR sg13cmos5l_buf_8
+X$5886 VGND \$1522 \$1359 VPWR sg13cmos5l_buf_8
+X$5887 VGND \$219 \$1720 VPWR sg13cmos5l_buf_8
+X$5888 VGND \$1484 \$3417 VPWR sg13cmos5l_buf_8
+X$5889 VGND \$871 \$39 VPWR sg13cmos5l_buf_8
+X$5890 VGND \$586 \$869 VPWR sg13cmos5l_buf_8
+X$5891 VPWR VGND \$116 \$584 \$313 \$747 sg13cmos5l_and3_1
+X$5892 VGND \$414 \$413 VPWR sg13cmos5l_buf_8
+X$5893 VGND \$413 \$756 VPWR sg13cmos5l_buf_8
+X$5894 VGND clk_ref \$871 VPWR sg13cmos5l_buf_8
+X$5895 VGND \$871 \$2375 VPWR sg13cmos5l_buf_8
+X$5896 VGND \$119 \$349 VPWR sg13cmos5l_buf_8
+X$5897 VGND \$1484 \$757 VPWR sg13cmos5l_buf_8
+X$5898 VGND \$476 \$586 VPWR sg13cmos5l_buf_8
+X$5899 VGND \$937 \$1522 VPWR sg13cmos5l_buf_8
+X$5900 VPWR VGND \$264 \$1457 \$1233 \$1105 sg13cmos5l_nand3b_1
+X$5901 VPWR VGND \$1457 \$1041 \$1233 \$187 sg13cmos5l_or3_1
+X$5902 VGND \$871 \$181 VPWR sg13cmos5l_buf_8
+X$5903 VGND \$54 \$2363 VPWR sg13cmos5l_buf_8
+X$5904 VGND \$937 \$302 VPWR sg13cmos5l_buf_8
+X$5905 VGND \$871 \$2189 VPWR sg13cmos5l_buf_8
+X$5906 VGND \$871 \$2337 VPWR sg13cmos5l_buf_8
+X$5907 VGND \$871 \$589 VPWR sg13cmos5l_buf_8
+X$5908 VGND \$586 \$477 VPWR sg13cmos5l_buf_8
+X$5909 VGND \$414 \$476 VPWR sg13cmos5l_buf_8
+X$5910 VGND \$219 \$79 VPWR sg13cmos5l_buf_8
+X$5911 VGND \$871 \$1974 VPWR sg13cmos5l_buf_8
+X$5912 VGND \$2363 \$1484 VPWR sg13cmos5l_buf_8
+X$5913 VGND \$302 \$219 VPWR sg13cmos5l_buf_8
+X$5914 VPWR VGND \$2906 \$2905 sg13cmos5l_inv_1
+X$5915 VPWR VGND \$592 \$775 sg13cmos5l_inv_1
+X$5916 VPWR VGND \$3224 \$3341 sg13cmos5l_inv_1
+X$5917 VPWR VGND \$121 \$138 sg13cmos5l_inv_1
+X$5918 VPWR VGND \$1987 \$1750 sg13cmos5l_inv_1
+X$5919 VPWR VGND \$869 \$868 sg13cmos5l_inv_1
+X$5920 VPWR VGND \$1093 \$1092 sg13cmos5l_inv_1
+X$5921 VPWR VGND \$1720 \$1197 sg13cmos5l_inv_1
+X$5922 VPWR VGND \$183 \$216 sg13cmos5l_inv_1
+X$5923 VPWR VGND \$135 \$425 sg13cmos5l_inv_1
+X$5924 VPWR VGND \$317 \$1820 sg13cmos5l_inv_1
+X$5925 VPWR VGND \$15 \$579 sg13cmos5l_inv_1
+X$5926 VPWR VGND \$2627 \$2585 sg13cmos5l_inv_1
+X$5927 VPWR VGND \$1965 \$2149 sg13cmos5l_inv_1
+X$5928 VPWR VGND \$2603 \$3199 sg13cmos5l_inv_1
+X$5929 VPWR VGND \$489 \$420 sg13cmos5l_inv_1
+X$5930 VPWR VGND \$182 \$50 sg13cmos5l_inv_1
+X$5931 VPWR VGND \$56 \$247 sg13cmos5l_inv_1
+X$5932 VPWR VGND \$1661 \$1333 sg13cmos5l_inv_1
+X$5933 VPWR VGND \$3196 \$3207 sg13cmos5l_inv_1
+X$5934 VPWR VGND \$3417 \$2052 sg13cmos5l_inv_1
+X$5935 VPWR VGND \$1065 \$1555 sg13cmos5l_inv_1
+X$5936 VPWR VGND \$2574 \$3062 sg13cmos5l_inv_1
+X$5937 VPWR VGND \$111 \$311 sg13cmos5l_inv_1
+X$5938 VPWR VGND \$383 \$151 sg13cmos5l_inv_1
+X$5939 VPWR VGND \$117 \$293 sg13cmos5l_inv_1
+X$5940 VPWR VGND \$188 \$769 sg13cmos5l_inv_1
+X$5941 VPWR VGND \$1423 \$1258 sg13cmos5l_inv_1
+X$5942 VPWR VGND \$1496 \$1245 sg13cmos5l_inv_1
+X$5943 VPWR VGND \$58 \$23 sg13cmos5l_inv_1
+X$5944 VPWR VGND \$2839 \$3296 sg13cmos5l_inv_1
+X$5945 VPWR VGND \$171 \$553 sg13cmos5l_inv_1
+X$5946 VPWR VGND \$478 \$487 sg13cmos5l_inv_1
+X$5947 VPWR VGND \$412 \$469 sg13cmos5l_inv_1
+X$5948 \$2176 VGND \$1550 VPWR \$1734 \$1473 sg13cmos5l_a21oi_1
+X$5949 \$3059 VGND \$576 VPWR \$2813 \$2549 sg13cmos5l_a21oi_1
+X$5950 \$3045 VGND \$3026 VPWR \$2795 \$3207 sg13cmos5l_a21oi_1
+X$5951 \$2828 VGND \$741 VPWR \$2473 \$2466 sg13cmos5l_a21oi_1
+X$5952 \$1618 VGND \$124 VPWR \$229 \$317 sg13cmos5l_a21oi_1
+X$5953 \$3425 VGND \$2821 VPWR \$3442 \$223 sg13cmos5l_a21oi_1
+X$5954 \$2692 VGND \$1970 VPWR \$2542 \$2074 sg13cmos5l_a21oi_1
+X$5955 \$1222 VGND \$1216 VPWR \$383 \$1055 sg13cmos5l_a21oi_1
+X$5956 \$1782 VGND \$1783 VPWR \$1565 \$1559 sg13cmos5l_a21oi_1
+X$5957 \$2697 VGND \$2809 VPWR \$2808 \$2971 sg13cmos5l_a21oi_1
+X$5958 \$707 VGND \$205 VPWR \$712 \$553 sg13cmos5l_a21oi_1
+X$5959 \$2507 VGND \$2675 VPWR \$2503 \$2679 sg13cmos5l_a21oi_1
+X$5960 \$2214 VGND \$1785 VPWR \$1964 \$1965 sg13cmos5l_a21oi_1
+X$5961 \$2971 VGND \$2613 VPWR \$2573 \$3062 sg13cmos5l_a21oi_1
+X$5962 \$1055 VGND \$464 VPWR \$579 \$743 sg13cmos5l_a21oi_1
+X$5963 \$1756 VGND \$1598 VPWR \$1750 \$1812 sg13cmos5l_a21oi_1
+X$5964 \$19 VGND \$45 VPWR \$208 \$568 sg13cmos5l_a21oi_1
+X$5965 VPWR VGND \$466 \$167 \$15 \$464 \$403 sg13cmos5l_nor4_1
+X$5966 VPWR VGND \$464 \$574 \$15 \$466 sg13cmos5l_nor3_1
+X$5967 \$3379 VGND \$3245 VPWR \$3449 \$223 sg13cmos5l_a21oi_1
+X$5968 \$59 VGND \$140 VPWR \$249 \$62 sg13cmos5l_a21oi_1
+X$5969 \$357 VGND \$461 VPWR \$460 \$152 sg13cmos5l_a21oi_1
+X$5970 \$3410 VGND \$3245 VPWR \$2466 \$3446 sg13cmos5l_a21oi_1
+X$5971 \$2985 VGND \$1489 VPWR \$2989 \$3445 sg13cmos5l_a21oi_1
+X$5972 \$2142 VGND \$120 VPWR \$1682 \$1730 sg13cmos5l_a21oi_1
+X$5973 \$1444 VGND \$187 VPWR \$62 \$1346 sg13cmos5l_a21oi_1
+X$5974 \$617 VGND \$103 VPWR \$22 \$450 sg13cmos5l_a21oi_1
+X$5975 \$470 VGND \$575 VPWR \$576 \$33 sg13cmos5l_a21oi_1
+X$5976 \$783 VGND \$124 VPWR \$229 \$222 sg13cmos5l_a21oi_1
+X$5977 \$1211 VGND \$1025 VPWR \$922 \$1333 sg13cmos5l_a21oi_1
+X$5978 \$2359 VGND \$2203 VPWR \$1226 \$2184 sg13cmos5l_a21oi_1
+X$5979 \$2595 VGND \$1874 VPWR \$2345 \$2788 sg13cmos5l_a21oi_1
+X$5980 \$2769 VGND \$2617 VPWR \$2822 \$584 sg13cmos5l_a21oi_1
+X$5981 \$1937 VGND \$935 VPWR \$1035 \$1408 sg13cmos5l_a21oi_1
+X$5982 \$2870 VGND \$3068 VPWR \$2603 \$3122 sg13cmos5l_a21oi_1
+X$5983 \$3190 VGND \$3191 VPWR \$1686 \$1781 sg13cmos5l_a21oi_1
+X$5984 \$731 VGND \$727 VPWR \$15 \$412 sg13cmos5l_a21oi_1
+X$5985 \$1512 VGND \$1423 VPWR \$741 \$317 sg13cmos5l_a21oi_1
+X$5986 \$1971 VGND \$1795 VPWR \$1281 \$1793 sg13cmos5l_a21oi_1
+X$5987 \$1473 VGND \$1472 VPWR \$1250 \$1545 sg13cmos5l_a21oi_1
+X$5988 \$1080 VGND \$398 VPWR \$719 \$1025 sg13cmos5l_a21oi_1
+X$5989 \$2523 VGND \$2234 VPWR \$2233 \$2296 sg13cmos5l_a21oi_1
+X$5990 \$2803 VGND \$2613 VPWR \$2573 \$2894 sg13cmos5l_a21oi_1
+X$5991 \$2146 VGND \$2570 VPWR \$2796 \$2064 sg13cmos5l_a21oi_1
+X$5992 \$480 VGND \$63 VPWR \$769 \$775 sg13cmos5l_a21oi_1
+X$5993 \$2841 VGND \$3003 VPWR \$2484 \$3296 sg13cmos5l_a21oi_1
+X$5994 \$3088 VGND \$2471 VPWR \$2991 \$3237 sg13cmos5l_a21oi_1
+X$5995 \$2846 \$2845 \$2088 VPWR VGND sg13cmos5l_or2_1
+X$5996 \$151 \$205 \$460 VPWR VGND sg13cmos5l_or2_1
+X$5997 \$553 \$714 \$701 VPWR VGND sg13cmos5l_or2_1
+X$5998 \$576 \$3076 \$2572 VPWR VGND sg13cmos5l_or2_1
+X$5999 \$73 \$2107 \$1551 VPWR VGND sg13cmos5l_or2_1
+X$6000 \$480 \$590 \$479 VPWR VGND sg13cmos5l_or2_1
+X$6001 \$2989 \$3085 \$1489 VPWR VGND sg13cmos5l_or2_1
+X$6002 \$748 \$740 \$264 VPWR VGND sg13cmos5l_or2_1
+X$6003 VPWR VGND \$579 \$743 \$748 \$264 \$460 sg13cmos5l_or4_1
+X$6004 \$2630 \$2743 \$2828 VPWR VGND sg13cmos5l_or2_1
+X$6005 \$2366 \$2843 \$1606 VPWR VGND sg13cmos5l_or2_1
+X$6006 \$33 \$2443 \$2862 VPWR VGND sg13cmos5l_or2_1
+X$6007 \$1534 \$2469 \$1803 VPWR VGND sg13cmos5l_or2_1
+X$6008 VGND \$545 VPWR \$707 \$304 sg13cmos5l_xor2_1
+X$6009 VGND \$2446 VPWR \$1874 \$2345 sg13cmos5l_xor2_1
+X$6010 VGND \$1064 VPWR \$1065 \$1066 sg13cmos5l_xor2_1
+X$6011 VGND \$1481 VPWR \$1783 \$1565 sg13cmos5l_xor2_1
+X$6012 VGND \$1567 VPWR \$2073 \$1021 sg13cmos5l_xor2_1
+X$6013 VGND \$2791 VPWR \$2452 \$2790 sg13cmos5l_xor2_1
+X$6014 VGND \$103 VPWR \$171 \$170 sg13cmos5l_xor2_1
+X$6015 VGND \$702 VPWR \$697 \$535 sg13cmos5l_xor2_1
+X$6016 VGND \$373 VPWR \$664 \$87 sg13cmos5l_xor2_1
+X$6017 VGND \$3016 VPWR \$2951 \$2671 sg13cmos5l_xor2_1
+X$6018 VGND \$2643 VPWR \$2441 \$2778 sg13cmos5l_xor2_1
+X$6019 VGND \$215 VPWR \$15 \$145 sg13cmos5l_xor2_1
+X$6020 VGND \$935 VPWR \$584 \$767 sg13cmos5l_xor2_1
+X$6021 VGND \$1796 VPWR \$1795 \$1228 sg13cmos5l_xor2_1
+X$6022 VGND \$457 VPWR \$461 \$403 sg13cmos5l_xor2_1
+X$6023 VGND \$2226 VPWR \$1035 \$1803 sg13cmos5l_xor2_1
+X$6024 VGND \$2778 VPWR \$2671 \$3007 sg13cmos5l_xor2_1
+X$6025 VGND \$1026 VPWR \$1025 \$922 sg13cmos5l_xor2_1
+X$6026 VGND \$321 VPWR \$304 \$199 sg13cmos5l_xor2_1
+X$6027 VGND \$2347 VPWR \$2205 \$2345 sg13cmos5l_xor2_1
+X$6028 VGND \$2063 VPWR \$2111 \$2336 sg13cmos5l_xor2_1
+X$6029 VGND \$105 VPWR \$104 \$19 sg13cmos5l_xor2_1
+X$6030 VGND \$22 VPWR \$388 \$103 \$450 \$199 \$304 sg13cmos5l_a221oi_1
+X$6031 VGND \$243 \$2218 \$2430 \$1974 VPWR sg13cmos5l_dfrbpq_1
+X$6032 VGND \$66 \$814 \$820 \$589 VPWR sg13cmos5l_dfrbpq_1
+X$6033 VGND \$1975 \$2574 \$3333 \$1974 VPWR sg13cmos5l_dfrbpq_1
+X$6034 VGND \$55 \$776 \$225 \$589 VPWR sg13cmos5l_dfrbpq_1
+X$6035 VGND \$61 \$2846 \$2849 \$2375 VPWR sg13cmos5l_dfrbpq_1
+X$6036 VGND \$1975 \$1790 \$1797 \$1974 VPWR sg13cmos5l_dfrbpq_1
+X$6037 VGND \$1975 \$1281 \$1933 \$181 VPWR sg13cmos5l_dfrbpq_1
+X$6038 VGND \$1955 \$2335 \$2385 \$2337 VPWR sg13cmos5l_dfrbpq_1
+X$6039 VGND \$1955 \$2590 \$2766 \$2337 VPWR sg13cmos5l_dfrbpq_1
+X$6040 VGND \$1975 \$2542 \$2437 \$2189 VPWR sg13cmos5l_dfrbpq_1
+X$6041 VGND \$49 \$1342 \$1463 \$181 VPWR sg13cmos5l_dfrbpq_1
+X$6042 VGND \$49 \$48 \$160 \$181 VPWR sg13cmos5l_dfrbpq_1
+X$6043 VGND \$41 \$3074 \$3438 \$1974 VPWR sg13cmos5l_dfrbpq_1
+X$6044 VGND \$1975 \$2818 \$2314 \$2189 VPWR sg13cmos5l_dfrbpq_1
+X$6045 VGND \$1975 \$2983 \$3341 \$2189 VPWR sg13cmos5l_dfrbpq_1
+X$6046 VGND \$297 \$182 \$50 \$477 VPWR sg13cmos5l_dfrbpq_1
+X$6047 VGND \$1955 \$1650 \$2383 \$2337 VPWR sg13cmos5l_dfrbpq_1
+X$6048 VGND \$49 \$466 \$582 \$181 VPWR sg13cmos5l_dfrbpq_1
+X$6049 VGND \$1955 \$2587 \$2258 \$1974 VPWR sg13cmos5l_dfrbpq_1
+X$6050 VGND \$34 \$1396 \$1247 \$172 VPWR sg13cmos5l_dfrbpq_1
+X$6051 VGND \$1955 \$2788 \$2771 \$2337 VPWR sg13cmos5l_dfrbpq_1
+X$6052 VGND \$297 \$117 \$293 \$182 VPWR sg13cmos5l_dfrbpq_1
+X$6053 VGND \$214 \$2322 \$2226 \$2189 VPWR sg13cmos5l_dfrbpq_1
+X$6054 VGND \$55 \$765 \$840 \$589 VPWR sg13cmos5l_dfrbpq_1
+X$6055 VGND \$297 \$937 \$1197 \$757 VPWR sg13cmos5l_dfrbpq_1
+X$6056 VGND \$61 \$2366 \$3263 \$2375 VPWR sg13cmos5l_dfrbpq_1
+X$6057 VGND \$214 \$1800 \$1937 \$181 VPWR sg13cmos5l_dfrbpq_1
+X$6058 VGND \$55 \$135 \$425 \$478 VPWR sg13cmos5l_dfrbpq_1
+X$6059 VGND \$66 \$947 \$591 \$589 VPWR sg13cmos5l_dfrbpq_1
+X$6060 VGND \$66 \$1243 \$1245 \$589 VPWR sg13cmos5l_dfrbpq_1
+X$6061 VGND \$34 \$950 \$943 \$172 VPWR sg13cmos5l_dfrbpq_1
+X$6062 VGND \$175 \$108 \$337 \$39 VPWR sg13cmos5l_dfrbpq_1
+X$6063 VGND \$49 \$287 \$291 \$181 VPWR sg13cmos5l_dfrbpq_1
+X$6064 VGND \$55 \$56 \$247 \$183 VPWR sg13cmos5l_dfrbpq_1
+X$6065 \$140 VGND VPWR \$185 \$478 \$120 \$121 sg13cmos5l_a22oi_1
+X$6066 VGND \$61 \$2629 \$2855 \$2375 VPWR sg13cmos5l_dfrbpq_1
+X$6067 VGND \$34 \$198 \$173 \$172 VPWR sg13cmos5l_dfrbpq_1
+X$6068 VGND \$34 \$499 \$537 \$172 VPWR sg13cmos5l_dfrbpq_1
+X$6069 VGND \$1975 \$2753 \$3081 \$2189 VPWR sg13cmos5l_dfrbpq_1
+X$6070 VGND \$55 \$121 \$138 \$58 VPWR sg13cmos5l_dfrbpq_1
+X$6071 VGND \$41 \$261 \$178 \$39 VPWR sg13cmos5l_dfrbpq_1
+X$6072 VGND \$265 \$460 \$310 \$151 VPWR sg13cmos5l_mux2_1
+X$6073 VGND \$49 \$183 \$216 \$53 VPWR sg13cmos5l_dfrbpq_1
+X$6074 VGND \$1975 \$54 \$2052 clk_fb VPWR sg13cmos5l_dfrbpq_1
+X$6075 VGND \$1955 \$3182 \$3359 \$2337 VPWR sg13cmos5l_dfrbpq_1
+X$6076 VGND \$55 \$489 \$420 \$135 VPWR sg13cmos5l_dfrbpq_1
+X$6077 VGND \$61 \$2991 \$3510 \$2375 VPWR sg13cmos5l_dfrbpq_1
+X$6078 VGND \$55 \$58 \$23 \$56 VPWR sg13cmos5l_dfrbpq_1
+X$6079 VPWR VGND \$59 \$85 \$146 sg13cmos5l_nor2_1
+X$6080 VGND \$41 \$109 \$91 \$39 VPWR sg13cmos5l_dfrbpq_1
+X$6081 \$44 \$45 \$111 VPWR VGND sg13cmos5l_or2_1
+X$6082 \$46 VGND \$47 VPWR \$163 \$33 sg13cmos5l_a21oi_1
+X$6083 VGND \$41 \$3582 \$3439 \$1974 VPWR sg13cmos5l_dfrbpq_1
+X$6084 VGND \$49 \$414 \$868 \$79 VPWR sg13cmos5l_dfrbpq_1
+X$6085 VGND \$61 \$1994 \$1613 \$2375 VPWR sg13cmos5l_dfrbpq_1
+X$6086 VGND \$16 \$2466 \$2905 \$2375 VPWR sg13cmos5l_dfrbpq_1
+X$6087 VGND \$41 \$167 \$112 \$39 VPWR sg13cmos5l_dfrbpq_1
+X$6088 VGND \$61 \$1987 \$2248 \$2375 VPWR sg13cmos5l_dfrbpq_1
+X$6089 VGND \$1955 \$3576 \$3512 \$2337 VPWR sg13cmos5l_dfrbpq_1
+X$6090 VGND \$41 \$1093 \$1224 \$39 VPWR sg13cmos5l_dfrbpq_1
+X$6091 VGND \$49 \$1096 \$934 \$181 VPWR sg13cmos5l_dfrbpq_1
+X$6092 VGND \$34 \$1021 \$1206 \$172 VPWR sg13cmos5l_dfrbpq_1
+X$6093 VGND \$55 \$594 \$1121 \$589 VPWR sg13cmos5l_dfrbpq_1
+X$6094 VGND \$49 \$53 \$29 \$117 VPWR sg13cmos5l_dfrbpq_1
+X$6095 VGND \$54 \$119 VPWR sg13cmos5l_buf_8
+X$6096 VGND \$34 \$1475 \$1432 \$172 VPWR sg13cmos5l_dfrbpq_1
+X$6097 VGND \$66 \$478 \$487 \$121 VPWR sg13cmos5l_dfrbpq_1
+X$6098 VGND \$16 \$2989 \$3231 \$2189 VPWR sg13cmos5l_dfrbpq_1
+X$6099 VGND \$297 \$1106 \$1190 \$589 VPWR sg13cmos5l_dfrbpq_1
+X$6100 VGND \$34 \$106 \$38 \$39 VPWR sg13cmos5l_dfrbpq_1
+X$6101 VGND \$41 \$40 \$245 \$39 VPWR sg13cmos5l_dfrbpq_1
+X$6102 VGND \$1955 \$2004 \$1767 \$2337 VPWR sg13cmos5l_dfrbpq_1
+X$6103 VGND \$214 \$3445 \$3225 \$2189 VPWR sg13cmos5l_dfrbpq_1
+X$6104 VGND \$175 \$2795 \$3530 \$1974 VPWR sg13cmos5l_dfrbpq_1
+X$6184 VPWR VGND \$1250 \$1066 \$1065 sg13cmos5l_nand2_1
+X$6185 VPWR VGND \$2650 \$2671 \$33 sg13cmos5l_nand2_1
+X$6186 VPWR VGND \$2806 \$2967 \$999 sg13cmos5l_nand2_1
+X$6187 VPWR VGND \$1869 \$1820 \$1423 sg13cmos5l_nand2_1
+X$6188 VPWR VGND \$2579 \$3085 \$2985 sg13cmos5l_nand2_1
+X$6189 VPWR VGND \$2813 \$2474 \$2573 sg13cmos5l_nand2_1
+X$6190 VPWR VGND \$249 \$135 \$27 sg13cmos5l_nand2_1
+X$6191 VPWR VGND \$62 \$116 \$17 sg13cmos5l_nand2_1
+X$6192 VPWR VGND \$929 \$458 \$735 sg13cmos5l_nand2_1
+X$6193 VPWR VGND \$2473 \$1682 \$27 sg13cmos5l_nand2_1
+X$6194 VPWR VGND \$1964 \$1065 \$1963 sg13cmos5l_nand2_1
+X$6195 VPWR VGND \$163 \$2573 \$2613 sg13cmos5l_nand2_1
+X$6196 VPWR VGND \$2368 \$1984 \$2372 sg13cmos5l_nand2_1
+X$6197 VPWR VGND \$1763 \$535 \$73 sg13cmos5l_nand2_1
+X$6198 VPWR VGND \$2705 \$2221 \$1405 sg13cmos5l_nand2_1
+X$6199 VPWR VGND \$554 \$2118 \$2674 sg13cmos5l_nand2_1
+X$6200 VPWR VGND \$2235 \$741 \$2142 sg13cmos5l_nand2_1
+X$6201 VPWR VGND \$3603 \$2599 \$3480 sg13cmos5l_nand2_1
+X$6202 VPWR VGND \$2073 \$1790 \$464 sg13cmos5l_nand2_1
+X$6203 VPWR VGND \$1963 \$2542 \$1216 sg13cmos5l_nand2_1
+X$6204 VPWR VGND \$2353 \$2218 \$1216 sg13cmos5l_nand2_1
+X$6205 VPWR VGND \$3033 \$2345 \$2205 sg13cmos5l_nand2_1
+X$6206 VPWR VGND \$3073 \$2571 \$2205 sg13cmos5l_nand2_1
+X$6207 VPWR VGND \$2674 \$2599 \$2803 sg13cmos5l_nand2_1
+X$6208 VPWR VGND \$2203 \$2074 \$1405 sg13cmos5l_nand2_1
+X$6209 VPWR VGND \$3054 \$3059 \$3533 sg13cmos5l_nand2_1
+X$6210 VPWR VGND \$1014 \$1035 \$578 sg13cmos5l_nand2_1
+X$6211 VPWR VGND \$743 \$167 \$466 sg13cmos5l_nand2_1
+X$6212 VPWR VGND \$1276 \$1281 \$1216 sg13cmos5l_nand2_1
+X$6213 VPWR VGND \$742 \$313 \$584 sg13cmos5l_nand2_1
+X$6214 VPWR VGND \$1033 \$739 \$458 sg13cmos5l_nand2_1
+X$6215 VPWR VGND \$772 \$317 \$485 sg13cmos5l_nand2_1
+X$6216 VPWR VGND \$1352 \$1065 \$73 sg13cmos5l_nand2_1
+X$6217 VPWR VGND \$1742 \$1793 \$1405 sg13cmos5l_nand2_1
+X$6218 VPWR VGND \$1223 \$1338 \$1405 sg13cmos5l_nand2_1
+X$6219 VPWR VGND \$3214 \$15 \$33 sg13cmos5l_nand2_1
+X$6220 VPWR VGND \$3222 \$3475 \$1405 sg13cmos5l_nand2_1
+X$6221 VPWR VGND \$547 \$1781 \$2572 sg13cmos5l_nand2_1
+X$6222 VPWR VGND \$2572 \$3074 \$2651 sg13cmos5l_nand2_1
+X$6223 VPWR VGND \$258 \$187 \$264 sg13cmos5l_nand2_1
+X$6224 VPWR VGND \$1419 \$1359 \$185 sg13cmos5l_nand2_1
+X$6225 VPWR VGND \$1489 \$62 \$187 sg13cmos5l_nand2_1
+X$6226 VPWR VGND \$3437 \$2118 \$3471 sg13cmos5l_nand2_1
+X$6227 VPWR VGND \$712 \$383 \$1216 sg13cmos5l_nand2_1
+X$6228 VPWR VGND \$1968 \$1021 \$2073 sg13cmos5l_nand2_1
+X$6229 VPWR VGND \$1927 \$1228 \$1405 sg13cmos5l_nand2_1
+X$6230 VPWR VGND \$719 \$171 \$701 sg13cmos5l_nand2_1
+X$6231 VPWR VGND \$2209 \$2335 \$2336 sg13cmos5l_nand2_1
+X$6232 VPWR VGND \$2065 \$2345 \$73 sg13cmos5l_nand2_1
+X$6233 VPWR VGND \$87 \$145 \$15 sg13cmos5l_nand2_1
+X$6234 VPWR VGND \$195 \$174 \$383 sg13cmos5l_nand2_1
+X$6235 VPWR VGND \$209 \$110 \$412 sg13cmos5l_nand2_1
+X$6236 VPWR VGND \$342 \$253 \$73 sg13cmos5l_nand2_1
+X$6237 VPWR VGND \$1818 \$1489 \$1980 sg13cmos5l_nand2_1
+X$6238 VPWR VGND \$3133 \$3217 \$1405 sg13cmos5l_nand2_1
+X$6239 VPWR VGND \$2007 \$2111 \$1859 sg13cmos5l_nand2_1
+X$6240 VPWR VGND \$346 \$400 \$73 sg13cmos5l_nand2_1
+X$6241 VPWR VGND \$1621 \$1550 \$73 sg13cmos5l_nand2_1
+X$6242 VPWR VGND \$64 \$123 \$63 sg13cmos5l_nand2_1
+X$6243 VGND \$726 VPWR \$1092 \$264 \$748 sg13cmos5l_o21ai_1
+X$6244 VGND \$3365 VPWR \$1781 \$2570 \$3199 sg13cmos5l_o21ai_1
+X$6245 VGND \$2406 VPWR \$2336 \$2214 \$2350 sg13cmos5l_o21ai_1
+X$6246 VGND \$91 VPWR \$346 \$256 \$348 sg13cmos5l_o21ai_1
+X$6247 VGND \$2632 VPWR \$2902 \$2666 \$2679 sg13cmos5l_o21ai_1
+X$6248 VGND \$701 VPWR \$1342 \$264 \$748 sg13cmos5l_o21ai_1
+X$6249 VGND \$632 VPWR \$397 \$710 \$393 sg13cmos5l_o21ai_1
+X$6250 VPWR VGND \$450 \$170 \$171 sg13cmos5l_and2_1
+X$6251 VGND \$578 VPWR \$742 \$584 \$51 sg13cmos5l_o21ai_1
+X$6252 VGND \$653 VPWR \$397 \$357 \$393 sg13cmos5l_o21ai_1
+X$6253 VPWR VGND \$398 \$396 \$151 \$399 sg13cmos5l_a21o_1
+X$6254 VGND \$348 VPWR \$194 \$395 \$176 sg13cmos5l_o21ai_1
+X$6255 VGND \$1472 VPWR \$1064 \$1020 \$1205 sg13cmos5l_o21ai_1
+X$6256 VGND \$473 VPWR \$1035 \$747 \$878 sg13cmos5l_o21ai_1
+X$6257 VGND \$1496 VPWR \$783 \$124 \$229 sg13cmos5l_o21ai_1
+X$6258 VGND \$2787 VPWR \$1686 \$2595 \$3026 sg13cmos5l_o21ai_1
+X$6259 VGND \$114 VPWR \$116 \$51 \$50 sg13cmos5l_o21ai_1
+X$6260 VGND \$2013 VPWR \$1686 \$1776 \$1874 sg13cmos5l_o21ai_1
+X$6261 VGND \$2434 VPWR \$2466 \$51 \$62 sg13cmos5l_o21ai_1
+X$6262 VGND \$690 VPWR \$693 \$388 \$691 sg13cmos5l_o21ai_1
+X$6263 VGND \$3079 VPWR \$3133 \$163 \$2818 sg13cmos5l_o21ai_1
+X$6264 VGND \$2256 VPWR \$2064 \$2446 \$393 sg13cmos5l_o21ai_1
+X$6265 VGND \$329 VPWR \$194 \$449 \$176 sg13cmos5l_o21ai_1
+X$6266 VGND \$544 VPWR \$397 \$545 \$393 sg13cmos5l_o21ai_1
+X$6267 VGND \$3356 VPWR \$3085 \$2825 \$3084 sg13cmos5l_o21ai_1
+X$6268 VGND \$3566 VPWR \$3425 \$2821 \$3442 sg13cmos5l_o21ai_1
+X$6269 VGND \$2383 VPWR \$1621 \$2107 \$2266 sg13cmos5l_o21ai_1
+X$6270 VGND \$1327 VPWR \$397 \$1637 \$393 sg13cmos5l_o21ai_1
+X$6271 VGND \$2852 VPWR \$1044 \$2098 \$1984 sg13cmos5l_o21ai_1
+X$6272 VGND \$2201 VPWR \$2309 \$1970 \$2221 sg13cmos5l_o21ai_1
+X$6273 VGND \$3130 VPWR \$2967 \$1686 \$1781 sg13cmos5l_o21ai_1
+X$6274 VGND \$3433 VPWR \$3390 \$2603 \$3179 sg13cmos5l_o21ai_1
+X$6275 VGND \$2205 VPWR \$2216 \$2149 \$1782 sg13cmos5l_o21ai_1
+X$6276 VGND \$922 VPWR \$714 \$845 \$557 sg13cmos5l_o21ai_1
+X$6277 VGND \$2186 VPWR \$2705 \$2201 \$1226 sg13cmos5l_o21ai_1
+X$6278 VGND \$631 VPWR \$632 \$239 \$547 sg13cmos5l_o21ai_1
+X$6279 VGND \$2254 VPWR \$2256 \$2063 \$547 sg13cmos5l_o21ai_1
+X$6280 VGND \$2343 VPWR \$194 \$2254 \$2118 sg13cmos5l_o21ai_1
+X$6281 VGND \$1819 VPWR \$1869 \$1818 \$1987 sg13cmos5l_o21ai_1
+X$6282 VGND \$2187 VPWR \$1927 \$2168 \$1226 sg13cmos5l_o21ai_1
+X$6283 VGND \$1917 VPWR \$1742 \$1693 \$1226 sg13cmos5l_o21ai_1
+X$6284 VGND \$3439 VPWR \$3214 \$3213 \$3371 sg13cmos5l_o21ai_1
+X$6285 VGND \$1565 VPWR \$1573 \$1567 \$1211 sg13cmos5l_o21ai_1
+X$6286 VGND \$1787 VPWR \$1567 \$1080 \$1480 sg13cmos5l_o21ai_1
+X$6287 VGND \$2249 VPWR \$3603 \$3433 \$3505 sg13cmos5l_o21ai_1
+X$6288 VGND \$391 VPWR \$194 \$631 \$176 sg13cmos5l_o21ai_1
+X$6289 VGND \$2233 VPWR \$1984 \$727 \$1811 sg13cmos5l_o21ai_1
+X$6290 VGND \$1206 VPWR \$1763 \$1363 \$1049 sg13cmos5l_o21ai_1
+X$6291 VGND \$2484 VPWR \$2094 \$1819 \$1421 sg13cmos5l_o21ai_1
+X$6292 VGND \$1553 VPWR \$1327 \$1511 \$547 sg13cmos5l_o21ai_1
+X$6293 VGND \$2090 VPWR \$1987 \$1730 \$2367 sg13cmos5l_o21ai_1
+X$6294 VGND \$1821 VPWR \$1855 \$1424 \$1123 sg13cmos5l_o21ai_1
+X$6295 VGND \$395 VPWR \$653 \$547 \$457 sg13cmos5l_o21ai_1
+X$6296 VGND \$230 VPWR \$171 \$457 \$383 sg13cmos5l_o21ai_1
+X$6297 VGND \$2736 VPWR \$2623 \$2585 \$2523 sg13cmos5l_o21ai_1
+X$6298 VGND \$2474 VPWR \$2824 \$2994 \$2841 sg13cmos5l_o21ai_1
+X$6299 VGND \$2732 VPWR \$2434 \$2516 \$2507 sg13cmos5l_o21ai_1
+X$6300 VGND \$2992 VPWR \$2991 \$2471 \$727 sg13cmos5l_o21ai_1
+X$6301 VGND \$1859 VPWR \$1550 \$1435 \$1065 sg13cmos5l_o21ai_1
+X$6302 VGND \$1845 VPWR \$194 \$1553 \$176 sg13cmos5l_o21ai_1
+X$6303 VGND \$2234 VPWR \$1756 \$1599 \$1922 sg13cmos5l_o21ai_1
+X$6304 VGND \$1432 VPWR \$1352 \$1845 \$1562 sg13cmos5l_o21ai_1
+X$6305 VGND \$208 VPWR \$209 \$212 \$87 sg13cmos5l_o21ai_1
+X$6306 VGND \$2771 VPWR \$2650 \$2591 \$2443 sg13cmos5l_o21ai_1
+X$6307 VGND \$449 VPWR \$544 \$525 \$547 sg13cmos5l_o21ai_1
+X$6308 VGND \$2258 VPWR \$2065 \$2343 \$2211 sg13cmos5l_o21ai_1
+X$6309 VGND \$1363 VPWR \$194 \$1295 \$554 sg13cmos5l_o21ai_1
+X$6310 VGND \$2906 VPWR \$3379 \$3245 \$3449 sg13cmos5l_o21ai_1
+X$6311 VGND \$3340 VPWR \$3222 \$2813 \$2818 sg13cmos5l_o21ai_1
+X$6312 VGND \$571 VPWR \$466 \$464 \$15 sg13cmos5l_o21ai_1
+X$6313 VGND \$1609 VPWR \$772 \$1424 \$1123 sg13cmos5l_o21ai_1
+X$6314 VGND \$337 VPWR \$131 \$254 \$329 sg13cmos5l_o21ai_1
+X$6315 VGND \$840 VPWR \$146 \$640 \$264 sg13cmos5l_o21ai_1
+X$6316 VGND \$2516 VPWR \$3088 \$2471 \$2991 sg13cmos5l_o21ai_1
+X$6317 VGND \$1289 VPWR \$1223 \$1483 \$1226 sg13cmos5l_o21ai_1
+X$6318 VGND \$1599 VPWR \$1714 \$1598 \$1750 sg13cmos5l_o21ai_1
+X$6319 VGND \$245 VPWR \$342 \$392 \$391 sg13cmos5l_o21ai_1
+X$6320 VGND \$2441 VPWR \$2209 \$2333 \$2176 sg13cmos5l_o21ai_1
+X$6321 VGND \$214 VPWR \$16 sg13cmos5l_buf_1
+X$6322 VGND \$229 VPWR \$1501 sg13cmos5l_buf_1
+X$6323 VGND \$317 VPWR \$423 sg13cmos5l_buf_1
+X$6324 VGND \$176 VPWR \$2697 sg13cmos5l_buf_1
+X$6325 VGND \$1803 VPWR \$2622 sg13cmos5l_buf_1
+X$6326 VGND \$383 VPWR \$109 sg13cmos5l_buf_1
+X$6327 VGND \$458 VPWR \$2146 sg13cmos5l_buf_1
+X$6328 VGND \$2064 VPWR \$576 sg13cmos5l_buf_1
+X$6329 VGND \$1233 VPWR \$1534 sg13cmos5l_buf_1
+X$6330 VGND \$1534 VPWR \$2413 sg13cmos5l_buf_1
+X$6331 VGND \$66 VPWR \$61 sg13cmos5l_buf_1
+X$6332 VGND \$55 VPWR \$61 sg13cmos5l_buf_1
+X$6333 VGND \$1041 VPWR \$748 sg13cmos5l_buf_1
+X$6334 VGND \$175 VPWR \$41 sg13cmos5l_buf_1
+X$6335 VGND \$2671 VPWR \$2790 sg13cmos5l_buf_1
+X$6336 VGND \$1065 VPWR \$1843 sg13cmos5l_buf_1
+X$6337 VGND \$I5843 VPWR \$757 sg13cmos5l_buf_1
+X$6338 VGND \$1457 VPWR \$190 sg13cmos5l_buf_1
+X$6339 VGND \$2336 VPWR \$2587 sg13cmos5l_buf_1
+X$6340 VGND \$741 VPWR \$740 sg13cmos5l_buf_1
+X$6341 VGND \$748 VPWR \$2080 sg13cmos5l_buf_1
+X$6342 VGND \$1955 VPWR \$175 sg13cmos5l_buf_1
+X$6343 VGND \$2345 VPWR \$2336 sg13cmos5l_buf_1
+X$6344 VGND \$2603 VPWR \$2795 sg13cmos5l_buf_1
+X$6345 VGND \$20 VPWR \$148 sg13cmos5l_buf_1
+X$6346 VGND \$73 VPWR \$33 sg13cmos5l_buf_1
+X$6347 VGND \$34 VPWR \$175 sg13cmos5l_buf_1
+X$6348 VGND \$49 VPWR \$214 sg13cmos5l_buf_1
+X$6349 VGND \$15 VPWR \$3132 sg13cmos5l_buf_1
+X$6350 VGND \$194 VPWR \$3059 sg13cmos5l_buf_1
+X$6351 VGND vctrl_out VPWR \$126 sg13cmos5l_buf_1
+X$6352 VGND \$1975 VPWR \$214 sg13cmos5l_buf_1
+X$6353 VGND \$222 VPWR \$223 sg13cmos5l_buf_1
+X$6354 VGND \$464 VPWR \$741 sg13cmos5l_buf_1
+X$6355 VGND \$17 VPWR \$190 sg13cmos5l_buf_1
+X$6356 VGND \$535 VPWR \$793 sg13cmos5l_buf_1
+X$6357 VGND \$223 VPWR \$318 sg13cmos5l_buf_1
+X$6358 VGND \$171 VPWR \$40 sg13cmos5l_buf_1
+X$6359 VGND \$397 VPWR \$576 sg13cmos5l_buf_1
+X$6360 VGND \$1550 VPWR \$1954 sg13cmos5l_buf_1
+X$6361 VGND \$304 VPWR \$108 sg13cmos5l_buf_1
+X$6362 VGND \$33 VPWR \$284 sg13cmos5l_buf_1
+X$6363 VGND \$1984 VPWR \$2488 sg13cmos5l_buf_1
+X$6364 VGND \$1216 VPWR \$464 sg13cmos5l_buf_1
+X$6365 VGND \$243 VPWR rst_ni sg13cmos5l_buf_1
+X$6366 VGND \$576 VPWR \$163 sg13cmos5l_buf_1
+X$6367 VGND \$68 VPWR vctrl_b_in sg13cmos5l_buf_1
+X$6368 VGND vctrl_b_out VPWR \$68 sg13cmos5l_buf_1
+X$6369 VGND \$1105 VPWR \$1803 sg13cmos5l_buf_1
+X$6370 VGND \$61 VPWR \$16 sg13cmos5l_buf_1
+X$6371 VGND \$41 VPWR \$243 sg13cmos5l_buf_1
+X$6372 VGND \$1682 VPWR \$768 sg13cmos5l_buf_1
+X$6373 VGND \$116 VPWR \$1096 sg13cmos5l_buf_1
+X$6374 VGND \$126 VPWR vctrl_in sg13cmos5l_buf_1
+X$6375 VGND \$16 VPWR \$243 sg13cmos5l_buf_1
+X$6376 VGND \$I5804 VPWR \$477 sg13cmos5l_buf_1
+X$6377 VGND \$I5803 VPWR \$79 sg13cmos5l_buf_1
+X$6378 VPWR VGND sg13cmos5l_decap_4
+X$6379 VGND \$727 VPWR \$1084 sg13cmos5l_buf_1
+X$6380 VGND \$297 VPWR \$214 sg13cmos5l_buf_1
+X$6381 VGND \$2118 VPWR \$176 sg13cmos5l_buf_1
+X$6382 VGND \$2599 VPWR \$3207 sg13cmos5l_buf_1
+X$6552 VPWR VGND sg13cmos5l_decap_8
+X$6554 VGND dac_out VPWR \$69 sg13cmos5l_buf_1
+X$6555 VGND \$22 VPWR \$195 \$104 \$19 sg13cmos5l_o21ai_1
+X$6558 VPWR VGND sg13cmos5l_decap_8
+X$6559 VPWR VGND sg13cmos5l_decap_8
+X$6560 VPWR VGND sg13cmos5l_decap_8
+X$6561 VPWR VGND sg13cmos5l_decap_8
+X$6562 VPWR VGND sg13cmos5l_decap_8
+X$6563 VPWR VGND sg13cmos5l_decap_8
+X$6564 VPWR VGND sg13cmos5l_decap_8
+X$6565 VPWR VGND sg13cmos5l_decap_8
+X$6566 VPWR VGND sg13cmos5l_decap_8
+X$6567 VPWR VGND sg13cmos5l_decap_8
+X$6568 VPWR VGND sg13cmos5l_decap_8
+X$6569 VPWR VGND sg13cmos5l_decap_8
+X$6570 VPWR VGND sg13cmos5l_decap_8
+X$6571 VPWR VGND sg13cmos5l_decap_8
+X$6572 VPWR VGND sg13cmos5l_decap_8
+X$6573 VPWR VGND sg13cmos5l_decap_8
+X$6574 VPWR VGND sg13cmos5l_decap_8
+X$6575 VPWR VGND sg13cmos5l_decap_8
+X$6576 VPWR VGND sg13cmos5l_decap_8
+X$6577 VPWR VGND sg13cmos5l_decap_8
+X$6578 VPWR VGND sg13cmos5l_decap_8
+X$6579 VPWR VGND sg13cmos5l_decap_8
+X$6580 VPWR VGND sg13cmos5l_decap_8
+X$6581 VPWR VGND sg13cmos5l_decap_8
+X$6582 VPWR VGND sg13cmos5l_decap_8
+X$6583 VPWR VGND sg13cmos5l_decap_8
+X$6584 VPWR VGND sg13cmos5l_decap_8
+X$6585 VPWR VGND sg13cmos5l_decap_8
+X$6586 VPWR VGND sg13cmos5l_decap_8
+X$6587 VPWR VGND sg13cmos5l_decap_8
+X$6588 VPWR VGND sg13cmos5l_decap_8
+X$6589 VPWR VGND sg13cmos5l_decap_8
+X$6590 VPWR VGND sg13cmos5l_decap_8
+X$6591 VPWR VGND sg13cmos5l_decap_8
+X$6592 VPWR VGND sg13cmos5l_decap_8
+X$6593 VPWR VGND sg13cmos5l_decap_8
+X$6594 VPWR VGND sg13cmos5l_decap_8
+X$6595 VPWR VGND sg13cmos5l_decap_8
+X$6596 VPWR VGND sg13cmos5l_decap_8
+X$6597 VPWR VGND sg13cmos5l_decap_8
+X$6598 VPWR VGND sg13cmos5l_decap_8
+X$6599 VPWR VGND sg13cmos5l_decap_8
+X$6600 VPWR VGND sg13cmos5l_decap_8
+X$6601 VPWR VGND sg13cmos5l_decap_8
+X$6602 VPWR VGND sg13cmos5l_decap_8
+X$6603 VPWR VGND sg13cmos5l_decap_8
+X$6604 VPWR VGND sg13cmos5l_decap_8
+X$6605 VPWR VGND sg13cmos5l_decap_8
+X$6606 VPWR VGND sg13cmos5l_decap_8
+X$6607 VPWR VGND sg13cmos5l_decap_8
+X$6608 VPWR VGND sg13cmos5l_decap_8
+X$6609 VPWR VGND sg13cmos5l_decap_8
+X$6610 VPWR VGND sg13cmos5l_decap_8
+X$6611 VPWR VGND sg13cmos5l_decap_8
+X$6612 VPWR VGND sg13cmos5l_decap_8
+X$6613 VPWR VGND sg13cmos5l_decap_8
+X$6614 VPWR VGND sg13cmos5l_decap_8
+X$6615 VPWR VGND sg13cmos5l_decap_8
+X$6616 VPWR VGND sg13cmos5l_decap_8
+X$6617 VPWR VGND sg13cmos5l_decap_8
+X$6618 VPWR VGND sg13cmos5l_decap_8
+X$6619 VPWR VGND sg13cmos5l_decap_8
+X$6620 VPWR VGND sg13cmos5l_decap_8
+X$6621 VPWR VGND sg13cmos5l_decap_8
+X$6622 VPWR VGND sg13cmos5l_decap_8
+X$6652 VGND VPWR \$239 \$505 \$230 sg13cmos5l_nor2b_1
+X$6705 VPWR VGND \$104 \$383 \$174 sg13cmos5l_xnor2_1
+X$6706 VPWR VGND \$38 \$105 sg13cmos5l_dlygate4sd3_1
+X$6721 VPWR VGND \$53 \$29 sg13cmos5l_inv_1
+X$6785 VPWR VGND \$131 \$20 \$73 sg13cmos5l_nand2_1
+X$6807 VGND \$34 \$69 \$35 \$172 VPWR sg13cmos5l_dfrbpq_1
+X$6808 VGND \$173 VPWR \$103 \$22 sg13cmos5l_xor2_1
+R$1 vcl \$3574 VGND rsil w=0.5u l=0.5u ps=0u b=0 m=1
+R$2 \$3755 VGND VGND rhigh w=2u l=5u ps=0u b=0 m=1
+R$3 dac_out vcl VGND rhigh w=1u l=61.395u ps=0.18u b=2 m=1
+M$4 \$3666 \$3666 \$3666 VGND sg13_lv_nmos L=0.13u W=0.4u AS=0.136p AD=0.136p
++ PS=1.48u PD=1.48u rfmode=0
+M$5 \$3665 \$3665 \$3665 VGND sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.34p
++ PS=3.36u PD=3.36u rfmode=0
+M$6 \$3666 \$3664 \$3665 VGND sg13_lv_nmos L=0.13u W=2u AS=0.44p AD=0.44p
++ PS=4.6u PD=4.6u rfmode=0
+M$11 VPWR VPWR VPWR VPWR sg13_lv_pmos L=0.13u W=10.25u AS=3.485p AD=3.485p
++ PS=26.62u PD=26.62u rfmode=0
+M$12 \$3643 \$3643 \$3643 VPWR sg13_lv_pmos L=0.13u W=0.5u AS=0.17p AD=0.17p
++ PS=1.68u PD=1.68u rfmode=0
+M$13 VPWR \$3643 \$3643 VPWR sg13_lv_pmos L=0.13u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u rfmode=0
+M$23 \$3644 \$3644 \$3644 VPWR sg13_lv_pmos L=0.13u W=0.95u AS=0.323p AD=0.323p
++ PS=3.26u PD=3.26u rfmode=0
+M$24 \$3666 \$3666 \$3666 VPWR sg13_lv_pmos L=0.13u W=0.45u AS=0.153p AD=0.153p
++ PS=1.58u PD=1.58u rfmode=0
+M$25 \$3666 \$3664 \$3644 VPWR sg13_lv_pmos L=0.13u W=4.5u AS=0.9225p
++ AD=0.9225p PS=9.05u PD=9.05u rfmode=0
+M$35 \$3643 \$3643 \$3643 VGND sg13_lv_nmos L=0.13u W=2u AS=0.68p AD=0.68p
++ PS=4.68u PD=4.68u rfmode=0
+M$36 \$3755 \$3755 \$3755 VGND sg13_lv_nmos L=0.13u W=2u AS=0.68p AD=0.68p
++ PS=4.68u PD=4.68u rfmode=0
+M$37 \$3755 \$3574 \$3643 VGND sg13_lv_nmos L=0.13u W=40u AS=7.9p AD=7.9p
++ PS=49.9u PD=49.9u rfmode=0
+M$57 VGND VGND VGND VGND sg13_lv_nmos L=0.13u W=11u AS=3.74p AD=3.74p PS=28.12u
++ PD=28.12u rfmode=0
+M$58 \$3660 \$3660 \$3660 VGND sg13_lv_nmos L=0.13u W=0.6u AS=0.204p AD=0.204p
++ PS=1.88u PD=1.88u rfmode=0
+M$59 \$3660 \$3660 VGND VGND sg13_lv_nmos L=0.13u W=3u AS=0.66p AD=0.66p
++ PS=5.8u PD=5.8u rfmode=0
+M$64 \$3660 \$3660 \$3660 VPWR sg13_lv_pmos L=0.13u W=0.5u AS=0.17p AD=0.17p
++ PS=1.68u PD=1.68u rfmode=0
+M$66 \$3660 \$3643 VPWR VPWR sg13_lv_pmos L=0.13u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u rfmode=0
+M$78 \$3665 \$3660 VGND VGND sg13_lv_nmos L=0.13u W=3u AS=0.66p AD=0.66p
++ PS=5.8u PD=5.8u rfmode=0
+M$84 vout vout vout VGND sg13_lv_nmos L=0.13u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$85 vout \$3689 VGND VGND sg13_lv_nmos L=0.13u W=80u AS=15.8p AD=15.8p
++ PS=91.9u PD=91.9u rfmode=0
+M$106 \$3689 \$3689 \$3689 VGND sg13_lv_nmos L=0.13u W=1.8u AS=0.612p AD=0.612p
++ PS=4.28u PD=4.28u rfmode=0
+M$107 \$3689 \$3686 VGND VGND sg13_lv_nmos L=0.13u W=18u AS=3.69p AD=3.69p
++ PS=23.9u PD=23.9u rfmode=0
+M$117 clk_fb clk_fb clk_fb VGND sg13_lv_nmos L=0.13u W=2.4u AS=0.816p AD=0.816p
++ PS=6.16u PD=6.16u rfmode=0
+M$119 clk_fb \$3674 VGND VGND sg13_lv_nmos L=0.13u W=6u AS=1.32p AD=1.32p
++ PS=9.4u PD=9.4u rfmode=0
+M$124 \$3686 \$3686 \$3686 VPWR sg13_lv_pmos L=0.13u W=2.6u AS=0.884p AD=0.884p
++ PS=6.56u PD=6.56u rfmode=0
+M$125 VGND VGND VGND VPWR sg13_lv_pmos L=0.13u W=1.3u AS=0.442p AD=0.442p
++ PS=3.28u PD=3.28u rfmode=0
+M$126 \$3686 vctrl_out VGND VPWR sg13_lv_pmos L=0.13u W=13.5u AS=2.7675p
++ AD=2.7675p PS=18.95u PD=18.95u rfmode=0
+M$136 \$3686 \$3686 \$3686 VGND sg13_lv_nmos L=0.13u W=2.4u AS=0.816p AD=0.816p
++ PS=6.16u PD=6.16u rfmode=0
+M$138 \$3686 vctrl_b_out VGND VGND sg13_lv_nmos L=0.13u W=6u AS=1.32p AD=1.32p
++ PS=9.4u PD=9.4u rfmode=0
+M$145 \$3686 vctrl_out clk_fb VGND sg13_lv_nmos L=0.13u W=6u AS=1.32p AD=1.32p
++ PS=9.4u PD=9.4u rfmode=0
+M$151 \$3672 \$3672 \$3672 VGND sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.34p
++ PS=3.36u PD=3.36u rfmode=0
+M$152 \$3672 \$3660 VGND VGND sg13_lv_nmos L=0.13u W=3u AS=0.66p AD=0.66p
++ PS=5.8u PD=5.8u rfmode=0
+M$157 \$3664 \$3664 \$3664 VGND sg13_lv_nmos L=0.13u W=0.4u AS=0.136p AD=0.136p
++ PS=1.48u PD=1.48u rfmode=0
+M$159 \$3664 \$3669 \$3672 VGND sg13_lv_nmos L=0.13u W=2u AS=0.44p AD=0.44p
++ PS=4.6u PD=4.6u rfmode=0
+M$164 \$3646 \$3646 \$3646 VPWR sg13_lv_pmos L=0.13u W=0.95u AS=0.323p
++ AD=0.323p PS=3.26u PD=3.26u rfmode=0
+M$165 \$3664 \$3664 \$3664 VPWR sg13_lv_pmos L=0.13u W=0.45u AS=0.153p
++ AD=0.153p PS=1.58u PD=1.58u rfmode=0
+M$166 \$3664 \$3669 \$3646 VPWR sg13_lv_pmos L=0.13u W=4.5u AS=0.9225p
++ AD=0.9225p PS=9.05u PD=9.05u rfmode=0
+M$176 \$3674 \$3674 \$3674 VGND sg13_lv_nmos L=0.13u W=0.4u AS=0.136p AD=0.136p
++ PS=1.48u PD=1.48u rfmode=0
+M$178 \$3674 \$3664 VGND VGND sg13_lv_nmos L=0.13u W=2u AS=0.44p AD=0.44p
++ PS=4.6u PD=4.6u rfmode=0
+M$184 \$3674 \$3674 \$3674 VPWR sg13_lv_pmos L=0.13u W=0.45u AS=0.153p
++ AD=0.153p PS=1.58u PD=1.58u rfmode=0
+M$185 \$3674 \$3664 VPWR VPWR sg13_lv_pmos L=0.13u W=4.5u AS=0.9225p AD=0.9225p
++ PS=9.05u PD=9.05u rfmode=0
+M$195 \$3689 \$3689 \$3689 VPWR sg13_lv_pmos L=0.13u W=2u AS=0.68p AD=0.68p
++ PS=4.68u PD=4.68u rfmode=0
+M$197 \$3689 \$3686 VPWR VPWR sg13_lv_pmos L=0.13u W=40u AS=7.9p AD=7.9p
++ PS=49.9u PD=49.9u rfmode=0
+M$217 vout vout vout VPWR sg13_lv_pmos L=0.13u W=4u AS=1.36p AD=1.36p PS=8.68u
++ PD=8.68u rfmode=0
+M$219 vout \$3689 VPWR VPWR sg13_lv_pmos L=0.13u W=200u AS=38.6p AD=38.6p
++ PS=223.3u PD=223.3u rfmode=0
+M$270 \$3668 \$3668 \$3668 VGND sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.34p
++ PS=3.36u PD=3.36u rfmode=0
+M$271 \$3668 \$3660 VGND VGND sg13_lv_nmos L=0.13u W=3u AS=0.66p AD=0.66p
++ PS=5.8u PD=5.8u rfmode=0
+M$276 \$3669 \$3669 \$3669 VGND sg13_lv_nmos L=0.13u W=0.4u AS=0.136p AD=0.136p
++ PS=1.48u PD=1.48u rfmode=0
+M$278 \$3669 \$3666 \$3668 VGND sg13_lv_nmos L=0.13u W=2u AS=0.44p AD=0.44p
++ PS=4.6u PD=4.6u rfmode=0
+M$283 \$3645 \$3645 \$3645 VPWR sg13_lv_pmos L=0.13u W=0.95u AS=0.323p
++ AD=0.323p PS=3.26u PD=3.26u rfmode=0
+M$284 \$3669 \$3669 \$3669 VPWR sg13_lv_pmos L=0.13u W=0.45u AS=0.153p
++ AD=0.153p PS=1.58u PD=1.58u rfmode=0
+M$285 \$3669 \$3666 \$3645 VPWR sg13_lv_pmos L=0.13u W=4.5u AS=0.9225p
++ AD=0.9225p PS=9.05u PD=9.05u rfmode=0
+M$297 \$3644 \$3643 VPWR VPWR sg13_lv_pmos L=0.13u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u rfmode=0
+M$309 \$3645 \$3643 VPWR VPWR sg13_lv_pmos L=0.13u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u rfmode=0
+M$321 \$3646 \$3643 VPWR VPWR sg13_lv_pmos L=0.13u W=5u AS=1.025p AD=1.025p
++ PS=9.6u PD=9.6u rfmode=0
+M$331 clk_fb clk_fb clk_fb VPWR sg13_lv_pmos L=0.13u W=2.6u AS=0.884p AD=0.884p
++ PS=6.56u PD=6.56u rfmode=0
+M$333 clk_fb \$3674 VPWR VPWR sg13_lv_pmos L=0.13u W=13.5u AS=2.7675p
++ AD=2.7675p PS=18.95u PD=18.95u rfmode=0
+M$345 \$3686 vctrl_b_out clk_fb VPWR sg13_lv_pmos L=0.13u W=13.5u AS=2.7675p
++ AD=2.7675p PS=18.95u PD=18.95u rfmode=0
+.ENDS ook_transmitter
+
+.SUBCKT sg13cmos5l_or4_1 VDD VSS B D A C X
+M$1 VSS D \$7 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.187p AD=0.1045p PS=1.78u
++ PD=0.93u rfmode=0
+M$2 VSS C \$7 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.16755p AD=0.1045p PS=1.165u
++ PD=0.93u rfmode=0
+M$3 VSS B \$7 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.16755p AD=0.1045p PS=1.165u
++ PD=0.93u rfmode=0
+M$4 VSS A \$7 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.14135p AD=0.1045p PS=1.14u
++ PD=0.93u rfmode=0
+M$5 VSS \$7 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.14135p AD=0.2516p PS=1.14u
++ PD=2.16u rfmode=0
+M$6 \$7 D \$11 VDD sg13_lv_pmos L=0.13u W=1u AS=0.34p AD=0.19p PS=2.68u
++ PD=1.38u rfmode=0
+M$7 \$11 C \$10 VDD sg13_lv_pmos L=0.13u W=1u AS=0.19p AD=0.2925p PS=1.38u
++ PD=1.585u rfmode=0
+M$8 \$10 B \$9 VDD sg13_lv_pmos L=0.13u W=1u AS=0.2925p AD=0.19p PS=1.585u
++ PD=1.38u rfmode=0
+M$9 VDD A \$9 VDD sg13_lv_pmos L=0.13u W=1u AS=0.2144p AD=0.19p PS=1.52u
++ PD=1.38u rfmode=0
+M$10 VDD \$7 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2144p AD=0.3808p PS=1.52u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_or4_1
+
+.SUBCKT sg13cmos5l_nor4_1 VDD VSS B A C D Y
+M$1 VSS A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 Y B VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$3 VSS C Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$4 Y D VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.237575p PS=1.12u
++ PD=2.16u rfmode=0
+M$5 VDD A \$9 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$6 \$9 B \$8 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$7 \$8 C \$10 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$8 \$10 D Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.4368p PS=1.5u
++ PD=3.02u rfmode=0
+.ENDS sg13cmos5l_nor4_1
+
+.SUBCKT sg13cmos5l_a221oi_1 VSS B1 VDD Y B2 C1 A1 A2
+M$1 Y A1 \$11 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 \$11 A2 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$3 Y C1 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$4 VSS B2 \$12 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$5 \$12 B1 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$6 VDD A1 \$9 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$7 \$9 A2 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+M$8 Y C1 \$6 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$9 \$6 B2 \$9 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$10 \$9 B1 \$6 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_a221oi_1
+
+.SUBCKT sg13cmos5l_nand4_1 VDD A VSS Y B C D
+M$1 VSS D \$10 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 \$10 C \$9 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$3 \$9 B \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$4 \$8 A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$5 VDD D Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$6 Y C VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$7 VDD B Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$8 Y A VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_nand4_1
+
+.SUBCKT sg13cmos5l_a22oi_1 Y VSS VDD A2 B2 B1 A1
+M$1 VSS B1 \$10 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2553p AD=0.13875p
++ PS=2.17u PD=1.115u rfmode=0
+M$2 \$10 B2 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.13875p AD=0.2664p PS=1.115u
++ PD=1.46u rfmode=0
+M$3 Y A1 \$9 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2664p AD=0.0962p PS=1.46u
++ PD=1u rfmode=0
+M$4 \$9 A2 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.0962p AD=0.2516p PS=1u
++ PD=2.16u rfmode=0
+M$5 VDD A1 \$5 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2716p PS=2.92u
++ PD=1.605u rfmode=0
+M$6 \$5 B1 Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2716p AD=0.2128p PS=1.605u
++ PD=1.5u rfmode=0
+M$7 Y B2 \$5 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2744p PS=1.5u
++ PD=1.61u rfmode=0
+M$8 \$5 A2 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2744p AD=0.3808p PS=1.61u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_a22oi_1
+
+.SUBCKT sg13cmos5l_mux2_1 VSS X S A1 A0 VDD
+M$1 VSS S \$2 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.18945p AD=0.187p PS=1.27u
++ PD=1.78u rfmode=0
+M$2 VSS S \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.18945p AD=0.13135p PS=1.27u
++ PD=1.095u rfmode=0
+M$3 \$8 A1 \$3 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.13135p AD=0.1628p
++ PS=1.095u PD=1.18u rfmode=0
+M$4 \$3 A0 \$9 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1628p AD=0.3367p PS=1.18u
++ PD=1.65u rfmode=0
+M$5 \$9 \$2 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.3367p AD=0.148p PS=1.65u
++ PD=1.14u rfmode=0
+M$6 VSS \$3 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.148p AD=0.4033p PS=1.14u
++ PD=2.57u rfmode=0
+M$7 \$2 S VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.253p PS=2.36u
++ PD=1.53u rfmode=0
+M$8 VDD S \$10 VDD sg13_lv_pmos L=0.13u W=1u AS=0.253p AD=0.3325p PS=1.53u
++ PD=1.665u rfmode=0
+M$9 \$10 A0 \$3 VDD sg13_lv_pmos L=0.13u W=1u AS=0.3325p AD=0.2225p PS=1.665u
++ PD=1.445u rfmode=0
+M$10 \$3 A1 \$11 VDD sg13_lv_pmos L=0.13u W=1u AS=0.2225p AD=0.2975p PS=1.445u
++ PD=1.595u rfmode=0
+M$11 \$11 \$2 VDD VDD sg13_lv_pmos L=0.13u W=1u AS=0.2975p AD=0.2198p PS=1.595u
++ PD=1.52u rfmode=0
+M$12 VDD \$3 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2198p AD=0.6048p PS=1.52u
++ PD=3.32u rfmode=0
+.ENDS sg13cmos5l_mux2_1
+
+.SUBCKT sg13cmos5l_and3_1 VDD VSS A C B X
+M$1 \$7 A \$9 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.2176p AD=0.1216p PS=1.96u
++ PD=1.02u rfmode=0
+M$2 \$9 B \$8 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1216p AD=0.1216p PS=1.02u
++ PD=1.02u rfmode=0
+M$3 VSS C \$8 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1371p AD=0.1216p PS=1.12u
++ PD=1.02u rfmode=0
+M$4 VSS \$7 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1371p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$5 \$7 A VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.1596p PS=2.36u
++ PD=1.22u rfmode=0
+M$6 VDD B \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1596p AD=0.1596p PS=1.22u
++ PD=1.22u rfmode=0
+M$7 VDD C \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.36195p AD=0.1596p PS=1.84u
++ PD=1.22u rfmode=0
+M$8 VDD \$7 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.36195p AD=0.3808p PS=1.84u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_and3_1
+
+.SUBCKT sg13cmos5l_a21o_1 VDD VSS X B1 A1 A2
+M$1 X \$4 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2351p AD=0.15745p PS=2.16u
++ PD=1.175u rfmode=0
+M$2 VSS B1 \$4 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.15745p AD=0.1216p
++ PS=1.175u PD=1.02u rfmode=0
+M$3 \$4 A1 \$9 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1216p AD=0.0816p PS=1.02u
++ PD=0.895u rfmode=0
+M$4 \$9 A2 VSS VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.0816p AD=0.2176p PS=0.895u
++ PD=1.96u rfmode=0
+M$5 \$4 B1 \$6 VDD sg13_lv_pmos L=0.13u W=1u AS=0.35p AD=0.2125p PS=2.7u
++ PD=1.425u rfmode=0
+M$6 \$6 A1 VDD VDD sg13_lv_pmos L=0.13u W=1u AS=0.2125p AD=0.19p PS=1.425u
++ PD=1.38u rfmode=0
+M$7 VDD A2 \$6 VDD sg13_lv_pmos L=0.13u W=1u AS=0.19p AD=0.34p PS=1.38u
++ PD=2.68u rfmode=0
+M$8 X \$4 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.3808p PS=2.92u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_a21o_1
+
+.SUBCKT sg13cmos5l_or3_1 VDD VSS C A B X
+M$1 \$6 C VSS VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.187p AD=0.1045p PS=1.78u
++ PD=0.93u rfmode=0
+M$2 VSS B \$6 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.1045p AD=0.198p PS=0.93u
++ PD=1.27u rfmode=0
+M$3 \$6 A VSS VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.198p AD=0.13395p PS=1.27u
++ PD=1.12u rfmode=0
+M$4 VSS \$6 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.13395p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$5 \$6 C \$9 VDD sg13_lv_pmos L=0.13u W=1u AS=0.34p AD=0.19p PS=2.68u PD=1.38u
++ rfmode=0
+M$6 \$9 B \$8 VDD sg13_lv_pmos L=0.13u W=1u AS=0.19p AD=0.1575p PS=1.38u
++ PD=1.315u rfmode=0
+M$7 \$8 A VDD VDD sg13_lv_pmos L=0.13u W=1u AS=0.1575p AD=0.3822p PS=1.315u
++ PD=1.84u rfmode=0
+M$8 VDD \$6 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3822p AD=0.3808p PS=1.84u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_or3_1
+
+.SUBCKT sg13cmos5l_buf_8 VSS A X VDD
+M$1 \$2 A VSS VSS sg13_lv_nmos L=0.13u W=2.22u AS=0.5365p AD=0.4218p PS=4.41u
++ PD=3.36u rfmode=0
+M$4 VSS \$2 X VSS sg13_lv_nmos L=0.13u W=5.92u AS=1.1248p AD=1.2358p PS=8.96u
++ PD=10u rfmode=0
+M$12 \$2 A VDD VDD sg13_lv_pmos L=0.13u W=3.36u AS=0.8064p AD=0.6384p PS=5.92u
++ PD=4.5u rfmode=0
+M$15 VDD \$2 X VDD sg13_lv_pmos L=0.13u W=8.96u AS=1.7024p AD=1.876p PS=12u
++ PD=13.43u rfmode=0
+.ENDS sg13cmos5l_buf_8
+
+.SUBCKT sg13cmos5l_nor2b_1 VSS VDD Y A B_N
+M$1 VSS B_N \$5 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.17255p AD=0.187p PS=1.25u
++ PD=1.78u rfmode=0
+M$2 VSS \$5 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.17255p AD=0.1406p PS=1.25u
++ PD=1.12u rfmode=0
+M$3 Y A VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 \$5 B_N VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.2618p PS=2.36u
++ PD=1.63u rfmode=0
+M$5 VDD \$5 \$7 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2618p AD=0.1176p PS=1.63u
++ PD=1.33u rfmode=0
+M$6 \$7 A Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.1176p AD=0.3808p PS=1.33u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_nor2b_1
+
+.SUBCKT sg13cmos5l_nand3_1 VDD VSS Y B C A
+M$1 VSS C \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2886p AD=0.1406p PS=2.26u
++ PD=1.12u rfmode=0
+M$2 \$8 B \$7 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$3 \$7 A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 VDD C Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$5 Y B VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$6 VDD A Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_nand3_1
+
+.SUBCKT sg13cmos5l_and2_1 VDD VSS X A B
+M$1 \$4 A \$7 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.2176p AD=0.1216p PS=1.96u
++ PD=1.02u rfmode=0
+M$2 VSS B \$7 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1331p AD=0.1216p PS=1.12u
++ PD=1.02u rfmode=0
+M$3 VSS \$4 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1331p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 VDD A \$4 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.1596p PS=2.36u
++ PD=1.22u rfmode=0
+M$5 VDD B \$4 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1918p AD=0.1596p PS=1.5u
++ PD=1.22u rfmode=0
+M$6 VDD \$4 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.1918p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_and2_1
+
+.SUBCKT sg13cmos5l_xnor2_1 VDD VSS Y B A
+M$1 VSS A \$8 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.2272p AD=0.0784p PS=1.99u
++ PD=0.885u rfmode=0
+M$2 \$8 B \$7 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.0784p AD=0.2176p PS=0.885u
++ PD=1.96u rfmode=0
+M$3 VSS A \$3 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1898p AD=0.2516p PS=1.36u
++ PD=2.16u rfmode=0
+M$4 VSS B \$3 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1898p AD=0.1406p PS=1.36u
++ PD=1.12u rfmode=0
+M$5 \$3 \$7 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$6 VDD A \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.4536p AD=0.1596p PS=2.76u
++ PD=1.22u rfmode=0
+M$7 VDD B \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2891p AD=0.1596p PS=1.695u
++ PD=1.22u rfmode=0
+M$8 VDD A \$9 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2891p AD=0.1428p PS=1.695u
++ PD=1.375u rfmode=0
+M$9 \$9 B Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.1428p AD=0.2408p PS=1.375u
++ PD=1.55u rfmode=0
+M$10 Y \$7 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2408p AD=0.3808p PS=1.55u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_xnor2_1
+
+.SUBCKT sg13cmos5l_or2_1 A X B VDD VSS
+M$1 VSS B \$6 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.187p AD=0.1045p PS=1.78u
++ PD=0.93u rfmode=0
+M$2 \$6 A VSS VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.1045p AD=0.1469p PS=0.93u
++ PD=1.155u rfmode=0
+M$3 VSS \$6 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1469p AD=0.2516p PS=1.155u
++ PD=2.16u rfmode=0
+M$4 \$6 B \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.1596p PS=2.36u
++ PD=1.22u rfmode=0
+M$5 VDD A \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2226p AD=0.1596p PS=1.535u
++ PD=1.22u rfmode=0
+M$6 VDD \$6 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2226p AD=0.3976p PS=1.535u
++ PD=2.95u rfmode=0
+.ENDS sg13cmos5l_or2_1
+
+.SUBCKT sg13cmos5l_dfrbpq_1 VSS RESET_B Q D CLK VDD
+M$1 VSS \$4 \$19 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.317325p AD=0.2516p
++ PS=1.805u PD=2.16u rfmode=0
+M$2 VSS CLK \$4 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.317325p AD=0.2516p
++ PS=1.805u PD=2.16u rfmode=0
+M$3 \$14 \$4 \$7 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.12665p AD=0.1428p
++ PS=1.145u PD=1.52u rfmode=0
+M$4 \$3 \$19 \$14 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.3473p AD=0.12665p
++ PS=2.71u PD=1.145u rfmode=0
+M$5 \$7 \$8 VSS VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.1428p AD=0.0798p PS=1.52u
++ PD=0.8u rfmode=0
+M$6 VSS RESET_B \$17 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0798p AD=0.0378p
++ PS=0.8u PD=0.6u rfmode=0
+M$7 \$17 \$14 \$8 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0378p AD=0.1428p
++ PS=0.6u PD=1.52u rfmode=0
+M$8 \$9 \$14 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p
++ PS=2.16u PD=1.12u rfmode=0
+M$9 VSS \$9 Q VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$10 \$5 D \$15 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.1428p AD=0.0609p PS=1.52u
++ PD=0.71u rfmode=0
+M$11 \$15 RESET_B VSS VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0609p AD=0.1626p
++ PS=0.71u PD=1.415u rfmode=0
+M$12 VSS \$12 \$3 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1626p AD=0.2516p
++ PS=1.415u PD=2.16u rfmode=0
+M$13 \$5 \$4 \$12 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.1296p AD=0.0798p
++ PS=1.52u PD=0.8u rfmode=0
+M$14 \$12 \$19 \$6 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0798p AD=0.2373p
++ PS=0.8u PD=1.97u rfmode=0
+M$15 VSS RESET_B \$16 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.1701p AD=0.0378p
++ PS=1.65u PD=0.6u rfmode=0
+M$16 \$16 \$3 \$6 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0378p AD=0.1428p
++ PS=0.6u PD=1.52u rfmode=0
+M$17 \$14 \$19 \$21 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.2048p AD=0.09345p
++ PS=1.63u PD=0.865u rfmode=0
+M$18 \$21 \$8 VDD VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.09345p AD=0.204p
++ PS=0.865u PD=1.835u rfmode=0
+M$19 VDD RESET_B \$8 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.204p AD=0.0798p
++ PS=1.835u PD=0.8u rfmode=0
+M$20 \$8 \$14 VDD VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.0798p AD=0.4659p
++ PS=0.8u PD=3.65u rfmode=0
+M$21 \$3 \$4 \$14 VDD sg13_lv_pmos L=0.13u W=1u AS=0.34p AD=0.2048p PS=2.68u
++ PD=1.63u rfmode=0
+M$22 \$9 \$14 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3864p AD=0.2128p
++ PS=2.93u PD=1.5u rfmode=0
+M$23 VDD \$9 Q VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+M$24 VDD D \$5 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.1428p AD=0.0798p PS=1.52u
++ PD=0.8u rfmode=0
+M$25 VDD RESET_B \$5 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.3623875p AD=0.0798p
++ PS=2.605u PD=0.8u rfmode=0
+M$26 VDD \$12 \$3 VDD sg13_lv_pmos L=0.13u W=1u AS=0.3623875p AD=0.34p
++ PS=2.605u PD=2.68u rfmode=0
+M$27 \$19 \$4 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3864p AD=0.41165p
++ PS=2.93u PD=2.12u rfmode=0
+M$28 VDD CLK \$4 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.41165p AD=0.4088p
++ PS=2.12u PD=2.97u rfmode=0
+M$29 \$12 RESET_B VDD VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.147p AD=0.1563p
++ PS=1.54u PD=1.22u rfmode=0
+M$30 VDD \$3 \$20 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.1563p AD=0.063p
++ PS=1.22u PD=0.72u rfmode=0
+M$31 \$20 \$4 \$12 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.063p AD=0.0798p
++ PS=0.72u PD=0.8u rfmode=0
+M$32 \$12 \$19 \$5 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.0798p AD=0.1428p
++ PS=0.8u PD=1.52u rfmode=0
+.ENDS sg13cmos5l_dfrbpq_1
+
+.SUBCKT sg13cmos5l_decap_4 VDD VSS
+M$1 VSS VDD VSS VSS sg13_lv_nmos L=1u W=0.42u AS=0.1428p AD=0.1428p PS=1.52u
++ PD=1.52u rfmode=0
+M$2 VDD VSS VDD VDD sg13_lv_pmos L=1u W=1u AS=0.34p AD=0.34p PS=2.68u PD=2.68u
++ rfmode=0
+.ENDS sg13cmos5l_decap_4
+
+.SUBCKT sg13cmos5l_decap_8 VDD VSS
+M$1 VSS VDD VSS VSS sg13_lv_nmos L=1u W=0.84u AS=0.2226p AD=0.2226p PS=2.32u
++ PD=2.32u rfmode=0
+M$3 VDD VSS VDD VDD sg13_lv_pmos L=1u W=2u AS=0.53p AD=0.53p PS=4.06u PD=4.06u
++ rfmode=0
+.ENDS sg13cmos5l_decap_8
+
+.SUBCKT sg13cmos5l_xor2_1 VSS X VDD B A
+M$1 VSS A \$1 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.374p AD=0.174625p PS=2.46u
++ PD=1.185u rfmode=0
+M$2 VSS B \$1 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.15245p AD=0.174625p
++ PS=1.17u PD=1.185u rfmode=0
+M$3 VSS A \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.15245p AD=0.0888p PS=1.17u
++ PD=0.98u rfmode=0
+M$4 \$8 B X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.0888p AD=0.1628p PS=0.98u
++ PD=1.18u rfmode=0
+M$5 X \$1 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1628p AD=0.3108p PS=1.18u
++ PD=2.32u rfmode=0
+M$6 \$3 A VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$7 VDD B \$3 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$8 \$3 \$1 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+M$9 VDD A \$9 VDD sg13_lv_pmos L=0.13u W=1u AS=0.36p AD=0.1225p PS=2.72u
++ PD=1.245u rfmode=0
+M$10 \$9 B \$1 VDD sg13_lv_pmos L=0.13u W=1u AS=0.1225p AD=0.34p PS=1.245u
++ PD=2.68u rfmode=0
+.ENDS sg13cmos5l_xor2_1
+
+.SUBCKT sg13cmos5l_nand2b_1 VDD VSS B A_N Y
+M$1 VSS A_N \$6 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.14505p AD=0.187p PS=1.15u
++ PD=1.78u rfmode=0
+M$2 VSS B \$7 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.14505p AD=0.1406p PS=1.15u
++ PD=1.12u rfmode=0
+M$3 \$7 \$6 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.333p PS=1.12u
++ PD=2.38u rfmode=0
+M$4 \$6 A_N VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.2198p PS=2.36u
++ PD=1.53u rfmode=0
+M$5 VDD B Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2198p AD=0.2128p PS=1.53u
++ PD=1.5u rfmode=0
+M$6 Y \$6 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_nand2b_1
+
+.SUBCKT sg13cmos5l_buf_1 VSS X VDD A
+M$1 VSS A \$1 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.14875p AD=0.187p PS=1.16u
++ PD=1.78u rfmode=0
+M$2 VSS \$1 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.14875p AD=0.2886p PS=1.16u
++ PD=2.26u rfmode=0
+M$3 VDD A \$1 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2114p AD=0.2856p PS=1.54u
++ PD=2.36u rfmode=0
+M$4 VDD \$1 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2114p AD=0.42p PS=1.54u
++ PD=2.99u rfmode=0
+.ENDS sg13cmos5l_buf_1
+
+.SUBCKT sg13cmos5l_nand3b_1 VDD VSS Y B C A_N
+M$1 VSS A_N \$6 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.18575p AD=0.187p PS=1.26u
++ PD=1.78u rfmode=0
+M$2 VSS C \$9 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.18575p AD=0.1406p PS=1.26u
++ PD=1.12u rfmode=0
+M$3 \$9 B \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$4 \$8 \$6 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.3404p PS=1.12u
++ PD=2.4u rfmode=0
+M$5 \$6 A_N VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.2198p PS=2.36u
++ PD=1.53u rfmode=0
+M$6 VDD C Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2198p AD=0.2128p PS=1.53u
++ PD=1.5u rfmode=0
+M$7 Y B VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$8 VDD \$6 Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_nand3b_1
+
+.SUBCKT sg13cmos5l_nand2_1 VDD VSS Y A B
+M$1 VSS B \$6 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 \$6 A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$3 VDD B Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$4 Y A VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_nand2_1
+
+.SUBCKT sg13cmos5l_o21ai_1 VSS Y VDD B1 A2 A1
+M$1 \$2 A1 VSS VSS sg13_lv_nmos L=0.15u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 VSS A2 \$2 VSS sg13_lv_nmos L=0.15u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$3 \$2 B1 Y VSS sg13_lv_nmos L=0.15u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 VDD A1 \$8 VDD sg13_lv_pmos L=0.15u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$5 \$8 A2 Y VDD sg13_lv_pmos L=0.15u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$6 Y B1 VDD VDD sg13_lv_pmos L=0.15u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_o21ai_1
+
+.SUBCKT sg13cmos5l_nor2_1 VDD VSS B A Y
+M$1 VSS A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 Y B VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$3 VDD A \$6 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.4032p AD=0.1176p PS=2.96u
++ PD=1.33u rfmode=0
+M$4 \$6 B Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.1176p AD=0.3808p PS=1.33u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_nor2_1
+
+.SUBCKT sg13cmos5l_a21oi_1 Y VSS A2 VDD A1 B1
+M$1 VSS B1 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 Y A1 \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$3 \$8 A2 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 Y B1 \$3 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$5 \$3 A1 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$6 VDD A2 \$3 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_a21oi_1
+
+.SUBCKT sg13cmos5l_inv_1 VDD VSS A Y
+M$1 VSS A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.2516p PS=2.16u
++ PD=2.16u rfmode=0
+M$2 VDD A Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.3808p PS=2.92u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_inv_1
+
+.SUBCKT sg13cmos5l_dlygate4sd3_1 VDD VSS X A
+M$1 VSS \$5 \$4 VSS sg13_lv_nmos L=0.5u W=0.42u AS=0.1426p AD=0.1428p PS=1.16u
++ PD=1.52u rfmode=0
+M$2 VSS \$4 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1426p AD=0.2516p PS=1.16u
++ PD=2.16u rfmode=0
+M$3 \$6 A VSS VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.1428p AD=0.0798p PS=1.52u
++ PD=0.8u rfmode=0
+M$4 VSS \$6 \$5 VSS sg13_lv_nmos L=0.5u W=0.42u AS=0.0798p AD=0.1428p PS=0.8u
++ PD=1.52u rfmode=0
+M$5 \$4 \$5 VDD VDD sg13_lv_pmos L=0.5u W=1u AS=0.34p AD=0.2254p PS=2.68u
++ PD=1.53u rfmode=0
+M$6 VDD \$4 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2254p AD=0.4256p PS=1.53u
++ PD=3u rfmode=0
+M$7 VDD A \$6 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.1523p AD=0.1428p PS=1.38u
++ PD=1.52u rfmode=0
+M$8 VDD \$6 \$5 VDD sg13_lv_pmos L=0.5u W=1u AS=0.1523p AD=0.34p PS=1.38u
++ PD=2.68u rfmode=0
+.ENDS sg13cmos5l_dlygate4sd3_1
+
+.SUBCKT sg13cmos5l_nor3_1 VDD VSS C Y B A
+M$1 VSS A Y VSS sg13_lv_nmos L=0.13u W=0.77u AS=0.2618p AD=0.1694p PS=2.22u
++ PD=1.21u rfmode=0
+M$2 Y B VSS VSS sg13_lv_nmos L=0.13u W=0.77u AS=0.1694p AD=0.1463p PS=1.21u
++ PD=1.15u rfmode=0
+M$3 VSS C Y VSS sg13_lv_nmos L=0.13u W=0.77u AS=0.1463p AD=0.2618p PS=1.15u
++ PD=2.22u rfmode=0
+M$4 VDD A \$8 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2464p PS=2.92u
++ PD=1.56u rfmode=0
+M$5 \$8 B \$7 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2464p AD=0.2128p PS=1.56u
++ PD=1.5u rfmode=0
+M$6 \$7 C Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13cmos5l_nor3_1

@@ -1,0 +1,21 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/schematic/xschem/ook_transmitter.sch
+**.subckt ook_transmitter clk_ref rst_ni vctrl_in vctrl_b_in dac_out clk_fb vcl VGND VPWR vout vctrl_out vctrl_b_out
+*.iopin vout
+*.iopin VPWR
+*.iopin VGND
+*.iopin vcl
+*.iopin dac_out
+*.iopin clk_fb
+*.iopin clk_ref
+*.iopin rst_ni
+*.iopin vctrl_in
+*.iopin vctrl_b_in
+*.iopin vctrl_out
+*.iopin vctrl_b_out
+*  R1 -  rhigh_ps  IS MISSING !!!!
+*  x1 -  vco  IS MISSING !!!!
+*  x2 -  output_buffer  IS MISSING !!!!
+XR2 net2 vcl VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+x7 VGND VPWR clk_fb clk_ref dac_out rst_ni vctrl_b_in vctrl_b_out vctrl_in vctrl_out dac
+**.ends
+.end

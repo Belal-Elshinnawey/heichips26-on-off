@@ -1,0 +1,32 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/charge_pump.sch
+**.subckt charge_pump cp_cap_p VSS VDD UP vout DN
+*.iopin VDD
+*.iopin VSS
+*.ipin UP
+*.ipin DN
+*.iopin vout
+*.iopin cp_cap_p
+XR2 net2 VSS VSS rhigh w=0.50e-6 l=80.585e-6 m=1 b=25 ps=0.18e-6 mm_ok=1
+XM3 net2 net2 VDD VDD sg13_lv_pmos w=0.5u l=10u ng=1 m=1 mm_ok=1
+XM4 net3 net2 VDD VDD sg13_lv_pmos w=0.5u l=10u ng=1 m=1 mm_ok=1
+XM2 vout UP net3 VDD sg13_lv_pmos w=0.5u l=10u ng=1 m=1 mm_ok=1
+XM6 net4 net1 VSS VSS sg13_lv_nmos w=1u l=5u ng=1 m=1 mm_ok=1
+XM7 net1 net1 VSS VSS sg13_lv_nmos w=1u l=5u ng=1 m=1 mm_ok=1
+XM1 vout DN net4 VSS sg13_lv_nmos w=0.5u l=10u ng=1 m=1 mm_ok=1
+XR1 vout cp_cap_p VSS rhigh w=0.50e-6 l=40.11e-6 m=1 b=20 ps=0.18e-6 mm_ok=1
+XR4 VDD net1 VSS rhigh w=0.50e-6 l=40.585e-6 m=1 b=25 ps=0.18e-6 mm_ok=1
+XM5 VDD VDD VDD VDD sg13_lv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM8 VDD VDD VDD VDD sg13_lv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM9 net3 net3 net3 VDD sg13_lv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM10 net2 net2 net2 VDD sg13_lv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM11 net4 net4 net4 VSS sg13_lv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM12 net1 net1 net1 VSS sg13_lv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM13 VSS VSS VSS VSS sg13_lv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM14 VSS VSS VSS VSS sg13_lv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM15 vout vout vout VSS sg13_lv_nmos w=0.63u l=0.5u ng=1 m=1 mm_ok=1
+XM16 net4 net4 net4 VSS sg13_lv_nmos w=0.63u l=0.5u ng=1 m=1 mm_ok=1
+XM17 vout vout vout VDD sg13_lv_pmos w=0.63u l=0.5u ng=1 m=1 mm_ok=1
+XM18 net3 net3 net3 VDD sg13_lv_pmos w=0.63u l=0.5u ng=1 m=1 mm_ok=1
+XC2 cp_cap_p VSS cap_mfringe w=60.3u l=60.3u mmin=1 mmax=4
+**.ends
+.end

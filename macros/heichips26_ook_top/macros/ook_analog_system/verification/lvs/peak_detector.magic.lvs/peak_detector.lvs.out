@@ -1,0 +1,111 @@
+
+Circuit 1 cell sg13_hv_pmos and Circuit 2 cell sg13_hv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_pmos                    |Circuit 2: sg13_hv_pmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_pmos and sg13_hv_pmos are equivalent.
+
+Circuit 1 cell sg13_hv_nmos and Circuit 2 cell sg13_hv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_nmos                    |Circuit 2: sg13_hv_nmos                    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_nmos and sg13_hv_nmos are equivalent.
+
+Circuit 1 cell rhigh and Circuit 2 cell rhigh are black boxes.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: rhigh                           |Circuit 2: rhigh                           
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rhigh and rhigh are equivalent.
+
+Cell peak_detector (0) disconnected node: vin
+Cell peak_detector (1) disconnected node: vin
+Class peak_detector (0):  Merged 22 parallel devices.
+Class peak_detector (1):  Merged 1 parallel devices.
+Cell peak_detector (0) disconnected node: vin
+Cell peak_detector (1) disconnected node: vin
+Subcircuit summary:
+Circuit 1: peak_detector                   |Circuit 2: peak_detector                   
+-------------------------------------------|-------------------------------------------
+sg13_hv_pmos (18->5)                       |sg13_hv_pmos (6->5)                        
+sg13_hv_nmos (10->1)                       |sg13_hv_nmos (1)                           
+rhigh (2)                                  |rhigh (2)                                  
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+rhigh:20 vs. rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:20 vs. rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:20 vs. rhigh:R5:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:20 vs. rhigh:R5:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:7 vs. rhigh:R3:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:7 vs. rhigh:R3:
+Property ps in circuit2 has no matching property in circuit1
+rhigh:7 vs. rhigh:R3:
+Property mm_ok in circuit2 has no matching property in circuit1
+rhigh:7 vs. rhigh:R3:
+Property ps in circuit2 has no matching property in circuit1
+sg13_hv_nmos:1 vs. sg13_hv_nmos:M1:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:4 vs. sg13_hv_pmos:M24:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:2 vs. sg13_hv_pmos:M25:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:0 vs. sg13_hv_pmos:M13:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:22 vs. sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:22 vs. sg13_hv_pmos:M28:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:6 vs. sg13_hv_pmos:M27:
+Property mm_ok in circuit2 has no matching property in circuit1
+sg13_hv_pmos:6 vs. sg13_hv_pmos:M27:
+Property mm_ok in circuit2 has no matching property in circuit1
+
+Subcircuit pins:
+Circuit 1: peak_detector                   |Circuit 2: peak_detector                   
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+vout                                       |vout                                       
+vamp                                       |vamp                                       
+VDD                                        |VDD                                        
+vin                                        |vin                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes peak_detector and peak_detector are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ peak_detector

@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2026 The HeiChips Contributors
+# SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+
+meta:
+  version: 3
+  flow: Classic
+  substituting_steps:
+
+    # Magic reports some overlaps which can be ignored
+    Checker.IllegalOverlap: null
+
+DESIGN_NAME: ook_digital_system
+VERILOG_FILES: dir::../../rtl/*.sv
+
+# Clock
+CLOCK_PORT: clk
+CLOCK_NET: clk
+CLOCK_PERIOD: 12.5
+
+# Layout / Floorplan Rules
+# grow DIE_AREA to match actual placed-cell utilization.
+FP_SIZING: absolute
+DIE_AREA: [0, 0, 180, 200]
+PL_TARGET_DENSITY_PCT: 80
+GRT_ALLOW_CONGESTION: true
+
+# Set the margin
+TOP_MARGIN_MULT: 1
+BOTTOM_MARGIN_MULT: 1
+LEFT_MARGIN_MULT: 8
+RIGHT_MARGIN_MULT: 8
+
+# Valid values are AREA 0-3 and DELAY 0-4
+# DELAY 4 = fastest, but largest area
+# AREA 3 = slowest, but smallest area
+SYNTH_STRATEGY: AREA 1
+
+# Use Metal2/Metal3 straps
+PDN_VERTICAL_LAYER: Metal2
+PDN_HORIZONTAL_LAYER: Metal3
+RT_MAX_LAYER: Metal3
+
+# Pin placement: standard digital chip interface, all on one edge
+FP_PIN_ORDER_CFG: dir::pin_order.cfg
+
+# Enable plugin for better SystemVerilog support
+# USE_SLANG: True

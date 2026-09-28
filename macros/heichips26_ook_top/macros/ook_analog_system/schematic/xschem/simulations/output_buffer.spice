@@ -1,0 +1,41 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/output_buffer.sch
+**.subckt output_buffer vout_fb vctrl VDD vin vout VSS vctrl_b
+*.iopin VDD
+*.iopin VSS
+*.ipin vin
+*.opin vout
+*.ipin vctrl
+*.opin vout_fb
+*.ipin vctrl_b
+XM7 vout_fb vin VDD VDD sg13_lv_pmos w=13.5u l=0.13u ng=10 m=1 mm_ok=1
+XM8 vout_fb vin VSS VSS sg13_lv_nmos w=6u l=0.13u ng=5 m=1 mm_ok=1
+XM3 net2 net1 VDD VDD sg13_lv_pmos w=40u l=0.13u ng=20 m=1 mm_ok=1
+XM4 net2 net1 VSS VSS sg13_lv_nmos w=18u l=0.13u ng=10 m=1 mm_ok=1
+XM1 vout net2 VDD VDD sg13_lv_pmos w=200u l=0.13u ng=50 m=1 mm_ok=1
+XM2 vout net2 VSS VSS sg13_lv_nmos w=80u l=0.13u ng=20 m=1 mm_ok=1
+XM5 net1 vctrl_b vout_fb VDD sg13_lv_pmos w=13.5u l=0.13u ng=10 m=1 mm_ok=1
+XM6 net1 vctrl vout_fb VSS sg13_lv_nmos w=6u l=0.13u ng=5 m=1 mm_ok=1
+XM11 net1 vctrl VSS VDD sg13_lv_pmos w=13.5u l=0.13u ng=10 m=1 mm_ok=1
+XM12 net1 vctrl_b VSS VSS sg13_lv_nmos w=6u l=0.13u ng=5 m=1 mm_ok=1
+XM17 VDD VDD VDD VDD sg13_lv_pmos w=1.3u l=0.13u ng=1 m=1 mm_ok=1
+XM18 vout_fb vout_fb vout_fb VDD sg13_lv_pmos w=1.3u l=0.13u ng=1 m=1 mm_ok=1
+XM19 vout_fb vout_fb vout_fb VSS sg13_lv_nmos w=1.2u l=0.13u ng=1 m=1 mm_ok=1
+XM20 VSS VSS VSS VSS sg13_lv_nmos w=1.2u l=0.13u ng=1 m=1 mm_ok=1
+XM21 vout_fb vout_fb vout_fb VDD sg13_lv_pmos w=1.3u l=0.13u ng=1 m=1 mm_ok=1
+XM22 vout_fb vout_fb vout_fb VSS sg13_lv_nmos w=1.2u l=0.13u ng=1 m=1 mm_ok=1
+XM23 VSS VSS VSS VSS sg13_lv_nmos w=1.2u l=0.13u ng=1 m=1 mm_ok=1
+XM24 VSS VSS VSS VDD sg13_lv_pmos w=1.3u l=0.13u ng=1 m=1 mm_ok=1
+XM25 net1 net1 net1 VDD sg13_lv_pmos w=1.3u l=0.13u ng=1 m=1 mm_ok=1
+XM26 net1 net1 net1 VSS sg13_lv_nmos w=1.2u l=0.13u ng=1 m=1 mm_ok=1
+XM27 net1 net1 net1 VSS sg13_lv_nmos w=1.2u l=0.13u ng=1 m=1 mm_ok=1
+XM28 net1 net1 net1 VDD sg13_lv_pmos w=1.3u l=0.13u ng=1 m=1 mm_ok=1
+XM29 VDD VDD VDD VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1 mm_ok=1
+XM30 net2 net2 net2 VDD sg13_lv_pmos w=2u l=0.13u ng=1 m=1 mm_ok=1
+XM31 net2 net2 net2 VSS sg13_lv_nmos w=1.8u l=0.13u ng=1 m=1 mm_ok=1
+XM32 VSS VSS VSS VSS sg13_lv_nmos w=1.8u l=0.13u ng=1 m=1 mm_ok=1
+XM33 VDD VDD VDD VDD sg13_lv_pmos w=4u l=0.13u ng=1 m=1 mm_ok=1
+XM34 vout vout vout VDD sg13_lv_pmos w=4u l=0.13u ng=1 m=1 mm_ok=1
+XM35 vout vout vout VSS sg13_lv_nmos w=4u l=0.13u ng=1 m=1 mm_ok=1
+XM36 VSS VSS VSS VSS sg13_lv_nmos w=4u l=0.13u ng=1 m=1 mm_ok=1
+**.ends
+.end

@@ -1,0 +1,71 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/testbenches/xschem/lna_tb_tran.sch
+**.subckt lna_tb_tran
+VDD3 VDD GND {VDD}
+Cb2 net4 net5 10p
+L20 net2 net3 8.33u
+R1 net2 vin 50
+Cb1 net1 GND 1.25n
+Cb3 net3 net1 16.14f
+L22 net1 GND 107p
+L24 net4 net1 344n
+Cb4 net4 GND 330f
+Cb5 vout GND 2.4p
+R2 GND vout 250k
+VCLK vclk GND PULSE(0 1.5 13n 0.1n 0.1n 50n 100n)
+VDDL VDDL GND {1.5}
+x1 net6 net7 net8 net9 net10 net11 net12 net13 VDD VDDL q3 q2 net5 q1 q0 vout GND vamp ook_receiver_pex
+**** begin user architecture code
+
+
+.param VDD=3.3
+.param temp=27
+.options savecurrents klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-12
+Vcarrier ncar 0 SINE(0 10m 433e6)
+Venv nenv 0 PULSE(1 0 1u 0.6u 0.6u 6u 20u)
+*Vnoise nnoise 0 DC 0 TRNOISE(223.6n 1p 0 0)
+Bvin1 vin 0 V={(V(nenv)*V(ncar))}
+.control
+save vin vout i(vdd3) v(q3) v(q2) v(q1) v(q0) v(vamp) vamp x1.vref0 x1.vref1 x1.vref2 x1.vref3 x1.acc_cap x1.group3_0.g
+
+tran 100p 4u 100p
+write lna_tb_tran\.raw
+meas tran vin_pp  PP  v(vin)  from=0.1u to=1u
+meas tran vout_pp PP  v(vout) from=0.1u to=1u
+meas tran vout_avg AVG v(vout) from=0.1u to=1u
+meas tran idd_raw AVG i(vdd3) from=0.1u to=1u
+let gain_dB = db(vout_pp/vin_pp)
+let idd = -idd_raw
+print gain_dB
+print vout_pp
+print vout_avg
+print idd
+plot vin vout
+plot i(vdd3)
+plot v(q3) v(q2) v(q1) v(q0)
+plot vamp
+plot v(vamp)
+.endc
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.tech/ngspice/models/cap_mfringe.lib
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/lna_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/lna_stage_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/peak_detector_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/comparator_adc_magic_pex_1.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/simple_comparator_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/simple_comparator_stage_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/ook_receiver_magic_pex_3.spice
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL vclk
+.GLOBAL VDDL
+.end

@@ -1,0 +1,44 @@
+* Extracted by KLayout with SG13CMOS5L LVS runset on : 13/09/2026 15:00
+
+.SUBCKT level_up_shifter A B VDD1 VDD2 VSS
+M$1 \$11 \$13 VDD2 VDD2 sg13_hv_pmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$2 \$13 \$10 VSS VSS sg13_hv_nmos L=0.5u W=10u AS=3.4p AD=3.4p PS=20.68u
++ PD=20.68u rfmode=0
+M$3 \$13 \$11 VDD2 VDD2 sg13_hv_pmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$4 \$11 \$9 VSS VSS sg13_hv_nmos L=0.5u W=10u AS=3.4p AD=3.4p PS=20.68u
++ PD=20.68u rfmode=0
+M$5 B B B VDD2 sg13_hv_pmos L=0.5u W=3u AS=1.02p AD=1.02p PS=6.68u PD=6.68u
++ rfmode=0
+M$6 B \$13 VDD2 VDD2 sg13_hv_pmos L=0.5u W=3u AS=1.02p AD=1.02p PS=6.68u
++ PD=6.68u rfmode=0
+M$7 VDD2 VDD2 VDD2 VDD2 sg13_hv_pmos L=0.5u W=3u AS=1.02p AD=1.02p PS=6.68u
++ PD=6.68u rfmode=0
+M$8 B B B VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u PD=2.68u
++ rfmode=0
+M$9 B \$13 VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u PD=2.68u
++ rfmode=0
+M$10 VSS VSS VSS VSS sg13_hv_nmos L=0.5u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$11 \$10 \$10 \$10 VSS sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$12 \$10 \$9 VSS VSS sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$13 VSS VSS VSS VSS sg13_lv_nmos L=0.13u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$14 \$10 \$10 \$10 VDD1 sg13_lv_pmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$15 \$10 \$9 VDD1 VDD1 sg13_lv_pmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$16 VDD1 VDD1 VDD1 VDD1 sg13_lv_pmos L=0.13u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$17 \$9 \$9 \$9 VSS sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$18 \$9 A VSS VSS sg13_lv_nmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$20 \$9 \$9 \$9 VDD1 sg13_lv_pmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+M$21 \$9 A VDD1 VDD1 sg13_lv_pmos L=0.13u W=1u AS=0.34p AD=0.34p PS=2.68u
++ PD=2.68u rfmode=0
+.ENDS level_up_shifter

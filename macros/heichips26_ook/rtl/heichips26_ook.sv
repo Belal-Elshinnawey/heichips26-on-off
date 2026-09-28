@@ -3,7 +3,6 @@
 
 // Adapted from the Tiny Tapeout template
 
-// トップモジュール
 
 `timescale 1ns / 1ps
 `default_nettype none
@@ -25,100 +24,75 @@ module heichips26_ook #(
     input  wire       rst_n     // reset_n - low to reset
 );
 
-    // 入力ピン割当
-    wire [5:0] tx_data  = ui_in[5:0];
-    wire       tx_valid = ui_in[6];
-    wire       rx_ready = ui_in[7];
-    wire       tx_sop   = uio_in[0];
-    wire       tx_eop   = uio_in[1];
-    wire       mode_sel = uio_in[4];
-    wire       bist_en  = uio_in[6]; //RXで仕様
+    // nets shared between the digital interface and the analog macro
+    wire aif_q0, aif_q1, aif_q2, aif_q3;
+    wire aif_vctrl, aif_vctrl_b;
+    wire aif_sys_clk, aif_sys_reset_n;
 
-    // TX周り
-    wire tx_ready, tx_busy, ro_en;
-    wire carrier_clk, ook_out, tx_drive_en;
-
-    tx_framer #(
-        .CLKS_PER_BIT(CLKS_PER_BIT)
-    ) u_tx_framer (
+    analog_interface analog_interface_inst (
+`ifdef USE_POWER_PINS
+        .VPWR(VPWR),
+        .VGND(VGND),
+`endif
+        .chip_ui_in(ui_in),
+        .chip_uo_out(uo_out),
         .clk(clk),
         .rst_n(rst_n),
-        .tx_data(tx_data),
-        .tx_valid(tx_valid),
-        .tx_sop(tx_sop),
-        .tx_eop(tx_eop),
-        .tx_ready(tx_ready),
-        .ro_en(ro_en),
-        .tx_busy(tx_busy)
+
+        .sys_clk(aif_sys_clk),
+        .sys_reset_n(aif_sys_reset_n),
+
+        .q0(aif_q0),
+        .q1(aif_q1),
+        .q2(aif_q2),
+        .q3(aif_q3),
+        .vctrl(aif_vctrl),
+        .vctrl_b(aif_vctrl_b),
+
+        .data_in_tx(),
+        .q0_rx_data(),
+        .q1_rx_data(),
+        .q2_rx_data(),
+        .q3_rx_data(),
+
+        .CS_D(),
+        .MOSI_D(),
+        .MISO_D(),
+        .DTRDY_D()
     );
 
-    `ifdef SIM
-    ro_model u_ro_model (
-        .ro_en(ro_en),
-        .ro_out(carrier_clk)
+    ook_analog_system ook_analog_system_inst (
+`ifdef USE_POWER_PINS
+        .VAPWR(),
+        .VGND(VGND),
+        .VPWR(VPWR),
+`endif
+        .ACC_CAP(),
+        .Cap_M1(),
+        .Cap_M11(),
+        .Cap_M2(),
+        .Cap_M21(),
+        .clk_fb(),
+        .clk_ref(aif_sys_clk),
+        .dac_out(),
+        .lnaf(),
+        .opm(),
+        .q0(aif_q0),
+        .q1(aif_q1),
+        .q2(aif_q2),
+        .q3(aif_q3),
+        .rst_ni(aif_sys_reset_n),
+        .rx_in(),
+        .tx_out(),
+        .vcl(),
+        .vctrl_b_in(aif_vctrl_b),
+        .vctrl_b_out(),
+        .vctrl_in(aif_vctrl),
+        .vctrl_out(),
+        .vref0(),
+        .vref1(),
+        .vref2(),
+        .vref3()
     );
-    `else
-    assign carrier_clk = 1'b0;
-    `endif
-
-    ook_gate u_ook_gate (
-        .mode_carrier(mode_sel),
-        .ro_en(ro_en),
-        .carrier_clk(carrier_clk),
-        .tx_busy(tx_busy),
-        .ook_out(ook_out),
-        .tx_drive_en(tx_drive_en)
-    );
-
-
-    // RX周り
-    wire rx_in_raw = bist_en ? ro_en : 1'b0;  // TODO: analog_0確定後に外部入力へ差替え
-
-    wire rx_suppress = tx_busy & ~bist_en;
-
-    wire       rx_i, phase_rst, symbol, symbol_valid;
-    wire [5:0] rx_data;
-    wire       rx_valid, rx_sop, rx_eop;
-
-    // 同期回路
-    rx_sync u_rx_sync (
-        .clk   (clk),
-        .rx_in (rx_in_raw),
-        .rx_i  (rx_i)
-    );
-
-    // 多数決回路
-    rx_sampler #(
-        .CLKS_PER_BIT(CLKS_PER_BIT)
-    ) u_rx_sampler (
-        .clk          (clk),
-        .rst_n        (rst_n),
-        .rx_i         (rx_i),
-        .phase_rst    (phase_rst),
-        .symbol       (symbol),
-        .symbol_valid (symbol_valid)
-    );
-
-    // デフレーム回路
-    rx_deframer u_rx_deframer (
-        .clk          (clk),
-        .rst_n        (rst_n),
-        .rx_i         (rx_i),
-        .suppress     (rx_suppress),
-        .symbol       (symbol),
-        .symbol_valid (symbol_valid),
-        .phase_rst    (phase_rst),
-        .rx_data      (rx_data),
-        .rx_valid     (rx_valid),
-        .rx_sop       (rx_sop),
-        .rx_eop       (rx_eop)
-    );
-
-    // 出力ピン
-    assign uo_out = {tx_ready, rx_valid, rx_data};
-    assign uio_out = {ook_out,       1'b0, tx_busy, 1'b0, rx_eop,  rx_sop, 2'b00};
-    assign uio_oe  = 8'b1010_1100;
-
-    wire _unused = &{ena, rx_ready, tx_drive_en, uio_in[7], uio_in[5], uio_in[3:2]};
 
 endmodule

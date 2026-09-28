@@ -1,0 +1,51 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/testbenches/xschem/comparator_adc_tb_tran.sch
+**.subckt comparator_adc_tb_tran
+VCLK clk VSS PULSE(0 {VDD} 0 5n 5n 490n 1000n)
+VDDSRC VDD VSS {VDD}
+VDDLSRC VDDL VSS {VDD/2}
+VIN vin VSS PWL(0 0 2u 0 10u {VDD})
+x2 VDDL VDD vin q3 VSS q2 q1 q0 clk vref_1 vref_2 vref_3 vref_4 comparator_group_pex
+VREF1SRC vref_1 VSS 0.25
+VREF2SRC vref_2 VSS 0.30
+VREF3SRC vref_3 VSS 0.32
+VREF4SRC vref_4 VSS 0.35
+**** begin user architecture code
+
+
+.param VDD=3.3
+.options savecurrents klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-9 itl1=500 trtol=10
+.nodeset v(vin)=0 v(clk)=0 v(VDD)={VDD} v(VDDL)={VDD/2} v(vref_1)=0.25 v(vref_2)=0.30 v(vref_3)=0.32 v(vref_4)=0.35
++ v(x2.group16_0.pmoshv$2_priv10_0.d)=0 v(x2.group16_1.pmoshv$2_priv10_0.d)=0
++ v(x2.group16_2.pmoshv$2_priv10_0.d)=0 v(x2.group16_3.pmoshv$2_priv10_0.d)=0
+.control
+save v(vin) v(clk) v(q0) v(q1) v(q2) v(q3) v(VDD) v(VDDL) v(vref_1) v(vref_2) v(vref_3) v(vref_4)
+tran 10p 10u 10p
+write comparator_adc_tb_tran\.raw
+meas tran q0_trip TRIG v(vin) VAL=0.250 RISE=1 TARG v(q0) VAL={VDD/4} CROSS=1
+meas tran q1_trip TRIG v(vin) VAL=0.300 RISE=1 TARG v(q1) VAL={VDD/4} CROSS=1
+meas tran q2_trip TRIG v(vin) VAL=0.320 RISE=1 TARG v(q2) VAL={VDD/4} CROSS=1
+meas tran q3_trip TRIG v(vin) VAL=0.350 RISE=1 TARG v(q3) VAL={VDD/4} CROSS=1
+print q0_trip
+print q1_trip
+print q2_trip
+print q3_trip
+plot vin q0 q1 q2 q3
+plot vref_1 vref_2 vref_3 vref_4
+.endc
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/comparator_adc_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/comparator_group_magic_pex_1.spice
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL VDDL
+.GLOBAL VSS
+.end

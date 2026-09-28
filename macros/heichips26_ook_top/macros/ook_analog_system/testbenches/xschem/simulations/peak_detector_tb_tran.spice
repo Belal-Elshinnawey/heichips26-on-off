@@ -1,0 +1,65 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/testbenches/xschem/peak_detector_tb_tran.sch
+**.subckt peak_detector_tb_tran
+VDD3 VDD3_3 GND {VDD3_3}
+x1 GND vin vout VDD3_3 vamp peak_detector
+VDD1 vin GND SINE(0.5 0.5 433.92meg)
+Cb5 vout GND 2.4p
+R2 GND vout 250k
+**** begin user architecture code
+
+
+.param VDD3_3=3.3
+.param temp=27
+.options savecurrents klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-12
+.control
+save vin vamp vout i(vdd3)
+op
+print all
+tran 100p 20u 0u 100p
+write peak_detector_tb_tran\.raw
+meas tran vamp_pp PP v(vamp) from=6u to=18u
+meas tran vout_max MAX v(vout) from=6u to=18u
+meas tran vout_min MIN v(vout) from=6u to=18u
+print vamp_pp
+print vout_max
+print vout_min
+plot vin vamp
+plot vout
+.endc
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.tech/ngspice/models/cap_mfringe.lib
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/netlist/pex/peak_detector_magic_pex_3.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  peak_detector.sym # of pins=5
+** sym_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/peak_detector.sym
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook/macros/ook_analog_system/schematic/xschem/peak_detector.sch
+.subckt peak_detector VSS vin vout VDD vamp
+*.ipin vin
+*.iopin vout
+*.iopin VDD
+*.iopin vamp
+*.iopin VSS
+XM24 net1 net1 VDD VDD sg13_hv_pmos w=14u l=0.5u ng=7 m=1 mm_ok=1
+XM25 vamp net1 VDD VDD sg13_hv_pmos w=14u l=0.5u ng=7 m=1 mm_ok=1
+XR5 net1 VSS VSS rhigh w=2e-6 l=10e-6 m=1 b=0 ps=0.18e-6 mm_ok=1
+XM13 VDD VDD VDD VDD sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM26 VDD VDD VDD VDD sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM27 vamp vamp vamp VDD sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XM28 net1 net1 net1 VDD sg13_hv_pmos w=2u l=0.5u ng=1 m=1 mm_ok=1
+XR3 vamp VSS VSS rhigh w=2e-6 l=6e-6 m=1 b=0 ps=0.18e-6 mm_ok=1
+XC2 vin vamp cap_mfringe w=40.0u l=8.0u mmin=1 mmax=4
+XM2 vout vout vamp vamp sg13_hv_pmos w=20u l=0.5u ng=10 m=1 mm_ok=1
+.ends
+
+.GLOBAL VDD3_3
+.GLOBAL GND
+.end

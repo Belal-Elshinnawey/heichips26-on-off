@@ -1,2 +1,3 @@
 #!/bin/bash
-export PDK_ROOT=$(pwd)/IHP-Open-PDK && export PDK=ihp-sg13cmos5l
+export HEICHIPS_ROOT=$(pwd)
+export PDK_ROOT=$HEICHIPS_ROOT/IHP-Open-PDK && export PDK=ihp-sg13cmos5l
