@@ -10,13 +10,17 @@ team-members:
 - Francisco Sayas
 slot-size: small # small, large, tiny
 analog-pins: 3 # 0-3, only for small or tiny projects
-short-description: 
-- ON OFF keying Transmitter+Receiver. It works by turning a carrier signal ON and OFF to transmit data.
-- I built this because I wanted an RFIC for my first SoC design, and OOK is the simplest.
-- How it works (bit bang mode. from the FPGA side, toggle the transmission pin with your favorite data encoding scheme
+uses-vapwr: true # set to "true" if separate analog power domain is needed
+short-description: |
+  ON OFF keying Transmitter+Receiver. It works by turning a carrier signal ON and OFF to transmit data.
+
+  I built this because I wanted an RFIC for my first SoC design, and OOK is the simplest.
+
+  How it works (bit bang mode. from the FPGA side, toggle the transmission pin with your favorite data encoding scheme
   , and hopefully, you receive something on the other end. I recommend start+stop bits with Manchester encoding, and a symbol duration no shorter than 6us)
-- ui_in[0] is connected to the transmitter tx pin.
-- uo_out[7] to [4] is connected to q3 to q0 of the receiver comparators.
+
+  ui_in[0] is connected to the transmitter tx pin.
+  uo_out[7] to [4] is connected to q3 to q0 of the receiver comparators.
 
 long-description: |
   - Receiver design:

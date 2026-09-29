@@ -8,8 +8,7 @@ MACRO heichips26_ook_top
   ORIGIN -201.600 0.000 ;
   SIZE 298.400 BY 200.000 ;
   PIN VGND
-    ANTENNAGATEAREA 5035.898926 ;
-    ANTENNADIFFAREA 3982.516602 ;
+    USE GROUND ;
     PORT
       LAYER Metal2 ;
         RECT 35.475 3.560 36.475 193.000 ;
@@ -24,11 +23,14 @@ MACRO heichips26_ook_top
     END
   END VGND
   PIN VPWR
-    ANTENNAGATEAREA 2125.772461 ;
-    ANTENNADIFFAREA 5448.575684 ;
+    USE POWER ;
     PORT
       LAYER Metal2 ;
         RECT 32.475 3.560 33.475 193.000 ;
+    END
+    PORT
+      LAYER Metal3 ;
+        RECT 22.975 12.780 195.295 14.780 ;
     END
     PORT
       LAYER Metal4 ;
@@ -37,10 +39,6 @@ MACRO heichips26_ook_top
     PORT
       LAYER Metal4 ;
         RECT 376.395 0.000 381.395 200.000 ;
-    END
-    PORT
-      LAYER Metal3 ;
-        RECT 22.975 12.780 195.295 14.780 ;
     END
   END VPWR
   PIN analog_0
@@ -66,18 +64,6 @@ MACRO heichips26_ook_top
         RECT 459.240 0.000 460.440 8.800 ;
     END
   END analog_2
-  PIN VAPWR
-    ANTENNAGATEAREA 67.250000 ;
-    ANTENNADIFFAREA 198.890396 ;
-    PORT
-      LAYER Metal4 ;
-        RECT 112.000 0.000 117.000 200.000 ;
-    END
-    PORT
-      LAYER Metal4 ;
-        RECT 388.395 0.000 393.395 200.000 ;
-    END
-  END VAPWR
   PIN rst_n_in
     ANTENNAGATEAREA 0.180700 ;
     PORT
@@ -233,6 +219,17 @@ MACRO heichips26_ook_top
         RECT 199.600 13.640 200.040 14.080 ;
     END
   END vctrl_b_in
+  PIN VAPWR
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 112.000 0.000 117.000 200.000 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 388.395 0.000 393.395 200.000 ;
+    END
+  END VAPWR
   OBS
       LAYER GatPoly ;
         RECT 23.470 192.130 24.470 192.310 ;

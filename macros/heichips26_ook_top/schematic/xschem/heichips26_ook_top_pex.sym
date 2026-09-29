@@ -31,6 +31,7 @@ L 7 -170 160 -150 160 {}
 L 7 -170 180 -150 180 {}
 L 7 -170 200 -150 200 {}
 L 7 -170 220 -150 220 {}
+L 7 -170 240 -150 240 {}
 B 5 -22.5 -122.5 -17.5 -117.5 {name=VAPWR dir=inout sim_pinname=VAPWR}
 B 5 -2.5 -122.5 2.5 -117.5 {name=VPWR dir=inout sim_pinname=VPWR}
 B 5 -12.5 117.5 -7.5 122.5 {name=VGND dir=inout sim_pinname=VGND}
@@ -49,10 +50,11 @@ B 5 -172.5 77.5 -167.5 82.5 {name=q3_d dir=out sim_pinname=q3_d}
 B 5 -172.5 97.5 -167.5 102.5 {name=q2_d dir=out sim_pinname=q2_d}
 B 5 -172.5 117.5 -167.5 122.5 {name=q1_d dir=out sim_pinname=q1_d}
 B 5 -172.5 137.5 -167.5 142.5 {name=q0_d dir=out sim_pinname=q0_d}
-B 5 -172.5 157.5 -167.5 162.5 {name=rst_d dir=in sim_pinname=rst_d}
-B 5 -172.5 177.5 -167.5 182.5 {name=clk_ref_d dir=in sim_pinname=clk_ref_d}
-B 5 -172.5 197.5 -167.5 202.5 {name=vctrl_d dir=in sim_pinname=vctrl_d}
-B 5 -172.5 217.5 -167.5 222.5 {name=vctrl_n_d dir=in sim_pinname=vctrl_n_d}
+B 5 -172.5 157.5 -167.5 162.5 {name=rst_n_in dir=in sim_pinname=rst_n_in}
+B 5 -172.5 177.5 -167.5 182.5 {name=clk dir=in sim_pinname=clk}
+B 5 -172.5 197.5 -167.5 202.5 {name=data_in_tx dir=in sim_pinname=data_in_tx}
+B 5 -172.5 217.5 -167.5 222.5 {name=in_tieoff dir=out sim_pinname=in_tieoff}
+B 5 -172.5 237.5 -167.5 242.5 {name=in_tieon dir=out sim_pinname=in_tieon}
 P 4 5 -150 -100 130 -100 130 100 -150 100 -150 -100 {}
 T {@symname} 48.821044921875 -163.767333984375 0 0 0.3 0.3 {}
 T {@name} 49.530029296875 -144.342529296875 0 0 0.2 0.2 {}
@@ -74,7 +76,8 @@ T {q3_d} -185 80 0 1 0.2 0.2 {}
 T {q2_d} -185 100 0 1 0.2 0.2 {}
 T {q1_d} -185 120 0 1 0.2 0.2 {}
 T {q0_d} -185 140 0 1 0.2 0.2 {}
-T {rst_d} -185 160 0 1 0.2 0.2 {}
-T {clk_ref_d} -185 180 0 1 0.2 0.2 {}
-T {vctrl_d} -185 200 0 1 0.2 0.2 {}
-T {vctrl_n_d} -185 220 0 1 0.2 0.2 {}
+T {rst_n_in} -185 160 0 1 0.2 0.2 {}
+T {clk} -185 180 0 1 0.2 0.2 {}
+T {data_in_tx} -185 200 0 1 0.2 0.2 {}
+T {in_tieoff} -185 220 0 1 0.2 0.2 {}
+T {in_tieon} -185 240 0 1 0.2 0.2 {}
