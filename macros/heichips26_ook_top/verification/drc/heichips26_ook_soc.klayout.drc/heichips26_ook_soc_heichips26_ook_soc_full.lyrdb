@@ -3,17 +3,11 @@
  <description>Main DRC Run Report at</description>
  <original-file />
  <generator>drc: script='/home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.tech/klayout/tech/drc/ihp-sg13cmos5l.drc'</generator>
- <top-cell>heichips26_ook_top</top-cell>
+ <top-cell>heichips26_ook_soc</top-cell>
  <tags>
  </tags>
  <categories>
   <category>
-   <name>TGO.f</name>
-   <description>5.7. TGO.f : Min. ThickGateOx width: 0.86 µm</description>
-   <categories>
-   </categories>
-  </category>
- <category>
    <name>AFil.c1</name>
    <description>5.6. AFil.c1 Min. Activ:filler space to Activ is 0.42 um</description>
    <categories>
@@ -34,6 +28,12 @@
   <category>
    <name>AFil.j</name>
    <description>5.6. AFil.j Min. nSD:block and SalBlock enclosure of Activ:filler inside PWell:block is 0.25 um</description>
+   <categories>
+   </categories>
+  </category>
+ <category>
+   <name>TGO.f</name>
+   <description>5.7. TGO.f : Min. ThickGateOx width: 0.86 µm</description>
    <categories>
    </categories>
   </category>
@@ -116,24 +116,6 @@
    </categories>
   </category>
  <category>
-   <name>GFil.d</name>
-   <description>5.9. GFil.d : Min. GatPoly:filler space to Activ, GatPoly, Cont, pSD, nSD:block, SalBlock is 1.1 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>GFil.e</name>
-   <description>5.9. GFil.e Min. GatPoly:filler space to NWell is 1.1 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>GFil.i</name>
-   <description>5.9. GFil.i Max. GatPoly:nofill area (um^2) is 400.0 um x 400.0 um</description>
-   <categories>
-   </categories>
-  </category>
- <category>
    <name>Cnt.a</name>
    <description>5.14. Cnt.a : Min. and max. Cont width: 0.16 um</description>
    <categories>
@@ -184,6 +166,24 @@
   <category>
    <name>Cnt.g2</name>
    <description>5.14. Cnt.g2 Min. pSD overlap of Cont on pSD-Activ is 0.09 um</description>
+   <categories>
+   </categories>
+  </category>
+ <category>
+   <name>GFil.d</name>
+   <description>5.9. GFil.d : Min. GatPoly:filler space to Activ, GatPoly, Cont, pSD, nSD:block, SalBlock is 1.1 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>GFil.e</name>
+   <description>5.9. GFil.e Min. GatPoly:filler space to NWell is 1.1 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>GFil.i</name>
+   <description>5.9. GFil.i Max. GatPoly:nofill area (um^2) is 400.0 um x 400.0 um</description>
    <categories>
    </categories>
   </category>
@@ -266,18 +266,6 @@
    </categories>
   </category>
  <category>
-   <name>TM1Fil.c</name>
-   <description>5.23. TM1Fil.c : Min. TopMetal1:filler space to TopMetal1 is 3.0 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>TM1Fil.a1</name>
-   <description>5.23. TM1Fil.a1 : Max. TopMetal1:filler width is 10.0 um</description>
-   <categories>
-   </categories>
-  </category>
- <category>
    <name>LBE.a</name>
    <description>9.1. LBE.a: Min. LBE width: 100.0 µm</description>
    <categories>
@@ -310,6 +298,18 @@
   <category>
    <name>LBE.h</name>
    <description>9.1. LBE.h: No LBE ring allowed.</description>
+   <categories>
+   </categories>
+  </category>
+ <category>
+   <name>TM1Fil.c</name>
+   <description>5.23. TM1Fil.c : Min. TopMetal1:filler space to TopMetal1 is 3.0 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>TM1Fil.a1</name>
+   <description>5.23. TM1Fil.a1 : Max. TopMetal1:filler width is 10.0 um</description>
    <categories>
    </categories>
   </category>
@@ -374,66 +374,6 @@
    </categories>
   </category>
  <category>
-   <name>Seal.n</name>
-   <description>6.10. seal.n : Sealring must be enclosed by an unbroken Passiv ring</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Seal.b_metal1</name>
-   <description>6.10. Seal.b_metal1 : Min. Activ space to EdgeSeal-metal1 is 4.9 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Seal.b_metal2</name>
-   <description>6.10. Seal.b_metal2 : Min. Activ space to EdgeSeal-metal2 is 4.9 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Seal.b_metal3</name>
-   <description>6.10. Seal.b_metal3 : Min. Activ space to EdgeSeal-metal3 is 4.9 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Seal.b_metal4</name>
-   <description>6.10. Seal.b_metal4 : Min. Activ space to EdgeSeal-metal4 is 4.9 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Seal.b_topmetal1</name>
-   <description>6.10. Seal.b_topmetal1 : Min. Activ space to EdgeSeal-topmetal1 is 4.9 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Seal.b_activ</name>
-   <description>6.10. Seal.b_activ : Min. Activ space to EdgeSeal-activ is 4.9 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Seal.b_psd</name>
-   <description>6.10. Seal.b_psd : Min. Activ space to EdgeSeal-psd is 4.9 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Seal.k</name>
-   <description>6.10. Seal.k : Min. EdgeSeal 45-degree corner length is 21.0 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Seal.m</name>
-   <description>6.10. Seal.m : Only one sealring per chip allowed</description>
-   <categories>
-   </categories>
-  </category>
- <category>
    <name>V2.a</name>
    <description>5.20. V2.a : Min. and max. Via2 width: 0.19 um</description>
    <categories>
@@ -466,54 +406,6 @@
   <category>
    <name>V3.c</name>
    <description>5.20. V3.c : Min. Metal3 enclosure of Via3 is 0.005 um</description>
-   <categories>
-   </categories>
-  </category>
- <category>
-   <name>Slt.e1_M1</name>
-   <description>7.3. Slt.e1_M1 : No M1:slit required on MIM</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Slt.e1_M2</name>
-   <description>7.3. Slt.e1_M2 : No M2:slit required on MIM</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Slt.e1_M3</name>
-   <description>7.3. Slt.e1_M3 : No M3:slit required on MIM</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Slt.e1_M4</name>
-   <description>7.3. Slt.e1_M4 : No M4:slit required on MIM</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Slt.e1_TM1</name>
-   <description>7.3. Slt.e1_TM1 : No TM1:slit required on MIM</description>
-   <categories>
-   </categories>
-  </category>
- <category>
-   <name>Pas.a</name>
-   <description>5.27. Pas.a:Min. Passiv width: 2.1 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Pas.b</name>
-   <description>5.27. Pas.b: Min. Passiv space or notch: 3.5 um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>Pas.c</name>
-   <description>5.27. Pas.c : Min. TopMetal1 enclosure of Passiv [Not checked outside of sealring (edge-seal-passive)] is 2.1 um </description>
    <categories>
    </categories>
   </category>
@@ -626,6 +518,66 @@
    </categories>
   </category>
  <category>
+   <name>Seal.n</name>
+   <description>6.10. seal.n : Sealring must be enclosed by an unbroken Passiv ring</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Seal.b_metal1</name>
+   <description>6.10. Seal.b_metal1 : Min. Activ space to EdgeSeal-metal1 is 4.9 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Seal.b_metal2</name>
+   <description>6.10. Seal.b_metal2 : Min. Activ space to EdgeSeal-metal2 is 4.9 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Seal.b_metal3</name>
+   <description>6.10. Seal.b_metal3 : Min. Activ space to EdgeSeal-metal3 is 4.9 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Seal.b_metal4</name>
+   <description>6.10. Seal.b_metal4 : Min. Activ space to EdgeSeal-metal4 is 4.9 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Seal.b_topmetal1</name>
+   <description>6.10. Seal.b_topmetal1 : Min. Activ space to EdgeSeal-topmetal1 is 4.9 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Seal.b_activ</name>
+   <description>6.10. Seal.b_activ : Min. Activ space to EdgeSeal-activ is 4.9 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Seal.b_psd</name>
+   <description>6.10. Seal.b_psd : Min. Activ space to EdgeSeal-psd is 4.9 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Seal.k</name>
+   <description>6.10. Seal.k : Min. EdgeSeal 45-degree corner length is 21.0 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Seal.m</name>
+   <description>6.10. Seal.m : Only one sealring per chip allowed</description>
+   <categories>
+   </categories>
+  </category>
+ <category>
    <name>M1.a</name>
    <description>5.16. M1.a: Min. Metal1 width: 0.16 μm.</description>
    <categories>
@@ -658,6 +610,54 @@
   <category>
    <name>M1.i</name>
    <description>5.16. M1.i Min. space of Metal1 lines of which at least one is bent by 45-degree is 0.22 um</description>
+   <categories>
+   </categories>
+  </category>
+ <category>
+   <name>Slt.e1_M1</name>
+   <description>7.3. Slt.e1_M1 : No M1:slit required on MIM</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.e1_M2</name>
+   <description>7.3. Slt.e1_M2 : No M2:slit required on MIM</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.e1_M3</name>
+   <description>7.3. Slt.e1_M3 : No M3:slit required on MIM</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.e1_M4</name>
+   <description>7.3. Slt.e1_M4 : No M4:slit required on MIM</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Slt.e1_TM1</name>
+   <description>7.3. Slt.e1_TM1 : No TM1:slit required on MIM</description>
+   <categories>
+   </categories>
+  </category>
+ <category>
+   <name>Pas.a</name>
+   <description>5.27. Pas.a:Min. Passiv width: 2.1 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Pas.b</name>
+   <description>5.27. Pas.b: Min. Passiv space or notch: 3.5 um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>Pas.c</name>
+   <description>5.27. Pas.c : Min. TopMetal1 enclosure of Passiv [Not checked outside of sealring (edge-seal-passive)] is 2.1 um </description>
    <categories>
    </categories>
   </category>
@@ -2176,7 +2176,7 @@
  </categories>
  <cells>
   <cell>
-   <name>heichips26_ook_top</name>
+   <name>heichips26_ook_soc</name>
    <variant />
    <layout-name />
    <references>

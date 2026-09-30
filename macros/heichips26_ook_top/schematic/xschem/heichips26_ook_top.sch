@@ -5,87 +5,321 @@ V {}
 S {}
 F {}
 E {}
-N 360 -770 360 -740 {lab=VGND}
-N 360 -1170 360 -1130 {lab=VPWR}
-N 1500 -530 1500 -500 {lab=VGND}
-N 1530 -1170 1530 -1150 {lab=VPWR}
-N 1460 -1170 1460 -1150 {lab=VAPWR}
-N 1650 -910 1670 -910 {lab=analog_0}
-N 1650 -1030 1670 -1030 {lab=analog_1}
-N 1650 -1050 1670 -1050 {lab=analog_2}
-N 690 -1190 690 -1130 {lab=VPWR}
-N 690 -770 690 -750 {lab=VGND}
-N 850 -1020 900 -1020 {lab=q3}
-N 850 -1000 900 -1000 {lab=q2}
-N 850 -980 900 -980 {lab=q1}
-N 850 -960 900 -960 {lab=q0}
-N 1300 -1010 1350 -1010 {lab=q3}
-N 1300 -1030 1350 -1030 {lab=q2}
-N 1300 -1050 1350 -1050 {lab=q1}
-N 1300 -1070 1350 -1070 {lab=q0}
-N 850 -940 900 -940 {lab=rst_n}
-N 1320 -890 1350 -890 {lab=rst_n}
-N 1320 -910 1350 -910 {lab=clk_ref}
-N 850 -920 900 -920 {lab=clk_ref}
-N 850 -900 900 -900 {lab=vctrl_in}
-N 850 -880 900 -880 {lab=vctrl_b_in}
-N 1320 -970 1350 -970 {lab=vctrl_b_in}
-N 1320 -950 1350 -950 {lab=vctrl_in}
-N 440 -1020 530 -1020 {lab=in_tieon}
-N 440 -1000 530 -1000 {lab=q0_d}
-N 440 -980 530 -980 {lab=q1_d}
-N 440 -960 530 -960 {lab=q2_d}
-N 440 -940 530 -940 {lab=q3_d}
-N 440 -920 530 -920 {lab=in_tieoff}
-N 440 -900 530 -900 {lab=data_in_tx}
-N 440 -880 530 -880 {lab=clk}
-N 440 -860 530 -860 {lab=rst_n_in}
+N 1840 -450 1840 -420 {lab=VGND}
+N 1840 -880 1840 -840 {lab=VPWR}
+N 1820 -860 1820 -840 {lab=VAPWR}
+N 1990 -720 2060 -720 {lab=analog_1}
+N 1990 -740 2060 -740 {lab=analog_2}
+N 1580 -640 1670 -640 {lab=uo_out[0]}
+N 1580 -660 1670 -660 {lab=uo_out[1]}
+N 1580 -680 1670 -680 {lab=uo_out[2]}
+N 1580 -700 1670 -700 {lab=uo_out[3]}
+N 1990 -700 2060 -700 {lab=analog_0}
+N 1600 -570 1670 -570 {lab=rst_n}
+N 1600 -550 1670 -550 {lab=clk}
+N 1600 -530 1670 -530 {lab=ui_in[0]}
+N 200 -1690 230 -1690 {lab=uio_out[5]}
+N 200 -1240 230 -1240 {lab=uio_out[2]}
+N 200 -1390 230 -1390 {lab=uio_out[3]}
+N 200 -1540 230 -1540 {lab=uio_out[4]}
+N 290 -1690 330 -1690 {lab=tie_off}
+N 290 -1540 330 -1540 {lab=tie_off}
+N 290 -1390 330 -1390 {lab=tie_off}
+N 290 -1240 330 -1240 {lab=tie_off}
+N 200 -1080 230 -1080 {lab=uio_out[1]}
+N 290 -1080 330 -1080 {lab=tie_off}
+N 200 -940 230 -940 {lab=uio_out[0]}
+N 290 -940 330 -940 {lab=tie_off}
+N 210 -780 240 -780 {lab=uo_out[7]}
+N 300 -780 340 -780 {lab=tie_off}
+N 210 -610 240 -610 {lab=uo_out[6]}
+N 300 -610 340 -610 {lab=tie_off}
+N 210 -420 240 -420 {lab=uo_out[5]}
+N 300 -420 340 -420 {lab=tie_off}
+N 210 -240 240 -240 {lab=uo_out[4]}
+N 300 -240 340 -240 {lab=tie_off}
+N 1590 -510 1670 -510 {lab=tie_off}
+N 560 -240 590 -240 {lab=uio_out[6]}
+N 650 -240 690 -240 {lab=tie_off}
+N 560 -420 590 -420 {lab=uio_out[7]}
+N 650 -420 690 -420 {lab=tie_off}
+N 560 -610 590 -610 {lab=uio_oe[0]}
+N 650 -610 690 -610 {lab=tie_off}
+N 560 -780 590 -780 {lab=uio_oe[1]}
+N 650 -780 690 -780 {lab=tie_off}
+N 560 -940 590 -940 {lab=uio_oe[2]}
+N 650 -940 690 -940 {lab=tie_off}
+N 560 -1080 590 -1080 {lab=uio_oe[3]}
+N 650 -1080 690 -1080 {lab=tie_off}
+N 560 -1240 590 -1240 {lab=uio_oe[4]}
+N 650 -1240 690 -1240 {lab=tie_off}
+N 560 -1390 590 -1390 {lab=uio_oe[5]}
+N 650 -1390 690 -1390 {lab=tie_off}
+N 560 -1540 590 -1540 {lab=uio_oe[6]}
+N 650 -1540 690 -1540 {lab=tie_off}
+N 560 -1690 590 -1690 {lab=uio_oe[7]}
+N 650 -1690 690 -1690 {lab=tie_off}
 C {title-3.sym} 0 0 0 0 {name=l1 author="Belal ELshinnawey" rev=1.0 lock=true}
-C {devices/iopin.sym} 360 -1170 3 0 {name=p9 lab=VPWR}
-C {devices/lab_pin.sym} 1530 -1170 1 0 {name=lp12 sig_type=std_logic lab=VPWR
+C {devices/iopin.sym} 1840 -880 3 0 {name=p9 lab=VPWR}
+C {devices/iopin.sym} 1840 -420 1 0 {name=p12 lab=VGND}
+C {devices/iopin.sym} 1820 -860 3 0 {name=pvout8 lab=VAPWR}
+C {devices/iopin.sym} 2060 -740 0 0 {name=pvout1 lab=analog_2}
+C {devices/iopin.sym} 2060 -720 0 0 {name=pvout2 lab=analog_1}
+C {devices/iopin.sym} 2060 -700 0 0 {name=pvout3 lab=analog_0}
+C {opin.sym} 1580 -660 0 1 {name=p13 lab=uo_out[1]}
+C {opin.sym} 1580 -680 0 1 {name=p10 lab=uo_out[2]}
+C {opin.sym} 1580 -700 0 1 {name=p11 lab=uo_out[3]}
+C {heichips26_ook_soc.sym} 1840 -730 0 0 {name=x1}
+C {sg13cmos5l_pr/rsil.sym} 260 -1690 1 0 {name=R1
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
 }
-C {devices/iopin.sym} 360 -740 1 0 {name=p12 lab=VGND}
-C {devices/lab_pin.sym} 1500 -500 3 0 {name=lp15 sig_type=std_logic lab=VGND}
-C {devices/iopin.sym} 1460 -1170 3 0 {name=pvout8 lab=VAPWR}
-C {devices/iopin.sym} 1670 -1050 0 0 {name=pvout1 lab=analog_2}
-C {devices/iopin.sym} 1670 -1030 0 0 {name=pvout2 lab=analog_1}
-C {devices/iopin.sym} 1670 -910 0 0 {name=pvout3 lab=analog_0}
-C {ook_analog_system.sym} 1500 -840 0 0 {name=x2}
-C {devices/lab_pin.sym} 690 -1190 0 0 {name=lpx1vpwr sig_type=std_logic lab=VPWR}
-C {devices/lab_pin.sym} 690 -750 0 0 {name=lpx1vgnd sig_type=std_logic lab=VGND}
-C {devices/lab_pin.sym} 900 -1020 0 1 {name=lpx1 sig_type=std_logic lab=q3}
-C {devices/lab_pin.sym} 900 -1000 0 1 {name=lpx2 sig_type=std_logic lab=q2}
-C {devices/lab_pin.sym} 900 -980 0 1 {name=lpx3 sig_type=std_logic lab=q1}
-C {devices/lab_pin.sym} 900 -960 0 1 {name=lpx4 sig_type=std_logic lab=q0}
-C {devices/lab_pin.sym} 1300 -1010 2 1 {name=lpx5 sig_type=std_logic lab=q3}
-C {devices/lab_pin.sym} 1300 -1030 2 1 {name=lpx6 sig_type=std_logic lab=q2}
-C {devices/lab_pin.sym} 1300 -1050 2 1 {name=lpx7 sig_type=std_logic lab=q1}
-C {devices/lab_pin.sym} 1300 -1070 2 1 {name=lpx8 sig_type=std_logic lab=q0}
-C {devices/lab_pin.sym} 1320 -890 2 1 {name=lpx10 sig_type=std_logic lab=rst_n}
-C {devices/lab_pin.sym} 1320 -910 2 1 {name=lpx11 sig_type=std_logic lab=clk_ref}
-C {devices/lab_pin.sym} 1320 -950 0 0 {name=lpx15 sig_type=std_logic lab=vctrl_in}
-C {devices/lab_pin.sym} 1320 -970 0 0 {name=lpx16 sig_type=std_logic lab=vctrl_b_in
+C {ipin.sym} 1600 -570 0 0 {name=p1 lab=rst_n}
+C {ipin.sym} 1600 -550 0 0 {name=p2 lab=clk}
+C {ipin.sym} 1600 -530 0 0 {name=p3 lab=ui_in[0]}
+C {opin.sym} 210 -240 2 0 {name=p4 lab=uo_out[4]}
+C {opin.sym} 210 -420 2 0 {name=p5 lab=uo_out[5]}
+C {opin.sym} 210 -610 2 0 {name=p6 lab=uo_out[6]}
+C {opin.sym} 210 -780 2 0 {name=p7 lab=uo_out[7]}
+C {sg13cmos5l_pr/rsil.sym} 260 -1540 1 0 {name=R2
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
 }
-C {devices/iopin.sym} 1180 -1220 1 0 {name=p1 lab=q0}
-C {devices/iopin.sym} 1200 -1220 1 0 {name=p2 lab=q1}
-C {devices/iopin.sym} 1220 -1220 1 0 {name=p3 lab=q2}
-C {devices/iopin.sym} 1240 -1220 1 0 {name=p4 lab=q3}
-C {devices/iopin.sym} 1260 -1220 1 0 {name=p5 lab=vctrl_in}
-C {devices/iopin.sym} 1280 -1220 1 0 {name=p6 lab=vctrl_b_in}
-C {devices/iopin.sym} 1160 -1220 1 0 {name=p7 lab=rst_n}
-C {devices/iopin.sym} 1140 -1220 1 0 {name=p8 lab=clk_ref}
-C {devices/lab_pin.sym} 900 -880 2 0 {name=lpx14 sig_type=std_logic lab=vctrl_b_in
+C {sg13cmos5l_pr/rsil.sym} 260 -1390 1 0 {name=R3
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
 }
-C {devices/lab_pin.sym} 900 -900 2 0 {name=lpx17 sig_type=std_logic lab=vctrl_in}
-C {devices/lab_pin.sym} 900 -920 0 1 {name=lpx13 sig_type=std_logic lab=clk_ref}
-C {devices/lab_pin.sym} 900 -940 0 1 {name=lpx9 sig_type=std_logic lab=rst_n}
-C {ook_digital_system.sym} 690 -950 0 0 {name=x1}
-C {opin.sym} 440 -1020 2 0 {name=p19 lab=in_tieon}
-C {opin.sym} 440 -1000 2 0 {name=p14 lab=q0_d}
-C {opin.sym} 440 -980 2 0 {name=p13 lab=q1_d}
-C {opin.sym} 440 -960 2 0 {name=p10 lab=q2_d}
-C {opin.sym} 440 -940 2 0 {name=p11 lab=q3_d}
-C {opin.sym} 440 -920 2 0 {name=p18 lab=in_tieoff}
-C {ipin.sym} 440 -900 0 0 {name=p17 lab=data_in_tx}
-C {ipin.sym} 440 -880 0 0 {name=p16 lab=clk}
-C {ipin.sym} 440 -860 0 0 {name=p15 lab=rst_n_in}
+C {sg13cmos5l_pr/rsil.sym} 260 -1240 1 0 {name=R4
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {lab_pin.sym} 330 -1690 2 0 {name=p8 sig_type=std_logic lab=tie_off}
+C {lab_pin.sym} 330 -1540 2 0 {name=p20 sig_type=std_logic lab=tie_off}
+C {lab_pin.sym} 330 -1390 2 0 {name=p21 sig_type=std_logic lab=tie_off}
+C {lab_pin.sym} 330 -1240 2 0 {name=p22 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 260 -1080 1 0 {name=R5
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 200 -940 2 0 {name=p23 lab=uio_out[0]}
+C {lab_pin.sym} 330 -1080 2 0 {name=p24 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 260 -940 1 0 {name=R6
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 200 -1080 2 0 {name=p25 lab=uio_out[1]}
+C {lab_pin.sym} 330 -940 2 0 {name=p26 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 270 -780 1 0 {name=R7
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 200 -1240 2 0 {name=p27 lab=uio_out[2]}
+C {lab_pin.sym} 340 -780 2 0 {name=p28 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 270 -610 1 0 {name=R8
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 200 -1390 2 0 {name=p29 lab=uio_out[3]}
+C {lab_pin.sym} 340 -610 2 0 {name=p30 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 270 -420 1 0 {name=R9
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 200 -1540 2 0 {name=p31 lab=uio_out[4]}
+C {lab_pin.sym} 340 -420 2 0 {name=p32 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 270 -240 1 0 {name=R10
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 200 -1690 2 0 {name=p33 lab=uio_out[5]}
+C {lab_pin.sym} 340 -240 2 0 {name=p34 sig_type=std_logic lab=tie_off}
+C {lab_pin.sym} 1590 -510 0 0 {name=p35 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -240 1 0 {name=R11
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -240 2 0 {name=p15 lab=uio_out[6]}
+C {lab_pin.sym} 690 -240 2 0 {name=p16 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -420 1 0 {name=R12
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -420 2 0 {name=p17 lab=uio_out[7]}
+C {lab_pin.sym} 690 -420 2 0 {name=p18 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -610 1 0 {name=R13
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -610 2 0 {name=p36 lab=uio_oe[0]}
+C {lab_pin.sym} 690 -610 2 0 {name=p44 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -780 1 0 {name=R14
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -780 2 0 {name=p37 lab=uio_oe[1]}
+C {lab_pin.sym} 690 -780 2 0 {name=p45 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -940 1 0 {name=R15
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -940 2 0 {name=p38 lab=uio_oe[2]}
+C {lab_pin.sym} 690 -940 2 0 {name=p46 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -1080 1 0 {name=R16
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -1080 2 0 {name=p39 lab=uio_oe[3]}
+C {lab_pin.sym} 690 -1080 2 0 {name=p47 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -1240 1 0 {name=R17
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -1240 2 0 {name=p40 lab=uio_oe[4]}
+C {lab_pin.sym} 690 -1240 2 0 {name=p48 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -1390 1 0 {name=R18
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -1390 2 0 {name=p41 lab=uio_oe[5]}
+C {lab_pin.sym} 690 -1390 2 0 {name=p49 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -1540 1 0 {name=R19
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -1540 2 0 {name=p42 lab=uio_oe[6]}
+C {lab_pin.sym} 690 -1540 2 0 {name=p50 sig_type=std_logic lab=tie_off}
+C {sg13cmos5l_pr/rsil.sym} 620 -1690 1 0 {name=R20
+w=0.5e-6
+l=0.5e-6
+model=rsil
+body=VGND
+spiceprefix=X
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 9.0e-6 / @w + 7.0 * ( @l ) / ( @w + 1.0e-8 ) ) / @m  )"
+}
+C {opin.sym} 560 -1690 2 0 {name=p43 lab=uio_oe[7]}
+C {lab_pin.sym} 690 -1690 2 0 {name=p51 sig_type=std_logic lab=tie_off}
+C {ipin.sym} 900 -640 0 0 {name=p52 lab=ui_in[1]}
+C {ipin.sym} 900 -790 0 0 {name=p53 lab=ui_in[2]}
+C {ipin.sym} 900 -940 0 0 {name=p54 lab=ui_in[3]}
+C {ipin.sym} 900 -1090 0 0 {name=p55 lab=ui_in[4]}
+C {ipin.sym} 900 -1240 0 0 {name=p56 lab=ui_in[5]}
+C {ipin.sym} 900 -1390 0 0 {name=p57 lab=ui_in[6]}
+C {ipin.sym} 900 -1540 0 0 {name=p58 lab=ui_in[7]}
+C {opin.sym} 1580 -640 0 1 {name=p14 lab=uo_out[0]}
+C {ipin.sym} 890 -1620 0 0 {name=p19 lab=ena}

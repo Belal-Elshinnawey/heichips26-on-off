@@ -1,6 +1,78 @@
 ** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/schematic/xschem/heichips26_ook_top.sch
-**.subckt heichips26_ook_top VAPWR VPWR VGND analog_2 analog_1 analog_0 rst_n clk_ref vctrl_in vctrl_b_in q0 q1 q2 q3 q3_d q2_d
-*+ q1_d q0_d rst_n_in clk data_in_tx in_tieoff in_tieon
+**.subckt heichips26_ook_top ena uio_out[5] uio_oe[7] ui_in[7] uio_oe[6] uio_out[4] ui_in[6] uio_out[3] uio_oe[5] uio_out[2]
+*+ uio_oe[4] ui_in[5] ui_in[4] uio_oe[3] uio_out[1] uio_out[0] uio_oe[2] ui_in[3] VPWR VAPWR ui_in[2] uio_oe[1] uo_out[7] analog_2 analog_1
+*+ analog_0 uo_out[3] uo_out[2] uo_out[1] uo_out[0] ui_in[1] uo_out[6] uio_oe[0] rst_n clk ui_in[0] uo_out[5] uio_out[7] VGND uio_out[6]
+*+ uo_out[4]
+*.iopin VPWR
+*.iopin VGND
+*.iopin VAPWR
+*.iopin analog_2
+*.iopin analog_1
+*.iopin analog_0
+*.opin uo_out[1]
+*.opin uo_out[2]
+*.opin uo_out[3]
+*.ipin rst_n
+*.ipin clk
+*.ipin ui_in[0]
+*.opin uo_out[4]
+*.opin uo_out[5]
+*.opin uo_out[6]
+*.opin uo_out[7]
+*.opin uio_out[0]
+*.opin uio_out[1]
+*.opin uio_out[2]
+*.opin uio_out[3]
+*.opin uio_out[4]
+*.opin uio_out[5]
+*.opin uio_out[6]
+*.opin uio_out[7]
+*.opin uio_oe[0]
+*.opin uio_oe[1]
+*.opin uio_oe[2]
+*.opin uio_oe[3]
+*.opin uio_oe[4]
+*.opin uio_oe[5]
+*.opin uio_oe[6]
+*.opin uio_oe[7]
+*.ipin ui_in[1]
+*.ipin ui_in[2]
+*.ipin ui_in[3]
+*.ipin ui_in[4]
+*.ipin ui_in[5]
+*.ipin ui_in[6]
+*.ipin ui_in[7]
+*.opin uo_out[0]
+*.ipin ena
+x1 VAPWR VPWR VGND analog_2 analog_1 analog_0 net1 net2 net3 net4 net5 net6 net7 net8 uo_out[3] uo_out[2] uo_out[1] uo_out[0]
++ rst_n clk ui_in[0] tie_off net9 heichips26_ook_soc
+XR1 tie_off uio_out[5] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR2 tie_off uio_out[4] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR3 tie_off uio_out[3] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR4 tie_off uio_out[2] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR5 tie_off uio_out[1] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR6 tie_off uio_out[0] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR7 tie_off uo_out[7] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR8 tie_off uo_out[6] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR9 tie_off uo_out[5] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR10 tie_off uo_out[4] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR11 tie_off uio_out[6] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR12 tie_off uio_out[7] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR13 tie_off uio_oe[0] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR14 tie_off uio_oe[1] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR15 tie_off uio_oe[2] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR16 tie_off uio_oe[3] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR17 tie_off uio_oe[4] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR18 tie_off uio_oe[5] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR19 tie_off uio_oe[6] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+XR20 tie_off uio_oe[7] VGND rsil w=0.5e-6 l=0.5e-6 m=1 mm_ok=1
+**.ends
+
+* expanding   symbol:  heichips26_ook_soc.sym # of pins=23
+** sym_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/schematic/xschem/heichips26_ook_soc.sym
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/schematic/xschem/heichips26_ook_soc.sch
+.subckt heichips26_ook_soc VAPWR VPWR VGND analog_2 analog_1 analog_0 rst_n clk_ref vctrl_in vctrl_b_in q0 q1 q2 q3 q3_d q2_d q1_d
++ q0_d rst_n_in clk data_in_tx in_tieoff in_tieon
 *.iopin VPWR
 *.iopin VGND
 *.iopin VAPWR
@@ -28,7 +100,8 @@ x2 VAPWR net1 VPWR q3 q2 analog_0 analog_2 q1 q0 vctrl_in net2 vctrl_b_in net3 a
 + net10 rst_n net11 VGND net12 net13 net14 net15 ook_analog_system
 x1 VGND VPWR clk clk_ref data_in_tx in_tieoff in_tieon q0 q0_d q1 q1_d q2 q2_d q3 q3_d rst_n rst_n_in vctrl_in vctrl_b_in
 + ook_digital_system
-**.ends
+.ends
+
 
 * expanding   symbol:  ook_analog_system.sym # of pins=29
 ** sym_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/schematic/xschem/ook_analog_system.sym

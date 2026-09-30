@@ -131,14 +131,35 @@ build-top: ## Build TOP cell (Verilog, LEF, LIB, copy GDS, and render image)
 lef: ## Export LEF from the TOP cell layout using Magic
 	rm -rf $(LEF_DIR)
 	mkdir -p $(LEF_DIR)
-	printf '%s\n' \
-		'gds read $(LAY_DIR)/$(TOP).$(_GDS_EXT)' \
-		'load $(TOP)' \
-		'box 0 0 0 0' \
-		'port VGND use ground' \
-		'port VPWR use power' \
-		'port VAPWR use power' \
-		'lef write $(LEF_DIR)/$(TOP).lef -hide -pinonly 2um' | \
+	{ \
+		printf '%s\n' \
+			'gds read $(LAY_DIR)/$(TOP).$(_GDS_EXT)' \
+			'load $(TOP)' \
+			'box 0 0 0 0' \
+			'port VGND use ground' \
+			'port VGND class bidirectional' \
+			'port VPWR use power' \
+			'port VPWR class bidirectional' \
+			'port VAPWR use power' \
+			'port VAPWR class bidirectional' \
+			'port clk use signal' \
+			'port clk class input' \
+			'port ena use signal' \
+			'port ena class input' \
+			'port rst_n use signal' \
+			'port rst_n class input'; \
+		for i in 0 1 2 3 4 5 6 7; do \
+			printf 'port {ui_in[%d]} use signal\nport {ui_in[%d]} class input\n' $$i $$i; \
+			printf 'port {uio_in[%d]} use signal\nport {uio_in[%d]} class input\n' $$i $$i; \
+			printf 'port {uio_out[%d]} use signal\nport {uio_out[%d]} class output\n' $$i $$i; \
+			printf 'port {uio_oe[%d]} use signal\nport {uio_oe[%d]} class output\n' $$i $$i; \
+			printf 'port {uo_out[%d]} use signal\nport {uo_out[%d]} class output\n' $$i $$i; \
+		done; \
+		for n in analog_0 analog_1 analog_2; do \
+			printf 'port %s use signal\nport %s class bidirectional\n' $$n $$n; \
+		done; \
+		printf '%s\n' 'lef write $(LEF_DIR)/$(TOP).lef -hide -pinonly 2um'; \
+	} | \
 		magic -dnull -noconsole \
 		-rcfile $(PDK_ROOT)/$(PDK)/libs.tech/magic/ihp-sg13cmos5l.magicrc
 .PHONY: lef
