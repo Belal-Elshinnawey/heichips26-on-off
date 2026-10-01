@@ -96,7 +96,7 @@ sim-xschem: ## Run TB simulation with Xschem in batch mode (usage: make sim-xsch
 		xschem set netlist_type spice; \
 		set netlist_dir $(abspath $(XSCHEM_TB_DIR)/simulations); \
 		xschem save; \
-		xschem netlist \
+		xschem netlist -erc \
 	' $(TB).sch
 	cd $(XSCHEM_TB_DIR)/simulations && ngspice -b $(TB).spice
 .PHONY: sim-xschem

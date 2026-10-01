@@ -2,11 +2,12 @@
 .subckt heichips26_ook_top ena uio_out[5] uio_oe[7] ui_in[7] uio_oe[6] uio_out[4] ui_in[6] uio_out[3] uio_oe[5] uio_out[2]
 + uio_oe[4] ui_in[5] ui_in[4] uio_oe[3] uio_out[1] uio_out[0] uio_oe[2] ui_in[3] VPWR VAPWR ui_in[2] uio_oe[1] uo_out[7] analog_2 analog_1
 + analog_0 uo_out[3] uo_out[2] uo_out[1] uo_out[0] ui_in[1] uo_out[6] uio_oe[0] rst_n clk ui_in[0] uo_out[5] uio_out[7] VGND uio_out[6]
-+ uo_out[4]
++ uo_out[4] uio_in[7] uio_in[6] uio_in[5] uio_in[4] uio_in[3] uio_in[2] uio_in[1] uio_in[0]
 *.PININFO VPWR:B VGND:B VAPWR:B analog_2:B analog_1:B analog_0:B uo_out[1]:O uo_out[2]:O uo_out[3]:O rst_n:I clk:I ui_in[0]:I
 *+ uo_out[4]:O uo_out[5]:O uo_out[6]:O uo_out[7]:O uio_out[0]:O uio_out[1]:O uio_out[2]:O uio_out[3]:O uio_out[4]:O uio_out[5]:O uio_out[6]:O
 *+ uio_out[7]:O uio_oe[0]:O uio_oe[1]:O uio_oe[2]:O uio_oe[3]:O uio_oe[4]:O uio_oe[5]:O uio_oe[6]:O uio_oe[7]:O ui_in[1]:I ui_in[2]:I ui_in[3]:I
-*+ ui_in[4]:I ui_in[5]:I ui_in[6]:I ui_in[7]:I uo_out[0]:O ena:I
+*+ ui_in[4]:I ui_in[5]:I ui_in[6]:I ui_in[7]:I uo_out[0]:O ena:I uio_in[0]:I uio_in[1]:I uio_in[2]:I uio_in[3]:I uio_in[4]:I uio_in[5]:I
+*+ uio_in[6]:I uio_in[7]:I
 x1 VAPWR VPWR VGND analog_2 analog_1 analog_0 net1 net2 net3 net4 net5 net6 net7 net8 uo_out[3] uo_out[2] uo_out[1] uo_out[0]
 + rst_n clk ui_in[0] tie_off net9 heichips26_ook_soc
 RR1 tie_off uio_out[5] 24.863 $SUB=VGND $[rsil] w=0.5e-6 l=0.5e-6

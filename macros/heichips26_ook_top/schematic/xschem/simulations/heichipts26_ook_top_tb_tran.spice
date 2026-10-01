@@ -1,0 +1,105 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/testbenches/xschem/heichipts26_ook_top_tb_tran.sch
+**.subckt heichipts26_ook_top_tb_tran
+VCLKREF CLK_REF GND PULSE(0 {VDD} 0 0.5n 0.5n {0.5/FREQ_REF} {1/FREQ_REF})
+VDDSRC VDD GND {VDD}
+VDDSRC1 VDDA GND {3.3}
+Cb5 vout_accum GND 5p
+R2 GND vout_accum 250k
+x1 net1 net19 net9 net2 net10 net20 net3 net21 net11 net22 net12 net4 net5 net13 net23 net24 net14 net6 VDD VDDA net7 net15 net25
++ rx_filt vout_accum vout_tx q0 q1 q2 q3 net8 net26 net16 VDD CLK_REF VDD net27 net17 GND net18 net28 net29 net30 net31 net32 net33 net34
++ net35 net36 heichips26_ook_top_pex
+* noconn #net28
+* noconn #net27
+* noconn #net26
+* noconn #net25
+* noconn #net24
+* noconn #net23
+* noconn #net22
+* noconn #net21
+* noconn #net20
+* noconn #net19
+* noconn #net18
+* noconn #net17
+* noconn #net16
+* noconn #net15
+* noconn #net14
+* noconn #net13
+* noconn #net12
+* noconn #net11
+* noconn #net10
+* noconn #net9
+* noconn #net8
+* noconn #net7
+* noconn #net6
+* noconn #net5
+* noconn #net4
+* noconn #net3
+* noconn #net2
+* noconn #net1
+* noconn #net36
+* noconn #net35
+* noconn #net34
+* noconn #net33
+* noconn #net32
+* noconn #net31
+* noconn #net30
+* noconn #net29
+Cb1 net37 rx_filt 1p
+C2 GND net37 1n
+L23 net37 GND 134.5p
+C1 net38 net37 0.558p
+L33 net37 GND 138.95n
+C3 net38 vin_rx 10.02p
+L43 net38 GND 17.56n
+**** begin user architecture code
+
+
+.param VDD=1.5
+.param FREQ_REF=80e6
+.param FREQ_FB=600e6
+.options klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-6 itl1=200 rshunt=1e9
+.param b0=1 b1=0 b2=1 b3=0 b4=0 b5=1 b6=0 b7=1
+.param bitsum={b0+b1+b2+b3+b4+b5+b6+b7}
+.param parity={bitsum-2*int(bitsum/2)}
+
+Vcarrier ncar 0 SINE(0 1m 433.92e6)
+
+Bvenv nenv 0 V =
++ (time<10e-6)  ? 1 :
++ (time<15e-6)  ? (1-b0) : (time<20e-6) ? b0 :
++ (time<25e-6)  ? (1-b1) : (time<30e-6) ? b1 :
++ (time<35e-6)  ? (1-b2) : (time<40e-6) ? b2 :
++ (time<45e-6)  ? (1-b3) : (time<50e-6) ? b3 :
++ (time<55e-6)  ? (1-b4) : (time<60e-6) ? b4 :
++ (time<65e-6)  ? (1-b5) : (time<70e-6) ? b5 :
++ (time<75e-6)  ? (1-b6) : (time<80e-6) ? b6 :
++ (time<85e-6)  ? (1-b7) : (time<90e-6) ? b7 :
++ (time<100e-6) ? parity :
++ 1
+
+Bvin1 vin_rx 0 V={(V(nenv)*V(ncar))}
+.save vout_tx q0 q1 q2 q3 vout_accum vin_rx rx_filt
+.tran 100p 150u 0 100p uic
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/dac/netlist/xspice/dac.xspice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/ook_transmitter_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/ook_analog_system_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.tech/ngspice/models/cap_mfringe.lib
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/vco_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/output_buffer_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/netlist/pex/heichips26_ook_top_magic_pex_3.spice
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VDDA
+.end

@@ -323,3 +323,11 @@ C {ipin.sym} 900 -1390 0 0 {name=p57 lab=ui_in[6]}
 C {ipin.sym} 900 -1540 0 0 {name=p58 lab=ui_in[7]}
 C {opin.sym} 1580 -640 0 1 {name=p14 lab=uo_out[0]}
 C {ipin.sym} 890 -1620 0 0 {name=p19 lab=ena}
+C {ipin.sym} 1050 -640 0 0 {name=p59 lab=uio_in[0]}
+C {ipin.sym} 1050 -790 0 0 {name=p60 lab=uio_in[1]}
+C {ipin.sym} 1050 -940 0 0 {name=p61 lab=uio_in[2]}
+C {ipin.sym} 1050 -1090 0 0 {name=p62 lab=uio_in[3]}
+C {ipin.sym} 1050 -1240 0 0 {name=p63 lab=uio_in[4]}
+C {ipin.sym} 1050 -1390 0 0 {name=p64 lab=uio_in[5]}
+C {ipin.sym} 1050 -1540 0 0 {name=p65 lab=uio_in[6]}
+C {ipin.sym} 1050 -1690 0 0 {name=p66 lab=uio_in[7]}

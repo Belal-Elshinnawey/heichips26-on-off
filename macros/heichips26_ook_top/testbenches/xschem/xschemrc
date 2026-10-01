@@ -45,3 +45,9 @@ set xschem_execute_scripts yes
 
 # Source top-level schematic xschemrc to pull in canonical library paths and macro libraries.
 source [file normalize [file join [file dirname [info script]] ../../schematic/xschem/xschemrc]]
+
+# ngspice here is OpenMP-enabled (linked against libomp) -- give it multiple
+# threads for transient sims. Inherited by any ngspice xschem spawns
+# (Simulate button/'s' key), regardless of which sim(spice,N,cmd) template
+# is selected.
+set ::env(OMP_NUM_THREADS) 8
