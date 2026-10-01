@@ -8,21 +8,12 @@ module heichips26_ook_top (
     inout analog_1,
     inout analog_2,
     inout clk,
-    inout clk_ref,
-    inout data_in_tx,
-    inout in_tieoff,
-    inout in_tieon,
-    inout q0,
-    inout q0_d,
-    inout q1,
-    inout q1_d,
-    inout q2,
-    inout q2_d,
-    inout q3,
-    inout q3_d,
+    inout ena,
     inout rst_n,
-    inout rst_n_in,
-    inout vctrl_b_in,
-    inout vctrl_in
+    inout [7:0] ui_in,
+    inout [7:0] uio_in,
+    inout [7:0] uio_oe,
+    inout [7:0] uio_out,
+    inout [7:0] uo_out
 );
 endmodule

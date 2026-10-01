@@ -180,6 +180,14 @@ Cell heichips26_ook_top (1) disconnected node: ui_in[4]
 Cell heichips26_ook_top (1) disconnected node: ui_in[3]
 Cell heichips26_ook_top (1) disconnected node: ui_in[2]
 Cell heichips26_ook_top (1) disconnected node: ui_in[1]
+Cell heichips26_ook_top (1) disconnected node: uio_in[7]
+Cell heichips26_ook_top (1) disconnected node: uio_in[6]
+Cell heichips26_ook_top (1) disconnected node: uio_in[5]
+Cell heichips26_ook_top (1) disconnected node: uio_in[4]
+Cell heichips26_ook_top (1) disconnected node: uio_in[3]
+Cell heichips26_ook_top (1) disconnected node: uio_in[2]
+Cell heichips26_ook_top (1) disconnected node: uio_in[1]
+Cell heichips26_ook_top (1) disconnected node: uio_in[0]
 Class heichips26_ook_top (0):  Merged 11191 parallel devices.
 Class heichips26_ook_top (1):  Merged 5164 parallel devices.
 Cell heichips26_ook_top (0) disconnected node: ena
@@ -206,6 +214,14 @@ Cell heichips26_ook_top (1) disconnected node: ui_in[4]
 Cell heichips26_ook_top (1) disconnected node: ui_in[3]
 Cell heichips26_ook_top (1) disconnected node: ui_in[2]
 Cell heichips26_ook_top (1) disconnected node: ui_in[1]
+Cell heichips26_ook_top (1) disconnected node: uio_in[7]
+Cell heichips26_ook_top (1) disconnected node: uio_in[6]
+Cell heichips26_ook_top (1) disconnected node: uio_in[5]
+Cell heichips26_ook_top (1) disconnected node: uio_in[4]
+Cell heichips26_ook_top (1) disconnected node: uio_in[3]
+Cell heichips26_ook_top (1) disconnected node: uio_in[2]
+Cell heichips26_ook_top (1) disconnected node: uio_in[1]
+Cell heichips26_ook_top (1) disconnected node: uio_in[0]
 Subcircuit summary:
 Circuit 1: heichips26_ook_top              |Circuit 2: heichips26_ook_top              
 -------------------------------------------|-------------------------------------------
@@ -1479,14 +1495,14 @@ ui_in[4]                                   |ui_in[4]
 ui_in[5]                                   |ui_in[5]                                   
 ui_in[6]                                   |ui_in[6]                                   
 ui_in[7]                                   |ui_in[7]                                   
-uio_in[0]                                  |(no matching pin)                          
-uio_in[1]                                  |(no matching pin)                          
-uio_in[2]                                  |(no matching pin)                          
-uio_in[3]                                  |(no matching pin)                          
-uio_in[4]                                  |(no matching pin)                          
-uio_in[5]                                  |(no matching pin)                          
-uio_in[6]                                  |(no matching pin)                          
-uio_in[7]                                  |(no matching pin)                          
+uio_in[0]                                  |uio_in[0]                                  
+uio_in[1]                                  |uio_in[1]                                  
+uio_in[2]                                  |uio_in[2]                                  
+uio_in[3]                                  |uio_in[3]                                  
+uio_in[4]                                  |uio_in[4]                                  
+uio_in[5]                                  |uio_in[5]                                  
+uio_in[6]                                  |uio_in[6]                                  
+uio_in[7]                                  |uio_in[7]                                  
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes heichips26_ook_top and heichips26_ook_top are equivalent.
