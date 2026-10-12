@@ -18,10 +18,33 @@ def eng_notation(val, pos=None):
         return "0"
     exp = int(math.floor(math.log10(abs(val)) / 3) * 3)
     mantissa = val / (10 ** exp)
+    if exp == 0:
+        # .3g collapses 1.619/1.610/1.620 all down to "1.62" -- right in
+        # the range these plots actually live in (e.g. inverter trip
+        # voltage). Fixed 3-decimal precision keeps them distinguishable.
+        return f"{mantissa:.3f}"
     return f"{mantissa:.3g}e{exp}"
 
 
 ENG_FORMATTER = FuncFormatter(eng_notation)
+
+
+def short_name(s):
+    """Shorten a dotted hierarchical node name to top.leaf, e.g.
+    x1.heichips26_ook_soc_0.q0 -> x1.q0. Names without a dot pass through
+    unchanged (lookup still uses the original full name, this is display
+    only)."""
+    if "." in s:
+        parts = s.split(".")
+        return f"{parts[0]}.{parts[-1]}"
+    return s
+
+
+def display_name(s):
+    m = FREQ_RE.match(s)
+    if m:
+        return f"freq({short_name(m.group(1))})"
+    return short_name(s)
 
 
 def parse_header(f):
@@ -121,6 +144,17 @@ RAIL_LOW = 0.0
 RAIL_HIGH = 1.5
 MID_RAIL = (RAIL_LOW + RAIL_HIGH) / 2
 
+# A uic-started .tran can report a wild value on the very first sample(s)
+# before the solver settles -- finite (isfinite() doesn't catch it) but
+# physically impossible, e.g. 950e168 on a node that never leaves a few
+# volts. Nothing in this testbench legitimately exceeds these.
+SANE_T_MAX = 1.0
+SANE_VAL_MAX = 1e6
+
+
+def sane(v, cap):
+    return math.isfinite(v) and abs(v) <= cap
+
 
 class FreqTracker:
     def __init__(self, buffer_factory):
@@ -133,7 +167,13 @@ class FreqTracker:
             self.armed = False
             if self.last_cross_t is not None:
                 period = t - self.last_cross_t
-                if period > 0:
+                # A harsh/UIC-started transient can produce spurious
+                # mid-rail crossings on a not-yet-settled node, giving a
+                # near-zero period and a 1/period that's technically finite
+                # but large enough (1e200+) to overflow matplotlib's axis
+                # math. Floor it well above the simulator's own timestep so
+                # only real edges register.
+                if period > 1e-12:
                     self.dec.add(t, [1.0 / period])
             self.last_cross_t = t
         elif not self.armed and val < MID_RAIL:
@@ -245,7 +285,7 @@ def main():
     for gi, g in enumerate(groups):
         for si, s in enumerate(g):
             m = FREQ_RE.match(s)
-            line, = axes[gi].plot([], [], label=s)
+            line, = axes[gi].plot([], [], label=display_name(s))
             cursor, = axes[gi].plot([], [], marker="o", markersize=6,
                                      color=line.get_color(), linestyle="None")
             # Fixed readout in the axes' top-right corner (axes-fraction
@@ -274,9 +314,24 @@ def main():
             t = p[time_idx]
             if t < args.skip_time:
                 continue
-            dec.add(t, [p[i] for i in plain_idxs])
+            # A harsh/uic-started transient can emit a wild sample (NaN,
+            # Inf, or a huge-but-finite value like 950e168 on a node that
+            # never leaves a few volts) before settling down. matplotlib's
+            # tick locator has no tolerance for that -- one bad value
+            # poisons autoscale for the whole axis and can crash the draw
+            # (isfinite() alone lets the huge-but-finite case through).
+            # Drop any sample outside a physically sane bound instead of
+            # ever handing it to the plot buffers.
+            if not sane(t, SANE_T_MAX):
+                continue
+            plain_vals = [p[i] for i in plain_idxs]
+            if not all(sane(v, SANE_VAL_MAX) for v in plain_vals):
+                continue
+            dec.add(t, plain_vals)
             for inner, idx in freq_idxs.items():
-                trackers[inner].update(t, p[idx])
+                v = p[idx]
+                if sane(v, SANE_VAL_MAX):
+                    trackers[inner].update(t, v)
         artists = [a for spec in line_specs for a in spec[:3]]
         if dec.tbuf:
             for line, cursor, label, name, kind, ref in line_specs:
@@ -290,10 +345,19 @@ def main():
                 line.set_data(tbuf, ybuf)
                 t_last, y_last = tbuf[-1], ybuf[-1]
                 cursor.set_data([t_last], [y_last])
-                label.set_text(f"{name}={eng_notation(y_last)}")
+                label.set_text(f"{display_name(name)}={eng_notation(y_last)}")
             for gi, ax in enumerate(axes):
                 ax.relim()
-                ax.autoscale_view()
+                try:
+                    # Early frames (or a flat/constant window) can leave an
+                    # axis with a zero-width data range. MaxNLocator divides
+                    # by that span internally and overflows -> ValueError
+                    # from np.arange. Not a bad sample, just not enough
+                    # spread yet: skip autoscaling this frame and retry once
+                    # more data has accumulated.
+                    ax.autoscale_view()
+                except ValueError:
+                    continue
                 if ymax_vals[gi] is not None or ymin_vals[gi] is not None:
                     # set_ylim() disables autoscale for this axis; whichever
                     # side isn't fixed must come fresh from autoscale_view()

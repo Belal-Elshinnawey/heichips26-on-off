@@ -1,0 +1,134 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/testbenches/xschem/output_buffer_tb_zout.sch
+**.subckt output_buffer_tb_zout
+VDD VDD GND {VDD}
+IAC_PROBE vout GND ac 1
+RBIAS vout GND 10meg
+x1 GND VDDA GND VDDA net1 net2 sg13cmos5l_IOPadAnalog
+* noconn #net35
+* noconn #net34
+* noconn #net33
+* noconn #net32
+* noconn #net31
+* noconn #net30
+* noconn #net29
+* noconn #net28
+* noconn #net27
+* noconn #net26
+* noconn #net25
+* noconn #net24
+* noconn #net23
+* noconn #net22
+* noconn #net21
+* noconn #net20
+* noconn #net19
+* noconn #net18
+* noconn #net17
+* noconn #net16
+* noconn #net15
+* noconn #net14
+* noconn #net13
+* noconn #net12
+* noconn #net11
+* noconn #net10
+* noconn #net9
+* noconn #net8
+* noconn #net43
+* noconn #net42
+* noconn #net41
+* noconn #net40
+* noconn #net39
+* noconn #net38
+* noconn #net37
+* noconn #net36
+x3 net8 net26 net16 net9 net17 net27 net10 net28 net18 net29 net19 net11 net12 net20 net30 net31 net21 net13 VDD VDDA net14 net22
++ net32 net44 net7 net2 net3 net4 net5 net6 net15 net33 net23 GND VDD VDD net34 net24 GND net25 net35 net36 net37 net38 net39 net40 net41
++ net42 net43 heichips26_ook_top_pex
+C5 VDD GND 10.0p
+* noconn #net44
+* noconn #net7
+* noconn #net3
+* noconn #net4
+* noconn #net5
+* noconn #net6
+VDDSRC1 VDDA GND {3.3}
+Cb2 net48 net1 2.3p
+L8 net1 GND 57n
+C3 net45 net46 0.75p
+L15 net48 net45 178n
+C1 net46 GND 106p
+L17 net46 GND 1.26n
+C2 net47 vout 0.75p
+L19 net46 net47 178n
+**** begin user architecture code
+
+
+.param VDD=1.5
+.csparam VDD=VDD
+.param temp=27
+.options savecurrents klu reltol=1e-3 abstol=1e-12 gmin=1e-9 trtol=25 itl1=200 itl4=50 rshunt=1e9
+.control
+
+shell rm -f output_buffer_tb_zout.raw
+shell rm -f ../plot_simulations/data/output_buffer_tb_zout.txt
+
+save all
+set wr_vecnames
+set wr_singlescale
+
+op
+write output_buffer_tb_zout.raw
+set appendwrite
+ac lin 200 200e6 600e6
+write output_buffer_tb_zout.raw
+let Rs = 50
+let zout = -v(vout)
+let zout_mag = mag(zout)
+let zout_ph = 180/PI*cphase(zout)
+let zout_re = real(zout)
+let zout_im = imag(zout)
+let Gam = (zout - Rs)/(zout + Rs)
+let Gmag = mag(Gam)
+let S11_dB = db(Gmag)
+let ML_dB = -10*log10(1 - Gmag*Gmag)
+plot real(zout) imag(zout) xlimit 200e6 600e6
+wrdata ../plot_simulations/data/output_buffer_tb_zout.txt mag(zout) phase(zout) real(zout) imag(zout)
+
+meas ac zmag_433 find zout_mag when frequency=433.92e6
+meas ac zph_433 find zout_ph when frequency=433.92e6
+meas ac zre_433 find zout_re when frequency=433.92e6
+meas ac zim_433 find zout_im when frequency=433.92e6
+meas ac S11_433 find S11_dB when frequency=433.92e6
+meas ac ML_433 find ML_dB when frequency=433.92e6
+
+unset appendwrite
+
+echo
+echo   Zout magnitude = $&zmag_433 ohm
+echo   Zout real      = $&zre_433 ohm
+echo   Zout imag      = $&zim_433 ohm
+echo   Zout phase     = $&zph_433 deg
+echo
+echo   S11            = $&S11_433 dB
+echo   mismatch loss  = $&ML_433 dB
+echo
+
+*quit
+.endc
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/netlist/pex/heichips26_ook_top_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/output_buffer_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.ref/sg13cmos5l_io/spice/sg13cmos5l_io.spi
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.GLOBAL VDDA
+.end

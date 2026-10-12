@@ -1,0 +1,85 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/testbenches/xschem/filter_tb_ac.sch
+**.subckt filter_tb_ac
+VDDSRC VDD GND {1.5}
+VDDSRC1 VDDA GND {3.3}
+V1 vsrc GND DC 0 AC {v1ac} SIN(0 1 433.9e6)
+R_SRC vsrc vin 50
+R_LOAD vout GND {rload_val}
+V2 v2n GND DC 0 AC {v2ac} SIN(0 1 433.9e6)
+R_SRC2 v2n vout {rsrc2_val}
+C3 net1 net2 0.75p
+L8 vin net1 178n
+C6 net2 GND 106p
+L10 net2 GND 1.26n
+C1 net3 vout 0.75p
+L1 net2 net3 178n
+**** begin user architecture code
+
+
+.param VDD=1.5
+.param tr=1e-9
+.param tr_data=50e-9
+.param v1ac=1
+.param v2ac=0
+.param rload_val=50
+.param rsrc2_val=50
+.options klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-12 itl1=200 itl4=100 rshunt=1e9 trtol=20
+.save all
+.control
+alterparam v1ac=1
+alterparam v2ac=0
+alterparam rload_val=50
+alterparam rsrc2_val=1e9
+reset
+ac lin 1001 100meg 1000meg
+let Zin = v(vin)*50/(v(vsrc)-v(vin))
+let S21_dB = db(2*v(vout)/v(vsrc))
+let Zin_re = real(Zin)
+let Zin_im = imag(Zin)
+plot Zin_re Zin_im xlabel 'Frequency [Hz]' ylabel 'Zin [ohm]'
+meas ac Zin_re_c find Zin_re when frequency=433.92e6
+meas ac Zin_im_c find Zin_im when frequency=433.92e6
+plot S21_dB xlabel 'Frequency [Hz]' ylabel 'S21 [dB]'
+meas ac S21_center find S21_dB when frequency=433.92e6
+echo
+echo S21 at 433.92MHz = $&S21_center dB
+echo Zin  at 433.92MHz = $&Zin_re_c + j$&Zin_im_c ohm
+
+alterparam v1ac=0
+alterparam v2ac=1
+alterparam rload_val=1e9
+alterparam rsrc2_val=50
+reset
+ac lin 1001 100meg 1000meg
+let Zout = v(vout)*50/(v(v2n)-v(vout))
+let Zout_re = real(Zout)
+let Zout_im = imag(Zout)
+plot Zout_re Zout_im xlabel 'Frequency [Hz]' ylabel 'Zout [ohm]'
+meas ac Zout_re_c find Zout_re when frequency=433.92e6
+meas ac Zout_im_c find Zout_im when frequency=433.92e6
+echo
+echo Zout at 433.92MHz = $&Zout_re_c + j$&Zout_im_c ohm
+.endc
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/dac/netlist/xspice/dac.xspice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/ook_transmitter_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/ook_analog_system_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.tech/ngspice/models/cap_mfringe.lib
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/vco_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/output_buffer_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/netlist/pex/heichips26_ook_top_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.ref/sg13cmos5l_io/spice/sg13cmos5l_io.spi
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.GLOBAL VDDA
+.end

@@ -3,11 +3,8 @@
 VCLKREF CLK_REF GND PULSE(0 {VDD} 0 0.5n 0.5n {0.5/FREQ_REF} {1/FREQ_REF})
 VDDSRC VDD GND {VDD}
 VDDSRC1 VDDA GND {3.3}
-Cb5 vout_accum GND 5p
+Cb5 vout_accum GND 2.5p
 R2 GND vout_accum 250k
-x1 net1 net19 net9 net2 net10 net20 net3 net21 net11 net22 net12 net4 net5 net13 net23 net24 net14 net6 VDD VDDA net7 net15 net25
-+ rx_filt vout_accum vout_tx q0 q1 q2 q3 net8 net26 net16 VDD CLK_REF VDD net27 net17 GND net18 net28 net29 net30 net31 net32 net33 net34
-+ net35 net36 heichips26_ook_top_pex
 * noconn #net28
 * noconn #net27
 * noconn #net26
@@ -36,6 +33,7 @@ x1 net1 net19 net9 net2 net10 net20 net3 net21 net11 net22 net12 net4 net5 net13
 * noconn #net3
 * noconn #net2
 * noconn #net1
+Vdatatx data_in_tx GND 0
 * noconn #net36
 * noconn #net35
 * noconn #net34
@@ -44,42 +42,51 @@ x1 net1 net19 net9 net2 net10 net20 net3 net21 net11 net22 net12 net4 net5 net13
 * noconn #net31
 * noconn #net30
 * noconn #net29
-Cb1 net37 rx_filt 1p
-C2 GND net37 1n
-L23 net37 GND 134.5p
-C1 net38 net37 0.558p
-L33 net37 GND 138.95n
-C3 net38 vin_rx 10.02p
-L43 net38 GND 17.56n
+x1 net1 net19 net9 net2 net10 net20 net3 net21 net11 net22 net12 net4 net5 net13 net23 net24 net14 net6 VDD VDDA net7 net15 net25
++ vin_rx vout_accum vout_tx q3 q2 q1 q0 net8 net26 net16 GND GND data_in_tx net27 net17 GND net18 net28 net29 net30 net31 net32 net33
++ net34 net35 net36 heichips26_ook_top_pex
+x2 GND VDDA GND VDDA net37 net38 sg13cmos5l_IOPadAnalog
+C2 net40 net39 1n
+L43 net39 net40 134.5p
+C1 net42 net39 0.558p
+L45 net39 net41 138.95n
+C3 net42 net44 10.02p
+L47 net42 GND 17.56n
+R1 net44 net43 50
+R3 GND net40 1e-3
+R4 GND net41 1e-3
 **** begin user architecture code
 
 
 .param VDD=1.5
 .param FREQ_REF=80e6
 .param FREQ_FB=600e6
-.options klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-6 itl1=200 rshunt=1e9
+.param tr=1e-9
+.param tr_data=50e-9
+.options klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-12 itl1=200 itl4=100 rshunt=1e9 trtol=20
 .param b0=1 b1=0 b2=1 b3=0 b4=0 b5=1 b6=0 b7=1
 .param bitsum={b0+b1+b2+b3+b4+b5+b6+b7}
 .param parity={bitsum-2*int(bitsum/2)}
 
-Vcarrier ncar 0 SINE(0 1m 433.92e6)
+* Stepped voltage ladder (amplitude, in volts) instead of OOK bit pattern:
+* 10mV/0/5mV/20mV, 0.5us each, then 0 for the rest of the (unchanged) .tran span
+Venv nenv 0 PWL(
++ 0 1m                       {3e-6-tr} 1m
++ 3e-6 0                    {4e-6-tr} 0
++ 4e-6 5m                     {5e-6-tr} 5m
++ 5e-6 20m                  {6e-6-tr} 20m
++ 6e-6 0                      150e-6 0 )
 
-Bvenv nenv 0 V =
-+ (time<10e-6)  ? 1 :
-+ (time<15e-6)  ? (1-b0) : (time<20e-6) ? b0 :
-+ (time<25e-6)  ? (1-b1) : (time<30e-6) ? b1 :
-+ (time<35e-6)  ? (1-b2) : (time<40e-6) ? b2 :
-+ (time<45e-6)  ? (1-b3) : (time<50e-6) ? b3 :
-+ (time<55e-6)  ? (1-b4) : (time<60e-6) ? b4 :
-+ (time<65e-6)  ? (1-b5) : (time<70e-6) ? b5 :
-+ (time<75e-6)  ? (1-b6) : (time<80e-6) ? b6 :
-+ (time<85e-6)  ? (1-b7) : (time<90e-6) ? b7 :
-+ (time<100e-6) ? parity :
-+ 1
+* Carrier folded into one B-source (one less node); nenv now carries the
+* step amplitude directly in volts, no separate 1e-3 scale factor needed
+Bvin1 vin_rx 0 V={(V(nenv)*sin(6.283185307*433.92e6*time))}
 
-Bvin1 vin_rx 0 V={(V(nenv)*V(ncar))}
-.save vout_tx q0 q1 q2 q3 vout_accum vin_rx rx_filt
-.tran 100p 150u 0 100p uic
+.save vout_accum vin_rx rx_filt i(VDDSRC) i(VDDSRC1)
+.save x1.heichips26_ook_soc_0.q0 x1.heichips26_ook_soc_0.q1 x1.heichips26_ook_soc_0.q2 x1.heichips26_ook_soc_0.q3
+.save x1.heichips26_ook_soc_0.q0_int x1.heichips26_ook_soc_0.q0_diff
+.save x1.heichips26_ook_soc_0.amp_s3
+.save x1.heichips26_ook_soc_0.amp_s3_cap
+.tran 100p 150u 0 100p
 
 
 
@@ -95,7 +102,7 @@ Bvin1 vin_rx 0 V={(V(nenv)*V(ncar))}
 .include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/vco_magic_pex_3.spice
 .include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/output_buffer_magic_pex_3.spice
 .include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/netlist/pex/heichips26_ook_top_magic_pex_3.spice
-
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.ref/sg13cmos5l_io/spice/sg13cmos5l_io.spi
 
 **** end user architecture code
 **.ends

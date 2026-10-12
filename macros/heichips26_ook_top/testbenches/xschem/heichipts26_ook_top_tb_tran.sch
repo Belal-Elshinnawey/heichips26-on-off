@@ -5,132 +5,126 @@ V {}
 S {}
 F {}
 E {}
-P 4 6 1690 -460 1690 -310 1880 -310 1880 -490 1690 -490 1690 -460 {}
-P 4 5 1490 -840 1490 -630 1650 -630 1650 -840 1490 -840 {}
-P 4 6 1680 -870 2050 -870 2050 -620 1670 -620 1670 -870 1680 -870 {}
-T {Off Chip Accumulator} 1680 -310 0 0 0.4 0.4 {}
-T {Filter} 1860 -900 0 0 0.4 0.4 {}
-T {Matching Stub} 1490 -870 0 0 0.4 0.4 {}
+P 4 6 1540 -470 1540 -270 1880 -270 1880 -490 1540 -490 1540 -470 {}
+T {Off Chip Accumulator} 1630 -260 0 0 0.4 0.4 {}
 N 160 -630 160 -610 {lab=CLK_REF}
 N 160 -550 160 -520 {lab=GND}
 N 160 -800 160 -780 {lab=VDD}
 N 160 -720 160 -690 {lab=GND}
-N 1190 -690 1220 -690 {lab=vout_tx}
-N 1030 -1160 1030 -1100 {lab=VDD}
+N 900 -730 930 -730 {lab=vout_tx}
+N 740 -1200 740 -1140 {lab=VDD}
 N 160 -990 160 -970 {lab=VDDA}
 N 160 -910 160 -880 {lab=GND}
-N 1050 -1120 1050 -1100 {lab=VDDA}
-N 1790 -470 1790 -430 {lab=vout_accum}
-N 1730 -470 1730 -430 {lab=vout_accum}
-N 1730 -470 1790 -470 {lab=vout_accum}
-N 1730 -370 1730 -350 {lab=GND}
-N 1730 -350 1790 -350 {lab=GND}
-N 1790 -370 1790 -350 {lab=GND}
-N 1790 -350 1790 -330 {lab=GND}
-N 1790 -470 1820 -470 {lab=vout_accum}
-N 1440 -800 1500 -800 {lab=vin_rx}
-N 840 -1060 890 -1060 {lab=VDD}
-N 800 -1040 890 -1040 {lab=CLK_REF}
-N 860 -440 890 -440 {lab=q0}
-N 860 -420 890 -420 {lab=q1}
-N 860 -400 890 -400 {lab=q2}
-N 860 -380 890 -380 {lab=q3}
-N 1190 -710 1220 -710 {lab=vout_accum}
-N 860 -1020 890 -1020 {lab=#net1}
-N 860 -1000 890 -1000 {lab=#net2}
-N 860 -980 890 -980 {lab=#net3}
-N 860 -960 890 -960 {lab=#net4}
-N 860 -940 890 -940 {lab=#net5}
-N 860 -920 890 -920 {lab=#net6}
-N 860 -900 890 -900 {lab=#net7}
-N 860 -880 890 -880 {lab=#net8}
-N 860 -840 890 -840 {lab=#net9}
-N 860 -820 890 -820 {lab=#net10}
-N 860 -800 890 -800 {lab=#net11}
-N 860 -780 890 -780 {lab=#net12}
-N 860 -760 890 -760 {lab=#net13}
-N 860 -740 890 -740 {lab=#net14}
-N 860 -720 890 -720 {lab=#net15}
-N 860 -700 890 -700 {lab=#net16}
-N 860 -680 890 -680 {lab=#net17}
-N 860 -660 890 -660 {lab=#net18}
-N 860 -640 890 -640 {lab=#net19}
-N 860 -620 890 -620 {lab=#net20}
-N 860 -600 890 -600 {lab=#net21}
-N 860 -580 890 -580 {lab=#net22}
-N 860 -560 890 -560 {lab=#net23}
-N 860 -540 890 -540 {lab=#net24}
-N 860 -520 890 -520 {lab=#net25}
-N 860 -500 890 -500 {lab=#net26}
-N 860 -480 890 -480 {lab=#net27}
-N 860 -460 890 -460 {lab=#net28}
-N 800 -860 890 -860 {lab=VDD}
-N 800 -890 800 -860 {lab=VDD}
-N 660 -1050 690 -1050 {lab=#net29}
-N 660 -1030 690 -1030 {lab=#net30}
-N 660 -1010 690 -1010 {lab=#net31}
-N 660 -990 690 -990 {lab=#net32}
-N 660 -970 690 -970 {lab=#net33}
-N 660 -950 690 -950 {lab=#net34}
-N 660 -930 690 -930 {lab=#net35}
-N 660 -910 690 -910 {lab=#net36}
-N 1040 -320 1040 -280 {lab=GND}
-N 1820 -800 1820 -760 {lab=#net37}
-N 1890 -800 1890 -760 {lab=#net37}
-N 1840 -680 1840 -660 {lab=GND}
-N 1820 -680 1840 -680 {lab=GND}
-N 1820 -700 1820 -680 {lab=GND}
-N 1890 -700 1890 -680 {lab=GND}
-N 1840 -680 1890 -680 {lab=GND}
-N 1990 -710 1990 -690 {lab=GND}
-N 1990 -800 1990 -770 {lab=#net37}
-N 1740 -800 1820 -800 {lab=#net37}
-N 1590 -800 1590 -770 {lab=#net38}
-N 1560 -800 1590 -800 {lab=#net38}
-N 1590 -800 1680 -800 {lab=#net38}
-N 1590 -710 1590 -680 {lab=GND}
-N 1820 -800 1890 -800 {lab=#net37}
-N 1990 -800 2060 -800 {lab=#net37}
-N 1890 -800 1990 -800 {lab=#net37}
-N 2120 -800 2170 -800 {lab=rx_filt}
-N 1190 -730 1230 -730 {lab=rx_filt}
-C {devices/code_shown.sym} 30 -1670 0 0 {name=NGSPICE
+N 760 -1160 760 -1140 {lab=VDDA}
+N 1720 -470 1720 -430 {lab=vout_accum}
+N 1660 -470 1660 -430 {lab=vout_accum}
+N 1660 -470 1720 -470 {lab=vout_accum}
+N 1660 -370 1660 -350 {lab=GND}
+N 1660 -350 1720 -350 {lab=GND}
+N 1720 -370 1720 -350 {lab=GND}
+N 1720 -350 1720 -330 {lab=GND}
+N 510 -1080 600 -1080 {lab=CLK_REF}
+N 570 -480 600 -480 {lab=q3}
+N 570 -460 600 -460 {lab=q2}
+N 570 -440 600 -440 {lab=q1}
+N 570 -420 600 -420 {lab=q0}
+N 900 -750 930 -750 {lab=vout_accum}
+N 570 -1060 600 -1060 {lab=#net1}
+N 570 -1040 600 -1040 {lab=#net2}
+N 570 -1020 600 -1020 {lab=#net3}
+N 570 -1000 600 -1000 {lab=#net4}
+N 570 -980 600 -980 {lab=#net5}
+N 570 -960 600 -960 {lab=#net6}
+N 570 -940 600 -940 {lab=#net7}
+N 570 -920 600 -920 {lab=#net8}
+N 570 -880 600 -880 {lab=#net9}
+N 570 -860 600 -860 {lab=#net10}
+N 570 -840 600 -840 {lab=#net11}
+N 570 -820 600 -820 {lab=#net12}
+N 570 -800 600 -800 {lab=#net13}
+N 570 -780 600 -780 {lab=#net14}
+N 570 -760 600 -760 {lab=#net15}
+N 570 -740 600 -740 {lab=#net16}
+N 570 -720 600 -720 {lab=#net17}
+N 570 -700 600 -700 {lab=#net18}
+N 570 -680 600 -680 {lab=#net19}
+N 570 -660 600 -660 {lab=#net20}
+N 570 -640 600 -640 {lab=#net21}
+N 570 -620 600 -620 {lab=#net22}
+N 570 -600 600 -600 {lab=#net23}
+N 570 -580 600 -580 {lab=#net24}
+N 570 -560 600 -560 {lab=#net25}
+N 570 -540 600 -540 {lab=#net26}
+N 570 -520 600 -520 {lab=#net27}
+N 570 -500 600 -500 {lab=#net28}
+N 510 -900 600 -900 {lab=data_in_tx}
+N 370 -1090 400 -1090 {lab=#net29}
+N 370 -1070 400 -1070 {lab=#net30}
+N 370 -1050 400 -1050 {lab=#net31}
+N 370 -1030 400 -1030 {lab=#net32}
+N 370 -1010 400 -1010 {lab=#net33}
+N 370 -990 400 -990 {lab=#net34}
+N 370 -970 400 -970 {lab=#net35}
+N 370 -950 400 -950 {lab=#net36}
+N 750 -360 750 -320 {lab=GND}
+N 900 -770 1050 -770 {lab=#net37}
+N 170 -400 170 -380 {lab=data_in_tx}
+N 170 -320 170 -290 {lab=GND}
+N 500 -1130 500 -1100 {lab=n_rst}
+N 500 -1100 600 -1100 {lab=n_rst}
+N 1110 -770 1150 -770 {lab=vin_rx}
+N 630 -1320 630 -1290 {lab=VDD}
+N 630 -1230 630 -1190 {lab=GND}
+N 1580 -290 1580 -260 {lab=GND}
+N 1580 -470 1580 -430 {lab=vout_accum}
+N 1580 -370 1580 -350 {lab=#net38}
+N 1720 -470 1750 -470 {lab=vout_accum}
+N 1580 -470 1660 -470 {lab=vout_accum}
+N 430 -160 430 -120 {lab=GND}
+N 430 -250 430 -220 {lab=n_rst}
+C {devices/code_shown.sym} -1120 -1740 0 0 {name=NGSPICE
 only_toplevel=true
 value="
 .param VDD=1.5
 .param FREQ_REF=80e6
-.param FREQ_FB=600e6
-.options klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-6 itl1=200 rshunt=1e9 trtol=20
+.param tr=1e-9
+.param tr_data=50e-9
+.options klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-12 itl1=200 itl4=100 rshunt=1e9 trtol=20
 .param b0=1 b1=0 b2=1 b3=0 b4=0 b5=1 b6=0 b7=1
 .param bitsum=\{b0+b1+b2+b3+b4+b5+b6+b7\}
 .param parity=\{bitsum-2*int(bitsum/2)\}
 
-Vcarrier ncar 0 SINE(0 1m 433.92e6)
+* Stepped voltage ladder (amplitude, in volts): ~0/1mV/5mV/10mV, 0.1us each,
+* then held at 10mV through the rest of the (unchanged) .tran span
+Venv nenv 0 PWL(
++ 0 1e-12                     \{0.1e-6-tr\} 1e-12
++ 0.1e-6 1m                   \{0.2e-6-tr\} 1m
++ 0.2e-6 5m                   \{0.3e-6-tr\} 5m
++ 0.3e-6 10m                  \{1.5e-6-tr\} 10m
++ 1.5e-6 0                    150e-6 0 )
 
-Bvenv nenv 0 V =
-+ (time<10e-6)  ? 1 :
-+ (time<15e-6)  ? (1-b0) : (time<20e-6) ? b0 :
-+ (time<25e-6)  ? (1-b1) : (time<30e-6) ? b1 :
-+ (time<35e-6)  ? (1-b2) : (time<40e-6) ? b2 :
-+ (time<45e-6)  ? (1-b3) : (time<50e-6) ? b3 :
-+ (time<55e-6)  ? (1-b4) : (time<60e-6) ? b4 :
-+ (time<65e-6)  ? (1-b5) : (time<70e-6) ? b5 :
-+ (time<75e-6)  ? (1-b6) : (time<80e-6) ? b6 :
-+ (time<85e-6)  ? (1-b7) : (time<90e-6) ? b7 :
-+ (time<100e-6) ? parity :
-+ 1
+* Carrier folded into one B-source (one less node); nenv now carries the
+* step amplitude directly in volts, no separate 1e-3 scale factor needed
+Bvin1 vin_rx 0 V=\{(V(nenv)*sin(6.283185307*433.92e6*time))\}
 
-Bvin1 vin_rx_src 0 V=\{(V(nenv)*V(ncar))\}
-Rsrc vin_rx_src vin_rx 50
-.save vout_tx q0 q1 q2 q3 vout_accum vin_rx rx_filt i(VDDSRC) i(VDDSRC1)
-.tran 100p 150u 0 100p uic
+.save vout_accum vin_rx rx_filt i(VDDSRC) i(VDDSRC1)
+.save x1.heichips26_ook_soc_0.q0 x1.heichips26_ook_soc_0.q1 x1.heichips26_ook_soc_0.q2 x1.heichips26_ook_soc_0.q3
+.save q0 q1 q2 q3
+.save x1.heichips26_ook_soc_0.q0_int x1.heichips26_ook_soc_0.q0_diff
+.save x1.heichips26_ook_soc_0.amp_s3_cap1 x1.heichips26_ook_soc_0.amp_s3_cap2
+.save x1.heichips26_ook_soc_0.vref1 x1.heichips26_ook_soc_0.vref2 x1.heichips26_ook_soc_0.vref3 x1.heichips26_ook_soc_0.vref4
+.save x1.heichips26_ook_soc_0.clk_fb x1.heichips26_ook_soc_0.vctrl_in x1.heichips26_ook_soc_0.vctrl_b_in
+.save data_in_tx
+.save x1.heichips26_ook_soc_0.vcl
+.save vout_accum
+.tran 100p 150u 0 100p
 "}
-C {devices/launcher.sym} 2340 -1410 0 0 {name=h2
+C {devices/launcher.sym} 2300 -1410 0 0 {name=h2
 descr="Simulate"
 tclcommand="xschem save; xschem netlist; xschem simulate"
 }
 C {title-3.sym} 0 0 0 0 {name=l2 author="Belal Elshinnawey" rev=1.0 lock=true}
-C {devices/launcher.sym} 2340 -1350 0 0 {name=h3
+C {devices/launcher.sym} 2300 -1350 0 0 {name=h3
 descr="Annotate OP"
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
@@ -149,7 +143,7 @@ value="
 .include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/vco_magic_pex_3.spice
 .include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/output_buffer_magic_pex_3.spice
 .include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/netlist/pex/heichips26_ook_top_magic_pex_3.spice
-
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.ref/sg13cmos5l_io/spice/sg13cmos5l_io.spi
 "}
 C {devices/vsource.sym} 160 -580 0 0 {name=VCLKREF value="PULSE(0 \{VDD\} 0 0.5n 0.5n \{0.5/FREQ_REF\} \{1/FREQ_REF\})"}
 C {devices/lab_pin.sym} 160 -630 0 0 {name=lpclkref1 sig_type=std_logic lab=CLK_REF}
@@ -157,113 +151,104 @@ C {devices/gnd.sym} 160 -520 0 0 {name=lgnd3 lab=GND}
 C {devices/vsource.sym} 160 -750 0 0 {name=VDDSRC value=\{VDD\}}
 C {vdd.sym} 160 -800 0 0 {name=lvddb lab=VDD}
 C {devices/gnd.sym} 160 -690 0 0 {name=lgnd5 lab=GND}
-C {vdd.sym} 1030 -1160 0 0 {name=lvddb2 lab=VDD}
-C {devices/lab_pin.sym} 1220 -690 2 0 {name=lpclkref7 sig_type=std_logic lab=vout_tx}
+C {vdd.sym} 740 -1200 0 0 {name=lvddb2 lab=VDD}
+C {devices/lab_pin.sym} 930 -730 2 0 {name=lpclkref7 sig_type=std_logic lab=vout_tx}
 C {devices/vsource.sym} 160 -940 0 0 {name=VDDSRC1 value=\{3.3\}}
 C {vdd.sym} 160 -990 0 0 {name=lvddb4 lab=VDDA
 value=\{3.3\}}
 C {devices/gnd.sym} 160 -880 0 0 {name=lgnd4 lab=GND
 value=\{VDD/2\}}
-C {vdd.sym} 1050 -1120 0 0 {name=lvddb5 lab=VDDA
+C {vdd.sym} 760 -1160 0 0 {name=lvddb5 lab=VDDA
 value=\{VDD/2\}}
-C {devices/lab_pin.sym} 860 -440 0 0 {name=lpclkref8 sig_type=std_logic lab=q0}
-C {devices/lab_pin.sym} 860 -420 0 0 {name=lpclkref9 sig_type=std_logic lab=q1}
-C {devices/lab_pin.sym} 860 -400 0 0 {name=lpclkref10 sig_type=std_logic lab=q2}
-C {devices/lab_pin.sym} 860 -380 0 0 {name=lpclkref11 sig_type=std_logic lab=q3}
-C {devices/lab_pin.sym} 800 -1040 0 0 {name=lpclkref12 sig_type=std_logic lab=CLK_REF}
-C {capa.sym} 1730 -400 0 1 {name=Cb5
+C {devices/lab_pin.sym} 570 -480 0 0 {name=lpclkref8 sig_type=std_logic lab=q3}
+C {devices/lab_pin.sym} 570 -460 0 0 {name=lpclkref9 sig_type=std_logic lab=q2}
+C {devices/lab_pin.sym} 570 -440 0 0 {name=lpclkref10 sig_type=std_logic lab=q1}
+C {devices/lab_pin.sym} 570 -420 0 0 {name=lpclkref11 sig_type=std_logic lab=q0}
+C {capa.sym} 1660 -400 0 1 {name=Cb5
 m=1
-value=5p
+value=2.5p
 footprint=1206
 device="ceramic capacitor"
 }
-C {res.sym} 1790 -400 2 1 {name=R2
+C {res.sym} 1720 -400 2 1 {name=R2
 value=250k
 int=1206
 device=resistor
 m=1}
-C {devices/gnd.sym} 1790 -330 0 1 {name=l4 lab=GND}
-C {devices/lab_pin.sym} 1820 -470 2 0 {name=p7 sig_type=std_logic lab=vout_accum}
-C {vdd.sym} 840 -1060 3 0 {name=lvddb1 lab=VDD}
-C {devices/lab_pin.sym} 1440 -800 2 1 {name=lpclkref2 sig_type=std_logic lab=vin_rx}
-C {heichips26_ook_top_pex.sym} 1050 -710 0 0 {name=x1}
-C {devices/lab_pin.sym} 1220 -710 2 0 {name=p1 sig_type=std_logic lab=vout_accum}
-C {noconn.sym} 860 -460 0 0 {name=l1}
-C {noconn.sym} 860 -480 0 0 {name=l3}
-C {noconn.sym} 860 -500 0 0 {name=l5}
-C {noconn.sym} 860 -520 0 0 {name=l6}
-C {noconn.sym} 860 -540 0 0 {name=l7}
-C {noconn.sym} 860 -560 0 0 {name=l8}
-C {noconn.sym} 860 -580 0 0 {name=l9}
-C {noconn.sym} 860 -600 0 0 {name=l10}
-C {noconn.sym} 860 -620 0 0 {name=l11}
-C {noconn.sym} 860 -640 0 0 {name=l12}
-C {noconn.sym} 860 -660 0 0 {name=l13}
-C {noconn.sym} 860 -680 0 0 {name=l14}
-C {noconn.sym} 860 -700 0 0 {name=l15}
-C {noconn.sym} 860 -720 0 0 {name=l16}
-C {noconn.sym} 860 -740 0 0 {name=l17}
-C {noconn.sym} 860 -760 0 0 {name=l18}
-C {noconn.sym} 860 -780 0 0 {name=l19}
-C {noconn.sym} 860 -800 0 0 {name=l20}
-C {noconn.sym} 860 -820 0 0 {name=l21}
-C {noconn.sym} 860 -840 0 0 {name=l22}
-C {noconn.sym} 860 -880 0 0 {name=l24}
-C {noconn.sym} 860 -900 0 0 {name=l25}
-C {noconn.sym} 860 -920 0 0 {name=l26}
-C {noconn.sym} 860 -940 0 0 {name=l27}
-C {noconn.sym} 860 -960 0 0 {name=l28}
-C {noconn.sym} 860 -980 0 0 {name=l29}
-C {noconn.sym} 860 -1000 0 0 {name=l30}
-C {noconn.sym} 860 -1020 0 0 {name=l31}
-C {vdd.sym} 800 -890 0 0 {name=lvddb3 lab=VDD}
-C {noconn.sym} 660 -910 0 0 {name=l34}
-C {noconn.sym} 660 -930 0 0 {name=l35}
-C {noconn.sym} 660 -950 0 0 {name=l36}
-C {noconn.sym} 660 -970 0 0 {name=l37}
-C {noconn.sym} 660 -990 0 0 {name=l38}
-C {noconn.sym} 660 -1010 0 0 {name=l39}
-C {noconn.sym} 660 -1030 0 0 {name=l40}
-C {noconn.sym} 660 -1050 0 0 {name=l41}
-C {devices/gnd.sym} 1040 -280 0 0 {name=lgnd1 lab=GND}
-C {capa.sym} 2090 -800 3 0 {name=Cb1
+C {devices/gnd.sym} 1720 -330 0 1 {name=l4 lab=GND}
+C {devices/lab_pin.sym} 1750 -470 2 0 {name=p7 sig_type=std_logic lab=vout_accum}
+C {devices/lab_pin.sym} 1150 -770 0 1 {name=lpclkref2 sig_type=std_logic lab=vin_rx}
+C {devices/lab_pin.sym} 930 -750 2 0 {name=p1 sig_type=std_logic lab=vout_accum}
+C {noconn.sym} 570 -500 0 0 {name=l1}
+C {noconn.sym} 570 -520 0 0 {name=l3}
+C {noconn.sym} 570 -540 0 0 {name=l5}
+C {noconn.sym} 570 -560 0 0 {name=l6}
+C {noconn.sym} 570 -580 0 0 {name=l7}
+C {noconn.sym} 570 -600 0 0 {name=l8}
+C {noconn.sym} 570 -620 0 0 {name=l9}
+C {noconn.sym} 570 -640 0 0 {name=l10}
+C {noconn.sym} 570 -660 0 0 {name=l11}
+C {noconn.sym} 570 -680 0 0 {name=l12}
+C {noconn.sym} 570 -700 0 0 {name=l13}
+C {noconn.sym} 570 -720 0 0 {name=l14}
+C {noconn.sym} 570 -740 0 0 {name=l15}
+C {noconn.sym} 570 -760 0 0 {name=l16}
+C {noconn.sym} 570 -780 0 0 {name=l17}
+C {noconn.sym} 570 -800 0 0 {name=l18}
+C {noconn.sym} 570 -820 0 0 {name=l19}
+C {noconn.sym} 570 -840 0 0 {name=l20}
+C {noconn.sym} 570 -860 0 0 {name=l21}
+C {noconn.sym} 570 -880 0 0 {name=l22}
+C {noconn.sym} 570 -920 0 0 {name=l24}
+C {noconn.sym} 570 -940 0 0 {name=l25}
+C {noconn.sym} 570 -960 0 0 {name=l26}
+C {noconn.sym} 570 -980 0 0 {name=l27}
+C {noconn.sym} 570 -1000 0 0 {name=l28}
+C {noconn.sym} 570 -1020 0 0 {name=l29}
+C {noconn.sym} 570 -1040 0 0 {name=l30}
+C {noconn.sym} 570 -1060 0 0 {name=l31}
+C {devices/lab_pin.sym} 510 -900 0 0 {name=lpdatatx sig_type=std_logic lab=data_in_tx}
+C {devices/lab_pin.sym} 170 -400 0 0 {name=lpdatatx2 sig_type=std_logic lab=data_in_tx}
+C {devices/vsource.sym} 430 -190 0 0 {name=Vrst value="PULSE(0 \{VDD\} 125e-9 \{tr\} \{tr\} 200e-6 10)"}
+C {devices/vsource.sym} 170 -350 0 0 {name=Vdatatx value="PULSE(0 \{VDD\} 0.5e-6 \{tr\} \{tr\} 0.5e-6 10)"}
+C {devices/gnd.sym} 170 -290 0 0 {name=lgnddatatx lab=GND}
+C {noconn.sym} 370 -950 0 0 {name=l34}
+C {noconn.sym} 370 -970 0 0 {name=l35}
+C {noconn.sym} 370 -990 0 0 {name=l36}
+C {noconn.sym} 370 -1010 0 0 {name=l37}
+C {noconn.sym} 370 -1030 0 0 {name=l38}
+C {noconn.sym} 370 -1050 0 0 {name=l39}
+C {noconn.sym} 370 -1070 0 0 {name=l40}
+C {noconn.sym} 370 -1090 0 0 {name=l41}
+C {devices/gnd.sym} 750 -320 0 0 {name=lgnd1 lab=GND}
+C {heichips26_ook_top_pex.sym} 760 -750 0 0 {name=x1}
+C {capa.sym} 1080 -770 1 0 {name=C4
+m=1
+value=10.0p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 510 -1080 3 0 {name=lpclkref3 sig_type=std_logic lab=CLK_REF}
+C {capa.sym} 630 -1260 0 0 {name=C5
+m=1
+value=10.0p
+footprint=1206
+device="ceramic capacitor"}
+C {vdd.sym} 630 -1320 0 0 {name=lvddb7 lab=VDD}
+C {devices/gnd.sym} 630 -1190 0 0 {name=lgnd2 lab=GND
+value=\{VDD/2\}}
+C {devices/gnd.sym} 1580 -260 0 0 {name=lgnd8 lab=GND}
+C {capa.sym} 1580 -400 0 0 {name=C6
 m=1
 value=1p
 footprint=1206
-device="ceramic capacitor"
+device="ceramic capacitor"}
+C {ind.sym} 1580 -320 0 0 {name=L32
+m=1
+value=1u
+footprint=1206
+device=inductor}
+C {devices/lab_pin.sym} 430 -250 0 0 {name=lpdatatx1 sig_type=std_logic lab=n_rst
 }
-C {capa.sym} 1820 -730 2 0 {name=C2
-m=1
-value=1n
-footprint=1206
-device="ceramic capacitor"}
-C {ind.sym} 1890 -730 0 0 {name=L23
-m=1
-value=134.5p
-footprint=1206
-device=inductor}
-C {devices/gnd.sym} 1840 -660 0 0 {name=l32 lab=GND}
-C {capa.sym} 1710 -800 3 0 {name=C1
-m=1
-value=0.558p
-footprint=1206
-device="ceramic capacitor"}
-C {ind.sym} 1990 -740 0 0 {name=L33
-m=1
-value=138.95n
-footprint=1206
-device=inductor}
-C {devices/gnd.sym} 1990 -690 0 0 {name=l42 lab=GND}
-C {capa.sym} 1530 -800 1 0 {name=C3
-m=1
-value=10.02p
-footprint=1206
-device="ceramic capacitor"}
-C {ind.sym} 1590 -740 0 0 {name=L43
-m=1
-value=17.56n
-footprint=1206
-device=inductor}
-C {devices/gnd.sym} 1590 -680 0 0 {name=l44 lab=GND}
-C {devices/lab_pin.sym} 2170 -800 0 1 {name=lpclkref3 sig_type=std_logic lab=rx_filt}
-C {devices/lab_pin.sym} 1230 -730 0 1 {name=lpclkref4 sig_type=std_logic lab=rx_filt}
+C {devices/gnd.sym} 430 -120 0 0 {name=lgnddatatx1 lab=GND}
+C {devices/lab_pin.sym} 500 -1130 0 0 {name=lpdatatx3 sig_type=std_logic lab=n_rst
+}
