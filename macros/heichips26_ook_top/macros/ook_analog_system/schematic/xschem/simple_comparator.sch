@@ -28,13 +28,13 @@ N 1530 -870 1530 -790 {lab=#net2}
 N 1530 -1170 1530 -1120 {lab=VDD}
 N 1530 -1090 1580 -1090 {lab=VDD}
 N 1460 -670 1490 -670 {lab=#net1}
-N 1530 -640 1530 -590 {lab=#net3}
+N 1530 -640 1530 -590 {lab=VSS}
 N 1530 -670 1580 -670 {lab=VSS}
-N 1730 -1110 1780 -1110 {lab=#net2}
-N 1820 -1110 1870 -1110 {lab=VDDL}
+N 1930 -1100 1980 -1100 {lab=#net3}
+N 2020 -1100 2070 -1100 {lab=VDDL}
 N 1460 -870 1460 -670 {lab=#net1}
-N 1530 -870 1730 -870 {lab=#net2}
-N 1820 -970 1820 -890 {lab=comp_out}
+N 1530 -870 1750 -870 {lab=#net2}
+N 2020 -900 2020 -830 {lab=comp_out}
 N 1300 -870 1460 -870 {lab=#net1}
 N 1010 -870 1200 -870 {lab=outn}
 N 1200 -870 1200 -680 {lab=outn}
@@ -81,35 +81,35 @@ N 1490 -1170 1530 -1170 {lab=VDD}
 N 1490 -1230 1490 -1170 {lab=VDD}
 N 1490 -1230 1530 -1230 {lab=VDD}
 N 1530 -1290 1530 -1230 {lab=VDD}
-N 1820 -1390 1820 -1320 {lab=VDDL}
-N 1820 -1290 1870 -1290 {lab=VDDL}
-N 1780 -1320 1780 -1260 {lab=VDDL}
-N 1780 -1320 1820 -1320 {lab=VDDL}
-N 1820 -1000 1870 -1000 {lab=VDDL}
-N 1780 -970 1820 -970 {lab=comp_out}
-N 1780 -1030 1780 -970 {lab=comp_out}
-N 1780 -1030 1820 -1030 {lab=comp_out}
-N 1780 -1260 1820 -1260 {lab=VDDL}
-N 1730 -1110 1730 -870 {lab=#net2}
-N 1820 -810 1870 -810 {lab=VSS}
-N 1780 -780 1820 -780 {lab=comp_out}
-N 1780 -840 1780 -780 {lab=comp_out}
-N 1780 -840 1820 -840 {lab=comp_out}
+N 2020 -1380 2020 -1310 {lab=VDDL}
+N 2020 -1280 2070 -1280 {lab=VDDL}
+N 1980 -1310 1980 -1250 {lab=VDDL}
+N 1980 -1310 2020 -1310 {lab=VDDL}
+N 2020 -990 2070 -990 {lab=VDDL}
+N 1980 -960 2020 -960 {lab=comp_out}
+N 1980 -1020 1980 -960 {lab=comp_out}
+N 1980 -1020 2020 -1020 {lab=comp_out}
+N 1980 -1250 2020 -1250 {lab=VDDL}
+N 1930 -890 1930 -700 {lab=#net3}
+N 2020 -800 2070 -800 {lab=VSS}
+N 1980 -770 2020 -770 {lab=comp_out}
+N 1980 -830 1980 -770 {lab=comp_out}
+N 1980 -830 2020 -830 {lab=comp_out}
 N 1820 -480 1820 -300 {lab=VSS}
-N 1820 -510 1870 -510 {lab=VSS}
-N 1780 -480 1820 -480 {lab=VSS}
-N 1780 -540 1780 -480 {lab=VSS}
-N 1780 -540 1820 -540 {lab=VSS}
+N 2020 -500 2070 -500 {lab=VSS}
+N 1980 -470 2020 -470 {lab=VSS}
+N 1980 -530 1980 -470 {lab=VSS}
+N 1980 -530 2020 -530 {lab=VSS}
 N 1530 -760 1580 -760 {lab=VSS}
 N 1530 -730 1530 -700 {lab=#net2}
 N 1490 -730 1530 -730 {lab=#net2}
 N 1490 -790 1490 -730 {lab=#net2}
 N 1490 -790 1530 -790 {lab=#net2}
 N 1530 -560 1580 -560 {lab=VSS}
-N 1530 -530 1530 -430 {lab=#net3}
-N 1490 -530 1530 -530 {lab=#net3}
-N 1490 -590 1490 -530 {lab=#net3}
-N 1490 -590 1530 -590 {lab=#net3}
+N 1530 -530 1530 -430 {lab=VSS}
+N 1490 -530 1530 -530 {lab=VSS}
+N 1490 -590 1490 -530 {lab=VSS}
+N 1490 -590 1530 -590 {lab=VSS}
 N 1010 -1100 1010 -1080 {lab=#net4}
 N 970 -1100 1010 -1100 {lab=#net4}
 N 970 -1160 970 -1100 {lab=#net4}
@@ -161,20 +161,52 @@ N 970 -510 1010 -510 {lab=VSS}
 N 970 -570 970 -510 {lab=VSS}
 N 970 -570 1010 -570 {lab=VSS}
 N 1010 -510 1010 -480 {lab=VSS}
-N 1670 -430 1670 -390 {lab=#net3}
 N 1670 -300 1820 -300 {lab=VSS}
 N 1640 -300 1670 -300 {lab=VSS}
-N 1670 -330 1670 -300 {lab=VSS}
-N 1530 -430 1670 -430 {lab=#net3}
-N 1820 -890 2140 -890 {lab=comp_out}
-N 1820 -1080 1820 -1030 {lab=comp_out}
-N 1820 -1260 1820 -1140 {lab=VDDL}
-N 1820 -890 1820 -840 {lab=comp_out}
+N 1530 -430 1670 -430 {lab=VSS}
+N 2020 -900 2340 -900 {lab=comp_out}
+N 2020 -1070 2020 -1020 {lab=comp_out}
+N 2020 -1250 2020 -1130 {lab=VDDL}
+N 2020 -700 2070 -700 {lab=VSS}
+N 2020 -770 2020 -730 {lab=comp_out}
+N 1930 -700 1980 -700 {lab=#net3}
+N 2020 -670 2020 -530 {lab=VSS}
+N 1670 -430 1670 -300 {lab=VSS}
+N 2020 -960 2020 -900 {lab=comp_out}
+N 1750 -1040 1780 -1040 {lab=#net2}
+N 1820 -1120 1820 -1070 {lab=VDDL}
+N 1820 -1040 1870 -1040 {lab=VDDL}
+N 1750 -620 1780 -620 {lab=#net2}
+N 1820 -590 1820 -540 {lab=VSS}
+N 1820 -620 1870 -620 {lab=VSS}
+N 1820 -950 1870 -950 {lab=VDDL}
+N 1820 -990 1820 -980 {lab=#net3}
+N 1820 -890 1820 -740 {lab=#net3}
+N 1780 -920 1820 -920 {lab=#net3}
+N 1780 -990 1780 -920 {lab=#net3}
+N 1780 -990 1820 -990 {lab=#net3}
+N 1820 -1010 1820 -990 {lab=#net3}
+N 1750 -870 1750 -620 {lab=#net2}
+N 1820 -1150 1870 -1150 {lab=VDDL}
+N 1780 -1120 1820 -1120 {lab=VDDL}
+N 1780 -1180 1780 -1120 {lab=VDDL}
+N 1780 -1180 1820 -1180 {lab=VDDL}
+N 1820 -1240 1820 -1180 {lab=VDDL}
 N 1820 -710 1870 -710 {lab=VSS}
-N 1820 -780 1820 -740 {lab=comp_out}
-N 1730 -710 1780 -710 {lab=#net2}
-N 1730 -870 1730 -710 {lab=#net2}
-N 1820 -680 1820 -540 {lab=VSS}
+N 1820 -680 1820 -650 {lab=#net3}
+N 1780 -680 1820 -680 {lab=#net3}
+N 1780 -740 1780 -680 {lab=#net3}
+N 1780 -740 1820 -740 {lab=#net3}
+N 1820 -510 1870 -510 {lab=VSS}
+N 1780 -480 1820 -480 {lab=VSS}
+N 1780 -540 1780 -480 {lab=VSS}
+N 1780 -540 1820 -540 {lab=VSS}
+N 1750 -1040 1750 -870 {lab=#net2}
+N 1820 -890 1930 -890 {lab=#net3}
+N 1820 -920 1820 -890 {lab=#net3}
+N 1930 -1100 1930 -890 {lab=#net3}
+N 2020 -470 2020 -300 {lab=VSS}
+N 1820 -300 2020 -300 {lab=VSS}
 C {title-3.sym} 0 0 0 0 {name=l1 author="Belal Elshinnawey" rev=1.0 lock=true}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 630 -1200 0 0 {name=MBIAS
 l=0.5u
@@ -247,8 +279,8 @@ ng=1
 spiceprefix=X
 }
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1510 -1090 0 0 {name=MP1
-l=4u
-w=2u
+l=0.45u
+w=8u
 ng=1
  m=1
   mm_ok=1
@@ -256,21 +288,21 @@ ng=1
 spiceprefix=X
 }
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1510 -670 0 0 {name=MN1
-l=4u
-w=2u
+l=0.45u
+w=4u
 ng=1
  m=1
   mm_ok=1
  model=sg13_hv_nmos
 spiceprefix=X
 }
-C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1800 -1110 0 0 {name=MP2
-l=4u
-w=2u
+C {sg13cmos5l_pr/sg13_lv_pmos.sym} 2000 -1100 0 0 {name=MP2
+l=0.13u
+w=8u
 ng=1
  m=1
   mm_ok=1
- model=sg13_hv_pmos
+ model=sg13_lv_pmos
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1110 -1490 0 0 {name=l0c sig_type=std_logic lab=VDD}
@@ -289,7 +321,7 @@ C {devices/ipin.sym} 920 -1050 0 0 {name=p1 lab=vin}
 C {devices/ipin.sym} 1210 -1050 0 0 {name=p2 lab=vref}
 C {devices/iopin.sym} 560 -1440 0 0 {name=p4 lab=VDD}
 C {devices/iopin.sym} 560 -1480 0 0 {name=p5 lab=VSS}
-C {devices/opin.sym} 2140 -890 0 0 {name=p6 lab=comp_out}
+C {devices/opin.sym} 2340 -900 0 0 {name=p6 lab=comp_out}
 C {devices/lab_pin.sym} 1050 -1310 0 0 {name=l2 sig_type=std_logic lab=vbias}
 C {devices/iopin.sym} 560 -1520 0 0 {name=p3 lab=VDDL}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 630 -1090 0 0 {name=MBIAS1
@@ -331,8 +363,8 @@ ng=1
 spiceprefix=X
 }
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1510 -1000 0 0 {name=MP3
-l=4u
-w=2u
+l=0.45u
+w=8u
 ng=1
  m=1
   mm_ok=1
@@ -341,8 +373,8 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1580 -1000 2 0 {name=l5 sig_type=std_logic lab=VDD}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1510 -1200 0 0 {name=MP4
-l=4u
-w=2u
+l=0.45u
+w=8u
 ng=1
  m=1
   mm_ok=1
@@ -350,50 +382,50 @@ ng=1
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1580 -1200 2 0 {name=l6 sig_type=std_logic lab=VDD}
-C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1800 -1290 0 0 {name=MP5
-l=4u
-w=2u
+C {sg13cmos5l_pr/sg13_lv_pmos.sym} 2000 -1280 0 0 {name=MP5
+l=0.13u
+w=8u
 ng=1
  m=1
   mm_ok=1
- model=sg13_hv_pmos
+ model=sg13_lv_pmos
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1820 -1390 0 0 {name=l7 sig_type=std_logic lab=VDDL}
-C {devices/lab_pin.sym} 1870 -1290 2 0 {name=l8 sig_type=std_logic lab=VDDL}
-C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1800 -1000 0 0 {name=MP6
-l=4u
-w=2u
+C {devices/lab_pin.sym} 2020 -1380 0 0 {name=l7 sig_type=std_logic lab=VDDL}
+C {devices/lab_pin.sym} 2070 -1280 2 0 {name=l8 sig_type=std_logic lab=VDDL}
+C {sg13cmos5l_pr/sg13_lv_pmos.sym} 2000 -990 0 0 {name=MP6
+l=0.13u
+w=8u
 ng=1
  m=1
   mm_ok=1
- model=sg13_hv_pmos
+ model=sg13_lv_pmos
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1870 -1000 2 0 {name=l9 sig_type=std_logic lab=VDDL}
-C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1800 -810 0 0 {name=MN3
-l=4u
-w=2u
+C {devices/lab_pin.sym} 2070 -990 2 0 {name=l9 sig_type=std_logic lab=VDDL}
+C {sg13cmos5l_pr/sg13_lv_nmos.sym} 2000 -800 0 0 {name=MN3
+l=0.13u
+w=4u
 ng=1
  m=1
   mm_ok=1
- model=sg13_hv_nmos
+ model=sg13_lv_nmos
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1870 -810 2 0 {name=l10 sig_type=std_logic lab=VSS}
-C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1800 -510 0 0 {name=MN4
-l=4u
-w=2u
+C {devices/lab_pin.sym} 2070 -800 2 0 {name=l10 sig_type=std_logic lab=VSS}
+C {sg13cmos5l_pr/sg13_lv_nmos.sym} 2000 -500 0 0 {name=MN4
+l=0.13u
+w=4u
 ng=1
  m=1
   mm_ok=1
- model=sg13_hv_nmos
+ model=sg13_lv_nmos
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1870 -510 2 0 {name=l11 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2070 -500 2 0 {name=l11 sig_type=std_logic lab=VSS}
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1510 -760 0 0 {name=MN5
-l=4u
-w=2u
+l=0.45u
+w=4u
 ng=1
  m=1
   mm_ok=1
@@ -402,8 +434,8 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1580 -760 2 0 {name=l12 sig_type=std_logic lab=VSS}
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1510 -560 0 0 {name=MN6
-l=4u
-w=2u
+l=0.45u
+w=4u
 ng=1
  m=1
   mm_ok=1
@@ -493,27 +525,76 @@ ng=1
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1060 -540 2 0 {name=l23 sig_type=std_logic lab=VSS}
-C {rhigh_ps.sym} 1670 -360 0 0 {name=RBIAS1
-w=2e-6
-l=13.71e-6
-model=rhigh
-body=VSS
-spiceprefix=X
-b=8
-ps=0.18e-6
+C {devices/lab_pin.sym} 1640 -300 0 0 {name=l24 sig_type=std_logic lab=VSS}
+C {sg13cmos5l_pr/sg13_lv_nmos.sym} 2000 -700 0 0 {name=MN8
+l=0.13u
+w=4u
+ng=1
  m=1
   mm_ok=1
-value="expr_eng(  ( 1.6e-4 / @w + 1360.0 * ( (@b + 1)* @l + ( 1.081*( @w - 0.04e-6 ) + 0.18e-6 )*@b ) / ( @w - 0.04e-6 ) ) / @m  )"
+ model=sg13_lv_nmos
+spiceprefix=X
 }
-C {devices/lab_pin.sym} 1640 -300 0 0 {name=l24 sig_type=std_logic lab=VSS}
-C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1800 -710 0 0 {name=MN8
-l=4u
-w=2u
+C {devices/lab_pin.sym} 2070 -700 2 0 {name=l27 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 2070 -1100 2 0 {name=l25 sig_type=std_logic lab=VDDL}
+C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1800 -1040 0 0 {name=MP7
+l=0.45u
+w=8u
+ng=1
+ m=1
+  mm_ok=1
+ model=sg13_hv_pmos
+spiceprefix=X
+}
+C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1800 -620 0 0 {name=MN2
+l=0.45u
+w=4u
 ng=1
  m=1
   mm_ok=1
  model=sg13_hv_nmos
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1870 -710 2 0 {name=l27 sig_type=std_logic lab=VSS}
-C {devices/lab_pin.sym} 1870 -1110 2 0 {name=l25 sig_type=std_logic lab=VDDL}
+C {devices/lab_pin.sym} 1870 -1040 2 0 {name=l28 sig_type=std_logic lab=VDDL}
+C {devices/lab_pin.sym} 1870 -620 2 0 {name=l29 sig_type=std_logic lab=VSS}
+C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1800 -950 0 0 {name=MP8
+l=0.45u
+w=8u
+ng=1
+ m=1
+  mm_ok=1
+ model=sg13_hv_pmos
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 1870 -950 2 0 {name=l30 sig_type=std_logic lab=VDDL}
+C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1800 -1150 0 0 {name=MP9
+l=0.45u
+w=8u
+ng=1
+ m=1
+  mm_ok=1
+ model=sg13_hv_pmos
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 1870 -1150 2 0 {name=l31 sig_type=std_logic lab=VDDL}
+C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1800 -710 0 0 {name=MN7
+l=0.45u
+w=4u
+ng=1
+ m=1
+  mm_ok=1
+ model=sg13_hv_nmos
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 1870 -710 2 0 {name=l32 sig_type=std_logic lab=VSS}
+C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1800 -510 0 0 {name=MN9
+l=0.45u
+w=4u
+ng=1
+ m=1
+  mm_ok=1
+ model=sg13_hv_nmos
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 1870 -510 2 0 {name=l33 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} 1820 -1240 0 0 {name=l26 sig_type=std_logic lab=VDDL}

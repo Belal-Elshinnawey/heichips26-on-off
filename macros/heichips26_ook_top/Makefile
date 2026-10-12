@@ -202,7 +202,11 @@ verilog: ## Generate a Verilog stub of the TOP cell from Magic or KLayout PEX ne
 	echo "Reading pins from $$pex_netlist..."; \
 	pex_pins=$$(awk '/^\.subckt $(TOP)_pex/{sub(/^\.subckt [^ ]+ /,"");p=$$0;next} p&&/^[+]/{sub(/^[+] */,"");p=p" "$$0;next} p{exit} END{print p}' "$$pex_netlist"); \
 	power_pins=$$(echo "$$pex_pins" | tr ' ' '\n' | grep -E '^(VDD|VSS|VPWR|VDPWR|VAPWR|VGND|VNB|VPB)$$' | sort -u | tr '\n' ' '); \
+	tt_pins='ui_in uo_out uio_in uio_out uio_oe ena clk rst_n'; \
 	signal_pins=$$(echo "$$pex_pins" | tr ' ' '\n' | grep -vE '^(VDD|VSS|VPWR|VDPWR|VAPWR|VGND|VNB|VPB)$$' | grep -v '^$$' | sort | tr '\n' ' '); \
+	other_pins=$$(echo "$$signal_pins" | tr ' ' '\n' | grep -v '^$$' | awk -v tt="$$tt_pins" 'BEGIN{split(tt,a," ");for(i in a)skip[a[i]]=1} {base=$$0; sub(/\[[0-9]+\]$$/,"",base); if(!(base in skip)) print}' | sort -u | tr '\n' ' '); \
+	rst_n_sep=","; \
+	if [ -z "$$(echo $$other_pins | xargs)" ]; then rst_n_sep=""; fi; \
 	{ \
 		echo 'module $(TOP) ('; \
 		if [ -n "$$(echo $$power_pins | xargs)" ]; then \
@@ -210,16 +214,26 @@ verilog: ## Generate a Verilog stub of the TOP cell from Magic or KLayout PEX ne
 			for p in $$power_pins; do echo "    inout $$p,"; done; \
 			echo '`endif'; \
 		fi; \
-		echo "$$signal_pins" | tr ' ' '\n' | grep -v '^$$' | awk ' \
+		echo '    input  wire [7:0] ui_in,    // Dedicated inputs'; \
+		echo '    output wire [7:0] uo_out,   // Dedicated outputs'; \
+		echo '    input  wire [7:0] uio_in,   // IOs: Input path'; \
+		echo '    output wire [7:0] uio_out,  // IOs: Output path'; \
+		echo '    output wire [7:0] uio_oe,   // IOs: Enable path (active high: 0=input, 1=output)'; \
+		echo '    input  wire       ena,      // always 1 when the design is powered, so you can ignore it'; \
+		echo '    input  wire       clk,      // clock'; \
+		echo "    input  wire       rst_n$$rst_n_sep     // reset_n - low to reset"; \
+		if [ -n "$$(echo $$other_pins | xargs)" ]; then \
+		echo "$$other_pins" | tr ' ' '\n' | grep -v '^$$' | awk ' \
 			{ name=$$0; idx=-1; base=name; \
 			  if (name ~ /\[[0-9]+\]$$/) { p=index(name,"["); base=substr(name,1,p-1); idx=substr(name,p+1,length(name)-p-1)+0; } \
 			  if (!(base in lo)) { order[++n]=base; lo[base]=idx; hi[base]=idx; } \
 			  if (idx>=0) { if (lo[base]<0 || idx<lo[base]) lo[base]=idx; if (idx>hi[base]) hi[base]=idx; } } \
 			END { for (i=1;i<=n;i++) { b=order[i]; \
-			  t="inout"; if (b ~ /^di_/) t="input"; else if (b ~ /^do_/) t="output"; \
+			  t="inout"; \
 			  if (lo[b]<0) line="    " t " " b; else line="    " t " [" hi[b] ":" lo[b] "] " b; \
 			  printf "%s%s\n", line, (i<n ? "," : ""); } } \
 		'; \
+		fi; \
 		echo ');'; \
 		echo 'endmodule'; \
 	} > $(VH_DIR)/$(TOP).vh

@@ -1,0 +1,4 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/schematic/xschem/simple_comparator_stage.sch
+.subckt simple_comparator_stage VDD1_5 VDD3_3 vin q0 vref0 VSS q1 vref1 q2 vref2 q3 vref3
+
+.ends

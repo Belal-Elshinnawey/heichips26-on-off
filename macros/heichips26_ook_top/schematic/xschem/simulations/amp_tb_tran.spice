@@ -1,0 +1,55 @@
+** sch_path: /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/testbenches/xschem/amp_tb_tran.sch
+**.subckt amp_tb_tran
+VDDSRC VDD GND {1.5}
+VDDSRC1 VDDA GND {3.3}
+XM1 net1 net2 GND GND sg13_lv_nmos w=2u l=0.13u ng=1 m=1 mm_ok=1
+XM2 net1 net2 VDD VDD sg13_lv_pmos w=4u l=0.13u ng=1 m=1 mm_ok=1
+XR1 net2 net1 GND rhigh w=2e-6 l=3.85e-6 m=1 b=0 mm_ok=1
+C1 vin net2 10p
+Vin1 vin GND DC 0 AC 1 SIN(0 1e-3 433.92e6)
+XM3 net3 net1 GND GND sg13_lv_nmos w=6u l=0.13u ng=3 m=1 mm_ok=1
+XM4 net3 net1 VDD VDD sg13_lv_pmos w=12u l=0.13u ng=3 m=1 mm_ok=1
+XM5 net4 net5 GND GND sg13_lv_nmos w=12u l=0.13u ng=3 m=1 mm_ok=1
+XM6 net4 net5 VDD VDD sg13_lv_pmos w=24u l=0.13u ng=10 m=1 mm_ok=1
+XR2 net5 net4 GND rhigh w=2e-6 l=3.85e-6 m=1 b=0 mm_ok=1
+XC2 net5 net3 cap_mfringe w=10.0u l=10.0u mmin=3 mmax=4
+XM7 vout net4 GND GND sg13_lv_nmos w=24u l=0.13u ng=10 m=1 mm_ok=1
+XM8 vout net4 VDD VDD sg13_lv_pmos w=48u l=0.13u ng=20 m=1 mm_ok=1
+**** begin user architecture code
+
+
+.param VDD=1.5
+.param tr=1e-9
+.param tr_data=50e-9
+.options klu reltol=1e-3 abstol=1e-12 vntol=1e-6 gmin=1e-12 itl1=200 itl4=100 rshunt=1e9 trtol=20
+.save vin vout
+.control
+ tran 100p 5u 0 100p
+ plot vin
+ plot vout
+* ac lin 600 1meg 600meg
+plot vdb(vout)
+.endc
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.lib cornerCAP.lib cap_typ
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/dac/netlist/xspice/dac.xspice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/ook_transmitter_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/ook_analog_system_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.tech/ngspice/models/cap_mfringe.lib
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/vco_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/macros/ook_analog_system/netlist/pex/output_buffer_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/macros/heichips26_ook_top/netlist/pex/heichips26_ook_top_magic_pex_3.spice
+.include /home/belal/HeiChips/heichips26-on-off/IHP-Open-PDK/ihp-sg13cmos5l/libs.ref/sg13cmos5l_io/spice/sg13cmos5l_io.spi
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.GLOBAL VDDA
+.end
